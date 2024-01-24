@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="63e80d41-a172-4bd8-b6d2-be08a3fcada8" extendedConfigurationObject="f3b86010-6dc9-4bd6-9fda-850ce2f2ea58">
+  <producedTypes>
+    <objectType typeId="38d8944b-3a26-46e7-b7ca-d640b2a12195" valueTypeId="2caee67d-10d8-4519-abbf-5f976f271222"/>
+    <refType typeId="97b87301-e714-4520-bf33-78ed5a2f2afe" valueTypeId="edd88ee1-f3f1-4265-9ac1-4d3ca9c85efe"/>
+    <selectionType typeId="1e34a54e-3952-4050-a28a-a28c26dff06d" valueTypeId="f049a93e-81fc-4712-8fbd-0c69c9a9325e"/>
+    <listType typeId="02b2d0fd-3692-4543-b489-b2a359f2822d" valueTypeId="898180be-fc3f-4237-948c-c3c9f37d7eb8"/>
+    <managerType typeId="0d491c38-60b2-4062-b52d-e65e060cf851" valueTypeId="293e869d-0dea-4d98-913a-98db58eee35e"/>
+  </producedTypes>
+  <name>ВидыНоменклатуры</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:CatalogExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <attributes uuid="39655d12-7b9b-4095-802a-40e4533398a5" extendedConfigurationObject="6673d95d-5505-48ac-867a-3145366a0bbd">
+    <name>ИспользоватьСерии</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Boolean</type>
+        </types>
+      </typeExtension>
+    </extension>
+    <type/>
+  </attributes>
+  <attributes uuid="c3d5333b-e8ba-4bc3-a56b-7c520514ab8a" extendedConfigurationObject="08523aaa-c465-4110-9eda-04a40e5d7dac">
+    <name>ТипНоменклатуры</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>EnumRef.ТипыНоменклатуры</type>
+        </types>
+      </typeExtension>
+    </extension>
+    <type/>
+  </attributes>
+</mdclass:Catalog>

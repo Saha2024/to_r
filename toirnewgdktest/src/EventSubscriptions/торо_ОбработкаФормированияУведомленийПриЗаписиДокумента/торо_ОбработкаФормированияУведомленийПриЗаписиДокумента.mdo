@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="62d4a15c-8bca-4aed-8c78-20220f5ec729">
+  <name>торо_ОбработкаФормированияУведомленийПриЗаписиДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обработка формирования уведомлений при записи документа</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.торо_ВводНачальныхДанных</types>
+    <types>DocumentObject.торо_НастройкаРегистрацииНаработкиЗависимыхОР</types>
+    <types>DocumentObject.торо_РегистрацияЗначенийВнешнихПоказателейKPI</types>
+    <types>DocumentObject.торо_УстановкаАналоговНоменклатурыДляРемонтов</types>
+    <types>DocumentObject.торо_УстановкаЦелевыхЗначенийПоказателейKPI</types>
+    <types>DocumentObject.торо_ПрисвоениеКвалификацийСотрудникам</types>
+    <types>DocumentObject.торо_ПланГрафикРемонта</types>
+    <types>DocumentObject.торо_УстановкаМинимальногоОстаткаНоменклатуры</types>
+    <types>DocumentObject.торо_АктОВыполненииРегламентногоМероприятия</types>
+    <types>DocumentObject.торо_НарядНаВыполнениеРемонтныхРабот</types>
+    <types>DocumentObject.торо_ВнешнееОснованиеДляРабот</types>
+    <types>DocumentObject.торо_ОценкаРаботыПодрядчика</types>
+    <types>DocumentObject.торо_АнализКоренныхПричин</types>
+    <types>DocumentObject.торо_ЗакрытиеЗаявокИРемонтов</types>
+    <types>DocumentObject.торо_УчетНаработкиОборудования</types>
+    <types>DocumentObject.торо_КомиссионноеРассмотрение</types>
+    <types>DocumentObject.торо_АктПриемкиОборудования</types>
+    <types>DocumentObject.торо_ИзменениеПоложенияВСтруктуреИерархии</types>
+    <types>DocumentObject.торо_УстановкаЛимитаНаПлановыеРемонтныеРаботы</types>
+    <types>DocumentObject.торо_СостоянияОбъектовРемонта</types>
+    <types>DocumentObject.торо_УстановкаКоэффициентовПереводаСтоимостейРемонтов</types>
+    <types>DocumentObject.торо_УстановкаПроизвольногоЗначенияНаработки</types>
+    <types>DocumentObject.торо_ПланРаботПодразделения</types>
+    <types>DocumentObject.торо_ИзменениеСоставаРемонтнойБригады</types>
+    <types>DocumentObject.торо_ПринятиеОРКУчету</types>
+    <types>DocumentObject.торо_НарядНаРегламентноеМероприятие</types>
+    <types>DocumentObject.торо_УстановкаКоэффициентовРемонтныхОсобенностей</types>
+    <types>DocumentObject.торо_ВыявленныеДефекты</types>
+    <types>DocumentObject.торо_ГрафикРегламентныхМероприятийТОиР</types>
+    <types>DocumentObject.торо_ЗаказПоставщику</types>
+    <types>DocumentObject.торо_ВыбытиеОбъектаРемонта</types>
+    <types>DocumentObject.торо_ОстановочныеРемонты</types>
+    <types>DocumentObject.торо_УчетКонтролируемыхПоказателей</types>
+    <types>DocumentObject.торо_АктОВыполненииЭтапаРабот</types>
+    <types>DocumentObject.торо_УстановкаСтоимостейКвалификаций</types>
+    <types>DocumentObject.ЗаказНаВнутреннееПотребление</types>
+    <types>DocumentObject.торо_ЗаявкаНаРемонт</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.торо_РаботаСУведомлениями.торо_ОбработкаФормированияУведомленийПриЗаписиДокументаПриЗаписи</handler>
+</mdclass:EventSubscription>

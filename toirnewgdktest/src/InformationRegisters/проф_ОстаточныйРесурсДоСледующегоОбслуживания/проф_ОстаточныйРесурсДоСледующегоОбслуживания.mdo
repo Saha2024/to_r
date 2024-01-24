@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3a06f4f3-109f-4cb6-b843-a61022a6911b">
+  <producedTypes>
+    <selectionType typeId="b877c3b7-61bb-49d4-844f-13e2ad90636a" valueTypeId="d41346e1-2ed2-446a-b9d8-86f45d9bef5e"/>
+    <listType typeId="81158d68-b949-47bc-8450-a20e2c269d27" valueTypeId="762af5b7-7df2-459b-a0e5-696b23c98e88"/>
+    <managerType typeId="9dec4c21-d355-4831-8766-2f7acc3b6d8f" valueTypeId="a9323d21-a3fe-4230-847a-9e971772609b"/>
+    <recordSetType typeId="6fe2c236-fe8f-4ad4-af0d-9d2f49cb036b" valueTypeId="643eb3ca-ee1f-49a8-b2ba-482e7f472977"/>
+    <recordKeyType typeId="d896e1ad-b87d-4574-aa17-2ce57f8ed2d8" valueTypeId="01bce8a0-590a-42a7-98a3-506647992666"/>
+    <recordType typeId="7e1facbb-a8c2-4db2-84d6-365fb30b8dc4" valueTypeId="389c9cc9-e630-4b9f-bcaf-8e656ea88d16"/>
+    <recordManagerType typeId="a76f64f5-d13d-4d9e-8660-dabe9e89fb55" valueTypeId="4ca14bd8-d140-49f4-8737-10acf97ee9c5"/>
+  </producedTypes>
+  <name>проф_ОстаточныйРесурсДоСледующегоОбслуживания</name>
+  <synonym>
+    <key>ru</key>
+    <value>Остаточный ресурс до следующего обслуживания</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <resources uuid="827587da-c36d-4978-9e47-6f47735b49f8">
+    <name>IDРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>ID ремонта</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="7328b107-f62e-4ec1-8db8-b50563b45d6c">
+    <name>ВидРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид ремонта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ВидыРемонтов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="5807ccf7-28a8-45e7-b08c-8a6a4521c396">
+    <name>ПлановаяДатаНачалаРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Плановая дата начала ремонта</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="601688b7-e907-43b7-8eb5-af789a5bcb68">
+    <name>НормаНаработкиРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Норма наработки ремонта</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>4</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="f4a4440a-b0f1-4c17-a802-af82f49e41b2">
+    <name>ПлановаяНаработкаНаДатуРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Плановая наработка на дату ремонта</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>4</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e3e0d633-c12a-4a79-900c-7cec173db52a">
+    <name>НаработкаСПоследнегоРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текущая наработка</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>4</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="1de43d79-68a2-4708-b006-190a08e824e6">
+    <name>ОстаточныйРесурс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Остаточный ресурс</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>4</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="2a626b69-cae6-4357-af58-902cd59ad997">
+    <name>ОстаточныйРесурсПроцентом</name>
+    <synonym>
+      <key>ru</key>
+      <value>Остаточный ресурс %</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="248944cb-f674-4f9a-9a5a-69298bffb8f9">
+    <name>ОбъектРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект ремонта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ОбъектыРемонта</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="1b5fc585-ffd5-404d-a0ff-d80640c30ac9">
+    <name>ПоказательНаработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатель наработки</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПараметрыВыработкиОС</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

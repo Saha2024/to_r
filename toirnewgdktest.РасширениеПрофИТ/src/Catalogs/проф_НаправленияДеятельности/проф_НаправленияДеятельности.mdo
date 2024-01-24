@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="badebfb9-6602-4d84-b090-ecc765653101" extendedConfigurationObject="d81c8864-3bb0-4bfc-a7ac-6ce765dd0f9a">
+  <producedTypes>
+    <objectType typeId="72e71901-bcae-4835-9cd6-710407acabf8" valueTypeId="b2875742-eca3-48c0-9da6-739fc5eb35e7"/>
+    <refType typeId="3925049b-d3bb-4606-aa3a-29f08a49697a" valueTypeId="b839acfd-9908-49a2-a625-bd806a1e4d1d"/>
+    <selectionType typeId="53b2d8bb-5c7c-4a65-a246-fa8e438c53e4" valueTypeId="10d6c5cb-e6b1-4bbf-912a-3997725a28b9"/>
+    <listType typeId="16af2f03-a4f8-4f6d-a189-acc8f10c3314" valueTypeId="6e8262a0-32e2-48ab-8596-08ffa0f6e95c"/>
+    <managerType typeId="f2cc8e10-4f7a-4ffb-9456-84a4a6e05e11" valueTypeId="17074077-a892-4996-b0c0-99350c329896"/>
+  </producedTypes>
+  <name>проф_НаправленияДеятельности</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:CatalogExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <attributes uuid="24d36928-a168-4e25-a04b-0025a2196307" extendedConfigurationObject="8e239639-687c-49fd-9555-bf8ee91b37d4">
+    <name>Статус</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>EnumRef.проф_СтатусыНаправленияДеятельности</type>
+        </types>
+      </typeExtension>
+    </extension>
+    <type/>
+  </attributes>
+  <attributes uuid="9ac037e9-aae9-4815-8a3f-06424ac84511" extendedConfigurationObject="30a37f07-d93c-4609-a038-f5bdad8e5aaa">
+    <name>НалогообложениеНДС</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>EnumRef.ТипыНалогообложенияНДС</type>
+        </types>
+      </typeExtension>
+    </extension>
+    <type/>
+  </attributes>
+  <attributes uuid="200d9fe8-aef8-4927-af77-d1dbcad1dfbe" extendedConfigurationObject="495b9727-43fa-40db-865d-1c8ddcac18df">
+    <name>НалогообложениеНДСОпределяетсяВДокументе</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Boolean</type>
+        </types>
+      </typeExtension>
+    </extension>
+    <type/>
+  </attributes>
+  <attributes uuid="2e5e98f8-ce04-4e35-9c11-502a8fd40848" extendedConfigurationObject="d123aaf6-b90e-48d6-8f0c-ee6a2bb80cce">
+    <name>ДатаНачалаДеятельности</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Date</type>
+        </types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </attributes>
+  <attributes uuid="060ba837-0c5a-4630-a9c7-ec6b834ec9f8" extendedConfigurationObject="27bc5277-e22e-4245-bc2f-8397423cb753">
+    <name>ДатаОкончанияДеятельности</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Date</type>
+        </types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </attributes>
+  <forms uuid="816b3808-9980-453e-b5de-1818685146d0">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="caef5c0a-1bfb-4ec5-a293-b836b7dcd84f">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d6d09d99-6649-4241-ad63-d731d1674c26">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

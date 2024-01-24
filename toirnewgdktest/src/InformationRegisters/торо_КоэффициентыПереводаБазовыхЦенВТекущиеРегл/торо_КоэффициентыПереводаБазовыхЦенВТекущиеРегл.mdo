@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="096dc1f4-cafe-4b24-9cce-b8e9c3ba4e7c">
+  <producedTypes>
+    <selectionType typeId="4f05921d-953f-4944-8a13-f95fae4e239f" valueTypeId="a440aaa6-1ba0-4cc3-94d7-0eebab825a62"/>
+    <listType typeId="92f866d7-ad80-4aae-b3e8-4f3d34ff3747" valueTypeId="61d641f9-f5d2-4534-aec1-b32e47965aa7"/>
+    <managerType typeId="efcdba13-10c9-4ee2-a335-cbdbf00f0fd5" valueTypeId="2c9de358-1924-4379-91fc-842a44de9546"/>
+    <recordSetType typeId="ee61762c-38f8-452c-83d6-46ca21a135a9" valueTypeId="0c576261-4667-4e59-bc19-f06e64654801"/>
+    <recordKeyType typeId="55a8d81f-1e41-4676-ad23-4b4c4c520135" valueTypeId="185a4e69-423c-490b-96c8-365e5dc4a949"/>
+    <recordType typeId="8a83021e-a71f-4676-b6cb-ee2c23bd02ce" valueTypeId="b2256466-95bd-47d8-abb3-d41dcc794daa"/>
+    <recordManagerType typeId="6f6e2d7e-e464-48b9-a72d-19b26703d816" valueTypeId="05c678df-34fb-4ddd-8b0a-8b49899365ae"/>
+  </producedTypes>
+  <name>торо_КоэффициентыПереводаБазовыхЦенВТекущиеРегл</name>
+  <synonym>
+    <key>ru</key>
+    <value>Коэффициенты перевода базовых цен в текущие для регламентных мероприятий</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Период записи регистра</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="e663c375-25c3-4d34-bb26-7aad04b201f0">
+    <name>ПоказательКоэффициента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатель коэффициента</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Значение коэффициента для указанных данных</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="65a365af-12c8-41ba-ba20-99d871588cc4">
+    <name>СписокОбъектов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список объектов</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_СписокОбъектовРегламентногоМероприятия</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Объект ремонта, для которого определяется коэффициент</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="497f1c2d-43c1-4e43-bc9f-302f7795d0bf">
+    <name>КлассификаторРемонтов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Классификатор ремонтов</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ВидыРемонтов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид ремонта, для которого определяется коэффициент</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="44610367-70f2-404b-b51c-d169c9c6b411">
+    <name>Коэффициент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коэффициент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ТипыКоэффициентовПереводаСтоимостейРемонтов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Тип коэффициента</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

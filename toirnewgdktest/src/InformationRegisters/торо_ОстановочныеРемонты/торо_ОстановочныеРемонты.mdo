@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="003a1e7e-2a96-45be-be0e-bf029762255b">
+  <producedTypes>
+    <selectionType typeId="55e38b30-7c83-46e8-868d-a6bdc5061a1e" valueTypeId="94951e03-809a-4225-bfbb-ff3fea2d4430"/>
+    <listType typeId="55fe149d-e0b0-4966-981a-f9c4eb2d4628" valueTypeId="4cf35ca3-b16c-4c49-a14b-a86bff6bb51c"/>
+    <managerType typeId="98c606c2-5b50-40ad-bb75-982459616a13" valueTypeId="5a33fa56-2b60-475e-8db7-6d2975682f70"/>
+    <recordSetType typeId="8e68c4e5-d803-46a4-ac86-104f0794b19f" valueTypeId="5f0b1bb5-e77c-4dc2-908d-f9c6c58d709d"/>
+    <recordKeyType typeId="18f2fdd4-b31e-45cf-9476-35bbab79323c" valueTypeId="00aa9116-99ee-41ea-b133-b300a86ff987"/>
+    <recordType typeId="90b44c0b-0e7f-4b6b-b92a-abc3edd803be" valueTypeId="b01ac223-c405-475d-baa8-8145d57f2856"/>
+    <recordManagerType typeId="37b99eb2-67e9-4a03-8a28-b6e2ad5012c2" valueTypeId="78c467b3-f860-4ed6-bbe4-86d869f2275d"/>
+  </producedTypes>
+  <name>торо_ОстановочныеРемонты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Остановочные ремонты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Период записи регистра</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="ff8af7ea-3073-4d6d-ac5e-4fae1dc195fc">
+    <name>Отвязан</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отвязан</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Отвязан)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="63e096d8-8826-4ced-8b6b-eef129cc343f">
+    <name>ДатаНачалаРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала ремонта</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Дата начала ремонта)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="58b2aaf1-f2fa-4b3d-91c2-ce4f1de72874">
+    <name>ДатаОкончанияРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания ремонта</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Дата окончания ремонта)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="f67551cd-5f38-44de-ac71-8bdd70634d73">
+    <name>IDОсновного</name>
+    <synonym>
+      <key>ru</key>
+      <value>IDОсновного</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(IDОсновного)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="223b97c4-273b-4663-a4f0-e7259a9af069">
+    <name>IDЗависимого</name>
+    <synonym>
+      <key>ru</key>
+      <value>IDЗависимого</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(IDЗависимого)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

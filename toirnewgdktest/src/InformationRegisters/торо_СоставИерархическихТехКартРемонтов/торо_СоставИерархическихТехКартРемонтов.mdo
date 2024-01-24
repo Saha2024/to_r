@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dc96be1b-0862-4289-87aa-9590d1e04d9b">
+  <producedTypes>
+    <selectionType typeId="af81f8ad-a48e-410a-9612-97cadc97f52a" valueTypeId="b976aab7-6b43-4e83-9dd7-3799db8a2632"/>
+    <listType typeId="c8641837-13e2-4dfb-8ec5-6de6330b1033" valueTypeId="7a463984-5c79-484b-8d85-6a0c878b6533"/>
+    <managerType typeId="b3e81dcc-f3d2-4ddc-88d2-bd5a2bed80d0" valueTypeId="d5de6a37-9263-4592-b972-04f50b596349"/>
+    <recordSetType typeId="54880081-aa8b-4afe-a259-f420e628b723" valueTypeId="2ed42e28-dc18-451b-af61-abd9b974ca1d"/>
+    <recordKeyType typeId="1998bd91-7a5d-4ce1-93f4-0f309242a771" valueTypeId="18c81664-3d2f-4264-80e1-1fc4fc521178"/>
+    <recordType typeId="6eb3adf0-e59f-4903-a499-b9fc095c2754" valueTypeId="4c09cb93-7723-4c2c-9491-0c6ebc3e4f75"/>
+    <recordManagerType typeId="35992bc2-0f26-4199-85f9-57fcfecb369b" valueTypeId="14fd4d8a-605e-4cd8-9473-ae6bd491d6c7"/>
+  </producedTypes>
+  <name>торо_СоставИерархическихТехКартРемонтов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состав иерархических тех карт ремонтов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="3890a18f-f5b5-4f82-9d8d-28558ede9857">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Количество тех. карт</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="ee2bb161-08d3-48a5-a933-46d69f760628">
+    <name>ТехКарта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тех карта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ТехКарты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Тех. карта для которой определяются входящие в нее тех. карты</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="31074b2f-ee6e-49ab-9e8e-fca04c6b3ebb">
+    <name>Состав</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состав</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ТехКарты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Входящая в состав тех. карта</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

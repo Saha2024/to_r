@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e0be6b2f-affd-402d-a128-0fc44390caa3">
+  <producedTypes>
+    <objectType typeId="36c6cf86-fcb5-40b6-9b3d-9136108504b0" valueTypeId="6e000b36-5a37-4865-a84b-f351c8c0b308"/>
+    <refType typeId="1d6b300f-5a5c-4fd9-a4d6-b97408c96908" valueTypeId="3a98b2a4-c986-4dea-9db3-0f9f1116d887"/>
+    <selectionType typeId="b980e96b-9fb1-4e3a-9314-25cca342fbf3" valueTypeId="9aa011a9-7165-4c2f-93be-0cd018753685"/>
+    <listType typeId="301e0996-1ad7-4da7-ab33-2d7d69091bd7" valueTypeId="72fafff1-4f0b-4f95-8726-9092c16cfc83"/>
+    <managerType typeId="60dfd2b0-9fb7-4afc-b3b1-87019b83cf65" valueTypeId="ac9cd9f2-3adb-4691-8f0a-11e9e01df7db"/>
+  </producedTypes>
+  <name>проф_КатегорииДокументовНаТранспортныеСредстваИВодителей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Категории документов на транспортные средства и водителей</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.проф_КатегорииДокументовНаТранспортныеСредстваИВодителей.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.проф_КатегорииДокументовНаТранспортныеСредстваИВодителей.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>10</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="c0752c30-d1d9-442a-bc50-4666b558c213">
+    <name>ВидДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид документа</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="df4ec940-34b3-40f9-bdec-2dc02eb6c169">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ed44a05a-2c19-4136-83f5-e23b53ae6020">
+  <producedTypes>
+    <selectionType typeId="5f62e628-0bd8-43be-81e4-2cc42f65e1e1" valueTypeId="1fcbdfdb-0ef4-44ad-a9f1-9b08a592d72a"/>
+    <listType typeId="8de22939-8ee5-4b58-9c9b-dad559d88fcb" valueTypeId="f92368e5-780f-4723-9005-548d0b1d34a8"/>
+    <managerType typeId="5622ed60-1b43-40b5-8d2f-d9ad16776f0a" valueTypeId="20538e5e-d1f1-428c-b4ab-52200ffc3bcd"/>
+    <recordSetType typeId="44c938ee-b51d-4c9c-b766-0069db2f999a" valueTypeId="f15a7bf3-7fd0-4db2-b016-a7dfdbb1a425"/>
+    <recordKeyType typeId="77b25dd8-2d07-480d-9977-9ced7cf9a43d" valueTypeId="ecb7b832-580f-46df-bbf6-08302b460615"/>
+    <recordType typeId="2f39c44c-4aee-44bb-9c3c-91bd9ca68e73" valueTypeId="61d32ac8-aabd-4f15-ab39-3d094ea0d729"/>
+    <recordManagerType typeId="1cac17a3-7d72-4192-b779-682c5dc2d0bc" valueTypeId="c9a211d3-269b-4cc1-8d4a-e807fdd981cb"/>
+  </producedTypes>
+  <name>торо_ПредшествующиеНормативныеРемонтыОборудования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Предшествующие нормативные ремонты оборудования</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <resources uuid="ec9bc0bb-3b54-44cc-ac0f-d48bb03d26b8">
+    <name>Приоритет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приоритет</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак указанной строки</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="391413f4-df51-4248-a37a-9b180d7ab46a">
+    <name>ВидРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид ремонта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ВидыРемонтов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид ремонта для установки предшествующего</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="cc46ab72-fa93-4c88-823d-581278f8db08">
+    <name>ОбъектРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект ремонта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ОбъектыРемонта</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Объект ремонта для установки предшествующего ремонта</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="cbccd94d-9720-4a3a-b236-260a4943f3ac">
+    <name>ПредшествующийВидРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предшествующий вид ремонта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ВидыРемонтов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид ремонта, предшествующий указанному</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="b598b131-49c2-447a-9ba5-8f95206a5717">
+    <name>ТиповойОР</name>
+    <synonym>
+      <key>ru</key>
+      <value>Типовой ОР</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ТиповыеОР</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Типовой объект ремонта для установки предшествующего ремонта</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

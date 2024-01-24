@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f2587c51-ca65-40f4-afd8-b43ca373b207">
+  <producedTypes>
+    <refType typeId="6742be0a-d817-4d1a-adfa-5103cbed04f2" valueTypeId="347c4da3-51e4-4756-8a58-b54e9a9cb507"/>
+    <listType typeId="2a8d6348-19b5-4b0e-89a9-cf81d2fa2f37" valueTypeId="4f0cdb60-5354-447d-a0ca-dd3256ed78f2"/>
+    <managerType typeId="a748079f-76a1-4b68-a72e-7fc977bf8a15" valueTypeId="2368c668-9961-42e5-b36d-43b660aa1958"/>
+  </producedTypes>
+  <name>ТипыНалогообложенияНДС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы налогообложения НДС</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>VAT taxation types</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <explanation>
+    <key>ru</key>
+    <value>Определяет возможный тип налогообложения продажи товаров налогом на добавленную стоимость</value>
+  </explanation>
+  <explanation>
+    <key>en</key>
+    <value>Determines a possible taxation type of the goods sale with VAT </value>
+  </explanation>
+  <enumValues uuid="61b22ccd-4a66-4f41-a048-15d095919411">
+    <name>НалоговыйАгентПоНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Налоговый агент по НДС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>VAT tax agent</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="f6d3cc2b-2d17-46b4-b831-e54e81ddbb88">
+    <name>ПоФактическомуИспользованию</name>
+    <synonym>
+      <key>ru</key>
+      <value>По фактическому использованию</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>By actual usage</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8391a266-170b-4675-8eda-f15f36c546c2">
+    <name>ПродажаНаЭкспорт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Продажа на экспорт</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Sale for export</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8187c16b-8889-4494-ae40-72eb23efc3fa">
+    <name>ПродажаНеОблагаетсяНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Продажа не облагается НДС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Sale is not subject to VAT</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="98f445b7-1d38-43b2-884e-8a39bffcb548">
+    <name>ПродажаОблагаетсяЕНВД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Продажа облагается ЕНВД</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Sale is subject to UTII</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c427f9c8-d724-4c72-8f78-fcaf63c6ed61">
+    <name>ПродажаОблагаетсяНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Продажа облагается НДС</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Sale is subject to VAT</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="73cb7412-c622-4645-aad7-6f76939e7c83">
+    <name>ЭкспортСырьевыхТоваровУслуг</name>
+    <synonym>
+      <key>ru</key>
+      <value>Экспорт сырьевых товаров, услуг (работ)</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Export of commodities, services (works)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="25e0884c-d88a-4509-acc7-81c2f92e1aac">
+    <name>ЭкспортНесырьевыхТоваров</name>
+    <synonym>
+      <key>ru</key>
+      <value>Экспорт несырьевых товаров</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Export of non-resource goods</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="77824dc5-eb20-408d-8d11-fac734eef9ba">
+    <name>ВводОСВЭксплуатацию</name>
+    <synonym>
+      <key>ru</key>
+      <value>Определяется использованием ОС/НМА</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Determined by FA/IA usage</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ad578b69-f44d-4c0f-b01c-2cb1a99abe02">
+    <name>ОпределяетсяРаспределением</name>
+    <synonym>
+      <key>ru</key>
+      <value>Определяется распределением</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Determined by allocation</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d5d1566d-8f20-4179-9e0a-8d1ec2d1efb5">
+    <name>ОблагаетсяНДСУПокупателя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Облагается НДС у покупателя</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Subject to VAT at customer</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6d5255e2-87ef-4406-9df5-5411c640f8b6">
+    <name>ПроизводствоСДЦ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Производство с длит. циклом</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Production with long cycle</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1259560c-a1f7-466e-ba73-8fc3d9905313">
+    <name>ЭлектронныеУслуги</name>
+    <synonym>
+      <key>ru</key>
+      <value>Электронные услуги иностранной организации</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Digital services of foreign company</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="01aba061-d4d3-494e-8293-cc2716138b8f">
+    <name>РеализацияРаботУслугНаЭкспорт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Реализация работ услуг на экспорт</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Sales of work services for export</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="5957da4a-71a3-4d6d-98d6-fd73ec48e0cb">
+    <name>ПродажаПоПатенту</name>
+    <synonym>
+      <key>ru</key>
+      <value>Продажа по патенту</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Sales by patent</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="5c1334ee-dad2-4e03-8fa4-290ec2ab6c91" extendedConfigurationObject="08ac77da-24bb-4814-abc1-7569b76201b6">
+  <producedTypes>
+    <selectionType typeId="f96310bd-100d-4e84-8312-208f11739da1" valueTypeId="ea67fe73-3b6f-4261-9d26-cf127ec8dcb3"/>
+    <listType typeId="736fe31a-143f-4e26-b487-a0ce06f9ec7f" valueTypeId="ad5d4c1e-e61a-4eaa-a3b0-270ee1d47b3b"/>
+    <managerType typeId="f4af9ad6-b230-4b55-ad7b-d3b26a77852f" valueTypeId="47b83288-573c-4104-b9e8-33c2a26ea7e2"/>
+    <recordSetType typeId="37e54472-7594-4832-ae0a-8c2deb2906f4" valueTypeId="5bec9265-09ff-4007-a103-a1e55ddd2cfc"/>
+    <recordKeyType typeId="527c1c07-f1cd-4035-9c31-69da755fabef" valueTypeId="cd182216-0fbe-4a3f-8aad-e49b3ff452ed"/>
+    <recordType typeId="17712d40-551f-405d-b8b4-a592633c6b9d" valueTypeId="85c34cb8-c97d-4626-870c-535d7d5e104e"/>
+    <recordManagerType typeId="d4f2e5eb-c54a-4bad-9611-45663611fcf2" valueTypeId="7ef299c5-e36c-440f-9a96-76dc1278da23"/>
+  </producedTypes>
+  <name>проф_НормыРасходаТехническихЖидкостей</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:InformationRegisterExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <informationRegisterPeriodicity>Checked</informationRegisterPeriodicity>
+    <writeMode>Checked</writeMode>
+  </extension>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <resources uuid="00486744-edee-4669-b346-1bf33fdcfe42" extendedConfigurationObject="c7c8923c-6abc-4dd2-8656-97c2ba47d2e1">
+    <name>ЛинейнаяНорма</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Number</type>
+        </types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </resources>
+  <resources uuid="e813ddeb-3c75-4651-a9e5-05f80a3e55b0" extendedConfigurationObject="fe30d0d1-fe81-4d2e-9059-0d8e5e910e65">
+    <name>Норма</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Number</type>
+        </types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </resources>
+  <resources uuid="c590a8ed-4f6d-41f5-9f2c-510c6576e873" extendedConfigurationObject="3d8f42ed-2914-4677-8905-94c708f709fc">
+    <name>НормаНаМоточас</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Number</type>
+        </types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </resources>
+  <dimensions uuid="9a761311-aeba-4a0c-ae69-fefc97fcccf3" extendedConfigurationObject="c49089a8-c679-4f9b-98ce-37b8d2b1b0a7">
+    <name>ГСМ</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>CatalogRef.Номенклатура</type>
+        </types>
+      </typeExtension>
+    </extension>
+    <type/>
+  </dimensions>
+  <dimensions uuid="7aa93645-617e-448b-89d4-f9206d9216c7" extendedConfigurationObject="75fa1b38-0874-454b-8ce3-a1bb6b3a87b6">
+    <name>МодельТС</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>AnyRef</type>
+        </types>
+      </typeExtension>
+    </extension>
+    <type/>
+  </dimensions>
+</mdclass:InformationRegister>

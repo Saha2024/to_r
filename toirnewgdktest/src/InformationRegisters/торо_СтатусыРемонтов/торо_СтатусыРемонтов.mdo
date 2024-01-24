@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="69977fd6-8ef4-4631-8c69-52774f253a0c">
+  <producedTypes>
+    <selectionType typeId="3afdf46f-ce1b-4164-8708-ca1b069b3ee0" valueTypeId="979f81c7-e6e5-4b78-aaef-5e2128a33814"/>
+    <listType typeId="8b7373f5-1e3a-436f-913b-12f2f83b8530" valueTypeId="a6e8b6b3-742e-4c83-91e1-8fb6a851e496"/>
+    <managerType typeId="36eec435-ab93-4605-8f81-e8e32f69d48d" valueTypeId="1ce3079c-2caa-4bcb-aef7-c424b8e34ebd"/>
+    <recordSetType typeId="5f64c61b-a88c-4611-b71d-594f64e62fb3" valueTypeId="c6531561-1b08-40d6-811b-27ee837a2bab"/>
+    <recordKeyType typeId="0c6e9bf6-cd54-41ab-81d5-ca371516a5b0" valueTypeId="0cd18fc4-b62f-4c9a-9429-23a8bf9941f2"/>
+    <recordType typeId="e922f3a8-a6c6-445d-8ae0-24c1166cab14" valueTypeId="dfee89fe-bff9-423d-a544-a4f0bd0613be"/>
+    <recordManagerType typeId="ab4250d8-e06b-4bcf-869e-d19a9090171b" valueTypeId="b22571f9-f937-4df1-a7b8-1ba9b016be7c"/>
+  </producedTypes>
+  <name>торо_СтатусыРемонтов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы ремонтов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="fb057e68-7620-40e1-9543-309bc5e3f755">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.торо_СтатусыРемонтов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="04606d03-8de6-42a9-af96-5cd79b29eb95">
+    <name>IDРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>IDРемонта</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2b3cb714-d924-4529-b3df-48d41e40fcea">
+  <producedTypes>
+    <selectionType typeId="65489fcd-dd41-438b-8ac1-ff5d651ae4d4" valueTypeId="16c1eba7-d8d8-49e7-9e63-a2e6af7d3cf3"/>
+    <listType typeId="b77fa9c4-1970-4ae7-a04a-02419a8a78b9" valueTypeId="70e3a607-b396-4c32-9061-a49515e59007"/>
+    <managerType typeId="ed03ec99-a627-4c77-9ac0-e4abc634df7c" valueTypeId="af2e8302-604c-46f6-b867-4f70b6a69e2b"/>
+    <recordSetType typeId="4718d47b-e411-4449-ab67-9cdbdb1533b2" valueTypeId="db5330df-85d4-45c6-add2-e9fcb06dd045"/>
+    <recordKeyType typeId="0387b55f-f83e-4bf9-891d-1d2cc450bb2b" valueTypeId="1aafe5a5-0788-43e4-82e1-dfdd92fc19ef"/>
+    <recordType typeId="70afec81-b526-4c37-948b-0af585bf5bac" valueTypeId="0a1bd98e-2662-42a5-90a2-257fe2f54a9f"/>
+    <recordManagerType typeId="be0ef5f9-8864-485b-b56f-d3423108b69a" valueTypeId="ae394049-dde0-4789-96d0-cf8a031a3fef"/>
+  </producedTypes>
+  <name>торо_СоответствиеОбъектовНСИДиспетчер</name>
+  <synonym>
+    <key>ru</key>
+    <value>Соответствие объектов НСИ с АИС Диспетчер</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="da9b2517-de1e-4c8a-89ca-93df1d9c4e80">
+    <name>ОбъектТОИР</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект ТОИР</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+      <types>CatalogRef.торо_ТиповыеОР</types>
+      <types>ChartOfCharacteristicTypesRef.торо_ГруппыХарактеристикОборудования</types>
+      <types>CatalogRef.Сотрудники</types>
+      <types>CatalogRef.торо_ОбъектыРемонта</types>
+      <types>CatalogRef.торо_ВидыЭксплуатации</types>
+      <types>CatalogRef.торо_НаправленияОбъектовРемонтныхРабот</types>
+      <types>CatalogRef.СтруктураПредприятия</types>
+      <types>ChartOfCharacteristicTypesRef.торо_ИзмеряемыеПоказателиОбъектовРемонта</types>
+      <types>CatalogRef.Контрагенты</types>
+      <types>ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</types>
+      <types>CatalogRef.торо_ПричиныПростояОборудования</types>
+      <types>CatalogRef.Производители</types>
+      <types>CatalogRef.ПараметрыВыработкиОС</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <dimensions uuid="f103921f-acc5-4b21-9be1-6186f740260b">
+    <name>ТипОбъекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип объекта</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="7e71e832-b18d-433a-ab14-bbf00feee958">
+    <name>УникальныйИдентификаторДиспетчер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уникальный идентификатор из АИС Диспетчера</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="a49abe36-5586-4000-8e5d-4297543ad8b3">
+  <name>торо_РасшифровкаРасчетаППР</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расшифровка расчета ППР</value>
+  </synonym>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:ConfigurationExtension">
+    <defaultRunMode>Checked</defaultRunMode>
+    <usePurposes>Checked</usePurposes>
+    <defaultLanguage>Checked</defaultLanguage>
+    <interfaceCompatibilityMode>Checked</interfaceCompatibilityMode>
+    <defaultRoles>Extended</defaultRoles>
+  </extension>
+  <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="e186d677-c03b-4a40-8036-daf504247ea0"/>
+  <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="4f60792a-eb7d-4e92-a11b-a95d50eaf599"/>
+  <containedObjects classId="e3687481-0a87-462c-a166-9f34594f9bba" objectId="83b0612f-a321-49b7-af74-b39e495726c5"/>
+  <containedObjects classId="9de14907-ec23-4a07-96f0-85521cb6b53b" objectId="0810ace5-35ca-4637-b2ad-737f12922605"/>
+  <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="cc232f39-bca4-4160-9d41-7689e48c5aa1"/>
+  <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="deecd3e6-86b6-49f1-95b2-f11d2d231241"/>
+  <containedObjects classId="fb282519-d103-4dd3-bc12-cb271d631dfc" objectId="97c78ca6-54e3-4d10-a4a9-a13f11da7089"/>
+  <keepMappingToExtendedConfigurationObjectsByIDs>true</keepMappingToExtendedConfigurationObjectsByIDs>
+  <namePrefix>тороРасшифровкаППР_</namePrefix>
+  <configurationExtensionCompatibilityMode>8.3.17</configurationExtensionCompatibilityMode>
+  <configurationExtensionPurpose>AddOn</configurationExtensionPurpose>
+  <defaultRunMode>ManagedApplication</defaultRunMode>
+  <usePurposes>PersonalComputer</usePurposes>
+  <scriptVariant>Russian</scriptVariant>
+  <defaultRoles>Role.тороРасшифровкаППР_ОсновнаяРоль</defaultRoles>
+  <vendor>ООО &quot;Деснол Софт Проджект&quot;</vendor>
+  <version>1.0.1.1</version>
+  <defaultLanguage>Language.Русский</defaultLanguage>
+  <briefInformation>
+    <key>ru</key>
+    <value>Расшифровка расчета ППР</value>
+  </briefInformation>
+  <detailedInformation>
+    <key>ru</key>
+    <value>Предоставляет возможность сохранения данных, полученных во время расчета ППР, в формат отчета-расифровки.</value>
+  </detailedInformation>
+  <copyright>
+    <key>ru</key>
+    <value>Copyright (С) ООО &quot;1С&quot;, 2023. Все права защищены</value>
+  </copyright>
+  <vendorInformationAddress>
+    <key>ru</key>
+    <value>http://www.1c.ru/</value>
+  </vendorInformationAddress>
+  <configurationInformationAddress>
+    <key>ru</key>
+    <value>http://solutions.1c.ru/catalog/eam2</value>
+  </configurationInformationAddress>
+  <compatibilityMode>8.3.23</compatibilityMode>
+  <languages uuid="f56b2ad8-6de2-4094-9eb5-796944b47cd9" extendedConfigurationObject="1304779b-9cbb-4496-a211-23bc55eb2b2a">
+    <name>Русский</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:LanguageExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <languageCode>Checked</languageCode>
+    </extension>
+    <languageCode>ru</languageCode>
+  </languages>
+  <styleItems>StyleItem.НедоступныеДанныеЦвет</styleItems>
+  <styleItems>StyleItem.ЦветРазделаПанелиФункций</styleItems>
+  <styleItems>StyleItem.ГиперссылкаЦвет</styleItems>
+  <styleItems>StyleItem.ПоясняющийТекст</styleItems>
+  <roles>Role.тороРасшифровкаППР_ОсновнаяРоль</roles>
+  <roles>Role.торо_БазовыеПрава</roles>
+  <commonModules>CommonModule.торо_СЛКСервер</commonModules>
+  <commonModules>CommonModule.тороРасшифровкаППР_СохранениеРасшифровки</commonModules>
+  <commonModules>CommonModule.тороРасшифровкаППР_СохранениеРасшифровкиПереопределяемый</commonModules>
+  <constants>Constant.тороРасшифровкаППР_СохранятьРасшифровкуППР</constants>
+  <constants>Constant.торо_ИспользоватьППР</constants>
+  <constants>Constant.торо_УчетЗамещающихРемонтов</constants>
+  <catalogs>Catalog.торо_ВидыРемонтов</catalogs>
+  <catalogs>Catalog.торо_ОбъектыРемонта</catalogs>
+  <catalogs>Catalog.торо_СпособыПланированияРемонтныхРабот</catalogs>
+  <catalogs>Catalog.Календари</catalogs>
+  <catalogs>Catalog.торо_ТехКарты</catalogs>
+  <catalogs>Catalog.ПараметрыВыработкиОС</catalogs>
+  <catalogs>Catalog.торо_ЦепочкиРемонта</catalogs>
+  <documents>Document.торо_ПланГрафикРемонта</documents>
+  <enums>Enum.торо_СтатусыНормативныхРемонтовИТехКарт</enums>
+  <enums>Enum.торо_СтатусыСпособовСогласованияДокументов</enums>
+  <enums>Enum.торо_СпособыУчетаДатыОтсчетаПриПланированииРемонтныхРабот</enums>
+  <dataProcessors>DataProcessor.торо_ПанельАдминистрированияТОИР</dataProcessors>
+  <informationRegisters>InformationRegister.торо_ОбщиеДанныеПоРемонтам</informationRegisters>
+</mdclass:Configuration>

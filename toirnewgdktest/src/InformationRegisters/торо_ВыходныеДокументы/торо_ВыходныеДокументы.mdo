@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6df22634-13e3-4a36-b5a0-f2c8bb12299d">
+  <producedTypes>
+    <selectionType typeId="db8f1e3e-686a-42b4-8224-763ae077c0d8" valueTypeId="0e6a8c93-e9e7-494a-be8c-81f7d6adaf2d"/>
+    <listType typeId="0afbdc88-bf8b-4e8b-b62b-1613dbc76a77" valueTypeId="e83d984d-e01e-4790-b915-b27abf946fdb"/>
+    <managerType typeId="06d1f4b6-2d1a-4aa6-82a3-2d9e2f0a3be7" valueTypeId="76232200-d69c-4346-9cc1-b24cd4291a50"/>
+    <recordSetType typeId="c138cf0c-b796-4310-b0c0-e5fe0bd0026c" valueTypeId="1abdce60-640f-4310-bd20-81cb3ec71c77"/>
+    <recordKeyType typeId="4dc06985-3ecf-4c1b-ae77-20b5aa0ade21" valueTypeId="2041febb-5f68-4926-9511-482493920e7f"/>
+    <recordType typeId="8ee5d83d-9a28-41b8-965d-533819d7e7f7" valueTypeId="782a8829-6ebe-41f5-884d-123f778d24bb"/>
+    <recordManagerType typeId="cf4a7517-870f-4e9d-9ce5-fac6e0fffb9b" valueTypeId="0ab3fdfa-e625-442d-ba67-17de1e49b3a0"/>
+  </producedTypes>
+  <name>торо_ВыходныеДокументы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выходные документы</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="7a5fb842-6ca9-42cf-88e4-df6eff358999">
+    <name>СписокОбъектов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список объектов</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_СписокОбъектовРегламентногоМероприятия</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Список объектов регламентного мероприятия</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="6ed10478-8679-4aee-9ba8-24c65cdd8cfc">
+    <name>ВидМероприятия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид мероприятия</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ВидыРемонтов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид регламентного мероприятия</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="3f74fde6-ae48-47b6-aeec-3213ec47a2b8">
+    <name>ВыходнойДокумент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выходной документ</value>
+    </synonym>
+    <type>
+      <types>EnumRef.торо_ВидыВыходныхДокументов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид выходного документа</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7bdfbc3c-df4e-4d39-80b1-678679e3c129">
+  <name>торо_ОбменMobileBrigades_РегистрацияНабора</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен &quot;мобильная бригада&quot; зарегистрировать изменение</value>
+  </synonym>
+  <source>
+    <types>InformationRegisterRecordSet.торо_ИзмеряемыеПоказателиОбъектовРемонта</types>
+    <types>InformationRegisterRecordSet.торо_ОбщиеПрисоединенныеФайлы</types>
+    <types>InformationRegisterRecordSet.торо_МаршрутыРегламентныхМероприятий</types>
+    <types>InformationRegisterRecordSet.торо_ПараметрыНаработкиОбъектовРемонта</types>
+    <types>InformationRegisterRecordSet.торо_ИерархическиеСтруктурыОР</types>
+    <types>InformationRegisterRecordSet.торо_РасположениеОРВСтруктуреИерархии</types>
+    <types>InformationRegisterRecordSet.торо_СоставРемонтныхБригад</types>
+    <types>InformationRegisterRecordSet.торо_ВыходныеДокументы</types>
+    <types>InformationRegisterRecordSet.торо_ВерсииТехКарт</types>
+    <types>InformationRegisterRecordSet.торо_КвалификацияРемонтногоПерсонала</types>
+    <types>InformationRegisterRecordSet.торо_ПорядокОРПоИерархии</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.торо_ОбменMobileBrigadesСобытия.Обмен_mobileBrigades_ЗарегистрироватьИзменениеНабораЗаписейПередЗаписью</handler>
+</mdclass:EventSubscription>

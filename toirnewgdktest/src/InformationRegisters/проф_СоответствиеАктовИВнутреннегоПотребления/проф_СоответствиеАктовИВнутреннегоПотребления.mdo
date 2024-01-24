@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="130135bc-6ef7-49b3-a04b-5bc1ac9bc395">
+  <producedTypes>
+    <selectionType typeId="8b7ef748-7a62-429b-a12c-1effeba387b6" valueTypeId="4cbb17b0-358a-41aa-ac11-81c42ea20559"/>
+    <listType typeId="3e848f80-d627-4ee9-84fc-5052a2c31793" valueTypeId="d57f7687-0232-406e-ae33-f2ef60cdf5a9"/>
+    <managerType typeId="957a2b29-da42-4003-81c5-382118dae14f" valueTypeId="bde259c2-8ac8-4fab-bc9f-04674ca5116e"/>
+    <recordSetType typeId="5369544a-8187-4c4c-8522-01e87306b7a3" valueTypeId="1a8ffee3-967c-4096-8e6e-0376a18da3fd"/>
+    <recordKeyType typeId="ac668b29-31ed-4258-9e0b-5f9d3e920721" valueTypeId="89aa0ace-a2df-45ba-b24c-b08097abfcce"/>
+    <recordType typeId="2d808112-0229-4083-8ec7-5153f33b82fe" valueTypeId="038beb1e-55a1-4e5e-96d0-6bd37cc01280"/>
+    <recordManagerType typeId="8015f763-9f37-40b8-9836-bb1ef012c593" valueTypeId="5dfcf479-800d-4fbb-891c-85a59d35b564"/>
+  </producedTypes>
+  <name>проф_СоответствиеАктовИВнутреннегоПотребления</name>
+  <synonym>
+    <key>ru</key>
+    <value>Соответствие Актов и Внутреннего потребления (Проф-ИТ)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Соответствие Актов и Внутреннего потребления (Проф-ИТ)</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Соответствия Актов и Внутреннего потребления (Проф-ИТ)</value>
+  </listPresentation>
+  <resources uuid="d15325de-7741-4201-8ce8-1d3a8f63ff25">
+    <name>ЗавершитьРемонтныеРаботы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Завершить ремонтные работы</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d603a23b-cb84-4368-b6a8-5133934e19c1">
+    <name>ДатаЗавершенияРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата завершения ремонта</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b5883e72-7c55-42da-9ff6-793fbe62c9da">
+    <name>ОбъектРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект ремонта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ОбъектыРемонта</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="59ed475b-67c0-4e52-ac68-9a85f30b3cc8">
+    <name>АктОВыполненииЭтапаРабот</name>
+    <synonym>
+      <key>ru</key>
+      <value>Акт о выполнении этапа работ</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.торо_АктОВыполненииЭтапаРабот</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="ef07c920-2fe5-4012-ab01-8098ed0e8aca">
+    <name>ВнутреннееПотреблениеТоваров</name>
+    <synonym>
+      <key>ru</key>
+      <value>Внутреннее потребление товаров</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ВнутреннееПотреблениеТоваров</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

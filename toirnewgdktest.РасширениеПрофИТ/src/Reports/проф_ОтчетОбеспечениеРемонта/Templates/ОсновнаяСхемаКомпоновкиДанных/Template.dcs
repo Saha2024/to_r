@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОжидаемаяДатаПоступленияБилибино</dataPath>
+			<field>ОжидаемаяДатаПоступленияБилибино</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ожидаемая дата поступления Билибино</v8:content>
+				</v8:item>
+			</title>
+			<presentationExpression>ОжидаемаяДатаПоступленияБилибино.ДатаПоставки</presentationExpression>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>СтатусПоставки</dataPath>
+			<field>СтатусПоставки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус поставки</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОжидаемаяДатаПоступленияБГЛЦ</dataPath>
+			<field>ОжидаемаяДатаПоступленияБГЛЦ</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ожидаемая дата поступления БГЛЦ</v8:content>
+				</v8:item>
+			</title>
+			<presentationExpression>ОжидаемаяДатаПоступленияБГЛЦ.ДатаПоставки</presentationExpression>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоПозиций</dataPath>
+			<field>КоличествоПозиций</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кол-во позиций</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗаказНаВнутреннееПотребление</dataPath>
+			<field>ЗаказНаВнутреннееПотребление</field>
+			<presentationExpression>ЗаказНаВнутреннееПотребление.Номер</presentationExpression>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Дата</dataPath>
+			<field>Дата</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата заказа на ВП</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ДФ='dd.MM.yyyy'</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПриоритетВ1С</dataPath>
+			<field>ПриоритетВ1С</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приоритет в 1С</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Описание</dataPath>
+			<field>Описание</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описание</v8:content>
+				</v8:item>
+			</title>
+			<presentationExpression>ЗаказНаВнутреннееПотребление.Комментарий</presentationExpression>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТекущийСтатус</dataPath>
+			<field>ТекущийСтатус</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущий статус</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПроцентВыполненияЗаказаНаВП</dataPath>
+			<field>ПроцентВыполненияЗаказаНаВП</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Процент выполнения заказа на ВП</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗЧКТранспортнымЕдиницам</dataPath>
+			<field>ЗЧКТранспортнымЕдиницам</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>З/Ч к транспортным единицам</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаНеобходимогоПоступления</dataPath>
+			<field>ДатаНеобходимогоПоступления</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата необходимого поступления з/ч</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПлановаяДатаВыходаИзРемонта</dataPath>
+			<field>ПлановаяДатаВыходаИзРемонта</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Плановая дата выхода из ремонта</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОписаниеНеисправности</dataPath>
+			<field>ОписаниеНеисправности</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описание неисправности</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ФактическаяДатаВыходаИзРемонта</dataPath>
+			<field>ФактическаяДатаВыходаИзРемонта</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Фактическая дата выхода из ремонта</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	тЗаказНаВнутреннееПотребление.Ссылка КАК Ссылка,
+	тЗаказНаВнутреннееПотребление.Дата КАК Дата,
+	тЗаказНаВнутреннееПотребление.ДокументОснование КАК ДокументОснование,
+	тЗаказНаВнутреннееПотребление.торо_IDРемонта КАК торо_IDРемонта,
+	тЗаказНаВнутреннееПотребление.проф_Назначение КАК проф_Назначение,
+	тЗаказНаВнутреннееПотребление.торо_СтатусУтверждения КАК ТекущийСтатус
+ПОМЕСТИТЬ ВТ_ЗаказыНаВнутреннееПотребление
+ИЗ
+	Документ.ЗаказНаВнутреннееПотребление КАК тЗаказНаВнутреннееПотребление
+ГДЕ
+	тЗаказНаВнутреннееПотребление.Дата &lt;= &amp;Период
+	И тЗаказНаВнутреннееПотребление.Проведен = ИСТИНА
+
+ИНДЕКСИРОВАТЬ ПО
+	торо_IDРемонта,
+	Ссылка,
+	проф_Назначение
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ЗаказыНаВнутреннееПотребление.ЗаказНаВнутреннееПотребление КАК ЗаказНаВнутреннееПотребление,
+	МАКСИМУМ(ЗаказыНаВнутреннееПотребление.НомерСтроки) КАК КоличествоПозиций
+ПОМЕСТИТЬ ВТ_КоличествоПозицийЗаказаНаВнутреннееПотребление
+ИЗ
+	ВТ_ЗаказыНаВнутреннееПотребление КАК ВТ_ЗаказыНаВнутреннееПотребление
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрНакопления.ЗаказыНаВнутреннееПотребление КАК ЗаказыНаВнутреннееПотребление
+		ПО ВТ_ЗаказыНаВнутреннееПотребление.Ссылка = ЗаказыНаВнутреннееПотребление.ЗаказНаВнутреннееПотребление
+ГДЕ
+	ЗаказыНаВнутреннееПотребление.ВидДвижения = ЗНАЧЕНИЕ(ВидДвиженияНакопления.Приход)
+
+СГРУППИРОВАТЬ ПО
+	ЗаказыНаВнутреннееПотребление.ЗаказНаВнутреннееПотребление
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ЗаказыНаВнутреннееПотребление.торо_IDРемонта КАК торо_IDРемонта,
+	ЕСТЬNULL(торо_ВыявленныеДефекты.ОбъектРемонта, ЗНАЧЕНИЕ(Справочник.торо_ОбъектыРемонта.ПустаяСсылка)) КАК ЗЧКТранспортнымЕдиницам,
+	ЕСТЬNULL(торо_ВыявленныеДефекты.ДефектОписание, "") КАК ДефектОписание,
+	ЕСТЬNULL(торо_ВыявленныеДефекты.КритичностьДефекта, ЗНАЧЕНИЕ(Справочник.торо_КритичностьДефекта.ПустаяСсылка)) КАК КритичностьДефекта,
+	ЕСТЬNULL(торо_ЗаявкиПоРемонтам.ДатаНачала, ДАТАВРЕМЯ(1, 1, 1)) КАК ДатаНеобходимогоПоступления,
+	ЕСТЬNULL(торо_ЗаявкиПоРемонтам.ДатаОкончания, ДАТАВРЕМЯ(1, 1, 1)) КАК ПлановаяДатаВыходаИзРемонта,
+	ЕСТЬNULL(торо_ЗавершенныеРемонтныеРаботы.ДатаОкончания, ДАТАВРЕМЯ(1, 1, 1)) КАК ФактическаяДатаВыходаИзРемонта
+ПОМЕСТИТЬ ВТ_ДанныеПоДефектамИРемонтам
+ИЗ
+	ВТ_ЗаказыНаВнутреннееПотребление КАК ВТ_ЗаказыНаВнутреннееПотребление
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.торо_ВыявленныеДефекты КАК торо_ВыявленныеДефекты
+		ПО ВТ_ЗаказыНаВнутреннееПотребление.торо_IDРемонта = торо_ВыявленныеДефекты.ID
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.торо_ЗаявкиПоРемонтам КАК торо_ЗаявкиПоРемонтам
+		ПО ВТ_ЗаказыНаВнутреннееПотребление.торо_IDРемонта = торо_ЗаявкиПоРемонтам.IDРемонта
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.торо_ЗавершенныеРемонтныеРаботы КАК торо_ЗавершенныеРемонтныеРаботы
+		ПО ВТ_ЗаказыНаВнутреннееПотребление.торо_IDРемонта = торо_ЗавершенныеРемонтныеРаботы.ID
+
+СГРУППИРОВАТЬ ПО
+	ЕСТЬNULL(торо_ВыявленныеДефекты.КритичностьДефекта, ЗНАЧЕНИЕ(Справочник.торо_КритичностьДефекта.ПустаяСсылка)),
+	ЕСТЬNULL(торо_ЗаявкиПоРемонтам.ДатаНачала, ДАТАВРЕМЯ(1, 1, 1)),
+	ЕСТЬNULL(торо_ЗаявкиПоРемонтам.ДатаОкончания, ДАТАВРЕМЯ(1, 1, 1)),
+	ЕСТЬNULL(торо_ЗавершенныеРемонтныеРаботы.ДатаОкончания, ДАТАВРЕМЯ(1, 1, 1)),
+	ВТ_ЗаказыНаВнутреннееПотребление.торо_IDРемонта,
+	ЕСТЬNULL(торо_ВыявленныеДефекты.ОбъектРемонта, ЗНАЧЕНИЕ(Справочник.торо_ОбъектыРемонта.ПустаяСсылка)),
+	ЕСТЬNULL(торо_ВыявленныеДефекты.ДефектОписание, "")
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ЗаказыНаВнутреннееПотребление.торо_IDРемонта КАК торо_IDРемонта,
+	ЕСТЬNULL(торо_ЗаказПоставщикуДокументыОснования.Ссылка, ЗНАЧЕНИЕ(Документ.торо_ЗаказПоставщику.ПустаяСсылка)) КАК ЗаказПоставщику,
+	ВЫБОР
+		КОГДА торо_ЗаказПоставщику.Склад = &amp;БГЛЦ
+			ТОГДА торо_ЗаказПоставщику.Ссылка
+		ИНАЧЕ ДАТАВРЕМЯ(1, 1, 1)
+	КОНЕЦ КАК ОжидаемаяДатаПоступленияБГЛЦ,
+	ВЫБОР
+		КОГДА торо_ЗаказПоставщику.Склад = &amp;Билибино
+			ТОГДА торо_ЗаказПоставщику.Ссылка
+		ИНАЧЕ ДАТАВРЕМЯ(1, 1, 1)
+	КОНЕЦ КАК ОжидаемаяДатаПоступленияБилибино,
+	ЕСТЬNULL(торо_ЗаказПоставщику.проф_Статус, ЗНАЧЕНИЕ(Перечисление.Проф_ПеречислениеСтатусыЗаказовПоставщикам.ПустаяСсылка)) КАК СтатусПоставки,
+	МАКСИМУМ(ЕСТЬNULL(торо_ЗаказПоставщикуТовары.НомерСтроки, 0)) КАК КоличествоЗаказанныхПозиций
+ПОМЕСТИТЬ ВТ_ЗаказПоставщикам
+ИЗ
+	ВТ_ЗаказыНаВнутреннееПотребление КАК ВТ_ЗаказыНаВнутреннееПотребление
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.торо_ЗаказПоставщику.ДокументыОснования КАК торо_ЗаказПоставщикуДокументыОснования
+			ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.торо_ЗаказПоставщику КАК торо_ЗаказПоставщику
+				ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.торо_ЗаказПоставщику.Товары КАК торо_ЗаказПоставщикуТовары
+				ПО (торо_ЗаказПоставщикуТовары.Ссылка = торо_ЗаказПоставщику.Ссылка)
+			ПО торо_ЗаказПоставщикуДокументыОснования.Ссылка = торо_ЗаказПоставщику.Ссылка
+		ПО ВТ_ЗаказыНаВнутреннееПотребление.Ссылка = торо_ЗаказПоставщикуДокументыОснования.ДокументОснование
+			И (торо_ЗаказПоставщикуДокументыОснования.Ссылка.Проведен)
+
+СГРУППИРОВАТЬ ПО
+	ВТ_ЗаказыНаВнутреннееПотребление.торо_IDРемонта,
+	ЕСТЬNULL(торо_ЗаказПоставщикуДокументыОснования.Ссылка, ЗНАЧЕНИЕ(Документ.торо_ЗаказПоставщику.ПустаяСсылка)),
+	ЕСТЬNULL(торо_ЗаказПоставщику.проф_Статус, ЗНАЧЕНИЕ(Перечисление.Проф_ПеречислениеСтатусыЗаказовПоставщикам.ПустаяСсылка)),
+	ВЫБОР
+		КОГДА торо_ЗаказПоставщику.Склад = &amp;БГЛЦ
+			ТОГДА торо_ЗаказПоставщику.Ссылка
+		ИНАЧЕ ДАТАВРЕМЯ(1, 1, 1)
+	КОНЕЦ,
+	ВЫБОР
+		КОГДА торо_ЗаказПоставщику.Склад = &amp;Билибино
+			ТОГДА торо_ЗаказПоставщику.Ссылка
+		ИНАЧЕ ДАТАВРЕМЯ(1, 1, 1)
+	КОНЕЦ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ЗаказыНаВнутреннееПотребление.Ссылка КАК ЗаказНаВнутреннееПотребление,
+	ВТ_ЗаказыНаВнутреннееПотребление.Дата КАК Дата,
+	ВТ_ДанныеПоДефектамИРемонтам.КритичностьДефекта КАК ПриоритетВ1С,
+	ВТ_ЗаказыНаВнутреннееПотребление.ДокументОснование КАК Описание,
+	ВТ_КоличествоПозицийЗаказаНаВнутреннееПотребление.КоличествоПозиций КАК КоличествоПозиций,
+	ВТ_ЗаказыНаВнутреннееПотребление.ТекущийСтатус КАК ТекущийСтатус,
+	ВТ_ЗаказПоставщикам.ОжидаемаяДатаПоступленияБГЛЦ КАК ОжидаемаяДатаПоступленияБГЛЦ,
+	ВТ_ЗаказПоставщикам.ОжидаемаяДатаПоступленияБилибино КАК ОжидаемаяДатаПоступленияБилибино,
+	ВТ_ЗаказПоставщикам.КоличествоЗаказанныхПозиций / ВТ_КоличествоПозицийЗаказаНаВнутреннееПотребление.КоличествоПозиций * 100 КАК ПроцентВыполненияЗаказаНаВП,
+	ВТ_ЗаказПоставщикам.СтатусПоставки КАК СтатусПоставки,
+	ВТ_ДанныеПоДефектамИРемонтам.ЗЧКТранспортнымЕдиницам КАК ЗЧКТранспортнымЕдиницам,
+	ВТ_ДанныеПоДефектамИРемонтам.ДатаНеобходимогоПоступления КАК ДатаНеобходимогоПоступления,
+	ВТ_ДанныеПоДефектамИРемонтам.ПлановаяДатаВыходаИзРемонта КАК ПлановаяДатаВыходаИзРемонта,
+	ВТ_ДанныеПоДефектамИРемонтам.ДефектОписание КАК ОписаниеНеисправности,
+	ВТ_ДанныеПоДефектамИРемонтам.ФактическаяДатаВыходаИзРемонта КАК ФактическаяДатаВыходаИзРемонта
+ИЗ
+	ВТ_ЗаказыНаВнутреннееПотребление КАК ВТ_ЗаказыНаВнутреннееПотребление
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ЗаказПоставщикам КАК ВТ_ЗаказПоставщикам
+		ПО ВТ_ЗаказыНаВнутреннееПотребление.торо_IDРемонта = ВТ_ЗаказПоставщикам.торо_IDРемонта
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ДанныеПоДефектамИРемонтам КАК ВТ_ДанныеПоДефектамИРемонтам
+		ПО ВТ_ЗаказыНаВнутреннееПотребление.торо_IDРемонта = ВТ_ДанныеПоДефектамИРемонтам.торо_IDРемонта
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВТ_КоличествоПозицийЗаказаНаВнутреннееПотребление КАК ВТ_КоличествоПозицийЗаказаНаВнутреннееПотребление
+		ПО ВТ_ЗаказыНаВнутреннееПотребление.Ссылка = ВТ_КоличествоПозицийЗаказаНаВнутреннееПотребление.ЗаказНаВнутреннееПотребление
+ГДЕ
+	НЕ ВТ_ЗаказПоставщикам.СтатусПоставки = ЗНАЧЕНИЕ(Перечисление.Проф_ПеречислениеСтатусыЗаказовПоставщикам.Закрыт)</query>
+	</dataSet>
+	<calculatedField>
+		<dataPath>ТекущийСтатусРеализацииПроблемы</dataPath>
+		<expression>""</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Текущий статус реализации проблемы</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>Комментарий</dataPath>
+		<expression>""</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Комментарий</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<parameter>
+		<name>БГЛЦ</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Склад БГЛЦ</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Склады</v8:Type>
+		</valueType>
+		<value xsi:type="dcscor:DesignTimeValue">Справочник.Склады.ПустаяСсылка</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Билибино</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Склад Билибино</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Склады</v8:Type>
+		</valueType>
+		<value xsi:type="dcscor:DesignTimeValue">Справочник.Склады.ПустаяСсылка</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+		<use>Always</use>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Обеспечение ремонта</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЗаказНаВнутреннееПотребление</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>№ Заказа</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Дата</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПриоритетВ1С</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Описание</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КоличествоПозиций</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ТекущийСтатус</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОжидаемаяДатаПоступленияБГЛЦ</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОжидаемаяДатаПоступленияБилибино</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПроцентВыполненияЗаказаНаВП</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>СтатусПоставки</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЗЧКТранспортнымЕдиницам</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаНеобходимогоПоступления</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПлановаяДатаВыходаИзРемонта</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ТекущийСтатусРеализацииПроблемы</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОписаниеНеисправности</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ФактическаяДатаВыходаИзРемонта</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Комментарий</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">ЗаказНаВнутреннееПотребление</dcsset:left>
+					<dcsset:comparisonType>InList</dcsset:comparisonType>
+					<dcsset:right xsi:type="v8:ValueListType">
+						<v8:valueType/>
+						<v8:lastId xsi:type="xs:decimal">-1</v8:lastId>
+					</dcsset:right>
+					<dcsset:userSettingID>55c8c764-e8b2-40b3-b831-15c67ea57fe1</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">СтатусПоставки</dcsset:left>
+					<dcsset:comparisonType>InList</dcsset:comparisonType>
+					<dcsset:right xsi:type="v8:ValueListType">
+						<v8:valueType/>
+						<v8:lastId xsi:type="xs:decimal">-1</v8:lastId>
+					</dcsset:right>
+					<dcsset:userSettingID>0a2b7f9b-5a7f-4858-83d7-5aaf7e2df4a7</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>БГЛЦ</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DesignTimeValue">Справочник.Склады.ПустаяСсылка</dcscor:value>
+					<dcsset:userSettingID>0c1c0965-c677-4f0e-8c5a-c08399f37cc9</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Билибино</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DesignTimeValue">Справочник.Склады.ПустаяСсылка</dcscor:value>
+					<dcsset:userSettingID>b0f83c8e-81e7-4abb-b0bc-ac4cdf660343</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardBeginningDate">
+						<v8:variant xsi:type="v8:StandardBeginningDateVariant">BeginningOfThisDay</v8:variant>
+					</dcscor:value>
+					<dcsset:userSettingID>37fa3fd4-c04f-4959-8a2f-de385f4df6f4</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

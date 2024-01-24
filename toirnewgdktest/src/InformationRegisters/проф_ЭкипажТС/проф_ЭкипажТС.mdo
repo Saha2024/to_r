@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="986c85e4-7ceb-4f0b-a406-d7d68fe2ce96">
+  <producedTypes>
+    <selectionType typeId="dd69bff9-27f2-4ae5-b4a8-db72f8655c2a" valueTypeId="dc1739de-8b1f-403f-8522-28971fadd8a4"/>
+    <listType typeId="8ae1d038-67dc-49c2-b28b-abee3d1af5bc" valueTypeId="8dffe0f0-42d8-4176-a429-6818581824c9"/>
+    <managerType typeId="4522547b-c718-4184-b78e-4ee44d0731fa" valueTypeId="204e364f-97cc-4cb0-a2e9-660a09e17ff3"/>
+    <recordSetType typeId="ea9b363d-6716-4fc7-918a-133e7c801b7c" valueTypeId="a87418eb-58f3-4a39-8e0b-3b1678505de0"/>
+    <recordKeyType typeId="c99aeb37-6930-44d6-972d-9e94e3ef189b" valueTypeId="3f152d5d-8261-4bc9-9026-1cbbce73415d"/>
+    <recordType typeId="6d9b1627-e759-4ff3-b7ec-23c71e752cbe" valueTypeId="288c7923-9617-4d47-8d16-dfd050bd14df"/>
+    <recordManagerType typeId="deff69a7-9124-4af1-bc45-69f46e533cc8" valueTypeId="1f1f9b5b-e387-4af8-bee7-d389e0e49e95"/>
+  </producedTypes>
+  <name>проф_ЭкипажТС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Экипаж ТС</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <resources uuid="4c3f4f35-5b15-4afb-bcd1-8d16510816d5">
+    <name>ЧленЭкипажа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Член экипажа</value>
+    </synonym>
+    <type>
+      <types>EnumRef.проф_ЧленыЭкипажа</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Член экипажа.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="dfe1760c-def3-4ba3-b9c3-1689ade24560">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Сотрудник.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <choiceHistoryOnInput>DontUse</choiceHistoryOnInput>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="752fa000-b0a8-4807-b84d-80055202b56d">
+    <name>ОбъектРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект ремонта</value>
+    </synonym>
+    <comment>Объект ремонта</comment>
+    <type>
+      <types>CatalogRef.торо_ОбъектыРемонта</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Объект ремонта</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="1a424f6b-7ed4-483a-bf07-6c4192ca0afb" extendedConfigurationObject="80b2615f-3dc2-46a9-9c09-c3a3cfccf414">
+  <producedTypes>
+    <objectType typeId="0b235ade-782e-43b6-b3f6-f94500cb6d31" valueTypeId="10a35f22-67bc-457e-a9be-88ca825e88a6"/>
+    <refType typeId="8b9f1bda-eacd-4e99-9dfa-221bcf19c3e8" valueTypeId="2da22367-b7cb-412d-8f81-a80ea8a16bc7"/>
+    <selectionType typeId="913e05bb-46eb-406e-88d4-6e4f8d62b6e4" valueTypeId="289c0c6f-d11a-4ecb-b70e-9229ebcaf4ae"/>
+    <listType typeId="5f17dcfd-0946-4f6b-abc3-751f238d678a" valueTypeId="9e647a06-f562-47cf-bd08-74648411e9b2"/>
+    <managerType typeId="e777c611-7583-4fce-b17f-3abb94736d4a" valueTypeId="753c918c-847b-4314-974e-e398ef672a0f"/>
+  </producedTypes>
+  <name>СписаниеНедостачТоваров</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <objectModule>Extended</objectModule>
+  </extension>
+  <attributes uuid="ccdac938-f547-487a-a2f1-6df8fd2ee5d4" extendedConfigurationObject="24ff1ee9-e2dd-4d56-9563-fa785f664ea0">
+    <name>Склад</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>CatalogRef.Склады</type>
+        </types>
+      </typeExtension>
+    </extension>
+    <type/>
+  </attributes>
+  <forms uuid="e31bc022-7e53-498e-8999-e08214f23063" extendedConfigurationObject="4268e821-903c-4369-b5da-f9401496b095">
+    <name>ФормаДокумента</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFormExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <form>Extended</form>
+    </extension>
+  </forms>
+</mdclass:Document>

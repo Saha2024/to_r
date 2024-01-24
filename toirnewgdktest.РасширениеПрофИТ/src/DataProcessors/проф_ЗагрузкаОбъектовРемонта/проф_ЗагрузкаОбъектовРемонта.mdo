@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f86a1dd9-d196-464e-a7a8-2e28a4193531">
+  <producedTypes>
+    <objectType typeId="a3548583-e545-4d08-a847-587fc7c76602" valueTypeId="c827d6e0-a90f-4ef8-accb-07dd7d8a7cb7"/>
+    <managerType typeId="0464766a-97c4-43a6-8ef0-3cfa92b2f9c3" valueTypeId="270c825c-979c-4e2d-a21f-3e9ec12ffe3a"/>
+  </producedTypes>
+  <name>проф_ЗагрузкаОбъектовРемонта</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка объектов ремонта (узлов)</value>
+  </synonym>
+  <attributes uuid="b0f4c331-0921-4dd0-95eb-a8634bdb7286">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="a36efb88-803d-4cb8-9d83-4de3b0b835e2">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5f2f75b9-1fb1-4e2c-88bf-4504fa7b786a">
+  <producedTypes>
+    <selectionType typeId="53d66b3c-f79a-4291-9d2e-7a65e247748b" valueTypeId="28a70d8d-f06f-4720-9d72-60789a3cec75"/>
+    <listType typeId="5aa27819-447a-466d-8935-48464f17a5a7" valueTypeId="6cac6e71-0176-4be0-88c1-9fadef6c882b"/>
+    <managerType typeId="9a55de50-c7f8-456f-8351-ecdf16fe1a53" valueTypeId="d768ccb6-9b54-4a77-a29f-5a1c21bbd595"/>
+    <recordSetType typeId="5194884d-9402-4040-867b-4696fb42bb7d" valueTypeId="fe1fda2c-f393-4b68-bc0f-3d0bb7711dc6"/>
+    <recordKeyType typeId="073db38e-9105-45e5-8faf-6af3a412e9c0" valueTypeId="c01fe112-d33d-40b2-9292-4e257938281e"/>
+    <recordType typeId="7db4783d-e02e-4fa4-b29b-414a50866071" valueTypeId="873383a2-7474-4163-9518-4ba991b16923"/>
+    <recordManagerType typeId="e0095bb4-ffd6-4ff1-884a-0bc0929982a3" valueTypeId="00d57b64-132b-430e-bf31-8fac04cbf950"/>
+  </producedTypes>
+  <name>торо_СтатусыРасчетаПроектныхЗатратНаРемонты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы расчета проектных затрат на ремонты</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="a5e0cbc9-1aa0-4bed-8bfa-bc4fe1eeda2e">
+    <name>ДокументЗатрат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ затрат</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.торо_ПроектныеЗатратыНаРемонты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="4d7296e4-1df5-43fb-89a4-8576730774ff">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.торо_СтатусыДокументовПроектныхЗатратНаРемонты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <attributes uuid="7b003890-74bc-4bae-9512-28cee7f4f638">
+    <name>ВидДокументаИсточника</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид документа источника</value>
+    </synonym>
+    <type>
+      <types>EnumRef.торо_ВидыДокументовНачалаЦепочкиРемонтов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="16545960-21d7-4f70-a1fd-df6d931ef0ef">
+    <name>ТехКарта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тех карта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ИдентификаторыТехКарт</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="39cb7e5e-e93f-4a1e-befe-2f4fdba25aeb">
+    <name>ТиповойДефект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Типовой дефект</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ТиповыеДефектыОборудования</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e43a0890-e8df-4a6e-9fb7-39e23032696b">
+    <name>ДатаСрезаТехКарты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата среза тех карты</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="93da5749-717e-4112-afe4-945628744de4">
+    <name>IDРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>ID ремонта</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+        <fixed>true</fixed>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value>                                    </value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="9f224c4b-5882-4e96-be82-0fc047a29c2b">
+    <name>ОбъектРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект ремонта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ОбъектыРемонта</types>
+      <types>CatalogRef.торо_СписокОбъектовРегламентногоМероприятия</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="6568eb05-e0e5-4846-bbda-8bcdd29aa29c">
+    <name>ДокументИсточник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ-основание</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.торо_ВнешнееОснованиеДляРабот</types>
+      <types>DocumentRef.торо_ПланГрафикРемонта</types>
+      <types>DocumentRef.торо_ГрафикРегламентныхМероприятийТОиР</types>
+      <types>DocumentRef.торо_ВыявленныеДефекты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ba5515f2-875a-4626-a50a-0406bf91b29d">
+  <producedTypes>
+    <selectionType typeId="8c52a58e-97ff-44bd-a412-66edc0ab59e5" valueTypeId="9a42dcda-e5d2-4fd6-ae4b-d3a6fdf7c413"/>
+    <listType typeId="b6f7c085-4300-49be-88f3-ca23a5ed41af" valueTypeId="b2017c8d-b0c6-44ac-afa6-f5a2befe8e02"/>
+    <managerType typeId="d37fdbdb-3bfd-4e6b-b00a-c14e6bc3ade8" valueTypeId="9b06a539-2d78-419c-9cfa-1356bf085345"/>
+    <recordSetType typeId="f80f6c68-64ae-4f5e-8b94-0f08087c6e44" valueTypeId="6aa40710-cd93-4bfe-b84b-5992d3de452a"/>
+    <recordKeyType typeId="ee718cdd-7f00-4abb-9709-27ad61536251" valueTypeId="49cea315-b0a8-40a1-9740-a2340ec97e8e"/>
+    <recordType typeId="ccb7152e-56c2-44c2-a128-ded794ee8984" valueTypeId="258bdde1-6835-4ee8-8c44-2b722c985902"/>
+    <recordManagerType typeId="9fe1e4d6-2c55-4125-82e3-95efc7efe518" valueTypeId="64ec89f0-c64f-4d67-8d60-19c682034469"/>
+  </producedTypes>
+  <name>торо_ОбъектыРемонтаГруппы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Объекты ремонта группы</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="a06d9719-e676-4c20-ba8e-f2c2011e1f67">
+    <name>ОбъектГруппа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект группа</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак, того что объект ремонта является группой</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="86e25b12-5282-4918-a8c1-9f47e2a8a5e6">
+    <name>ОбъектИерархии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект иерархии</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ОбъектыРемонта</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Объект ремонта, для которого устанавливается признак группы</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="3ee8c48b-df49-4112-a8c6-676fb955f9ce">
+    <name>СтруктураИерархии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Структура иерархии</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_СтруктурыОР</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Иерархия, в которой находится объект - группа</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

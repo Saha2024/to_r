@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="584b0e8e-fc1d-406d-b7f6-ff5e7d1546da">
+  <name>торо_ИнтеграцияСАИСДиспетчерРегистрацияИзменения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Интеграция с АИС Диспетчер (регистрация изменения)</value>
+  </synonym>
+  <source>
+    <types>CatalogObject.торо_ОбъектыРемонта</types>
+    <types>CatalogObject.Сотрудники</types>
+    <types>CatalogObject.СтруктураПредприятия</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.торо_ИнтеграцияСАИСДиспетчерСобытия.торо_ИнтеграцияСАИСДиспетчерСобытия_ЗарегистрироватьИзменениеПередЗаписью</handler>
+</mdclass:EventSubscription>

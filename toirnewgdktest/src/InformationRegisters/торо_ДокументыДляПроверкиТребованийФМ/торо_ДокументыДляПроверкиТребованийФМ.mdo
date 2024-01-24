@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c31a71f9-416f-4a95-812d-547aeb1400d8">
+  <producedTypes>
+    <selectionType typeId="028109c6-ddb5-40ed-941d-77f6891c6ab6" valueTypeId="a207ee90-123a-44f6-b29e-3e86e77fa730"/>
+    <listType typeId="a28e01f0-be7f-4763-9238-96d8e2a65b66" valueTypeId="c37569b5-1b38-489f-a5c2-7987de17d422"/>
+    <managerType typeId="187aaf0f-46c4-4117-a876-2c67457bdf20" valueTypeId="e9ab76fe-6c87-4564-8f74-d35f087dffca"/>
+    <recordSetType typeId="46a1f204-1f37-4106-8831-4927acfec0ab" valueTypeId="cdcf634b-9ac7-4e2e-a924-5270f4444075"/>
+    <recordKeyType typeId="adb15cd9-c624-4e02-97f1-86d9f352174c" valueTypeId="98c1c260-e041-4c1d-abd4-fa8e44495045"/>
+    <recordType typeId="fd0e8664-fa59-4707-a3a1-2d20ba5c7bfa" valueTypeId="500e6088-8bb7-4e6d-93a1-a9b362e642d5"/>
+    <recordManagerType typeId="519d6c93-e383-41fe-88ad-f13985c4f15c" valueTypeId="e5826f3a-c14f-4321-8061-9b4bf16587c3"/>
+  </producedTypes>
+  <name>торо_ДокументыДляПроверкиТребованийФМ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Документы для проверки требований функциональных мест</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="5095ab99-15d0-432a-8326-d9482bed7f3a">
+    <name>ПроверяемыйДокумент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проверяемый документ</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.торо_УчетКонтролируемыхПоказателей</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

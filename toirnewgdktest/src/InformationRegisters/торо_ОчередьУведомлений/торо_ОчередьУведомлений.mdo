@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="05bc7005-d271-4d0f-b978-6222cabdae7e">
+  <producedTypes>
+    <selectionType typeId="10861493-d435-4dc5-ba5f-0ca5c0e0bcb1" valueTypeId="76f8717b-3dc9-4a7e-ac27-c20a5022d8f5"/>
+    <listType typeId="4f70569a-248a-4378-b448-cfa26e499c8f" valueTypeId="b5b6ac1e-164c-49f6-b601-1da9e9214bfa"/>
+    <managerType typeId="f96016d8-883a-4b75-b42a-b8250444754f" valueTypeId="721c46a1-c835-4b1b-b58c-f849bc47aeaf"/>
+    <recordSetType typeId="e652774f-ae25-49d9-9a36-5cda2168b730" valueTypeId="8abe5137-dc1f-4826-89fe-aa495e6da9a8"/>
+    <recordKeyType typeId="47e523d2-9b34-4174-8dbb-4b151c353515" valueTypeId="372b06ee-6e9a-4df7-b85f-453d6df2bf5a"/>
+    <recordType typeId="15c49096-a150-4b95-858f-a71beb6a0fc3" valueTypeId="f538e9a2-d0c4-401e-ae91-fb5d6f6daebb"/>
+    <recordManagerType typeId="6b9c8bd8-4549-4035-89a9-c3523134183b" valueTypeId="c313edfb-f7c1-4f59-95f5-55818a7db343"/>
+  </producedTypes>
+  <name>торо_ОчередьУведомлений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Очередь уведомлений</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="c3b14dd5-d2d8-44f5-9a6a-fb1a98b70549">
+    <name>ТемаПисьма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тема письма</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Тема уведомления (тема письма)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e3558519-e6a8-4b99-8f7c-9ccdc68cc619">
+    <name>ТелоПисьма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тело письма</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Содержание уведомления</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <attributes uuid="f406dd60-181a-49b4-b5f3-066d4214c6ed">
+    <name>ОписаниеОшибки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание ошибки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Описание ошибок при отправке</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="a2afda4c-62a0-4acd-b681-a3d6cfd51238">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <types>CatalogRef.Пользователи</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Пользователь, для которого сформировано уведомление</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="cfca17f5-e0b8-4af8-9a61-550dda4d9180">
+    <name>ID_уведомления</name>
+    <synonym>
+      <key>ru</key>
+      <value>I d уведомления</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+        <fixed>true</fixed>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Идентификатор уведомления</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="6df3c419-054f-4c0b-97fb-0e373cda0788">
+    <name>СпособУведомления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ уведомления</value>
+    </synonym>
+    <type>
+      <types>EnumRef.торо_СпособыУведомленияПользователей</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Способ уведомления пользователя</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="33d9092d-8133-4d9d-906c-992514b33041">
+    <name>Источник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Источник</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.торо_УстановкаЛимитаНаПлановыеРемонтныеРаботы</types>
+      <types>DocumentRef.торо_ВнешнееОснованиеДляРабот</types>
+      <types>DocumentRef.торо_ИзменениеСоставаРемонтнойБригады</types>
+      <types>DocumentRef.торо_УчетКонтролируемыхПоказателей</types>
+      <types>DocumentRef.торо_УстановкаКоэффициентовРемонтныхОсобенностей</types>
+      <types>DocumentRef.торо_ЗакрытиеЗаявокИРемонтов</types>
+      <types>DocumentRef.торо_НарядНаРегламентноеМероприятие</types>
+      <types>DocumentRef.торо_УстановкаАналоговНоменклатурыДляРемонтов</types>
+      <types>DocumentRef.торо_НастройкаРегистрацииНаработкиЗависимыхОР</types>
+      <types>DocumentRef.торо_ПланГрафикРемонта</types>
+      <types>DocumentRef.торо_ИзменениеПоложенияВСтруктуреИерархии</types>
+      <types>DocumentRef.торо_НарядНаВыполнениеРемонтныхРабот</types>
+      <types>CatalogRef.торо_ОбъектыРемонта</types>
+      <types>DocumentRef.торо_ГрафикРегламентныхМероприятийТОиР</types>
+      <types>DocumentRef.торо_ПринятиеОРКУчету</types>
+      <types>DocumentRef.торо_УстановкаЦелевыхЗначенийПоказателейKPI</types>
+      <types>DocumentRef.торо_КомиссионноеРассмотрение</types>
+      <types>DocumentRef.торо_РегистрацияЗначенийВнешнихПоказателейKPI</types>
+      <types>DocumentRef.торо_АктОВыполненииРегламентногоМероприятия</types>
+      <types>DocumentRef.торо_ОстановочныеРемонты</types>
+      <types>DocumentRef.торо_ВыявленныеДефекты</types>
+      <types>DocumentRef.торо_ВыбытиеОбъектаРемонта</types>
+      <types>DocumentRef.торо_АктОВыполненииЭтапаРабот</types>
+      <types>DocumentRef.торо_ОценкаРаботыПодрядчика</types>
+      <types>DocumentRef.торо_УстановкаСтоимостейКвалификаций</types>
+      <types>DocumentRef.торо_УчетНаработкиОборудования</types>
+      <types>DocumentRef.торо_АнализКоренныхПричин</types>
+      <types>DocumentRef.торо_ВводНачальныхДанных</types>
+      <types>DocumentRef.торо_ПланРаботПодразделения</types>
+      <types>DocumentRef.торо_ПрисвоениеКвалификацийСотрудникам</types>
+      <types>DocumentRef.торо_ЗаказПоставщику</types>
+      <types>DocumentRef.торо_СостоянияОбъектовРемонта</types>
+      <types>DocumentRef.торо_УстановкаПроизвольногоЗначенияНаработки</types>
+      <types>DocumentRef.торо_УстановкаМинимальногоОстаткаНоменклатуры</types>
+      <types>DocumentRef.ЗаказНаВнутреннееПотребление</types>
+      <types>DocumentRef.торо_УстановкаКоэффициентовПереводаСтоимостейРемонтов</types>
+      <types>DocumentRef.торо_ЗаявкаНаРемонт</types>
+      <types>DocumentRef.торо_АктПриемкиОборудования</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Документ, по которому сформировано уведомление</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

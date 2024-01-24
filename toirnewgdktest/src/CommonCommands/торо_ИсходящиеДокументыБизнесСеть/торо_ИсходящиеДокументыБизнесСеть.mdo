@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonCommand xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9eec1a3f-ad48-4758-a373-fdea4abc0e18">
+  <name>торо_ИсходящиеДокументыБизнесСеть</name>
+  <synonym>
+    <key>ru</key>
+    <value>Исходящие документы 1С:Бизнес-сеть</value>
+  </synonym>
+  <comment>Открытие формы исходящих документов в сервисе 1С:Бизнес-сеть</comment>
+  <group>CommandGroup.торо_Перейти</group>
+  <commandParameterType>
+    <types>DocumentRef.торо_ЗаказПоставщику</types>
+  </commandParameterType>
+  <representation>Auto</representation>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.БизнесСетьОтправка</picture>
+  </picture>
+</mdclass:CommonCommand>

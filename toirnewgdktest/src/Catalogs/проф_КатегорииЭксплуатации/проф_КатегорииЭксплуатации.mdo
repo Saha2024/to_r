@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dc994999-0833-4618-b5c1-9b5d8622f782">
+  <producedTypes>
+    <objectType typeId="b2c5fe5a-bfd3-4ef6-adbb-57d14babaf2f" valueTypeId="0b9a01e4-df39-47a4-aae0-54358b3962b7"/>
+    <refType typeId="3d6fea79-1ea6-47f8-b2e6-9711c7e670fb" valueTypeId="82f521b4-edb3-400b-be09-36df6529f562"/>
+    <selectionType typeId="894e538c-d0f9-49a8-81c3-dcb0e0e0cc64" valueTypeId="83cd6c97-777f-4c1e-8265-56a55996abb7"/>
+    <listType typeId="be88a1ac-eb8b-4815-8633-b3c0f59d4a8e" valueTypeId="8654f03b-d0ca-4b64-852f-cd3de751bd83"/>
+    <managerType typeId="fe3f1729-5ebd-4052-90a7-a9decef36115" valueTypeId="7258af5a-2b84-494a-abe1-b09b14a62e58"/>
+  </producedTypes>
+  <name>проф_КатегорииЭксплуатации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Категории эксплуатации</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.проф_КатегорииЭксплуатации.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="9d83aa67-d424-4218-9207-148ec65613a3">
+    <name>ИнвентарныйУчет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Инвентарный учет</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a1f794d7-c52f-48a0-bce6-abe84a03a397">
+    <name>УчетПоФизЛицам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учет по физ лицам</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

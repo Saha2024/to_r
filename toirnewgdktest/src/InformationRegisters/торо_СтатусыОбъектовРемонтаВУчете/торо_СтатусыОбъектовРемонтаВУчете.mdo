@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d185feb9-8bb4-4681-9160-79804a121d41">
+  <producedTypes>
+    <selectionType typeId="e00fb765-afab-459c-87a0-5e7ad9252767" valueTypeId="c589adb8-1e65-42a5-a612-26a220f44862"/>
+    <listType typeId="4dabe9ab-bdac-43f3-9886-57d0c3a4750a" valueTypeId="4ae5929e-9118-4ffe-8947-c18e0045bda2"/>
+    <managerType typeId="e34f229f-208a-4b3b-a74d-af397727fbd8" valueTypeId="7533ecc5-74b9-4704-9c09-e680225a92e0"/>
+    <recordSetType typeId="d9cb33a0-a959-40bd-906a-cab31e5fb827" valueTypeId="45ed8fd9-6f86-4776-b8a5-b92bdf0725b1"/>
+    <recordKeyType typeId="8dd81228-b7ad-4b22-a1a0-ced5ec9139f3" valueTypeId="564763bf-6f4b-4c56-b93e-7be37ca1534b"/>
+    <recordType typeId="5c091136-628c-4327-9036-b93ef479e20a" valueTypeId="aa1c31c5-8779-4f67-a643-04818d49a31d"/>
+    <recordManagerType typeId="f4db6098-d0cc-4ab7-bb7d-1ade66efcd80" valueTypeId="5d974b6b-5ad1-4d2d-b095-ee6d498afd84"/>
+  </producedTypes>
+  <name>торо_СтатусыОбъектовРемонтаВУчете</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы объектов ремонта в учете</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Период на который указан статус для объекта ремонта</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSliceLast>true</enableTotalsSliceLast>
+  <resources uuid="9c852cf9-e441-4aa3-8ece-02f2361a78e8">
+    <name>СтатусОР</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус объекта ремонта</value>
+    </synonym>
+    <type>
+      <types>EnumRef.торо_СтатусыОРВУчете</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Статус объекта ремонта)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="f9629aee-b1d8-4835-ab3b-7e6e29c19f1c">
+    <name>ОбъектРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект ремонта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ОбъектыРемонта</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Объект ремонта для которого указан статус</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

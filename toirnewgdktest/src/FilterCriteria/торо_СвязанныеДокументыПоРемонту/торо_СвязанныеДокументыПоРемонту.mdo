@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:FilterCriterion xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="83b05127-82a1-4a6b-9d0b-1b07aec20a6b">
+  <producedTypes>
+    <listType typeId="ec1525dd-811f-47e4-bd5e-e98b8531ab7d" valueTypeId="ad6eb373-b00f-4a46-8eba-3e529928d7fa"/>
+    <managerType typeId="5b5d7faa-e54e-4b36-9254-1a6f973e0f93" valueTypeId="8edcdc2d-926f-4e1e-92d6-6857e187d872"/>
+  </producedTypes>
+  <name>торо_СвязанныеДокументыПоРемонту</name>
+  <synonym>
+    <key>ru</key>
+    <value>Связанные документы по ремонту</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>36</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <content>Document.торо_АктОВыполненииРегламентногоМероприятия.TabularSection.Мероприятия.Attribute.ID</content>
+  <content>Document.торо_АктОВыполненииЭтапаРабот.TabularSection.РемонтыОборудования.Attribute.ID</content>
+  <content>Document.торо_АктПриемкиОборудования.TabularSection.РемонтыОборудования.Attribute.ID</content>
+  <content>Document.торо_ВнешнееОснованиеДляРабот.TabularSection.ОбследованноеОборудование.Attribute.ID</content>
+  <content>Document.торо_ВыявленныеДефекты.TabularSection.СписокДефектов.Attribute.ID</content>
+  <content>Document.торо_ГрафикРегламентныхМероприятийТОиР.TabularSection.ПланРемонтов.Attribute.ID</content>
+  <content>Document.торо_ЗакрытиеЗаявокИРемонтов.TabularSection.ЗакрываемыеЗаявки.Attribute.ИДРемонта</content>
+  <content>Document.торо_ЗакрытиеЗаявокИРемонтов.TabularSection.ЗакрываемыеРемонты.Attribute.ID</content>
+  <content>Document.торо_ЗаявкаНаРемонт.TabularSection.РемонтыОборудования.Attribute.ID</content>
+  <content>Document.торо_НарядНаВыполнениеРемонтныхРабот.TabularSection.РемонтыОборудования.Attribute.ID</content>
+  <content>Document.торо_НарядНаРегламентноеМероприятие.TabularSection.РегламентныеМероприятия.Attribute.ID</content>
+  <content>Document.торо_ОстановочныеРемонты.Attribute.IDОсновногоРемонта</content>
+  <content>Document.торо_ОстановочныеРемонты.TabularSection.СвязанныеРемонты.Attribute.ID</content>
+  <content>Document.торо_ПланГрафикРемонта.TabularSection.ПланРемонтов.Attribute.ID</content>
+  <content>Document.торо_ПлановыеЗатраты.Attribute.РемонтыОборудования_ID</content>
+  <content>Document.торо_ПланРаботПодразделения.TabularSection.СписокРемонтовПлана.Attribute.ID</content>
+  <content>Document.торо_АнализКоренныхПричин.Attribute.ИДРемонта</content>
+  <content>Document.торо_ПроектныеЗатратыНаРемонты.Attribute.IDРемонта</content>
+  <defaultForm>FilterCriterion.торо_СвязанныеДокументыПоРемонту.Form.ФормаСписка</defaultForm>
+  <forms uuid="9a8e5878-4bed-4762-a551-f9fc2f5f1816">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <includeHelpInContents>true</includeHelpInContents>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="308adb36-99ae-4707-a770-9d7e8b400b0a">
+    <name>Открыть</name>
+    <synonym>
+      <key>ru</key>
+      <value>Связанные документы по ТОИР</value>
+    </synonym>
+    <group>CommandGroup.торо_Перейти</group>
+    <commandParameterType>
+      <types>DocumentRef.торо_ВнешнееОснованиеДляРабот</types>
+      <types>DocumentRef.торо_ЗакрытиеЗаявокИРемонтов</types>
+      <types>DocumentRef.торо_НарядНаРегламентноеМероприятие</types>
+      <types>DocumentRef.торо_ПланГрафикРемонта</types>
+      <types>DocumentRef.торо_НарядНаВыполнениеРемонтныхРабот</types>
+      <types>DocumentRef.торо_ГрафикРегламентныхМероприятийТОиР</types>
+      <types>DocumentRef.торо_АктОВыполненииРегламентногоМероприятия</types>
+      <types>DocumentRef.торо_ОстановочныеРемонты</types>
+      <types>DocumentRef.торо_ВыявленныеДефекты</types>
+      <types>DocumentRef.торо_АктОВыполненииЭтапаРабот</types>
+      <types>DocumentRef.торо_ПлановыеЗатраты</types>
+      <types>DocumentRef.торо_АнализКоренныхПричин</types>
+      <types>DocumentRef.торо_ВводНачальныхДанных</types>
+      <types>DocumentRef.торо_ПланРаботПодразделения</types>
+      <types>DocumentRef.торо_ПроектныеЗатратыНаРемонты</types>
+      <types>DocumentRef.торо_ЗаявкаНаРемонт</types>
+      <types>DocumentRef.торо_АктПриемкиОборудования</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:FilterCriterion>

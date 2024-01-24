@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="855de82d-7eee-4ce5-918b-4346b60b354b">
+  <producedTypes>
+    <selectionType typeId="0fc73db2-1908-4b2b-afa6-b1fd54e64299" valueTypeId="84042a51-d304-4250-ae0f-27bdcd62f4fd"/>
+    <listType typeId="a1be4398-52b7-4363-b599-dffcd3541aa0" valueTypeId="2563c36e-9921-4329-ba04-30e25c1a95c2"/>
+    <managerType typeId="f4f7c952-316d-4b8c-945a-8a6a945f453d" valueTypeId="c16c825e-6d78-4248-b232-09d4dd45f072"/>
+    <recordSetType typeId="cd981814-b81c-4ecc-b19a-23ce5c5a6b87" valueTypeId="281d86ad-a7f9-467c-a799-de821d28b23e"/>
+    <recordKeyType typeId="ec0c0afd-a017-49ce-bc1f-a984825a1808" valueTypeId="0dd3a253-df9f-4bec-b147-3be3543b94ad"/>
+    <recordType typeId="c355eadb-f9aa-4ed1-af81-56ef2ac104bd" valueTypeId="015dbcd1-d473-4b9e-b9d9-6d8ebe088cb4"/>
+    <recordManagerType typeId="fd2ae0a9-09cc-4ed0-8547-ee6a6274188e" valueTypeId="0e1e6c99-7860-49e2-a808-6c937df447c8"/>
+  </producedTypes>
+  <name>торо_НастройкиСтатусовСогласованияДокументов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки статусов согласования документов</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <resources uuid="92dfe2a7-32f1-4df7-8d7d-37f07134870a">
+    <name>Начальный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начальный</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Начальный)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d4105039-9296-496a-b4c2-a92b699a0dad">
+    <name>СогласованиеЗавершено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Согласование завершено</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Согласование завершено)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b456d891-0469-4a35-9cfa-5abcee2e5ff8">
+    <name>ПроводитьДокумент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проводить документ</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Проводить документ)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d46aae2e-debe-4446-b85e-5f62e0c0f2dd">
+    <name>ШаблонСообщенияЭлектроннойПочты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон сообщения E-Mail</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ШаблоныСообщенийИУведомлений</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Шаблон сообщения E-Mail)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="69d9405d-8721-4678-9750-a13f879b0c76">
+    <name>НеИспользоватьВПодборах</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не использовать в подборах</value>
+    </synonym>
+    <comment>Не выводить ремонтные работы в форме подбора для документов, имеющих соответствующий статус</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Не использовать в подборах)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="af055f87-5c8b-46f1-92c0-1782ffabd5a3">
+    <name>ЗапретитьРедактирование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запретить редактирование</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Запретить редактирование документа в этом статусе</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="8928215a-e074-49e9-8f6a-77bab6b392ae">
+    <name>РазрешитьПометкуНаУдаление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разрешить пометку на удаление</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Разрешить пометку на удаление)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="6656a3ba-32fa-47be-9138-91343baf6f6d">
+    <name>НеОтображатьВСпискеЗадач</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не отображать в списке задач</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Не отображать в списке задач)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="1f15ac92-a4e0-40f4-b214-2d826ea3a8c1">
+    <name>АвтоматическоеПроведение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автоматическое проведение</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Не отображать в списке задач)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="9ac43bfb-c1f3-4d1d-8427-d4565e1c507e">
+    <name>ШаблонУведомления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон уведомления</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ШаблоныСообщенийИУведомлений</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Шаблон уведомления)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="3a4f3561-eb5c-4413-8587-4306d0428c4f">
+    <name>КомментарийОбязателен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий обязателен</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Комментарий обязателен)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="35086284-5c95-4bbd-a413-6d2a541d9a45">
+    <name>НомерСтатуса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер статуса</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Номер статуса)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="614b6b74-e4f5-4ed5-8857-b7efe3e54a9e">
+    <name>СпособСогласования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ согласования</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_СпособыСогласованияДокументов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Способ согласования)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.Статус</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.торо_СтатусыСпособовСогласованияДокументов.EnumValue.Действует</value>
+      </value>
+    </choiceParameters>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="305cc89e-e443-4c7a-aa8c-ed995930e20c">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_СтатусыСогласованияДокументовРемонтныхРабот</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Текущий статус)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

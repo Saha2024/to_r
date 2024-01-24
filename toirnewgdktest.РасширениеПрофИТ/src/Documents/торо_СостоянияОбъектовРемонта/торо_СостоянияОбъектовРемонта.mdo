@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="6537594f-afbb-4877-9d68-f9f1aa59c294" extendedConfigurationObject="23cdc2e0-c8fb-411b-a976-ed6952618937">
+  <producedTypes>
+    <objectType typeId="aaf36c02-2273-42ba-a9cf-3b0e7b3c12b3" valueTypeId="5c2cb010-6e78-4aa3-890d-87b16c3f9927"/>
+    <refType typeId="c6f0f12c-be19-4112-adae-08c3faac073d" valueTypeId="bb954f92-6628-4fc8-a645-8d3b9e69e7a1"/>
+    <selectionType typeId="ebacf4f8-f9a8-40d8-a0ac-e7fb49934e6c" valueTypeId="bc0f598a-8232-4a76-ae5e-bf3888deb715"/>
+    <listType typeId="c1767eff-d236-40bb-85bb-48062e2c86ad" valueTypeId="6c0ab221-ed54-4c51-a755-7f7a9deb71a7"/>
+    <managerType typeId="b0a1f214-5029-446b-8496-7127214668ea" valueTypeId="70f6ec03-aff8-476c-9966-2825ee55eb33"/>
+  </producedTypes>
+  <name>торо_СостоянияОбъектовРемонта</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <objectModule>Extended</objectModule>
+  </extension>
+  <attributes uuid="32470711-2fbe-406d-8c7e-e3cacddff043" extendedConfigurationObject="ce46f3b3-678d-45c3-834d-506cd592653f">
+    <name>ВидОперации</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>EnumRef.торо_ВидыОперацийОтклоненияВРаботеОборудования</type>
+        </types>
+      </typeExtension>
+    </extension>
+    <type/>
+  </attributes>
+  <forms uuid="d7e083ca-64c4-4623-bc55-bf7666a53ee2" extendedConfigurationObject="2da4e1cb-f836-43b6-9361-bcae8e675a16">
+    <name>ФормаДокумента</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFormExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <form>Extended</form>
+    </extension>
+  </forms>
+  <tabularSections uuid="e0059e32-d1e1-42d0-98cd-0e3b8eda94eb" extendedConfigurationObject="f68ead0e-ff44-4a11-ba24-e2f89589947b">
+    <producedTypes>
+      <objectType typeId="98830c1c-48a2-470a-a727-7c30141acfa8" valueTypeId="82d413a6-bd9a-4b0e-bd88-3a9503e8fbcf"/>
+      <rowType typeId="7f10857e-1b5a-4e9d-acc4-14ef04ca12cd" valueTypeId="0f43e8e8-62ce-49cf-bfc5-480f2d5c1a1a"/>
+    </producedTypes>
+    <name>ОбъектыРемонта</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </tabularSections>
+</mdclass:Document>

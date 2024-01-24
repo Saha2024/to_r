@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>АктПоРемонту</dataPath>
+			<field>АктПоРемонту</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Акт по ремонту</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">25</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъектРемонта</dataPath>
+			<field>ОбъектРемонта</field>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">25</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВнутреннееПотребление</dataPath>
+			<field>ВнутреннееПотребление</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Внутреннее потребление</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">25</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Характеристика</dataPath>
+			<field>Характеристика</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">25</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаЗавершенияРемонта</dataPath>
+			<field>ДатаЗавершенияРемонта</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗавершитьРемонтныеРаботы</dataPath>
+			<field>ЗавершитьРемонтныеРаботы</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДокументОснование</dataPath>
+			<field>ДокументОснование</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документ основание</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номенклатура</dataPath>
+			<field>Номенклатура</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">25</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоОстаток</dataPath>
+			<field>КоличествоОстаток</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=3</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>АктОВыполненииЭтапаРабот</dataPath>
+			<field>АктОВыполненииЭтапаРабот</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗаказНаВнутреннееПотребление</dataPath>
+			<field>ЗаказНаВнутреннееПотребление</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заказ на внутреннее потребление</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">25</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЕдиницаИзмерения</dataPath>
+			<field>ЕдиницаИзмерения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ед. хранения</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	проф_ОстатокТМЦКСписаниюПоЗакрытымАктамНаРемонтОстатки.АктОВыполненииЭтапаРабот КАК АктПоРемонту,
+	ЕСТЬNULL(ДокументВнутреннееПотреблениеТоваров.Ссылка, ЗНАЧЕНИЕ(Документ.ВнутреннееПотреблениеТоваров.ПустаяСсылка)) КАК ВнутреннееПотребление,
+	проф_СоответствиеАктовИВнутреннегоПотребления.ЗавершитьРемонтныеРаботы КАК ЗавершитьРемонтныеРаботы,
+	проф_СоответствиеАктовИВнутреннегоПотребления.ДатаЗавершенияРемонта КАК ДатаЗавершенияРемонта,
+	проф_СоответствиеАктовИВнутреннегоПотребления.ОбъектРемонта КАК ОбъектРемонта,
+	ЕСТЬNULL(торо_АктОВыполненииЭтапаРаботДокументыОснования.ДокументОснование, ЗНАЧЕНИЕ(Документ.торо_ЗаявкаНаРемонт.ПустаяСсылка)) КАК ДокументОснование,
+	проф_ОстатокТМЦКСписаниюПоЗакрытымАктамНаРемонтОстатки.Номенклатура КАК Номенклатура,
+	проф_ОстатокТМЦКСписаниюПоЗакрытымАктамНаРемонтОстатки.Характеристика КАК Характеристика,
+	проф_ОстатокТМЦКСписаниюПоЗакрытымАктамНаРемонтОстатки.КоличествоОстаток КАК КоличествоОстаток,
+	СправочникНоменклатура.ЕдиницаИзмерения КАК ЕдиницаИзмерения
+ПОМЕСТИТЬ втОстатки
+ИЗ
+	РегистрНакопления.проф_ОстатокТМЦКСписаниюПоЗакрытымАктамНаРемонт.Остатки КАК проф_ОстатокТМЦКСписаниюПоЗакрытымАктамНаРемонтОстатки
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.проф_СоответствиеАктовИВнутреннегоПотребления КАК проф_СоответствиеАктовИВнутреннегоПотребления
+		ПО проф_ОстатокТМЦКСписаниюПоЗакрытымАктамНаРемонтОстатки.АктОВыполненииЭтапаРабот = проф_СоответствиеАктовИВнутреннегоПотребления.АктОВыполненииЭтапаРабот
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.ВнутреннееПотреблениеТоваров КАК ДокументВнутреннееПотреблениеТоваров
+		ПО (проф_СоответствиеАктовИВнутреннегоПотребления.ВнутреннееПотреблениеТоваров = ДокументВнутреннееПотреблениеТоваров.Ссылка)
+			И (НЕ ДокументВнутреннееПотреблениеТоваров.ПометкаУдаления)
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.торо_АктОВыполненииЭтапаРабот.ДокументыОснования КАК торо_АктОВыполненииЭтапаРаботДокументыОснования
+		ПО проф_ОстатокТМЦКСписаниюПоЗакрытымАктамНаРемонтОстатки.АктОВыполненииЭтапаРабот = торо_АктОВыполненииЭтапаРаботДокументыОснования.Ссылка
+			И (торо_АктОВыполненииЭтапаРаботДокументыОснования.ДокументОснование ССЫЛКА Документ.торо_ЗаявкаНаРемонт)
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.Номенклатура КАК СправочникНоменклатура
+		ПО проф_ОстатокТМЦКСписаниюПоЗакрытымАктамНаРемонтОстатки.Номенклатура = СправочникНоменклатура.Ссылка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	втОстатки.АктПоРемонту КАК АктПоРемонту,
+	втОстатки.ВнутреннееПотребление КАК ВнутреннееПотребление,
+	втОстатки.ЗавершитьРемонтныеРаботы КАК ЗавершитьРемонтныеРаботы,
+	втОстатки.ДатаЗавершенияРемонта КАК ДатаЗавершенияРемонта,
+	втОстатки.ОбъектРемонта КАК ОбъектРемонта,
+	втОстатки.ДокументОснование КАК ДокументОснование,
+	ЕСТЬNULL(торо_ИнтеграцияДокументов.ДокументЕРП, ЗНАЧЕНИЕ(Документ.ЗаказНаВнутреннееПотребление.ПустаяСсылка)) КАК ЗаказНаВнутреннееПотребление,
+	втОстатки.Номенклатура КАК Номенклатура,
+	втОстатки.Характеристика КАК Характеристика,
+	втОстатки.КоличествоОстаток КАК КоличествоОстаток,
+	втОстатки.ЕдиницаИзмерения КАК ЕдиницаИзмерения
+ИЗ
+	втОстатки КАК втОстатки
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.торо_ЗаявкаНаРемонт.РемонтыОборудования КАК ТЧРемонтыОборудования
+			ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.торо_ИнтеграцияДокументов КАК торо_ИнтеграцияДокументов
+			ПО ТЧРемонтыОборудования.ID = торо_ИнтеграцияДокументов.ID
+				И (ВЫРАЗИТЬ(торо_ИнтеграцияДокументов.ДокументЕРП КАК Документ.ЗаказНаВнутреннееПотребление).ПометкаУдаления = ЛОЖЬ)
+				И (ТИПЗНАЧЕНИЯ(торо_ИнтеграцияДокументов.ДокументЕРП) = ТИП(Документ.ЗаказНаВнутреннееПотребление))
+		ПО втОстатки.ДокументОснование = ТЧРемонтыОборудования.Ссылка
+			И втОстатки.ОбъектРемонта = ТЧРемонтыОборудования.ОбъектРемонта</query>
+	</dataSet>
+	<totalField>
+		<dataPath>КоличествоОстаток</dataPath>
+		<expression>Сумма(КоличествоОстаток)</expression>
+	</totalField>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Количество не списанных ТМЦ</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаЗавершенияРемонта</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>АктПоРемонту</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОбъектРемонта</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЗаказНаВнутреннееПотребление</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Номенклатура</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ЕдиницаИзмерения</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Together</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Характеристика</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КоличествоОстаток</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">Output</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество не списанных ТМЦ</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:WebService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1ce77087-9420-42c9-a119-a4e2da308680">
+  <name>Monitor</name>
+  <synonym>
+    <key>ru</key>
+    <value>Монитор</value>
+  </synonym>
+  <namespace>monitor</namespace>
+  <xdtoPackages xsi:type="core:ReferenceValue">
+    <value>XDTOPackage.Monitor</value>
+  </xdtoPackages>
+  <descriptorFileName>monitor.1cws</descriptorFileName>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <operations uuid="0f1b9176-dacf-490a-a01a-0adcbfd7f63b">
+    <name>ВерсияОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Версия обмена</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>integer</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ВерсияОбмена</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+  </operations>
+  <operations uuid="11cc86dd-35b0-493b-8930-e148930eaab4">
+    <name>ПолучитьKPIПлановоПредупредительныеРаботы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить KPI Планово предупредительные работы</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>Данные</name>
+      <nsUri>monitor</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ПолучитьKPIПлановоПредупредительныеРаботы</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="b71053bb-0ec1-4397-867a-c8eeb3b31cda">
+      <name>Данные</name>
+      <synonym>
+        <key>ru</key>
+        <value>Данные</value>
+      </synonym>
+      <xdtoValueType>
+        <name>Данные</name>
+        <nsUri>monitor</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="37d15c35-db5d-42f0-a15c-7c08f00e7ea9">
+    <name>ПолучитьKPIПроцентДефектовУстраненныхНеВСрок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить KPI Процент дефектов устраненных не в срок</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>Данные</name>
+      <nsUri>monitor</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ПолучитьKPIПроцентДефектовУстраненныхНеВСрок</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="bf0ab705-720c-4565-a7ca-925b195713be">
+      <name>Данные</name>
+      <synonym>
+        <key>ru</key>
+        <value>Данные</value>
+      </synonym>
+      <xdtoValueType>
+        <name>Данные</name>
+        <nsUri>monitor</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="474badbf-0fd5-420f-8fba-bb4d87a831f4">
+    <name>ПолучитьKPIПроцентПодтвержденныхЧасовПоППР</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить KPI Процент подтвержденных часов по ППР</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>Данные</name>
+      <nsUri>monitor</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ПолучитьKPIПроцентПодтвержденныхЧасовПоППР</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="47de353a-0fac-4a7f-a8a0-f36810b89afc">
+      <name>Данные</name>
+      <synonym>
+        <key>ru</key>
+        <value>Данные</value>
+      </synonym>
+      <xdtoValueType>
+        <name>Данные</name>
+        <nsUri>monitor</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="ff83cad3-688d-4556-a37b-2b4c8b816515">
+    <name>ПолучитьKPIРаботаСВнешнимиОснованиями</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить KPI Работа с внешними основаниями</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>Данные</name>
+      <nsUri>monitor</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ПолучитьKPIРаботаСВнешнимиОснованиями</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="a1d5c8d0-5641-47fc-8aff-0441ad6100fd">
+      <name>Данные</name>
+      <synonym>
+        <key>ru</key>
+        <value>Данные</value>
+      </synonym>
+      <xdtoValueType>
+        <name>Данные</name>
+        <nsUri>monitor</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="f207adc8-23cd-4c6f-81ef-48b67b97666b">
+    <name>ПолучитьKPIУстранениеДефектов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить KPI Устранение дефектов</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>Данные</name>
+      <nsUri>monitor</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ПолучитьKPIУстранениеДефектов</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="6bf91155-3dd7-4886-926c-1ca39f8a5c4f">
+      <name>Данные</name>
+      <synonym>
+        <key>ru</key>
+        <value>Данные</value>
+      </synonym>
+      <xdtoValueType>
+        <name>Данные</name>
+        <nsUri>monitor</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="22387286-f280-4146-a0c2-a6bc903b4d6a">
+    <name>ПолучитьВнешниеОснования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить внешние основания</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>Данные</name>
+      <nsUri>monitor</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ПолучитьВнешниеОснования</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="a50de672-4540-4734-bf0e-9b5b69fe8fd3">
+      <name>Данные</name>
+      <synonym>
+        <key>ru</key>
+        <value>Данные</value>
+      </synonym>
+      <xdtoValueType>
+        <name>Данные</name>
+        <nsUri>monitor</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="593020e7-86c9-4622-b490-ff4e73f6fd6f">
+    <name>ПолучитьВыявленныеДефекты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить выявленные дефекты</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>Данные</name>
+      <nsUri>monitor</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ПолучитьВыявленныеДефекты</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="a0eb73b1-de9c-4139-b6ff-d264ea00a3fe">
+      <name>Данные</name>
+      <synonym>
+        <key>ru</key>
+        <value>Данные</value>
+      </synonym>
+      <xdtoValueType>
+        <name>Данные</name>
+        <nsUri>monitor</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="830120d2-ca25-476d-b036-6b2477c37ed6">
+    <name>ПолучитьДанныеОДокументеДляСогласования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить данные о документе для согласования</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>Данные</name>
+      <nsUri>monitor</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ПолучитьДанныеОДокументеДляСогласования</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="741de44e-102f-4c22-ae8f-cea25bd63b1d">
+      <name>Данные</name>
+      <synonym>
+        <key>ru</key>
+        <value>Данные</value>
+      </synonym>
+      <xdtoValueType>
+        <name>Данные</name>
+        <nsUri>monitor</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="28f31b65-ef7b-4aee-9b7f-1db2cbd883b3">
+    <name>ПолучитьДанныеПоОбъектуРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить данные по объекту ремонта</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>Данные</name>
+      <nsUri>monitor</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ПолучитьДанныеПоОбъектуРемонта</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="519a5f87-2753-4c9b-92ad-a59d18cb1e49">
+      <name>Данные</name>
+      <synonym>
+        <key>ru</key>
+        <value>Данные</value>
+      </synonym>
+      <xdtoValueType>
+        <name>Данные</name>
+        <nsUri>monitor</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="56ba49d8-75ef-4075-8979-375ac77a978c">
+    <name>ПолучитьНаработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить наработки</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>Данные</name>
+      <nsUri>monitor</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ПолучитьНаработки</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="b6a52914-cb41-4221-9579-61054e504dab">
+      <name>Данные</name>
+      <synonym>
+        <key>ru</key>
+        <value>Данные</value>
+      </synonym>
+      <xdtoValueType>
+        <name>Данные</name>
+        <nsUri>monitor</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="fdc8178a-25f0-4300-9176-819f14436bae">
+    <name>ПолучитьНомерПодразделенияИсполнителяОбъектаРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить номер подразделения исполнителя объекта ремонта</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>Данные</name>
+      <nsUri>monitor</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ПолучитьНомерПодразделенияИсполнителяОбъектаРемонта</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="a19edf16-e158-4a25-b35d-fd9005530942">
+      <name>Данные</name>
+      <synonym>
+        <key>ru</key>
+        <value>Данные</value>
+      </synonym>
+      <xdtoValueType>
+        <name>Данные</name>
+        <nsUri>monitor</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="c6ee9c81-6562-46cb-9252-e2ffefd1e5e3">
+    <name>ПолучитьНомерПодразделенияОбъектаРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить номер подразделения объекта ремонта</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>Данные</name>
+      <nsUri>monitor</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ПолучитьНомерПодразделенияОбъектаРемонта</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="f8960600-3d77-4b5a-97b0-785ad2371565">
+      <name>Данные</name>
+      <synonym>
+        <key>ru</key>
+        <value>Данные</value>
+      </synonym>
+      <xdtoValueType>
+        <name>Данные</name>
+        <nsUri>monitor</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="61410325-3394-43e6-aa97-8695eeedae94">
+    <name>ПолучитьПараметрыФормыОбъектаРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить параметры формы объекта ремонта</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>Данные</name>
+      <nsUri>monitor</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ПолучитьПараметрыФормыОбъектаРемонта</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="7519d8df-3ef9-412f-a665-cf07e8d77e07">
+      <name>Данные</name>
+      <synonym>
+        <key>ru</key>
+        <value>Данные</value>
+      </synonym>
+      <xdtoValueType>
+        <name>Данные</name>
+        <nsUri>monitor</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="a8269e0b-6d17-4ab5-9da9-734ebf39297b">
+    <name>ПолучитьПлановыеРаботы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить плановые работы</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>Данные</name>
+      <nsUri>monitor</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ПолучитьПлановыеРаботы</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="4cc04453-b29c-4d16-9527-a54de0e1c2bf">
+      <name>Данные</name>
+      <synonym>
+        <key>ru</key>
+        <value>Данные</value>
+      </synonym>
+      <xdtoValueType>
+        <name>Данные</name>
+        <nsUri>monitor</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="75e8ab4f-d061-45bb-9816-0e11ae1d6586">
+    <name>ПолучитьСостояния</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить состояния</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>Данные</name>
+      <nsUri>monitor</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ПолучитьСостояния</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="bec4db00-73a7-4df3-9bb2-0e592d76bb11">
+      <name>Данные</name>
+      <synonym>
+        <key>ru</key>
+        <value>Данные</value>
+      </synonym>
+      <xdtoValueType>
+        <name>Данные</name>
+        <nsUri>monitor</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="74e2fcd7-c38a-49b1-8acc-fcc6b362f1fd">
+    <name>ПолучитьСписокОбъектовРемонтов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить список объектов ремонтов</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>Данные</name>
+      <nsUri>monitor</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ПолучитьСписокОбъектовРемонтов</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="45c3753a-d8da-4315-99a5-d88101de427a">
+      <name>Данные</name>
+      <synonym>
+        <key>ru</key>
+        <value>Данные</value>
+      </synonym>
+      <xdtoValueType>
+        <name>Данные</name>
+        <nsUri>monitor</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="815a3cab-16ac-478e-94c7-702523b7073f">
+    <name>ПолучитьСписокЭлементовСправочника</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить список элементов справочника</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>Данные</name>
+      <nsUri>monitor</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ПолучитьСписокЭлементовСправочника</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="90ec7f8b-1639-49f1-ba92-6a3f1c10d98d">
+      <name>Данные</name>
+      <synonym>
+        <key>ru</key>
+        <value>Данные</value>
+      </synonym>
+      <xdtoValueType>
+        <name>Данные</name>
+        <nsUri>monitor</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="0239562b-6844-48fe-9041-21c392ce177e">
+    <name>ПроверитьДобавитьРегистрациюУстройстваМонитор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проверить добавить регистрацию устройства монитор</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>string</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <nillable>true</nillable>
+    <procedureName>ПроверитьДобавитьРегистрациюУстройстваМонитор</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="2cd8e911-1e5a-487a-96a6-37d3e34664ba">
+      <name>Запрос</name>
+      <synonym>
+        <key>ru</key>
+        <value>Запрос</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="5f9c507e-af41-40c4-94c5-2c7b18bbec99">
+      <name>ИмяУстройства</name>
+      <synonym>
+        <key>ru</key>
+        <value>Имя устройства</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="0820601b-718c-4363-96c4-5715f207dc94">
+      <name>ИмяПользователя</name>
+      <synonym>
+        <key>ru</key>
+        <value>Имя пользователя</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="3ea9c046-407f-4eaa-a420-db05399fdb4f">
+    <name>УтвердитьСтатусДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Утвердить статус документа</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>Данные</name>
+      <nsUri>monitor</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>УтвердитьСтатусДокумента</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="81a2cc69-3a0a-47b5-9163-6fea46bd4095">
+      <name>Данные</name>
+      <synonym>
+        <key>ru</key>
+        <value>Данные</value>
+      </synonym>
+      <xdtoValueType>
+        <name>Данные</name>
+        <nsUri>monitor</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+</mdclass:WebService>

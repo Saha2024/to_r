@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Местоположение объекта</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+        ymaps.ready(init);
+        function init() {
+    var myMap = new ymaps.Map("map", {
+            center: [COORDS_W, COORDS_H],
+            zoom: 10
+        }, {
+            searchControlProvider: 'yandex#search'
+        }),
+
+        myGeoObject = new ymaps.GeoObject({
+            geometry: {
+                type: "Point",
+                coordinates: [COORDS_W, COORDS_H]
+            },
+            properties: {
+                iconContent: 'Объект ремонта',
+                hintContent: 'OBJECT_NAME'
+            }
+        }, {
+            preset: 'islands#blackStretchyIcon',
+            draggable: true
+        });
+
+    myMap.geoObjects
+        .add(myGeoObject);
+}
+    </script>
+</head>
+
+<body>
+    <div id="map" style="width: 600px; height: 600px"></div>
+</body>
+
+</html>

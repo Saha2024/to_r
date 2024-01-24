@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="92695621-1af2-4e6c-9be0-aafda6e54d3d" extendedConfigurationObject="cbf85425-da7d-4f6d-ac82-8b3cab251fd6">
+  <producedTypes>
+    <objectType typeId="0f7343a0-956d-4bd1-8858-c58afcbc3f23" valueTypeId="f43402a9-b8e7-41a9-985c-b8f8147b9a76"/>
+    <refType typeId="3f7b4a7d-4fbb-49bc-91e7-c4aadcb0940c" valueTypeId="d0ce2a2b-d63f-4079-a558-1e2bdcdcecdd"/>
+    <selectionType typeId="fda71a18-7f51-4e99-b13b-2ce8d6bddd50" valueTypeId="3baff0e0-ee29-40f6-aa23-7d993d3fe042"/>
+    <listType typeId="36bedcb5-f266-4d42-bd14-dc335a409ace" valueTypeId="fd2f0c99-0518-4825-8293-01cd43c8f5a1"/>
+    <managerType typeId="130bdf85-0934-42c6-a8aa-8c6b0b4e06ec" valueTypeId="84ab8277-5e35-4a66-8574-c6f4d57719ae"/>
+  </producedTypes>
+  <name>торо_ВыбытиеОбъектаРемонта</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <objectModule>Extended</objectModule>
+  </extension>
+  <attributes uuid="cedb0cb7-019b-4ffb-ae4a-706a27905552" extendedConfigurationObject="719e5915-5ab2-466b-951f-188b2a52e0f8">
+    <name>ОбъектРемонта</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>CatalogRef.торо_ОбъектыРемонта</type>
+        </types>
+      </typeExtension>
+    </extension>
+    <type/>
+  </attributes>
+  <attributes uuid="b62c35c8-ff58-46d8-b8a1-1bf95a6171e3" extendedConfigurationObject="d99214c8-4f2e-4ea6-81ce-62736a38a54b">
+    <name>ДатаСписания</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Date</type>
+        </types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </attributes>
+  <forms uuid="45a9fc9c-c5b2-446a-a623-9fff3f2ef4f3" extendedConfigurationObject="ed786798-2a25-47b6-b909-f8d037ef6f4f">
+    <name>ФормаДокумента</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFormExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <form>Extended</form>
+    </extension>
+  </forms>
+</mdclass:Document>

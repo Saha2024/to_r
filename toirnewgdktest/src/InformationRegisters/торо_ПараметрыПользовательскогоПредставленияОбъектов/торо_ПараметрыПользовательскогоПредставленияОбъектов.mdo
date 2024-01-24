@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="22833409-1b0c-4bf9-a475-9b2a1bd7a624">
+  <producedTypes>
+    <selectionType typeId="83985205-eea9-46cc-9786-ed97514899e2" valueTypeId="52a3e4cf-86b3-4959-b195-10e401085433"/>
+    <listType typeId="6908465b-4b2a-40a3-90d6-2c3f5a850ecd" valueTypeId="24a6f0b9-0610-4881-87d1-5a876060499b"/>
+    <managerType typeId="2f53c46a-1480-4bf5-8dcc-2f3afa695997" valueTypeId="fde2f125-6b8d-43e3-bd52-75cf0c745516"/>
+    <recordSetType typeId="4cb86e1f-8c7e-41ce-ad00-1098de71d0da" valueTypeId="907d1d15-634f-4d24-9ba1-ff5bb9fe9c5c"/>
+    <recordKeyType typeId="10f4c3a7-b59c-4160-b1f7-7ff6fca7d7c2" valueTypeId="15fdfb96-a63f-4d56-a546-dee19470a746"/>
+    <recordType typeId="dcfaef06-c6dd-4829-a1aa-cc7976e6daa2" valueTypeId="24f2dbb0-8b2e-4aef-b54d-c7a25f885393"/>
+    <recordManagerType typeId="7b4b1f41-e361-44cc-942c-cde7e6d91d65" valueTypeId="d5a36d73-b810-4786-a84d-839c61a3d12d"/>
+  </producedTypes>
+  <name>торо_ПараметрыПользовательскогоПредставленияОбъектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Параметры пользовательского представления объектов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.торо_ПараметрыПользовательскогоПредставленияОбъектов.Form.ФормаСписка</defaultListForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="212c318e-8804-4774-b220-d528e26f6c6b">
+    <name>ФорматнаяСтрокаПоУмолчанию</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форматная строка по умолчанию</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Форматная строка по умолчанию для объекта конфигурации</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <attributes uuid="29a2d62c-6d61-44c7-a94a-59ec0d757336">
+    <name>ОбъектКонфигурацииСиноним</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект конфигурации синоним</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Синоним настраиваемого объекта конфигурации</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <dimensions uuid="19efa01e-dd88-48d8-805c-25db5f3043bd">
+    <name>ОбъектКонфигурации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект конфигурации</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>80</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Объект конфигурации, для которого задается представление</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="b3d757cc-c9d3-42e0-a0a7-3c19549643ce">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <includeHelpInContents>true</includeHelpInContents>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

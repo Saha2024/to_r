@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9693e6b6-6fc8-4fc5-b8f9-a7fab328a69d">
+  <producedTypes>
+    <selectionType typeId="f7d7df26-82fc-47f9-a396-96f652634a6e" valueTypeId="6ffb3df9-c50b-4fda-abe1-5c68e08a31b4"/>
+    <listType typeId="9054e640-dcdf-4056-aa84-e9470cbf1b3e" valueTypeId="e2ce8259-073c-4a2c-8aec-e761834496be"/>
+    <managerType typeId="e5726c8d-f15d-4132-9279-361ed435531b" valueTypeId="c74bbdc2-e4f0-43d1-be23-2902636f29dc"/>
+    <recordSetType typeId="f3a5a29f-4e6c-4151-9a22-1acc55717d50" valueTypeId="7cf808eb-5305-4b88-a872-f50bfe872374"/>
+    <recordKeyType typeId="c1d463dc-4d8f-46bb-82c9-3724fd5f8b04" valueTypeId="8a471c3b-faaa-4123-a5f3-b1176be1b305"/>
+    <recordType typeId="00aa19c5-884c-4ee5-abcf-481bea8833d1" valueTypeId="daa789cf-c3bb-48cc-aa83-15e47cd6b082"/>
+  </producedTypes>
+  <name>проф_МатериальныеЗатратыНаНевыполненныеРемонтныеРаботы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Материальные затраты на невыполненные ремонтные работы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <toolTip>
+      <key>ru</key>
+      <value>(Период)</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <resources uuid="1e9b8e31-b528-431b-88fd-f7b9d4243f74">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Количество)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="7a35ab38-464b-4e62-a6f0-9fad3088d6c4">
+    <name>РемонтыОборудования_ID</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ремонты оборудования ID</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Ремонты оборудования ID)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="61537004-22e9-46db-a6b6-342b1da18af8">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Номенклатура)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="f631709b-12cf-48c4-8291-6f100c9f6a5d">
+    <name>ХарактеристикаНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Характеристика номенклатуры</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ХарактеристикиНоменклатуры</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Характеристика номенклатуры)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="31264bee-fc88-407e-beb0-16bef36f9c20">
+    <name>ID</name>
+    <synonym>
+      <key>ru</key>
+      <value>ID</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(ID)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+  <dimensions uuid="30a3d5a2-7d32-4cdd-a3f3-5f3b7f141a15">
+    <name>РемонтнаяРабота</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ремонтная работа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ТехнологическиеОперации</types>
+      <types>CatalogRef.торо_ИдентификаторыТехКарт</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Ремонтная работа)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+</mdclass:AccumulationRegister>

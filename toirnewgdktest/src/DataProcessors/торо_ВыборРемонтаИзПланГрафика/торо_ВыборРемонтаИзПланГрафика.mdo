@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7ba447b5-e5ac-49a0-84e0-e6ef57db0c11">
+  <producedTypes>
+    <objectType typeId="8897fc13-6686-474e-b917-3749ad81bdb7" valueTypeId="8b0da061-2f8f-4ede-904e-56e7bab34099"/>
+    <managerType typeId="7d83ceb6-ab9a-46db-b864-7ddf0e745533" valueTypeId="6d860f56-7cb5-4441-b2b2-cbd80d6ab3da"/>
+  </producedTypes>
+  <name>торо_ВыборРемонтаИзПланГрафика</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выбор ремонта из план-графика</value>
+  </synonym>
+  <defaultForm>DataProcessor.торо_ВыборРемонтаИзПланГрафика.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="e7b316dc-b180-4a63-a239-c362579ead47">
+    <name>ПланГрафикРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>План-график ремонта</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.торо_ПланГрафикРемонта</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(План-график ремонта)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3de95d5e-7806-443d-91d5-3013ee4ba19f">
+    <name>АктОВыполненииЭтапаРабот</name>
+    <synonym>
+      <key>ru</key>
+      <value>Акт о выполнении этапа работ</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.торо_АктОВыполненииЭтапаРабот</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Акт о выполнении этапа работ)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="3a42ef80-8ffa-4180-88bd-4cec4e847a3f">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <includeHelpInContents>true</includeHelpInContents>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

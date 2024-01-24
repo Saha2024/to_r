@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a2e5cdd8-c25c-42fd-b7bf-be88d8088516">
+  <producedTypes>
+    <refType typeId="f8b58723-055b-4c5d-af87-7fd16b20b207" valueTypeId="f4103831-4d64-4565-85a7-9dcdf369f907"/>
+    <listType typeId="e1f1c54b-1071-44bc-bbcc-7fe2ba5c4c3a" valueTypeId="55460f40-0d65-4026-ba89-c4545bcc4eca"/>
+    <managerType typeId="4fd5582e-5c65-4142-88e0-3da011e8d6e1" valueTypeId="1ce065b4-47a7-4df4-935f-98884235a22d"/>
+  </producedTypes>
+  <name>НастройкиИспользованияСерийНоменклатуры</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки использования серий номенклатуры</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="ffe2f8f3-25ef-4566-828f-d59b10396c24">
+    <name>ЭкземплярТовара</name>
+    <synonym>
+      <key>ru</key>
+      <value>Экземпляр товара, имеющий уникальный серийный номер</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="dcdc6c6b-ea3a-48e1-a6a3-f57c956b960c">
+    <name>ПартияТоваровПоНомеру</name>
+    <synonym>
+      <key>ru</key>
+      <value>Партия товаров, имеющих одинаковый номер серии</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c6e310d3-34e0-4171-b5fc-6379652c7ba3">
+    <name>ПартияТоваровПоСрокуГодности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Партия товаров, имеющих одинаковый срок годности</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="aa3db6fb-c353-47bb-8ab2-1a798ad54569">
+    <name>ПартияТоваровПоНомеруИСрокуГодности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Партия товаров, имеющих одинаковый номер серии и срок годности</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

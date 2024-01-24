@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f9f6a5d6-b890-48fa-9bac-57d3fa8e577a">
+  <producedTypes>
+    <objectType typeId="8e98045d-86de-4a9d-9d21-126dbdc62124" valueTypeId="75a0a63a-6419-4400-829d-c66470cbfb62"/>
+    <managerType typeId="fa2ac335-0a02-4c12-a791-789a31d23528" valueTypeId="2c72cd05-5bbd-4feb-a036-7f2af3030881"/>
+  </producedTypes>
+  <name>торо_КалькуляторРЦ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Калькулятор ремонтного цикла</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.торо_КалькуляторРЦ.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <tabularSections uuid="d9848f33-7c9d-4086-b6f0-042221aaae08">
+    <producedTypes>
+      <objectType typeId="370d8475-f5ca-49cf-97f3-562903b2b64c" valueTypeId="4833cbb3-e9d0-4842-add5-e593d660c483"/>
+      <rowType typeId="37fd3621-7928-4afb-9595-5c6520e487ce" valueTypeId="6d500de2-7065-47cc-968a-d162be187e0a"/>
+    </producedTypes>
+    <name>СдвигСтрокМнемосхема</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сдвиг строк мнемосхема</value>
+    </synonym>
+    <attributes uuid="c1ec1943-4739-4cab-8e59-efeb04cecefa">
+      <name>Имя</name>
+      <synonym>
+        <key>ru</key>
+        <value>Имя</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>30</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>(не отображается)</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="04f53331-23c5-4c09-8eb8-81d1c8409a20">
+      <name>НомерКолонки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номер колонки</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>(не отображается)</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="8b3f2b87-b848-4e01-88a4-6aae7b2e0d7d">
+      <name>СдвигСтрок</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сдвиг строк</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>(не отображается)</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="80b1c80c-0e58-4d6d-8c1e-8e4d924fdbc4">
+      <name>ВидРемонта</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид ремонта</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.торо_ВидыРемонтов</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>(не отображается)</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="05bb53dc-a4e0-494c-84d4-7934a28a0d6d">
+    <producedTypes>
+      <objectType typeId="03e0e49c-4ea2-4976-8969-da0bd7e44663" valueTypeId="bd2b3c4a-2e54-401c-a272-93b5f58a4461"/>
+      <rowType typeId="b1f6c075-7b7f-4687-9638-272788a1759b" valueTypeId="52eff8d5-16d4-4eaf-a8b8-2c65375b4a3d"/>
+    </producedTypes>
+    <name>КолонкиНаработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Колонки наработки</value>
+    </synonym>
+    <attributes uuid="84915714-f403-4440-b06b-9d8551719420">
+      <name>Показатель</name>
+      <synonym>
+        <key>ru</key>
+        <value>Показатель</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ПараметрыВыработкиОС</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Показатель наработки (не отображается)</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="915fc63e-01af-482e-b4f2-700ebfb01b2f">
+      <name>ИмяКолонки</name>
+      <synonym>
+        <key>ru</key>
+        <value>Имя колонки</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>30</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Служебный реквизит (не отображается)</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+    <attributes uuid="d5326dc0-5a96-4dbe-a599-eca1d1ae7278">
+      <name>ПредшествующийТогоЖеВида</name>
+      <synonym>
+        <key>ru</key>
+        <value>Предшествующий того же вида</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Предшествующий</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="3f1a95b3-e34e-403f-bb19-5dea78998551">
+    <producedTypes>
+      <objectType typeId="f55b9c25-f57f-4892-bfa9-3b52273158b6" valueTypeId="dc33c9e1-dd90-498e-98f0-f1d2f769e96b"/>
+      <rowType typeId="100eb7f2-fac9-4708-9d83-604dfe405e17" valueTypeId="c4a957ee-3753-4436-be17-1a492cfcb59d"/>
+    </producedTypes>
+    <name>БазаДляРасчетаПГППР</name>
+    <synonym>
+      <key>ru</key>
+      <value>База для расчета ПГППР</value>
+    </synonym>
+    <attributes uuid="a1a7bf6e-38ea-41ef-96a1-6acceb10071d">
+      <name>ВидРемонта</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид ремонта</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.торо_ВидыРемонтов</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Нормативный вид ремонта</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="cd0321c8-df41-4382-9d82-f37cc5f2dfb6">
+      <name>ОбъектРемонта</name>
+      <synonym>
+        <key>ru</key>
+        <value>Объект ремонта</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.торо_ОбъектыРемонта</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Объект ремонта для расчета</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="62afe26b-5413-4dd9-937b-9c75aacfc54c">
+      <name>НормативныйРемонт</name>
+      <synonym>
+        <key>ru</key>
+        <value>Нормативный ремонт</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.торо_ТехКарты</types>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Технологическая карта</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="5e5029f4-1d9c-475c-af14-c7ad7a223f34">
+      <name>НомерКартинкиСостояний</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номер картинки состояний</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+        </numberQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Служебный реквизит (не отображается)</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="5d897d6e-1a5d-47b9-9755-70da92f9e4b7">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <includeHelpInContents>true</includeHelpInContents>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="16014450-9403-4fe1-8f8b-b96280e5d774">
+    <name>ФормаСохранения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма сохранения</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="d025392b-37cf-4b79-95af-f34f788469e9">
+    <name>КалькуляторРемонтногоЦикла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Калькулятор ремонтного цикла</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

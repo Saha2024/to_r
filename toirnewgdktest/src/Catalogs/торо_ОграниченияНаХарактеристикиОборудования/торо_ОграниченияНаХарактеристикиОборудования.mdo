@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c423a666-6506-4bef-b53c-10d4ece2f681">
+  <producedTypes>
+    <objectType typeId="59c34005-0f18-455f-8f4c-8459b8ebe942" valueTypeId="e48b80a7-5fed-4532-8609-188dbcbceac5"/>
+    <refType typeId="11a26e0c-abf3-4a20-bf47-ef1496116c44" valueTypeId="1bb50690-7e20-40ff-a1db-c2affdf30680"/>
+    <selectionType typeId="a340719c-7c85-47da-b029-467e3f2c5a41" valueTypeId="17db0d14-1605-461f-b103-1e372fb3bc45"/>
+    <listType typeId="c9956404-5aaa-4941-abda-72f66e4fafae" valueTypeId="99dcd755-7bed-4851-970f-800d9b9927b5"/>
+    <managerType typeId="6b68d707-467d-4ac5-ab11-9b7e582edff8" valueTypeId="5b2a84d6-7303-48e1-b9a4-524f56d868a7"/>
+  </producedTypes>
+  <name>торо_ОграниченияНаХарактеристикиОборудования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ограничения на характеристики оборудования</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.торо_ОграниченияНаХарактеристикиОборудования.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.торо_ОграниченияНаХарактеристикиОборудования.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Ограничение на характеристики оборудования</value>
+  </objectPresentation>
+  <extendedObjectPresentation>
+    <key>ru</key>
+    <value>Ограничение на характеристики оборудования</value>
+  </extendedObjectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Ограничения на характеристики оборудования</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Ограничения на характеристики оборудования</value>
+  </extendedListPresentation>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.торо_ОграниченияНаХарактеристикиОборудования.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="a5c92deb-0a23-41ae-9017-59282c9624e7">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f1b4850c-2109-493d-8cca-50fe9334f459">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="c7390bf9-6434-4449-9773-eb95412ebdee">
+    <producedTypes>
+      <objectType typeId="95b58789-8cd4-4a80-b97b-def283def126" valueTypeId="15b29ff8-180e-4aee-952c-1b6126d65ba0"/>
+      <rowType typeId="74c36272-714c-4321-bff9-c93fc4ba1eb0" valueTypeId="358e8b59-f241-40fd-8739-6e7dd48af692"/>
+    </producedTypes>
+    <name>СписокОграничений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список ограничений</value>
+    </synonym>
+    <attributes uuid="b4e77e5a-a9af-4672-9673-26f4139d42ac">
+      <name>Характеристика</name>
+      <synonym>
+        <key>ru</key>
+        <value>Характеристика</value>
+      </synonym>
+      <type>
+        <types>ChartOfCharacteristicTypesRef.торо_ГруппыХарактеристикОборудования</types>
+        <types>ChartOfCharacteristicTypesRef.торо_ИзмеряемыеПоказателиОбъектовРемонта</types>
+        <types>ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="4a6b3acd-4e58-4c20-83cd-5ed694b4de0c">
+      <name>ВидСравнения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид сравнения</value>
+      </synonym>
+      <type>
+        <types>EnumRef.торо_ВидыСравнения</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameters>
+        <name>Отбор.Ссылка</name>
+        <value xsi:type="core:FixedArrayValue">
+          <values xsi:type="core:ReferenceValue">
+            <value>Enum.торо_ВидыСравнения.EnumValue.Больше</value>
+          </values>
+          <values xsi:type="core:ReferenceValue">
+            <value>Enum.торо_ВидыСравнения.EnumValue.БольшеИлиРавно</value>
+          </values>
+          <values xsi:type="core:ReferenceValue">
+            <value>Enum.торо_ВидыСравнения.EnumValue.Меньше</value>
+          </values>
+          <values xsi:type="core:ReferenceValue">
+            <value>Enum.торо_ВидыСравнения.EnumValue.МеньшеИлиРавно</value>
+          </values>
+          <values xsi:type="core:ReferenceValue">
+            <value>Enum.торо_ВидыСравнения.EnumValue.Равно</value>
+          </values>
+          <values xsi:type="core:ReferenceValue">
+            <value>Enum.торо_ВидыСравнения.EnumValue.НеРавно</value>
+          </values>
+        </value>
+      </choiceParameters>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c42521ce-2be7-4c6b-a1a6-ec848b4efe63">
+      <name>Значение</name>
+      <synonym>
+        <key>ru</key>
+        <value>Значение</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+        <types>String</types>
+        <types>Date</types>
+        <types>Number</types>
+        <types>AnyRef</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="5f9b22e1-5209-4ff8-b08e-0b26fcdb31c1">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <includeHelpInContents>true</includeHelpInContents>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"></meta><style>#contents {
+	BACKGROUND-COLOR: #fffbf0; BORDER-RIGHT: #eae5d8 4px solid
+}
+#contents A {
+	MARGIN-BOTTOM: 2px; COLOR: #3366ff; FONT-SIZE: 11px; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+#contents A:visited {
+	COLOR: #3366ff
+}
+#contents A:hover {
+	COLOR: #3366ff; TEXT-DECORATION: underline
+}
+#contents H3 {
+	TEXT-ALIGN: left; COLOR: #3366ff; FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+#contents P {
+	TEXT-ALIGN: left; LINE-HEIGHT: 13px; MARGIN-TOP: 0px; MARGIN-BOTTOM: 8px; FONT-SIZE: 12px
+}
+A {
+	COLOR: #3366ff; TEXT-DECORATION: underline
+}
+H1 {
+	TEXT-ALIGN: left; COLOR: #a00000; FONT-SIZE: 18px; FONT-WEIGHT: bold
+}
+H2 {
+	TEXT-ALIGN: left; COLOR: #c00000; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+TABLE {
+	FONT-SIZE: x-small
+}
+BODY {
+	MARGIN: 0px; FONT-FAMILY: Verdana; FONT-SIZE: x-small
+}
+.tip {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeffee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.tip TD {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeffee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.important {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #ffeeee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.important TD {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #ffeeee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.note {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeeeff; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.note TD {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeeeff; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+</style><script type="text/javascript">
+
+var obj;
+var originalHeight;
+
+function slideDown(height) {
+
+	obj.style.display = 'block';
+	
+	obj.style.height = height;
+
+	if (height < originalHeight) setTimeout('slideDown(' + Math.min(parseInt(obj.style.height) + 20, originalHeight) + ')', 1);
+
+}
+
+function slideUp(height) {
+
+	obj.style.display = 'block';
+
+	obj.style.height = height;
+
+	if (height > 1) {
+	
+		setTimeout('slideUp(' + Math.max(parseInt(obj.style.height) - 15, 1) + ')', 1);
+		
+	} else {
+	
+		obj.style.height = originalHeight;
+		obj.style.display = 'none';
+	
+	}
+
+}
+
+function slide(id){
+
+	obj = document.getElementById(id);
+
+	if (obj.style.display == 'none') {
+	
+		obj.style.display = 'block';
+		originalHeight = obj.offsetHeight;
+
+		slideDown(1);
+
+		obj.style.display = 'block';
+	
+	} else {
+
+		obj.style.display = 'block';
+		originalHeight = obj.offsetHeight;
+		
+		slideUp(originalHeight);
+		
+		obj.style.display = 'none';
+		
+	}
+
+}
+</script><meta name="GENERATOR" content="MSHTML 8.00.7601.19104"></meta></head><body>
+<table border="0" cellpadding="10" width="100%" height="100%"><tbody><tr><td id="contents" valign="top" width="150"></td>
+<td valign="top">
+<h1>7. Управление документацией</h1>
+<p></p>
+<table border="0" cellspacing="0" cellpadding="10" width="100%"><tbody><tr><td bgcolor="#eeeeff">
+<p><font size="2">В связи с вводом в эксплуатацию здания цеха №1, в котором было установлено рейсмусовое общепромышленное оборудование (рейсмусовые станки D510 и D630) </font><font size="2">в комплекте с оборудованием </font><font size="2">поступила техническая документация в электронном виде. Данную документацию закрепили за указанным оборудованием.</font><font size="2"> </font></p></td></tr></tbody></table><p><strong><font size="3">7.1. Ведение базы данных текстовых и графических документов</font></strong></p>
+<p><font size="2">В системе предусмотрена возможность ведения базы данных текстовых и графических документов. </font></p>Для возможности ведения архива документов в системе должна быть задана настройка “Операции/Константы/Каталог хранения технической документации”, в которой указывается наименование каталога, в котором будут храниться файлы документов архива. 
+<p><font size="2">Для ведения архива документов предназначен <strong><u><a href="Catalog.Файлы/Help">справочник «Техническая документация».</a></u></strong></font></p>
+<p><u><a href="../ide8b4ff03-868f-43aa-8a99-d211a252bc40/e1cib/data/Справочник.торо_ТехническаяДокументация__62a89778-3297-11e4-bb03-2c4138168855">Техническая документация 000000000016 - D510_manual.pdf.</a></u></p>
+<p><a id="Заключение" href="ShowMaket=v8config://v8cfgHelp/mdobject/idd3ac1c06-e6b2-4dc3-9225-01b6bf9b58ea/8eb4fad1-1fa6-403e-970f-2c12dbb43e23">Далее&gt;</a></p></td></tr></tbody></table><img style="DISPLAY: none" src="_files/drop.gif" width="14" height="10"></img><img style="DISPLAY: none" src="_files/up.gif" width="14" height="10"></img></body></html>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="84cafc85-abd9-4644-979b-be21609cb21d">
+  <producedTypes>
+    <selectionType typeId="04a1b4b5-b59f-4f10-bc33-62f793f7b339" valueTypeId="2e419da2-42d4-4c97-ad14-e67b7d0a558a"/>
+    <listType typeId="d910d760-cda2-4e3b-a55d-c53a643793ce" valueTypeId="930ee2e4-d69a-4b98-93b4-d3e1f8131179"/>
+    <managerType typeId="1efc7123-fb8c-44e4-89ea-d7c8516ef059" valueTypeId="8b13fce0-9e2a-4567-a75e-ac51db73d6cc"/>
+    <recordSetType typeId="ec377967-35cd-42a9-8f20-d526c105e376" valueTypeId="5f1a324b-7c10-43d0-b57b-9efba5f9cd60"/>
+    <recordKeyType typeId="df59652d-6e9c-4c6b-be3d-ae1963a5b355" valueTypeId="35cad1ac-bde5-4a77-ac67-e15dd7f765c9"/>
+    <recordType typeId="facae77e-df25-401d-906b-b0fbee2422da" valueTypeId="c658f8be-b2cb-4b34-8b76-38870b1e59aa"/>
+    <recordManagerType typeId="ac532b5e-43cc-48ad-a007-3cc3cb2ef7c6" valueTypeId="60639967-c407-4e13-b68c-3af8baba3d66"/>
+  </producedTypes>
+  <name>торо_НастройкиДоступностиОбъектовРемонта</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки доступности объектов ремонта</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="cb8c703d-ba9b-43c0-9eea-c0ec7d329022">
+    <name>ДоступностьПриПодборе</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доступность при подборе</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Доступность объекта ремонта в списках подбора</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d73077ed-23a3-40ab-9c19-f5020576fcab">
+    <name>ДоступностьФлага</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доступность флага</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Доступность флага &quot;Использовать при планировании&quot;</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="71dd8b2f-6f16-4ddc-a7fc-d9274f11d8a0">
+    <name>ЗначениеПоУмолчанию</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение по умолчанию</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Значение флага по умолчанию</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="13eb5bfb-ddb4-43f3-bef2-ebb544f22478">
+    <name>НомерСтрокиТаб</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер строки таб</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>1</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Номер строки (для упорядочивания)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="46f8a0b9-33ec-484f-a863-cd174c0a8897">
+    <name>СтатусОРВУчете</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус объекта ремонта в учете</value>
+    </synonym>
+    <type>
+      <types>EnumRef.торо_СтатусыОРВУчете</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Статус объекта ремонта, для которого настраивается доступность</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

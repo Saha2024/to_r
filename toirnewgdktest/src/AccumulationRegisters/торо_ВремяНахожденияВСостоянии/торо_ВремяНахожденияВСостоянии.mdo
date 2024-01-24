@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="82d94d5b-5803-4f1a-a3ca-00dedf435fd6">
+  <producedTypes>
+    <selectionType typeId="c946c705-541e-41dd-81a7-937a84c9171f" valueTypeId="a6b48dd3-b4fc-4f9c-8341-9406c28efafb"/>
+    <listType typeId="12a20bca-72ec-49c3-ba0e-856ed57cccdd" valueTypeId="44202752-2e12-4081-8611-20734a782648"/>
+    <managerType typeId="a9b08564-af7e-4452-ab04-59c74ac18cd2" valueTypeId="16af29af-1883-44b0-8899-1cfea61957a6"/>
+    <recordSetType typeId="5c73c7d4-3394-4817-84eb-8a225dcb0415" valueTypeId="ab5d4e6b-a013-4f12-b9a4-0bda79f65f64"/>
+    <recordKeyType typeId="448c417e-d40c-41e4-90f0-5abc3538cce7" valueTypeId="eabc37ec-030f-4e03-a9c9-2ffb5e6d7cca"/>
+    <recordType typeId="9897ce30-42ff-4e10-bd78-1a66c9eaf052" valueTypeId="8eef597c-aaa6-46c4-8c2d-c3d6a7d50210"/>
+  </producedTypes>
+  <name>торо_ВремяНахожденияВСостоянии</name>
+  <synonym>
+    <key>ru</key>
+    <value>Время нахождения в состоянии</value>
+  </synonym>
+  <comment>Время нахождения в состоянии</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Период записи регистра</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="25dc208b-4b5e-4b56-9bd2-b57c51083357">
+    <name>ВремяНахожденияВСостоянии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время нахождения в состоянии</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Время нахождения объекта ремонта в указанном состоянии</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="b5a26388-1194-4ff1-a3b4-07ab922cd8ab">
+    <name>ОбъектРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект ремонта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ОбъектыРемонта</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Объект ремонта для отражения состояния</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="4015dbfc-38ed-4e00-ae64-01e6eb6f5709">
+    <name>ДатаИзмененияСостояния</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата изменения состояния</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата изменения состояния объекта ремонта</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="e7c5ff24-6cb2-4105-b44f-2f7a2ff33100">
+    <name>ВидЭксплуатации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид эксплуатации</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ВидыЭксплуатации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид эксплуатации объекта ремонта</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="52be766b-1e67-4074-8e19-3d5ca05971f6">
+  <producedTypes>
+    <selectionType typeId="1b467e75-8c09-411a-a566-0f2d2130de75" valueTypeId="a0abbcdb-2b08-4019-b784-db2b292fe124"/>
+    <listType typeId="69533e6f-e79c-494d-89f0-198ff982d980" valueTypeId="3937d976-0940-46bd-9f86-b95d0ad7257d"/>
+    <managerType typeId="a9bc6cc4-9d04-49d2-b6a9-c0df299585e4" valueTypeId="a6bc31bb-7697-4b77-ac88-8baa1aa51c0d"/>
+    <recordSetType typeId="5880cf7b-92f0-484b-9faa-56ef1fd8a295" valueTypeId="3cca4fba-847e-4234-afa2-38fb409ea51f"/>
+    <recordKeyType typeId="495b2c5e-e570-495b-8c60-9ed8e618641e" valueTypeId="68dc380c-ba7a-48fc-9dc5-6a49bd8eb8f6"/>
+    <recordType typeId="0889a3a6-256b-47f5-8fc2-9db7afa40c36" valueTypeId="a741edb8-8b61-401a-8fa5-7f6c8205fd90"/>
+    <recordManagerType typeId="271c57f6-a297-4a6b-a97f-6440b5a7fc9c" valueTypeId="1c27b556-4c4d-4408-8350-e4abb2989166"/>
+  </producedTypes>
+  <name>торо_СтатусыРемонтовВЗаявкахПоБригадам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы ремонтов в заявках (по бригадам)</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSliceLast>true</enableTotalsSliceLast>
+  <resources uuid="a09e780f-011e-441d-8e57-6a4409845ab7">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.торо_СтатусыРемонтов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="63357224-7a33-438d-a489-97b302266914">
+    <name>КомментарийКСтатусу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий к статусу</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="934ac711-ee38-49d9-a395-8498c9ab545a">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="57e86c4a-7852-4bb9-a029-7e4fcd5272ca">
+    <name>ДокументИсточник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ-основание</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.торо_ЗакрытиеЗаявокИРемонтов</types>
+      <types>DocumentRef.торо_НарядНаРегламентноеМероприятие</types>
+      <types>DocumentRef.торо_НарядНаВыполнениеРемонтныхРабот</types>
+      <types>DocumentRef.торо_АктОВыполненииРегламентногоМероприятия</types>
+      <types>DocumentRef.торо_АктОВыполненииЭтапаРабот</types>
+      <types>DocumentRef.торо_ЗаявкаНаРемонт</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="eecd77ae-3192-4b38-8a52-f54e21f0f9ad">
+    <name>ЗаявкаНаРемонт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заявка на ремонт</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.торо_ЗаявкаНаРемонт</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="4959d7d0-2724-46fb-b091-0c76f41d48f9">
+    <name>ИДРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор ремонта</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="6af0dbd6-6583-47b5-b577-731949a1bc1b">
+    <name>Исполнитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исполнитель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтруктураПредприятия</types>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="b1df9e34-f364-4c15-a653-d9b2234176ae">
+    <name>УточнениеИсполнителя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор / Бригада</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ДоговорыКонтрагентов</types>
+      <types>CatalogRef.торо_РемонтныеБригады</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

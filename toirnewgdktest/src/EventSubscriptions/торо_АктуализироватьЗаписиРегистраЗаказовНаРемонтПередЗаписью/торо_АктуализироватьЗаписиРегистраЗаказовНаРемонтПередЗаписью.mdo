@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2fa0e2c5-521e-492d-8412-896682b54006">
+  <name>торо_АктуализироватьЗаписиРегистраЗаказовНаРемонтПередЗаписью</name>
+  <synonym>
+    <key>ru</key>
+    <value>Актуализировать записи регистра заказов на ремонт (перед записью)</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.торо_ПланГрафикРемонта</types>
+    <types>DocumentObject.торо_НарядНаВыполнениеРемонтныхРабот</types>
+    <types>DocumentObject.торо_ВнешнееОснованиеДляРабот</types>
+    <types>DocumentObject.торо_ВыявленныеДефекты</types>
+    <types>DocumentObject.торо_АктОВыполненииЭтапаРабот</types>
+    <types>DocumentObject.торо_ЗаявкаНаРемонт</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.торо_Ремонты.торо_АктуализироватьЗаписиРегистраЗаказовНаРемонтПередЗаписьюПередЗаписью</handler>
+</mdclass:EventSubscription>

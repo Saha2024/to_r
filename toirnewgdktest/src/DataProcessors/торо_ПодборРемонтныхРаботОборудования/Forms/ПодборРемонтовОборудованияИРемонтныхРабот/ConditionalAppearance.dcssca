@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConditionalAppearance xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+	<item>
+		<selection>
+			<item>
+				<field>ДеревоРемонтныхРаботРемонтнаяРабота</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ДеревоРемонтныхРабот.Завершена</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">true</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>РемонтыОборудованияВидРемонтныхРабот</field>
+			</item>
+			<item>
+				<field>РемонтыОборудованияОбъектРемонта</field>
+			</item>
+			<item>
+				<field>РемонтыОборудованияДатаНачала</field>
+			</item>
+			<item>
+				<field>РемонтыОборудованияДатаОкончания</field>
+			</item>
+			<item>
+				<field>РемонтыОборудованияID</field>
+			</item>
+			<item>
+				<field>РемонтыОборудованияОбъектРемонтаВладелец</field>
+			</item>
+			<item>
+				<field>РемонтыОборудованияКрайняяДопустимаяДатаЗавершенияРемонта</field>
+			</item>
+			<item>
+				<field>РемонтыОборудованияОписаниеРемонта</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>OrGroup</groupType>
+				<item xsi:type="FilterItemGroup">
+					<groupType>AndGroup</groupType>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">ДатаНачала</left>
+						<comparisonType>Filled</comparisonType>
+					</item>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.РемонтыОборудования.ДатаНачала</left>
+						<comparisonType>Less</comparisonType>
+						<right xsi:type="dcscor:Field">ДатаНачала</right>
+					</item>
+				</item>
+				<item xsi:type="FilterItemGroup">
+					<groupType>AndGroup</groupType>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">ДатаОкончания</left>
+						<comparisonType>Filled</comparisonType>
+					</item>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.РемонтыОборудования.ДатаНачала</left>
+						<comparisonType>Greater</comparisonType>
+						<right xsi:type="dcscor:Field">ДатаОкончания</right>
+					</item>
+				</item>
+				<item xsi:type="FilterItemGroup">
+					<groupType>AndGroup</groupType>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">ФлажокЗавершенные</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">false</right>
+					</item>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.РемонтыОборудования.Завершен</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">true</right>
+					</item>
+				</item>
+				<item xsi:type="FilterItemGroup">
+					<groupType>AndGroup</groupType>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">флЗависимыеОтОстановочных</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">true</right>
+					</item>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.РемонтыОборудования.IDОсновного</left>
+						<comparisonType>NotFilled</comparisonType>
+					</item>
+				</item>
+				<item xsi:type="FilterItemGroup">
+					<groupType>AndGroup</groupType>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">IDОсновногоДляОтбораПоОстановочным</left>
+						<comparisonType>Filled</comparisonType>
+					</item>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Объект.РемонтыОборудования.IDОсновного</left>
+						<comparisonType>NotEqual</comparisonType>
+						<right xsi:type="dcscor:Field">IDОсновногоДляОтбораПоОстановочным</right>
+					</item>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Видимость</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Отбор по дате, флагу "завершено" и остановочным для ремонтов</v8:content>
+			</v8:item>
+		</presentation>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ДеревоРемонтныхРаботРемонтнаяРабота</field>
+			</item>
+			<item>
+				<field>ДеревоРемонтныхРаботЗаявка</field>
+			</item>
+			<item>
+				<field>ДеревоРемонтныхРаботНаряд</field>
+			</item>
+			<item>
+				<field>ДеревоРемонтныхРаботАкт</field>
+			</item>
+			<item>
+				<field>ДеревоРемонтныхРаботПроцентВыполненияРабот</field>
+			</item>
+			<item>
+				<field>ДеревоРемонтныхРаботКоличество</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemGroup">
+					<groupType>OrGroup</groupType>
+					<item xsi:type="FilterItemGroup">
+						<groupType>AndGroup</groupType>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">ДатаНачала</left>
+							<comparisonType>Filled</comparisonType>
+						</item>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">Объект.РемонтыОборудования.ДатаНачала</left>
+							<comparisonType>Less</comparisonType>
+							<right xsi:type="dcscor:Field">ДатаНачала</right>
+						</item>
+					</item>
+					<item xsi:type="FilterItemGroup">
+						<groupType>AndGroup</groupType>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">ДатаОкончания</left>
+							<comparisonType>Filled</comparisonType>
+						</item>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">Объект.РемонтыОборудования.ДатаНачала</left>
+							<comparisonType>Greater</comparisonType>
+							<right xsi:type="dcscor:Field">ДатаОкончания</right>
+						</item>
+					</item>
+					<item xsi:type="FilterItemGroup">
+						<groupType>AndGroup</groupType>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">ФлажокЗавершенные</left>
+							<comparisonType>Equal</comparisonType>
+							<right xsi:type="xs:boolean">false</right>
+						</item>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">Объект.РемонтыОборудования.Завершен</left>
+							<comparisonType>Equal</comparisonType>
+							<right xsi:type="xs:boolean">true</right>
+						</item>
+					</item>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ДеревоРемонтныхРабот.РемонтыОборудования_ID</left>
+					<comparisonType>Equal</comparisonType>
+					<right xsi:type="dcscor:Field">Объект.РемонтыОборудования.ID</right>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Видимость</dcscor:parameter>
+				<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			</dcscor:item>
+		</appearance>
+		<presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Отбор по ремонту для работ</v8:content>
+			</v8:item>
+		</presentation>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ДеревоРемонтныхРабот</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>AndGroup</groupType>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ДеревоРемонтныхРабот.ID_ПараллельнойОперации</left>
+					<comparisonType>Equal</comparisonType>
+					<right xsi:type="dcscor:Field">ID_ПараллельнойОперации</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ДеревоРемонтныхРабот.ID_ПараллельнойОперации</left>
+					<comparisonType>Filled</comparisonType>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>Шрифт</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+			</dcscor:item>
+		</appearance>
+	</item>
+</ConditionalAppearance>

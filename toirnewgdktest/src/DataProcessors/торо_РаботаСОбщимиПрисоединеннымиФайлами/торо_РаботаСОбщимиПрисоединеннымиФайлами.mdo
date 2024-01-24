@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8607584d-c552-4024-b706-1ff7d39673ef">
+  <producedTypes>
+    <objectType typeId="d9b33578-2dcf-4518-8dcb-dd14a18c99d1" valueTypeId="88ee52c5-eca6-4f02-90a4-642b8eb0eb8d"/>
+    <managerType typeId="de334b05-5e2a-4b51-bbfa-0b5c1a9d6e65" valueTypeId="c0aec7a7-0c77-4cae-99a7-8a6ffe51b43b"/>
+  </producedTypes>
+  <name>торо_РаботаСОбщимиПрисоединеннымиФайлами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Работа с общими присоединенными файлами</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="67244242-e7c9-49b2-b594-006d90d788a3">
+    <name>СписокОбъектовПоФайлу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список объектов по файлу</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="6e8fd91a-180a-4be2-b843-a8436d2ef397">
+    <name>СписокФайловПоОбъекту</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список файлов по объекту</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="4bfca6f1-9760-49fa-95bf-da2146da95be">
+    <name>ОбщиеПрисоединенныеФайлы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Общие присоединенные файлы</value>
+    </synonym>
+    <group>CommandGroup.торо_Перейти</group>
+    <commandParameterType>
+      <types>DefinedType.ВладелецПрисоединенныхФайлов</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="19bb7be7-771c-4280-839b-c7d8e4c9c48d">
+    <name>ВладельцыОбщегоФайла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Владельцы общего файла</value>
+    </synonym>
+    <group>CommandGroup.торо_Перейти</group>
+    <commandParameterType>
+      <types>CatalogRef.Файлы</types>
+    </commandParameterType>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

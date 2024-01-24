@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConditionalAppearance xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+	<item>
+		<selection>
+			<item>
+				<field>ЗначенияКонтролируемыхПоказателейЗначение</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>OrGroup</groupType>
+				<item xsi:type="FilterItemGroup">
+					<groupType>AndGroup</groupType>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">ЗначенияКонтролируемыхПоказателей.ЗначениеКПОР</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">true</right>
+					</item>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">ЗначенияКонтролируемыхПоказателей.ВыделятьКакКритическоеЗначение</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:string">Истина</right>
+					</item>
+				</item>
+				<item xsi:type="FilterItemGroup">
+					<groupType>OrGroup</groupType>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">ЗначенияКонтролируемыхПоказателей.Значение</left>
+						<comparisonType>Greater</comparisonType>
+						<right xsi:type="dcscor:Field">ЗначенияКонтролируемыхПоказателей.КритическийМаксимум</right>
+					</item>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">ЗначенияКонтролируемыхПоказателей.Значение</left>
+						<comparisonType>Less</comparisonType>
+						<right xsi:type="dcscor:Field">ЗначенияКонтролируемыхПоказателей.КритическийМинимум</right>
+					</item>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗначенияКонтролируемыхПоказателейЗначение</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>OrGroup</groupType>
+				<item xsi:type="FilterItemGroup">
+					<groupType>AndGroup</groupType>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">ЗначенияКонтролируемыхПоказателей.ЗначениеКПОР</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">true</right>
+					</item>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">ЗначенияКонтролируемыхПоказателей.ВыделятьКакНедопустимоеЗначение</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">true</right>
+					</item>
+				</item>
+				<item xsi:type="FilterItemGroup">
+					<groupType>OrGroup</groupType>
+					<item xsi:type="FilterItemGroup">
+						<groupType>AndGroup</groupType>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">ЗначенияКонтролируемыхПоказателей.Значение</left>
+							<comparisonType>GreaterOrEqual</comparisonType>
+							<right xsi:type="dcscor:Field">ЗначенияКонтролируемыхПоказателей.КритическийМинимум</right>
+						</item>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">ЗначенияКонтролируемыхПоказателей.Значение</left>
+							<comparisonType>Less</comparisonType>
+							<right xsi:type="dcscor:Field">ЗначенияКонтролируемыхПоказателей.ДопустимыйМинимум</right>
+						</item>
+					</item>
+					<item xsi:type="FilterItemGroup">
+						<groupType>AndGroup</groupType>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">ЗначенияКонтролируемыхПоказателей.Значение</left>
+							<comparisonType>LessOrEqual</comparisonType>
+							<right xsi:type="dcscor:Field">ЗначенияКонтролируемыхПоказателей.КритическийМаксимум</right>
+						</item>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">ЗначенияКонтролируемыхПоказателей.Значение</left>
+							<comparisonType>Greater</comparisonType>
+							<right xsi:type="dcscor:Field">ЗначенияКонтролируемыхПоказателей.ДопустимыйМаксимум</right>
+						</item>
+					</item>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">#FF9900</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ЗначенияКонтролируемыхПоказателейЗначение</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemGroup">
+				<groupType>OrGroup</groupType>
+				<item xsi:type="FilterItemGroup">
+					<groupType>AndGroup</groupType>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">ЗначенияКонтролируемыхПоказателей.ЗначениеКПОР</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">true</right>
+					</item>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">ЗначенияКонтролируемыхПоказателей.ВыделятьКакНедопустимоеЗначение</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">false</right>
+					</item>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">ЗначенияКонтролируемыхПоказателей.ВыделятьКакКритическоеЗначение</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:boolean">false</right>
+					</item>
+				</item>
+				<item xsi:type="FilterItemGroup">
+					<groupType>AndGroup</groupType>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">ЗначенияКонтролируемыхПоказателей.Значение</left>
+						<comparisonType>GreaterOrEqual</comparisonType>
+						<right xsi:type="dcscor:Field">ЗначенияКонтролируемыхПоказателей.ДопустимыйМинимум</right>
+					</item>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">ЗначенияКонтролируемыхПоказателей.Значение</left>
+						<comparisonType>LessOrEqual</comparisonType>
+						<right xsi:type="dcscor:Field">ЗначенияКонтролируемыхПоказателей.ДопустимыйМаксимум</right>
+					</item>
+				</item>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">#008000</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ВыявленныеДефектыОбъектРемонта</field>
+			</item>
+			<item>
+				<field>ВыявленныеДефектыДокумент</field>
+			</item>
+			<item>
+				<field>ВыявленныеДефектыОтказавшийЭлемент</field>
+			</item>
+			<item>
+				<field>ВыявленныеДефектыТиповойДефект</field>
+			</item>
+			<item>
+				<field>ВыявленныеДефектыВидДефекта</field>
+			</item>
+			<item>
+				<field>ВыявленныеДефектыПричинаДефекта</field>
+			</item>
+			<item>
+				<field>ВыявленныеДефектыКритичностьДефекта</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ВыявленныеДефекты.Отменен</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">true</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ВнешниеОснованияОбъектРемонта</field>
+			</item>
+			<item>
+				<field>ВнешниеОснованияДокумент</field>
+			</item>
+			<item>
+				<field>ВнешниеОснованияПлановаяДатаРемонта</field>
+			</item>
+			<item>
+				<field>ВнешниеОснованияОписание</field>
+			</item>
+			<item>
+				<field>ВнешниеОснованияОбработано</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ВнешниеОснования.Отменен</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">true</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+	<item>
+		<selection>
+			<item>
+				<field>ПредстоящиеРемонтыОбъектРемонтныхРабот</field>
+			</item>
+			<item>
+				<field>ПредстоящиеРемонтыДокументПлановыхДат</field>
+			</item>
+			<item>
+				<field>ПредстоящиеРемонтыДокумент</field>
+			</item>
+			<item>
+				<field>ПредстоящиеРемонтыВидРемонтныхРабот</field>
+			</item>
+			<item>
+				<field>ПредстоящиеРемонтыДатаНачалаРемонтныхРабот</field>
+			</item>
+			<item>
+				<field>ПредстоящиеРемонтыДатаОкончанияРемонтныхРабот</field>
+			</item>
+		</selection>
+		<filter>
+			<item xsi:type="FilterItemComparison">
+				<left xsi:type="dcscor:Field">ПредстоящиеРемонты.Отменен</left>
+				<comparisonType>Equal</comparisonType>
+				<right xsi:type="xs:boolean">true</right>
+			</item>
+		</filter>
+		<appearance>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:parameter>ЦветТекста</dcscor:parameter>
+				<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</item>
+</ConditionalAppearance>

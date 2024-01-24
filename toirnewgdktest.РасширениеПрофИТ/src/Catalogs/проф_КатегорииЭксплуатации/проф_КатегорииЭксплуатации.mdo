@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="f3d4e652-6480-436a-93d0-5ba495b9ae83" extendedConfigurationObject="dc994999-0833-4618-b5c1-9b5d8622f782">
+  <producedTypes>
+    <objectType typeId="5231b27e-3942-4cb3-8ac2-67109343eb61" valueTypeId="886d088b-c2ed-45e9-b3b4-85291a674cd3"/>
+    <refType typeId="5261fe46-79f3-4915-a940-19835b68b6c1" valueTypeId="a60d7372-b2c0-42c8-b0cc-189de031453c"/>
+    <selectionType typeId="1ffd8850-04c4-459c-a93b-eb82a990c10c" valueTypeId="0443e52d-f2c9-4096-b6d0-86d716dd6bb8"/>
+    <listType typeId="e4c0c220-d91a-4ed0-9af0-90b1a3cf8cb9" valueTypeId="8eb12790-46ff-4d3f-86a2-e4a80ff3a605"/>
+    <managerType typeId="3b39d087-c885-4348-b92b-5bab165eaee0" valueTypeId="11dcf46f-fd96-49ba-b9bb-2b6a3cc0ea05"/>
+  </producedTypes>
+  <name>проф_КатегорииЭксплуатации</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:CatalogExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <defaultObjectForm>Extended</defaultObjectForm>
+  </extension>
+  <defaultObjectForm>Catalog.проф_КатегорииЭксплуатации.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="c922417f-3311-4a32-b1b5-c9c35c694652" extendedConfigurationObject="9d83aa67-d424-4218-9207-148ec65613a3">
+    <name>ИнвентарныйУчет</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Boolean</type>
+        </types>
+      </typeExtension>
+    </extension>
+    <type/>
+  </attributes>
+  <attributes uuid="5b1074e3-e48e-472b-b7c7-c7c0e9f4f103" extendedConfigurationObject="a1f794d7-c52f-48a0-bce6-abe84a03a397">
+    <name>УчетПоФизЛицам</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Boolean</type>
+        </types>
+      </typeExtension>
+    </extension>
+    <type/>
+  </attributes>
+  <forms uuid="b26046c4-500b-4c93-9195-31115aaf37c3">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

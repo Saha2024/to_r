@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><meta content="text/html;charset=utf-8" http-equiv="content-type"></meta><style>#contents {
+	BACKGROUND-COLOR: #fffbf0; BORDER-RIGHT: #eae5d8 4px solid
+}
+#contents A {
+	MARGIN-BOTTOM: 2px; COLOR: #3366ff; FONT-SIZE: 11px; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
+#contents A:visited {
+	COLOR: #3366ff
+}
+#contents A:hover {
+	COLOR: #3366ff; TEXT-DECORATION: underline
+}
+#contents H3 {
+	TEXT-ALIGN: left; COLOR: #3366ff; FONT-SIZE: 12px; FONT-WEIGHT: bold
+}
+#contents P {
+	TEXT-ALIGN: left; LINE-HEIGHT: 13px; MARGIN-TOP: 0px; MARGIN-BOTTOM: 8px; FONT-SIZE: 12px
+}
+A {
+	COLOR: #3366ff; TEXT-DECORATION: underline
+}
+H1 {
+	TEXT-ALIGN: left; COLOR: #a00000; FONT-SIZE: 18px; FONT-WEIGHT: bold
+}
+H2 {
+	TEXT-ALIGN: left; COLOR: #c00000; FONT-SIZE: 14px; FONT-WEIGHT: bold
+}
+TABLE {
+	FONT-SIZE: x-small
+}
+BODY {
+	MARGIN: 0px; FONT-FAMILY: Verdana; FONT-SIZE: x-small
+}
+.tip {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeffee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.tip TD {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeffee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.important {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #ffeeee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.important TD {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #ffeeee; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.note {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeeeff; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+.note TD {
+	PADDING-BOTTOM: 15px; BORDER-RIGHT-WIDTH: 0px; BACKGROUND-COLOR: #eeeeff; PADDING-LEFT: 15px; WIDTH: 95%; PADDING-RIGHT: 15px; BORDER-TOP-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; PADDING-TOP: 15px
+}
+</style><script type="text/javascript">
+
+var obj;
+var originalHeight;
+
+function slideDown(height) {
+
+	obj.style.display = 'block';
+	
+	obj.style.height = height;
+
+	if (height < originalHeight) setTimeout('slideDown(' + Math.min(parseInt(obj.style.height) + 20, originalHeight) + ')', 1);
+
+}
+
+function slideUp(height) {
+
+	obj.style.display = 'block';
+
+	obj.style.height = height;
+
+	if (height > 1) {
+	
+		setTimeout('slideUp(' + Math.max(parseInt(obj.style.height) - 15, 1) + ')', 1);
+		
+	} else {
+	
+		obj.style.height = originalHeight;
+		obj.style.display = 'none';
+	
+	}
+
+}
+
+function slide(id){
+
+	obj = document.getElementById(id);
+
+	if (obj.style.display == 'none') {
+	
+		obj.style.display = 'block';
+		originalHeight = obj.offsetHeight;
+
+		slideDown(1);
+
+		obj.style.display = 'block';
+	
+	} else {
+
+		obj.style.display = 'block';
+		originalHeight = obj.offsetHeight;
+		
+		slideUp(originalHeight);
+		
+		obj.style.display = 'none';
+		
+	}
+
+}
+</script><meta name="GENERATOR" content="MSHTML 8.00.7601.19104"></meta></head><body>
+<table border="0" cellpadding="10" width="100%" height="100%"><tbody><tr><td id="contents" valign="top" width="150"></td>
+<td valign="top">
+<h1>1. Учет оборудования и нормативов</h1>
+<p><font size="2">
+<table border="0" cellspacing="0" cellpadding="10" width="100%"><tbody><tr><td bgcolor="#eeeeff">
+<p><font size="2">В организации «Гефест» было введено в эксплуатация здание цеха №1, в котором было установлено рейсмусовое общепромышленное оборудование (рейсмусовые станки D510 и D630).</font><font size="2"> Новое оборудование было введено в эксплуатацию и поставлено на обслуживание ремонтно-механическим цехом (РМЦ). Само же здание цеха обслуживается сотрудниками отдела капитального строительства (ОКС).</font><font size="2"> Внесены </font>сведения о здании цеха №1 и рейсмусовых станках D510 и D630, сформированы ремонтные нормативы.</p></td></tr></tbody></table></font></p>
+<p><font size="2"><strong>1.1.  Ведение списка оборудования и ввод начальных данных</strong></font></p>
+<p><font size="2">Для ведения списка оборудования в системе предусмотрен иерархический <strong><a href="">справочник «Объекты ремонта»</a>.</strong> Для каждого объекта ремонта необходимо указать паспортные данные, информацию по характеристикам, контролируемым показателям, запчастям, нормативным ремонтам.</font></p>
+<p><u><a href="../ide8b4ff03-868f-43aa-8a99-d211a252bc40/e1cib/data/Справочник.торо_ОбъектыРемонта__1b586c3b-8b57-4de0-9b5b-5f048bd51d39">Объект ремонта «Здание цеха №1».</a></u></p>
+<p><u><a href="../ide8b4ff03-868f-43aa-8a99-d211a252bc40/e1cib/data/Справочник.торо_ОбъектыРемонта__7e4efd03-0a79-48d6-bcdd-4d404bf65a04">Объект ремонта «Станок рейсмусовый D510».</a></u></p>
+<p><u><a href="../ide8b4ff03-868f-43aa-8a99-d211a252bc40/e1cib/data/Справочник.торо_ОбъектыРемонта__7dd6e7f6-8a13-40be-bba9-7c14cc29155a">Объект ремонта «Станок рейсмусовый D630».</a></u></p>
+<p>Ввод начальных данных в систему (информация по истории ранее выполненных ремонтов, истории контролируемых показателей, имевшейся ранее наработке) осуществляется с помощью <u><strong><a href="Document.торо_ВводНачальныхДанных/Help">документа «Ввод начальных данных».</a></strong></u></p>
+<p><u><a href="../ide8b4ff03-868f-43aa-8a99-d211a252bc40/e1cib/data/Документ.торо_ВводНачальныхДанных__231564fc-3198-11e4-be43-2c4138168855">Документ «Ввод начальных данных» №РК000000003 от 01.01.2014 11:00:00.</a></u></p>
+<p><font size="2"><strong>1.2.  Классификация оборудования</strong></font></p>
+<p style="BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none" class="MsoBodyText">Для классификации оборудования в системе предназначены классификаторы. Ведение такой структуры объектов ремонта позволяет видеть всю многоуровневую структуру, количество уровней которой не ограничено. Перечень зарегистрированных в системе классификаторов оборудования хранится в <a href="Catalog.торо_СтруктурыОР/Help"><strong>справочнике</strong> <strong>«Структуры иерархии объектов ремонта».</strong></a> В справочнике задаются классификаторы и способ регистрации перемещения оборудования (флаг "Изменяется документами"). </p>
+<p style="BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none" class="MsoBodyText">В системе можно работать в нескольких иерархиях (например, сформированные иерархии по местанохождению, по технологической позиции, по зонам ответственности и т.д.). При этом одна из иерархий является основной.</p>
+<p style="BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none" class="MsoBodyText">В демонстрационной базе заполнена основная иерархия, а также иерархии по <u><strong><a href="../ide8b4ff03-868f-43aa-8a99-d211a252bc40/e1cib/data/Справочник.торо_СтруктурыОР__235ddcfd-5419-4756-bea2-4a9034fa386b">местанохождению</a></strong></u> и иерархия по <u><strong><a href="../ide8b4ff03-868f-43aa-8a99-d211a252bc40/e1cib/data/Справочник.торо_СтруктурыОР__4226a50a-f49f-4c25-bef4-20fca226d2bb">технологической позиции</a></strong></u>.</p>
+<p style="BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none" class="MsoBodyText"><strong>1.3.  Ведение классификатора нормативных ТО и ремонтов</strong></p>
+<p>Нормативные ТО и ремонты ведутся в системе в <a><strong>справочнике</strong> <strong>«Типовые объекты ремонта».</strong></a> Типовой объект ремонта — это тип объектов ремонта с одинаковыми нормативными ТО и ремонтами. Каждый тип объектов ремонта включает нормативные ТО и ремонты для списка однотипных объектов ремонта. Объект ремонта может относиться только к одному какому-либо типу объектов ремонта. </p>
+<p>Типовой объект ремонта можно создать объединив схожие типы объектов ремонта. Можно также сначала создать типовой объект ремонта и из него уже создавать схожие типы объектов ремонта.</p>
+<p>Формирование типовых объектов ремонта с едиными  характеристиками, показателями, запчастями, нормативными ремонтами позволяет значительно упростить работу в системе и облегчает ввод данных.</p>
+<p><u><a href="../ide8b4ff03-868f-43aa-8a99-d211a252bc40/e1cib/data/Справочник.торо_РемонтныеГруппы__8c25128c-01d5-433b-8d81-c4d77cc5e28d">Типовой объект ремонта «Станки рейсмусовые».</a></u></p>
+<p><strong>1.4.  Ведение технологических карт ремонтов</strong></p>
+<p>Для ведения технологических карт ремонтов в системе предназначен <strong><u><a href="Catalog.торо_ИдентификаторыТехКарт.Form.ФормаСписка/Help">справочник «Технологические карты ремонтов».</a></u></strong> Для удобства редактирования технологические карты разнесены по группам однотипного оборудования. При вводе технологической карты ремонта указывается перечень технологических операций.</p>
+<p>Для каждой операции указываются:</p>
+<ul><li>Материальные затраты; 
+</li>
+<li>Трудозатраты; 
+</li>
+<li>Инструменты и техника; 
+</li>
+<li>Измеряемые показатели; 
+</li>
+<li>Документация; 
+</li>
+<li>Оказываемые услуги; 
+</li>
+<li>Меры безопасности;</li></ul><p><u><a href="../ide8b4ff03-868f-43aa-8a99-d211a252bc40/e1cib/data/Справочник.торо_Ремонты__f4bb743e-2e81-11e4-839d-2c4138168855">Технологическая карта ремонта «Капитальный ремонт рейсмусовых станков».</a></u></p>
+<p><u><a href="../ide8b4ff03-868f-43aa-8a99-d211a252bc40/e1cib/data/Справочник.торо_Ремонты__f4bb743f-2e81-11e4-839d-2c4138168855">Технологическая карта ремонта «Текущий ремонт рейсмусовых станков».</a></u></p>
+<p><u><a href="../ide8b4ff03-868f-43aa-8a99-d211a252bc40/e1cib/data/Справочник.торо_Ремонты__f4bb7440-2e81-11e4-839d-2c4138168855">Технологическая карта ремонта «Техническое обслуживание рейсмусовых станков».</a></u></p>
+<p><strong>1.5.  Учет перемещений оборудования</strong></p>
+<p>В системе под перемещением понимается изменение местоположения оборудования, которое оформляется <strong><a href="Document.торо_ИзменениеПоложенияВСтруктуреИерархии/Help">документом «Изменение положения в структуре иерархии»</a></strong> (при установленном флаге "Изменяется документами" <a href="Catalog.торо_СтруктурыОР/Help"><strong>справочника</strong> <strong>«Структуры иерархии объектов ремонта»</strong></a>).</p>
+<p><a href="../ide8b4ff03-868f-43aa-8a99-d211a252bc40/e1cib/data/Документ.торо_ИзменениеПоложенияВСтруктуреИерархии__dab0a10e-318d-11e4-be43-2c4138168855">Документ «Изменение положения в структуре иерархии» №РК0000001 от 11.01.2014  9:14:32.</a></p>
+<p><a id="УчетПоказателейЭксплуатации" href="ShowMaket=v8config://v8cfgHelp/mdobject/idd7ef145c-553d-4fce-8bcc-a9f0f8359cb0/8eb4fad1-1fa6-403e-970f-2c12dbb43e23">Далее&gt;</a></p></td></tr></tbody></table><img style="DISPLAY: none" src="_files/drop.gif" width="14" height="10"></img><img style="DISPLAY: none" src="_files/up.gif" width="14" height="10"></img></body></html>

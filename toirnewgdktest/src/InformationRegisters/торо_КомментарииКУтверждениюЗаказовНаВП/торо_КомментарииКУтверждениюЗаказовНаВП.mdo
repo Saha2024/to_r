@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3ea3b02e-1b21-49ae-b53b-5ee04e59c83b">
+  <producedTypes>
+    <selectionType typeId="bebdc6b3-825e-4a66-9ef6-fa988d9f0198" valueTypeId="3abefa85-2c9c-4dd1-8faa-75ea1b257c6c"/>
+    <listType typeId="53abb32f-bbff-4984-914c-7ce2533ced53" valueTypeId="90c5ff98-a3f0-45d5-b77b-849dcc3addb4"/>
+    <managerType typeId="3ab178c5-1fa5-4ef7-9284-72fa1886afb7" valueTypeId="d4c3b2a0-2f3a-46ab-89f1-a0a7f329cf71"/>
+    <recordSetType typeId="5a90e4fc-a912-4f6f-a788-03fabeb6f503" valueTypeId="22f95562-8644-421e-8bd5-969525b6a316"/>
+    <recordKeyType typeId="33518a4c-1a38-4770-ab8f-d646e866b0ca" valueTypeId="5f7d1409-cf3d-4942-b843-e9d63047fb78"/>
+    <recordType typeId="d7dbb64b-9f34-4366-ab85-51ba4d9c2490" valueTypeId="ea040797-b50f-4a33-8bb4-a0519584158c"/>
+    <recordManagerType typeId="43f8f2a0-cb87-4673-9cc7-e9cf5a64ab8b" valueTypeId="6cd64771-97c8-4ba0-a017-a7eaf0ac5cee"/>
+  </producedTypes>
+  <name>торо_КомментарииКУтверждениюЗаказовНаВП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Комментарии к утверждению заказов на ВП</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="8264bff5-bd8f-48a1-aaad-b3d5491af228">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="d1a16749-5bc8-4168-883b-8a9f93298787">
+    <name>ЗаказНаВнутреннееПотребление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказ на внутреннее потребление</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ЗаказНаВнутреннееПотребление</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="959fa909-c35e-41ea-9185-556d0a3127ee">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="149b6caa-2eb2-4e10-a517-383d808ffc0a">
+    <name>КодСтрокиНоменклатуры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код строки номенклатуры</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="dddb5834-36f2-4f75-bb5a-f6f66e6b54d2">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

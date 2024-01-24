@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6aacfe97-da05-41fb-bbdb-1466a116bd19">
+  <name>торо_СостояниеОборудования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояние оборудования</value>
+  </synonym>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Report.торо_ИсторияОстановаЗапускаОборудования</content>
+  <content>Report.торо_ПлановыеОстановыОборудования</content>
+  <content>Report.торо_ПростойОборудования</content>
+  <content>Report.торо_ТекущееСостояниеОборудования</content>
+  <content>Report.торо_НаработкаНаОтказ</content>
+  <content>Report.торо_ЖурналСостоянийОборудования</content>
+  <content>Report.торо_КТГОборудования</content>
+  <content>Role.торо_ОтчетКТГОборудования</content>
+  <content>Role.торо_ОтчетЖурналСостоянийОборудования</content>
+  <content>Role.торо_ОтчетТекущееСостояниеОборудования</content>
+  <content>Role.торо_ОтчетНаработкаНаОтказ</content>
+  <parentSubsystem>Subsystem.торо_ПоказателиЭксплуатации.Subsystem.торо_СостояниеНаработкаПоказатели</parentSubsystem>
+</mdclass:Subsystem>

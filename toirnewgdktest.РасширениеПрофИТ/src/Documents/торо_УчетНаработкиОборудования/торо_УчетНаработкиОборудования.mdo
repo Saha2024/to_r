@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="3fd11388-c2ec-4454-a7d4-144a412e13c8" extendedConfigurationObject="f6d4f225-886e-46da-a5b3-a818328b1e21">
+  <producedTypes>
+    <objectType typeId="071c3a3f-cf68-4542-bf8b-b12168514571" valueTypeId="ae5b42a0-fb37-4ad5-a784-0c848f520e67"/>
+    <refType typeId="c3fda3c2-2781-4194-9cc2-6cb73237c83c" valueTypeId="dbd50bbb-3611-4114-9bfa-6c0f941b0978"/>
+    <selectionType typeId="4974e807-1d9d-416d-8681-9d29197dd21c" valueTypeId="705d626b-6dc5-4545-81d8-bfa24ba09fa3"/>
+    <listType typeId="aaef77dd-4e4c-48a0-9521-cf8d3083dc60" valueTypeId="e25f2cf8-7e1b-43df-ad99-44567b29a7e4"/>
+    <managerType typeId="0d2737a8-c9b8-47a8-8aca-f392d9887440" valueTypeId="2f2b06f7-d61b-4c10-9b72-a8805c40bf3c"/>
+  </producedTypes>
+  <name>торо_УчетНаработкиОборудования</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <objectModule>Extended</objectModule>
+  </extension>
+  <attributes uuid="36c4a492-f397-40d9-899c-5db2f8e05912" extendedConfigurationObject="e680dbd7-a409-4f12-abeb-076ab266a46d">
+    <name>Организация</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>CatalogRef.Организации</type>
+        </types>
+      </typeExtension>
+    </extension>
+    <type/>
+  </attributes>
+  <tabularSections uuid="efb41aca-2c59-448e-a456-b8f0ac5655dd" extendedConfigurationObject="102c0b26-a0eb-4d40-9518-548637143fa6">
+    <producedTypes>
+      <objectType typeId="2650f35b-bd46-4028-b26c-b340662e1777" valueTypeId="5990508f-09e8-423a-a7eb-73327c59df33"/>
+      <rowType typeId="1dea92da-7fae-402d-96e3-7e08a0b6c2eb" valueTypeId="5e71df44-e80e-469c-a6f8-938cd1f5c3d9"/>
+    </producedTypes>
+    <name>НаработкаОбъектов</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </tabularSections>
+</mdclass:Document>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="09bf821b-96d8-44ff-a873-1aa963572a34">
+  <producedTypes>
+    <selectionType typeId="682ac446-2c1e-4b84-bcb1-0c4745522dd9" valueTypeId="50a3c2d6-3e46-426f-908b-fcfb2e6fdfed"/>
+    <listType typeId="81b3d47d-c442-4164-8230-e875e02a85e7" valueTypeId="fa65740c-1fa5-4e8f-9dfe-2928f16eea5f"/>
+    <managerType typeId="98dc47c2-5b7a-4395-bee7-648fd2f77537" valueTypeId="5335153d-faad-4f2a-ab88-fbb8bb093d85"/>
+    <recordSetType typeId="65f3087d-8348-4360-ba62-310b3b8db467" valueTypeId="b88ef97c-6199-432d-854e-e3c9174fce3e"/>
+    <recordKeyType typeId="0d07b660-8977-4fba-a950-6295c2eb0a22" valueTypeId="e3349f52-a870-4617-9a85-e5bc7878c360"/>
+    <recordType typeId="5783b476-23d9-4f92-977d-c78515b743f8" valueTypeId="c6b2e20b-7760-4881-a445-2373e7c839df"/>
+    <recordManagerType typeId="d55ab064-19ab-448e-82e2-1318104772f5" valueTypeId="16780e7e-368a-432e-af9a-bd744db3ebde"/>
+  </producedTypes>
+  <name>торо_АктуальныеПлановыеДатыРемонтов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Актуальные плановые даты ремонтов</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="72058171-1407-4dd6-aab0-0f72afd60d2a">
+    <name>ДатаНачала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="168c85e9-3bb0-431a-ae6e-08c455b37fa5">
+    <name>ДатаОкончания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="87dab202-5f73-4752-a87e-e69c7a5c70e7">
+    <name>КрайняяДатаЗавершения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Крайняя дата завершения</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="9f5d4e4f-bee5-4929-ac3d-e4200cf1416f">
+    <name>ДокументОснование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ-основание</value>
+    </synonym>
+    <type>
+      <types>DefinedType.торо_ДокументыПлановыхДатРемонта</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a6306ae3-4e8a-4225-8afa-a01e16f34954">
+    <name>ВидДокументаНачалаЦепочки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид документа начала цепочки</value>
+    </synonym>
+    <type>
+      <types>EnumRef.торо_ВидыДокументовНачалаЦепочкиРемонтов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="6ee4238f-830b-4334-9861-1394de9ae423">
+    <name>ОбъектРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект ремонта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ОбъектыРемонта</types>
+      <types>CatalogRef.торо_СписокОбъектовРегламентногоМероприятия</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="85c92d14-1c04-44bd-9284-befe63c7394c">
+    <name>IDРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор ремонта</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="605b0bf5-59d2-473b-b6f9-85ceca4cd110">
+    <name>ДокументНачалаЦепочки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ начала цепочки</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.торо_ВнешнееОснованиеДляРабот</types>
+      <types>DocumentRef.торо_ПланГрафикРемонта</types>
+      <types>DocumentRef.торо_ГрафикРегламентныхМероприятийТОиР</types>
+      <types>DocumentRef.торо_ВыявленныеДефекты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

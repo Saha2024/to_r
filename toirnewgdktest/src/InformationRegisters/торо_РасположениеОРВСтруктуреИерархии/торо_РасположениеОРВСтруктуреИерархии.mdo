@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="774db338-91f2-4ead-8895-fd51f145458a">
+  <producedTypes>
+    <selectionType typeId="b50a81fb-5261-45f3-9e7a-3ebe9b9603f0" valueTypeId="5c9d3ccc-419f-4295-bb0b-3a55102c6b09"/>
+    <listType typeId="fee2f437-6210-444c-a231-fcd583dadbe1" valueTypeId="02fef54b-3e14-4941-902e-aa782a27b98c"/>
+    <managerType typeId="19232077-c81b-4b6d-99b4-c16a48932130" valueTypeId="72da07bc-fdbb-476e-abea-0516e874575b"/>
+    <recordSetType typeId="a11eca7b-4599-4c07-a21d-90617c6d5952" valueTypeId="3677c13c-9f15-403a-b39d-6388821f99ba"/>
+    <recordKeyType typeId="1474c8e6-9468-4cd4-b7fc-1eb1bd01c696" valueTypeId="f23fd267-76fd-4cbe-ab9a-04dd5487e592"/>
+    <recordType typeId="32f1fa90-6d4e-4e86-b7cd-7e27d35e62d5" valueTypeId="93ee4b21-1953-4618-9fb8-a0caf27729ff"/>
+    <recordManagerType typeId="07c97194-5ea3-4a1c-96fb-a0e95c0464f5" valueTypeId="4f2a5755-2f7f-40fa-8c90-4d3bbef19733"/>
+  </producedTypes>
+  <name>торо_РасположениеОРВСтруктуреИерархии</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расположение объектов ремонтных работ в структуре иерархии</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Документ изменения положения в структуре иерархии</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата изменения положения</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <enableTotalsSliceLast>true</enableTotalsSliceLast>
+  <resources uuid="d8481881-51b9-4962-8b6c-bfa78e30e457">
+    <name>РодительИерархии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Родитель иерархии</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ОбъектыРемонта</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Родитель объекта ремонта в текущей иерархии</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <resources uuid="2c99b177-de41-496b-bfc8-0cd1b039671a">
+    <name>Удален</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удален</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак удаления объекта из иерархии</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="280e0fd3-b182-49f3-abd2-2c4247cfe274">
+    <name>ОбъектИерархии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект иерархии</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ОбъектыРемонта</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Объект ремонта, для которого отражается его текущее положение</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="6bc5297f-c3fd-4ba2-ad6f-c69875395c47">
+    <name>СтруктураИерархии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Структура иерархии</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_СтруктурыОР</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Иерархия, для которой отражается положение</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

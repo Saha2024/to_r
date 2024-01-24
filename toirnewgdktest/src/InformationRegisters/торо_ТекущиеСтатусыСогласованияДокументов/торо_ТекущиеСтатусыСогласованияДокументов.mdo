@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9defc3d3-0f49-4999-8086-570ae22c1686">
+  <producedTypes>
+    <selectionType typeId="97bcb183-d091-4f7c-8586-17ddc5a3ce0d" valueTypeId="f32462bf-55f8-4fdc-aa39-94ac1f716bfd"/>
+    <listType typeId="19ad0f1f-8f8a-4867-8c9b-227afd60e01f" valueTypeId="71493bbe-d47c-470e-bb36-5bb12f7b3e71"/>
+    <managerType typeId="1aedf1d6-1aab-47e7-9b62-071baaea973c" valueTypeId="441a3950-3c0e-4e52-b2cc-f3f2a1db792a"/>
+    <recordSetType typeId="87be9dd7-ba39-4463-bc78-a3bc99de7747" valueTypeId="d5e4738c-8d7b-4f62-9b2b-c921c2590308"/>
+    <recordKeyType typeId="940f94d9-1593-4c07-a999-5c31b8ffbaf3" valueTypeId="9f84e8a2-9d21-490f-9a0d-10c66a8cc2a8"/>
+    <recordType typeId="da2592e9-d256-436e-bf7c-dd41d9734b9f" valueTypeId="3a67586b-ad58-4093-aee3-cbd514547fb8"/>
+    <recordManagerType typeId="c6944af2-a742-4bc6-95dd-1c1889c03dcc" valueTypeId="935236d6-c2fd-4aa6-b3c1-3e8315865d81"/>
+  </producedTypes>
+  <name>торо_ТекущиеСтатусыСогласованияДокументов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Текущие статусы согласования документов</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <resources uuid="9126efd2-8520-4b11-97ee-dbe1da8fb76f">
+    <name>СтатусДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус документа</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_СтатусыСогласованияДокументовРемонтныхРабот</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Пользователь)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <dimensions uuid="b050901d-7e29-4168-9c00-93a5872b4b34">
+    <name>СогласуемыйДокумент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Согласуемый документ</value>
+    </synonym>
+    <type>
+      <types>DefinedType.торо_СогласуемыеДокументы</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Документ)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

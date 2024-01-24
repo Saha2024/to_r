@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="c191305c-7104-4c3b-b831-8b8f9e9f6d7b" extendedConfigurationObject="0fb2df8c-9107-4695-8e88-6b53458d126c">
+  <producedTypes>
+    <selectionType typeId="d1954a7c-bdc7-4473-8997-3f225c35b094" valueTypeId="94621d49-1723-4130-8ab5-60c1b5d10311"/>
+    <listType typeId="adab74f0-1815-4642-bffa-8dbb94ff1cda" valueTypeId="fa89fee1-ef56-4f68-86ab-ea9baa181465"/>
+    <managerType typeId="16972bd6-da35-4eda-a8c1-5e9f4e5272de" valueTypeId="d19c18a8-4ca0-4dc3-a8db-45e427a98a5a"/>
+    <recordSetType typeId="f13f42d2-3efd-4ff8-909e-9b35cab505c8" valueTypeId="8f383593-f2d8-48ee-b618-a40c2b489d0e"/>
+    <recordKeyType typeId="6dbb42dd-bff1-4092-a2b9-8043b9cebd21" valueTypeId="c6945eb9-6adc-4400-b473-a628f3f63e96"/>
+    <recordType typeId="29476e12-a517-4d25-b40f-25aa3345a7e9" valueTypeId="14851d33-c2fb-4ee6-828b-ee16655816c5"/>
+  </producedTypes>
+  <name>торо_НаработкаОбъектовРемонта</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:AccumulationRegisterExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <registerType>Checked</registerType>
+  </extension>
+  <resources uuid="d83e4814-1a78-42bb-bed5-aba2925f38a4" extendedConfigurationObject="140c0589-4396-4fbd-aacc-7e0332bb4954">
+    <name>Наработка</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Number</type>
+        </types>
+        <numberQualifiers>
+          <precision>16</precision>
+          <scale>5</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </resources>
+  <attributes uuid="cd6a2a28-9577-472c-8335-ebc0047b4afb" extendedConfigurationObject="f95e90a0-fbfa-4357-a315-5f5be5985494">
+    <name>ДатаНач</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Date</type>
+        </types>
+        <dateQualifiers/>
+      </typeExtension>
+    </extension>
+    <type/>
+  </attributes>
+  <attributes uuid="cf8cf393-3bf8-4167-88fa-469f42c53fc0" extendedConfigurationObject="08a971de-a5d1-48a0-901a-ac3249fa9ea3">
+    <name>ДатаКон</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Date</type>
+        </types>
+        <dateQualifiers/>
+      </typeExtension>
+    </extension>
+    <type/>
+  </attributes>
+  <dimensions uuid="3797b4a1-d394-4a69-89e3-84e05c5f894e" extendedConfigurationObject="905523e1-ecd0-4a06-ada5-ae31c7486a96">
+    <name>ОбъектРемонта</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>CatalogRef.торо_ОбъектыРемонта</type>
+        </types>
+      </typeExtension>
+    </extension>
+    <type/>
+  </dimensions>
+  <dimensions uuid="467f2e7b-5365-4810-b4b0-d3064f188911" extendedConfigurationObject="00273605-707e-4baf-9cba-4106f0447f06">
+    <name>Показатель</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>CatalogRef.ПараметрыВыработкиОС</type>
+        </types>
+      </typeExtension>
+    </extension>
+    <type/>
+  </dimensions>
+</mdclass:AccumulationRegister>

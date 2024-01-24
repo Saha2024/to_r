@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d371e888-2d14-44ea-a7de-d317fac53a73">
+  <producedTypes>
+    <selectionType typeId="18ccee71-8ce0-43ce-b791-18f853986026" valueTypeId="be86387a-e729-4cda-a0e3-a9d4183fd64b"/>
+    <listType typeId="3f30c199-002c-4d14-bee6-bec58312df40" valueTypeId="2550ed04-2b5d-4f49-b14f-d783220069cc"/>
+    <managerType typeId="a5865691-3feb-4f1f-84f5-319047a828ae" valueTypeId="f8c1678f-e73f-4b73-be54-b31866a8536a"/>
+    <recordSetType typeId="d71d5955-4c8d-4824-aeb7-a43fdb989b85" valueTypeId="2a8b64fd-b05a-46c1-a209-47da8e48b1d6"/>
+    <recordKeyType typeId="7d9133d4-f660-465d-af9b-91446d912094" valueTypeId="4e2eafb0-2e11-4961-b87a-b9646c61fbb8"/>
+    <recordType typeId="e75f5115-9825-4993-afef-7786c6afaba4" valueTypeId="e11421db-b932-4cfc-8ae1-19bd3a3753c6"/>
+    <recordManagerType typeId="83de1ac0-60fd-4f2a-ab5e-b9c69a0b16c1" valueTypeId="1720739e-a191-4b87-b98a-d2b1394a18ed"/>
+  </producedTypes>
+  <name>СхемыОбеспечения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Схемы обеспечения</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Supply schemes</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.СхемыОбеспечения.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="492dd336-de82-4019-889f-b5c26c05f2e2">
+    <name>СпособОбеспеченияПотребностей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ обеспечения потребностей</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Procurement strategy</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СпособыОбеспеченияПотребностей</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="832d75b0-9193-4aa0-a231-06f08ba0d214">
+    <name>СхемаОбеспечения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема обеспечения</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Supply scheme</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СхемыОбеспечения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="b4608188-a42d-4f26-902b-9434a17aa9bf">
+    <name>Склад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Warehouse</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Склады</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="74490f05-c523-47a5-bb12-8f3dd5650281">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

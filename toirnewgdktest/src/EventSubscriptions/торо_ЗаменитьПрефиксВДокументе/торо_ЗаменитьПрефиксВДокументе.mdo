@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6e035a63-f8b0-4a68-ae48-7d2b93c2c2ab">
+  <name>торо_ЗаменитьПрефиксВДокументе</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заменить префикс в документе</value>
+  </synonym>
+  <source>
+    <types>DocumentObject</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.торо_ЗаполнениеДокументов.торо_ЗаменитьПрефиксВДокументеПередЗаписью</handler>
+</mdclass:EventSubscription>

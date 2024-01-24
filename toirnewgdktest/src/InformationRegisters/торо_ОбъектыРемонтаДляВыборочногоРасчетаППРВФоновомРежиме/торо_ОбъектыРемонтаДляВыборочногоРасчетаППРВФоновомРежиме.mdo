@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6595d837-408a-4777-abc8-2a70133a7f75">
+  <producedTypes>
+    <selectionType typeId="7ada4c35-4650-45bd-acbb-918be537a9bb" valueTypeId="4f8bd035-a3bc-490c-8384-9b31b270c50b"/>
+    <listType typeId="72170661-8640-4002-8a95-8da8407cdc13" valueTypeId="32400952-fe8f-4406-8754-19a1b79b2073"/>
+    <managerType typeId="3dbe73b5-dab7-438e-bbec-6fef2a48abf0" valueTypeId="f1779a24-007a-4f20-ada9-cd699300f1e7"/>
+    <recordSetType typeId="daac08c8-78b3-4b43-9c1d-a633d99ec69e" valueTypeId="b19cd71d-6a57-4e5e-bf4a-e6eac3dcf05c"/>
+    <recordKeyType typeId="273b53b6-286e-4bb0-b922-f007eb4d7603" valueTypeId="99cbe2c5-7140-43a9-b655-8b34b931c264"/>
+    <recordType typeId="e180c926-4f51-403c-9eea-24a9511b8742" valueTypeId="bb954ff1-7a08-4938-b673-d2034c4bde00"/>
+    <recordManagerType typeId="16d94e3d-b4bc-4bfb-a7d5-db3060dc9a41" valueTypeId="b0aec648-8f50-47a0-992c-560738b9b0ed"/>
+  </producedTypes>
+  <name>торо_ОбъектыРемонтаДляВыборочногоРасчетаППРВФоновомРежиме</name>
+  <synonym>
+    <key>ru</key>
+    <value>Объекты ремонта для выборочного расчета ППР в фоновом режиме</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="247f44ec-3066-46e8-8de6-d35b0003d704">
+    <name>ДокументППР</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ ППР</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.торо_ПланГрафикРемонта</types>
+      <types>DocumentRef.торо_ГрафикРегламентныхМероприятийТОиР</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Документ, который необходимо рассчитать в фоне</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="a117593d-99c7-4aba-8e30-b80d0e4ac39a">
+    <name>ВидРемонтныхРабот</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид ремонтных работ</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ЦепочкиРемонта</types>
+      <types>CatalogRef.торо_ВидыРемонтов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид ремонта</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="3680bceb-f285-4bb3-86e2-d054308392da">
+    <name>ОбъектРемонтныхРабот</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект ремонтных работ</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ОбъектыРемонта</types>
+      <types>CatalogRef.торо_СписокОбъектовРегламентногоМероприятия</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Объект ремонта</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="12274b29-9f29-4b10-be02-fbf4bd2e0044">
+    <name>ЭтоЦепочка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Это цепочка</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Это цепочка)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a6614f09-0d84-4ac0-8cb9-ed61ffcdf79e">
+  <producedTypes>
+    <selectionType typeId="b6fd5ea8-ed32-4f1a-abaa-4e07b658b3e5" valueTypeId="3a4a36d6-e03d-4313-a7c3-7ea1946372a0"/>
+    <listType typeId="48d72d27-f5cf-4567-b64e-ac2ff451b69e" valueTypeId="dd698acf-6988-4eae-92cb-d8174b99c1ae"/>
+    <managerType typeId="c02eb950-07ab-43f3-80a4-3b5bb341c36e" valueTypeId="279cb2be-7b7b-47c8-bd9e-004e034b612c"/>
+    <recordSetType typeId="514158ea-9560-4814-a20a-804af9addd51" valueTypeId="c53a8e78-02fa-4b01-8871-b8c987570062"/>
+    <recordKeyType typeId="aaff5965-4ef9-4a20-b6bc-83278159c218" valueTypeId="8464b018-271e-49f8-ac90-25a7c872735d"/>
+    <recordType typeId="847849f3-f990-45b7-b6de-09a8752397b8" valueTypeId="ca9a8d66-2137-4772-b31b-da562df88238"/>
+    <recordManagerType typeId="81f012aa-e8ac-4006-bc95-9494520d3279" valueTypeId="dd67d448-646b-4a2b-9061-6b3878aeb663"/>
+  </producedTypes>
+  <name>торо_НормативныеРемонтыОборудования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Нормативные ремонты оборудования</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <resources uuid="1d7e3482-1aaf-495f-8cd5-3167bce1138f">
+    <name>НормативныйРемонт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Нормативный ремонт</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ИдентификаторыТехКарт</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Технологическая карта ремонта</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d30c4db5-e74f-463a-ae64-5fbd511553c3">
+    <name>СпособПланирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ планирования</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_СпособыПланированияРемонтныхРабот</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Способ планирования ремонта</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="8c63d7c6-06c1-4714-98f4-9e83471b1d9b">
+    <name>ГрафикРемонтныхРабот</name>
+    <synonym>
+      <key>ru</key>
+      <value>График ремонтных работ</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Календари</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>График выполнения ремонтных работ</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b5c26398-de07-43ac-803f-f0c1870847d6">
+    <name>СпособВыполнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ выполнения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СпособыСтроительства</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Хозспособ или подрядный</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="fe5d3e46-f6db-44b6-8d42-7a1a2a6bcd5e">
+    <name>НеИспользоватьВПланированииДатуВводаВЭксплуатацию</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не использовать в планировании дату ввода в эксплуатацию</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>признак того, что при формировании графика ППР в качестве даты отсчёта не будет браться дата ввода в эксплуатацию</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="72ef4eb0-288a-4e85-9368-ca8e4d324328">
+    <name>СпособУчетаДатыОтсчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ учета даты отсчета</value>
+    </synonym>
+    <type>
+      <types>EnumRef.торо_СпособыУчетаДатыОтсчетаПриПланированииРемонтныхРабот</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Название способа, в соответствии с которым учитывается дата отсчета графика ППР</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e905d725-7618-4edb-a751-ebca3b574428">
+    <name>НеУчаствуетВПланировании</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не участвует в планировании</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак того, что нормативный ремонт не будет планироваться при формировании графика ППР и будет иметь справочное значение</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="4e43a785-2706-4646-98e2-a44cac191e5f">
+    <name>РазрешитьСокращатьМежремонтныйПериодПриПланировании</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разрешить сокращать межремонтный период при планировании</value>
+    </synonym>
+    <comment>Разрешить сокращать межремонтный период в случае, если начало ремонта приходится на выходной день</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак перемещения планового ремонта на более раннюю дату</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="bec55919-796d-46be-b47b-348f0909aada">
+    <name>НеУчитыватьПриПланированииГрафикРаботыОборудования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не учитывать при планировании график работы оборудования</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак, определяющий способ расчета плановой наработки для определения даты следующего ремонта при расчете графика ППР</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="44adb22b-665c-46c5-ae26-ad733386eca3">
+    <name>НеУчитыватьПриПланированииГрафикРемонтныхРабот</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не учитывать при планировании график ремонтных работ</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак того, что при формировании графика ППР ремонты будут запланированы без учета графика ремонтов оборудования</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="f5f084e2-8159-4f2e-9597-5a2f71ded98c">
+    <name>НеУчитыватьПродолжительность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не учитывать продолжительность</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак, определяющий дату начала планирования следующего ремонта</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e3073458-052a-4282-8be3-cc9965e7acce">
+    <name>ИспользоватьКоэффициентыРемонтныхОсобенностей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать коэффициенты ремонтных особенностей</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак того, что при формировании графика ППР будут учитываться заданные коэффициенты ремонтных особенностей</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="64f53b04-b44c-4fea-9f08-32f5b7ea597a">
+    <name>УчитыватьПростоиОборудования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не добавлять плановые ремонты в простое</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак того, что при формировании графика ППР ремонты будут запланированы с учетом простоев оборудования</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="fa5853f6-4e31-43cc-998d-a78b841937e5">
+    <name>РассчитыватьНаработкуВПростое</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рассчитывать плановую наработку в простое</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Рассчитывать плановую наработку для объектов в простое</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="35b5c935-8999-4d00-a96d-554761a860d1">
+    <name>Приоритет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приоритет</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Приоритет объекта ремонта</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="1f235459-d095-44b0-bc6b-aa151c906f7f">
+    <name>СтратегияОбслуживания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стратегия обслуживания</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_СтратегииОбслуживания</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="f7184903-1f27-417d-b0b8-5f2a2680f0b9">
+    <name>ИсточникСтратегии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Источник стратегии</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="5da2628c-da5c-436e-af5a-752a5f3e8864">
+    <name>ИспользоватьДатыЗамещающихРемонтов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать даты замещающих ремонтов вместо замещаемых</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>При расчете с замещениями, если ремонт замещен, следующий ремонт рассчитывается от дат заместившего его ремонта, а не от дат исходного замещенного ремонта.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="bc1309b6-9ba3-46a3-b2a0-f739d2af5fa4">
+    <name>ОбъектРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект ремонта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ОбъектыРемонта</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Объект ремонта, для которого установлен норматив</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="654540a8-efae-49bf-b596-f2a612abe9c4">
+    <name>ВидРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид ремонта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ВидыРемонтов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид ремонта объекта ремонта</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="5614fb54-ffb3-4b46-94a6-cb631365a571">
+    <name>ТиповойОР</name>
+    <synonym>
+      <key>ru</key>
+      <value>Типовой ОР</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ТиповыеОР</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Типовой объект ремонта, для которого установлен норматив</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

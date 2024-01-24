@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="3d4a0c42-a57b-4d81-9f66-27f442e4a0c4" extendedConfigurationObject="4d59b585-78df-4900-998a-fb2752666700">
+  <producedTypes>
+    <selectionType typeId="0d03316d-e61c-41cb-9541-a62e7db00ea1" valueTypeId="8a2db46a-5ba6-4761-9933-b992080a7bf0"/>
+    <listType typeId="78fa7ccb-68cb-473d-b7a5-ecc0b626a666" valueTypeId="67f26b4b-82c1-4fcd-aea5-d30fa8d7f64b"/>
+    <managerType typeId="a61eb07b-3a69-43eb-86d5-7808ec3c0e1e" valueTypeId="86cafde4-66ac-46dc-a277-00319a34400c"/>
+    <recordSetType typeId="0ce6e4cd-b98e-4884-af91-505120e2cb09" valueTypeId="4d2783c8-c5c2-4641-8070-1090b2fb60e3"/>
+    <recordKeyType typeId="473483bb-85ab-4326-a0ac-27bc05e1f010" valueTypeId="d6ff3517-a705-4544-80ce-b5928dc1a043"/>
+    <recordType typeId="fb76dd85-93a9-4cd4-a7d4-af3ef16cba32" valueTypeId="c44c260a-beb9-4827-8b8d-a53c39a2a8e9"/>
+    <recordManagerType typeId="58b861f5-8e35-4a05-a55f-3a99df345323" valueTypeId="3d88d0ed-7abc-41a6-a20b-80070693c2b7"/>
+  </producedTypes>
+  <name>торо_МаксимальныеЗначенияНаработкиОР</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:InformationRegisterExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <informationRegisterPeriodicity>Checked</informationRegisterPeriodicity>
+    <writeMode>Checked</writeMode>
+  </extension>
+  <resources uuid="d1a3bcf8-f83b-497d-9fa8-f87c34b0d5d4" extendedConfigurationObject="505ce38b-c0a0-46dd-9459-08db6b8e4b73">
+    <name>НазначенныйРесурс</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Number</type>
+        </types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </resources>
+  <resources uuid="8ccaede1-548a-4a64-a082-a6db5b496807" extendedConfigurationObject="4dc81ec1-cefd-4479-a1b3-4cb056e33408">
+    <name>МаксимальноеЗначение</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Number</type>
+        </types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </resources>
+  <dimensions uuid="04a30808-3956-4742-ae3f-1b457e5e1546" extendedConfigurationObject="70aa15af-eb4f-4d17-ae72-d8d8c1b9669a">
+    <name>ОбъектРемонта</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>AnyRef</type>
+        </types>
+      </typeExtension>
+    </extension>
+    <type/>
+  </dimensions>
+  <dimensions uuid="3db9f496-7a68-4f48-8fa7-bf552e95f679" extendedConfigurationObject="431961cf-c6de-4d74-8ff8-241c23a7e643">
+    <name>Показатель</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>CatalogRef.ПараметрыВыработкиОС</type>
+        </types>
+      </typeExtension>
+    </extension>
+    <type/>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ee5d163e-23d9-48a4-9dc4-388b995d7877">
+  <producedTypes>
+    <selectionType typeId="476ad531-908c-47da-b488-e3cc37d37a19" valueTypeId="51432852-3051-4470-bdc1-a5fe88e60994"/>
+    <listType typeId="d7371dcd-0765-4ae5-aaa6-1377489d29b7" valueTypeId="8520c57c-96b9-4fde-b6b5-766bd751b31b"/>
+    <managerType typeId="1c3e89b3-3d94-49ef-824b-6de7f8acec7f" valueTypeId="120132bc-1595-4b90-8099-90847ee5fb57"/>
+    <recordSetType typeId="f81c135a-b0f8-4042-bfb9-cfc91184a795" valueTypeId="9156e8de-c729-455b-87e9-583bce820ee5"/>
+    <recordKeyType typeId="b0b8bbfa-68a9-40c0-b4dc-6ce3daa6857f" valueTypeId="7a2f2c25-d57f-4311-a974-47021d8e3b2d"/>
+    <recordType typeId="eb2fb240-f20e-44d0-a722-839034b97a47" valueTypeId="7a7957b7-8d84-441f-b824-21646ef50be6"/>
+    <recordManagerType typeId="b9258dd2-ada4-4105-8ec4-c9a796252c4e" valueTypeId="32507288-a869-4ea6-b5e2-46f8d90939c5"/>
+  </producedTypes>
+  <name>торо_ПорядокОРПоИерархии</name>
+  <synonym>
+    <key>ru</key>
+    <value>Порядок ОР по иерархии</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="13f9c12f-5964-4636-80ab-cabac6c3331b">
+    <name>РеквизитДопУпорядочиванияОР</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порядок ОР</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Порядок объекта ремонта в иерархии</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <dimensions uuid="f9a1f70d-38e2-4ed2-bb79-dde5da3877d2">
+    <name>ОбъектРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект ремонта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ОбъектыРемонта</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Объект ремонта, для упорядочивания</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceFoldersAndItems>FoldersAndItems</choiceFoldersAndItems>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="68d1bf1d-d5f1-410b-bf9a-90d46ae44b68">
+    <name>СтруктураИерархии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Структура иерархии</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_СтруктурыОР</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Структура иерархии, для которой сохранен реквизит упорядочивания</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

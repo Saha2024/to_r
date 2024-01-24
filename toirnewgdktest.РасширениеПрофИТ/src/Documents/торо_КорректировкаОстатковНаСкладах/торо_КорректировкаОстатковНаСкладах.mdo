@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="5d5c55e1-770c-4ffe-981c-e7e351d649ed" extendedConfigurationObject="b7f6afca-f72d-4f17-af59-d6ff5a73d4b3">
+  <producedTypes>
+    <objectType typeId="c86a4a34-2800-4c94-a773-3fe871efae2c" valueTypeId="2ae53851-8c86-4cd2-b2c2-e52410638124"/>
+    <refType typeId="94b2a98e-0d65-4e6d-bbf4-f1adbaccdde3" valueTypeId="c2cb2fae-df1e-40e7-833a-90803b6a69fe"/>
+    <selectionType typeId="dc5bc4fb-9ca1-461d-b683-7261d4978a83" valueTypeId="7c992695-756c-46d5-a892-fb37df55cd62"/>
+    <listType typeId="13618423-c077-4cf3-a73f-68a9f22faabb" valueTypeId="649f7aca-4563-4ea9-9e1d-b7c1c9bd8cd0"/>
+    <managerType typeId="7df55481-5037-449b-9dcc-3db40a7f1c69" valueTypeId="507a17dd-be0a-47a3-94ed-49f23b5b4efe"/>
+  </producedTypes>
+  <name>торо_КорректировкаОстатковНаСкладах</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <objectModule>Extended</objectModule>
+    <numberType>Extended</numberType>
+    <numberLength>Extended</numberLength>
+    <numberAllowedLength>Extended</numberAllowedLength>
+  </extension>
+  <numberType>String</numberType>
+  <numberLength>11</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <attributes uuid="16dcb777-0eea-46fb-b836-e538f195fc1e" extendedConfigurationObject="c26e6a66-348d-422b-b1b4-9e388d7281e8">
+    <name>ВидОперации</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>EnumRef.торо_ВидыОперацийКорректировкиОстатков</type>
+        </types>
+      </typeExtension>
+    </extension>
+    <type/>
+  </attributes>
+  <forms uuid="eefa4a70-6594-48b2-a3b8-a425b6e37a26" extendedConfigurationObject="1aedc507-29da-41ae-b4e1-bfc792911441">
+    <name>ФормаДокумента</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFormExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <form>Extended</form>
+    </extension>
+  </forms>
+</mdclass:Document>

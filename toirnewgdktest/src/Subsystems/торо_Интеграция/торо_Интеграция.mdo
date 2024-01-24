@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fa796b2a-defd-4237-adae-d2d4e9120a3a">
+  <name>торо_Интеграция</name>
+  <synonym>
+    <key>ru</key>
+    <value>Интеграция с АСУ ТП</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.торо_РазделИнтеграцияАСУТП16</picture>
+  </picture>
+  <content>CommonModule.торо_ПолучениеДанныхАСУТП</content>
+  <content>CommonModule.торо_ОбработкаДанныхАСУТП</content>
+  <content>Enum.торо_ОшибкиАСУТП</content>
+  <content>Constant.торо_ОтладкаАСУТП_ЗагрузкаДанныхИзМакета</content>
+  <content>CommonTemplate.торо_ОтладочныеДанныеАСУТП</content>
+  <content>Enum.торо_ТипыСигналовАСУТП</content>
+  <content>ScheduledJob.торо_ИнтеграцияСАСУТП</content>
+  <content>Enum.торо_СобытияИнтеграции</content>
+  <content>Report.торо_СобытияИнтеграцииСАСУТП</content>
+  <content>Report.торо_ОшибкиПриПодключенииКБазеДанных</content>
+  <content>Constant.торо_УдалятьОбработанныеЗаписиАСУТП</content>
+  <content>CommonModule.торо_ОбработкаДанныхАСУТППереопределяемый</content>
+  <content>Constant.торо_ОтступВСекундахАСУТП</content>
+  <content>ScheduledJob.торо_УдалениеОбработанныхДанныхАСУТП</content>
+  <content>Constant.торо_ПоказыватьПодсистемуИнтеграцияАСУТП</content>
+  <content>FunctionalOption.торо_ПоказыватьПодсистемуИнтеграцияАСУТП</content>
+  <content>CommonPicture.торо_РазделИнтеграцияАСУТП16</content>
+  <subsystems>торо_ИнтеграцияСАСУТП</subsystems>
+</mdclass:Subsystem>

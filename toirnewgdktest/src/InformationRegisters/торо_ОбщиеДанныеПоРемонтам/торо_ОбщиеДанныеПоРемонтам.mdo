@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1b8fbeca-59ee-4207-b4da-c1fdb926cf07">
+  <producedTypes>
+    <selectionType typeId="4df3f289-8865-4164-b0ba-2117921eb289" valueTypeId="464e49de-a0ad-4d27-935d-47318241f255"/>
+    <listType typeId="d200d363-e784-45be-9e39-55989f02436c" valueTypeId="d3da4fa3-3cc2-405d-a87d-fa926594d05f"/>
+    <managerType typeId="0f5ccf13-9708-49f7-86da-bfb9e31cd598" valueTypeId="62e39a92-ac02-46af-a97f-fa51dbd43497"/>
+    <recordSetType typeId="ae967c65-61a1-4343-a168-bdc0fe7abc45" valueTypeId="cf1e794e-cf1b-4d9d-90c5-a9f8847436f6"/>
+    <recordKeyType typeId="cf7c92c5-bc35-4fa1-83bc-8080ef5703a0" valueTypeId="0a1092a1-96ab-4dea-abbb-5d5d91a7ee4c"/>
+    <recordType typeId="55f331be-1ec6-4008-9292-b89c45fd5d0f" valueTypeId="864baae7-4bc9-4255-8565-189292aa7749"/>
+    <recordManagerType typeId="550b3301-df20-4362-b5da-95a3b15e1d41" valueTypeId="4dfdf772-3203-4097-a951-9d4d54fb7da8"/>
+  </producedTypes>
+  <name>торо_ОбщиеДанныеПоРемонтам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Общие данные по ремонтам</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="ca7de41a-4380-42d3-b93b-3d14a13ce3d9">
+    <name>ВидРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид ремонта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ВидыРемонтов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a534769e-5beb-4b57-b3af-d138e38afe8e">
+    <name>ЕстьЗаявка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Есть заявка</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>По ремонту есть документ &quot;Заявка на ремонт&quot;.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e320ae57-9da9-47dd-9d22-4265d1574beb">
+    <name>ЕстьНаряд</name>
+    <synonym>
+      <key>ru</key>
+      <value>Есть наряд</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>По ремонту есть документ &quot;Наряд на выполнение работ&quot;.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="26632482-bdd2-4881-af87-d856096d8d30">
+    <name>ЕстьАкт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Есть акт</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>По ремонту есть документ &quot;Акт о выполнении работ&quot;.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d55a38b3-ccd6-42d5-ae8f-6fe7a5e3b7e3">
+    <name>ЕстьАктПриемки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Есть акт приемки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>По ремонту есть документ &quot;Акт приемки&quot;.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="f7d027da-099e-47c1-b6c6-76397094ed0e">
+    <name>Отменен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отменен</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Ремонт отменен</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="646d6d26-3edf-4e80-88ae-f94e1a83e51d">
+    <name>Завершен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Завершен</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="760d81bf-833c-42a4-8d1e-f2df012d64e5">
+    <name>Замещен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Замещен</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="ba85eb5c-9b6e-4b48-91c7-27de33dd2f16">
+    <name>ВидДокументаНачалаЦепочки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид документа начала цепочки</value>
+    </synonym>
+    <type>
+      <types>EnumRef.торо_ВидыДокументовНачалаЦепочкиРемонтов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="088d9db2-1a15-4bff-99d4-26bc08da07cd">
+    <name>ОбъектРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект ремонта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ОбъектыРемонта</types>
+      <types>CatalogRef.торо_СписокОбъектовРегламентногоМероприятия</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="8d7e3dc7-96eb-4e67-9634-d1e75420b4bb">
+    <name>IDРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>IDРемонта</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Идентификатор ремонта в заявке</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="60e67476-1608-4996-b48f-ffa74f993732">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Организация документа начала цепочки</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="332898fd-fb46-4e34-af0e-1450d855fac1">
+    <name>ПодразделениеИнициатор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение-инициатор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтруктураПредприятия</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Подразделение документа начала цепочки</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="442326ff-0b99-4a6d-81af-fa819b4a7b89">
+    <name>ДокументНачалаЦепочки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ начала цепочки</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.торо_ВнешнееОснованиеДляРабот</types>
+      <types>DocumentRef.торо_ПланГрафикРемонта</types>
+      <types>DocumentRef.торо_ГрафикРегламентныхМероприятийТОиР</types>
+      <types>DocumentRef.торо_ВыявленныеДефекты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

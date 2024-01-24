@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="34d0ac38-1730-4144-bacb-e0a6ebcf17f1">
+  <producedTypes>
+    <selectionType typeId="6efe845e-ff80-4782-8f7b-2f9fb1a50107" valueTypeId="da5258f0-27ea-4d8e-afff-3224fbb12fb8"/>
+    <listType typeId="22b750d4-a705-4f36-8d20-18a0de3034c6" valueTypeId="885b2e39-c70a-48d2-94bf-6a95612b76c4"/>
+    <managerType typeId="bebb9371-fd53-4f65-8115-e855f049c9b5" valueTypeId="f2e93129-5ad0-458c-a108-0cb7031c1119"/>
+    <recordSetType typeId="4b584ec3-6819-4b57-b558-a92375bd218d" valueTypeId="e891149e-1de0-476f-a41d-b0c821feeb94"/>
+    <recordKeyType typeId="610f72ec-fabd-4fb4-b8ed-dd7af0571c82" valueTypeId="bc9bf525-68e0-4e54-a1e2-827ad779eced"/>
+    <recordType typeId="936080bc-75fc-4b3f-bda8-e43f7573e568" valueTypeId="6379f230-3b55-403e-be50-7a6fa2a210df"/>
+    <recordManagerType typeId="cc91c91f-ab03-4f7a-961c-ea70a0c3fa4d" valueTypeId="ba454790-a581-491a-b1d9-3120c9d8475a"/>
+  </producedTypes>
+  <name>проф_ТекущееМестоположениеТСПоМониторингу</name>
+  <synonym>
+    <key>ru</key>
+    <value>Текущее местоположение ТС по мониторингу</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="dc8d803b-0369-4db3-a648-1fa64d996e32">
+    <name>Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e36b8e42-388b-4dd6-b5ff-3bba080ea16b">
+    <name>Долгота</name>
+    <synonym>
+      <key>ru</key>
+      <value>Долгота</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>21</precision>
+        <scale>17</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="0be792c4-8a64-46d6-924e-f7f60731cad4">
+    <name>Курс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Курс</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="283e0a80-230b-4f02-b84f-d43f3c938466">
+    <name>ПредставлениеАдреса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Представление адреса</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="62a81c74-ed5e-491b-a0a9-ecd00aad97f2">
+    <name>Скорость</name>
+    <synonym>
+      <key>ru</key>
+      <value>Скорость, км/ч</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>6</precision>
+        <scale>1</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="248be40e-d0e6-465d-bf3b-9573d38cc5dd">
+    <name>Широта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Широта</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>21</precision>
+        <scale>17</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="2bd4c27c-632b-4e65-b3d1-d5e1c328ca81">
+    <name>ОбъектРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект ремонта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ОбъектыРемонта</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

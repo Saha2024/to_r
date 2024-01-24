@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f540258d-70fa-41da-bc63-ddc137a230f1">
+  <producedTypes>
+    <selectionType typeId="4d202d16-009a-469e-96cf-14fa29dcc6b2" valueTypeId="4b9e36f5-d6de-47cc-b24b-c9b8fb344be1"/>
+    <listType typeId="102246fe-2e72-455a-a2ab-00ff65b92155" valueTypeId="bce8bab5-bcba-4f91-a869-8fcaf29c1d06"/>
+    <managerType typeId="f481f96e-a540-4d7c-a43e-a308980aa4aa" valueTypeId="da2bfd82-5ea4-483f-9671-38bf93939cdc"/>
+    <recordSetType typeId="dfe91883-c992-4375-95d8-ded024c4fd81" valueTypeId="73c1634e-6b8a-4962-a2ab-4a9f6004d59c"/>
+    <recordKeyType typeId="126a7b1d-98f1-477a-9846-0ccde08e1ee0" valueTypeId="fa13d600-aa6c-422a-a656-b918f786631c"/>
+    <recordType typeId="a268ce9f-35dc-4891-bb8a-d9e6d883c844" valueTypeId="e20a8f9b-69d1-4690-899a-a7be2b398034"/>
+    <recordManagerType typeId="2bef001d-f541-4961-aadd-dfdcbcba9342" valueTypeId="d686b718-9e0e-4b66-a9b8-dcde50b667d6"/>
+  </producedTypes>
+  <name>торо_СеансыОбменаСАСУТП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сеансы обмена с АСУ ТП</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="0ef31fd6-c63d-4aa3-b071-9e48fec6b14a">
+    <name>КоличествоЗагруженныхЗаписей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество загруженных записей</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="47683a05-0919-4e11-9f1b-9b84776fd3f0">
+    <name>Подключение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подключение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ПодключенияКБазеДанных</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

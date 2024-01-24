@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5f61d5fc-e171-4bee-9530-fcc493c7d709">
+  <producedTypes>
+    <selectionType typeId="6df4c333-2067-46fb-97cd-99d06382d6d7" valueTypeId="31b58a4b-1346-4059-b40a-a79ceb1b193b"/>
+    <listType typeId="c00dc156-020b-46c5-bbf3-75c9bc9bf6b8" valueTypeId="75ff1308-f9cb-436e-a8f1-c7c28cff4ff8"/>
+    <managerType typeId="2b405d6e-6083-413e-84f8-ad2996e78d1f" valueTypeId="ac9dcd0b-2835-4b2c-bbb3-1c3ff8be4d89"/>
+  </producedTypes>
+  <name>КадровыеДокументы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Все кадровые документы</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>All HR documents</value>
+  </synonym>
+  <defaultForm>DocumentJournal.КадровыеДокументы.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.КадровыйПеревод</registeredDocuments>
+  <registeredDocuments>Document.ПриемНаРаботу</registeredDocuments>
+  <registeredDocuments>Document.Увольнение</registeredDocuments>
+  <registeredDocuments>Document.ПриемНаРаботуСписком</registeredDocuments>
+  <registeredDocuments>Document.КадровыйПереводСписком</registeredDocuments>
+  <registeredDocuments>Document.УвольнениеСписком</registeredDocuments>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Type</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <format>
+      <key>ru</key>
+      <value>ДЛФ=D</value>
+    </format>
+    <format>
+      <key>en</key>
+      <value>DLF=D</value>
+    </format>
+    <editFormat>
+      <key>ru</key>
+      <value>ДЛФ=D</value>
+    </editFormat>
+    <editFormat>
+      <key>en</key>
+      <value>DLF=D</value>
+    </editFormat>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <columns uuid="74859753-c36a-4f42-bc04-1aeba6d7f351">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Company</value>
+    </synonym>
+    <references>Document.КадровыйПеревод.Attribute.Организация</references>
+    <references>Document.ПриемНаРаботу.Attribute.Организация</references>
+    <references>Document.Увольнение.Attribute.Организация</references>
+    <references>Document.ПриемНаРаботуСписком.Attribute.Организация</references>
+    <references>Document.КадровыйПереводСписком.Attribute.Организация</references>
+    <references>Document.УвольнениеСписком.Attribute.Организация</references>
+  </columns>
+  <columns uuid="3f55e32f-ded3-4c62-be86-027f9f83283a">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Employee</value>
+    </synonym>
+    <references>Document.КадровыйПеревод.Attribute.Сотрудник</references>
+    <references>Document.ПриемНаРаботу.Attribute.Сотрудник</references>
+    <references>Document.Увольнение.Attribute.Сотрудник</references>
+    <references>Document.ПриемНаРаботуСписком.Attribute.КраткийСоставДокумента</references>
+    <references>Document.КадровыйПереводСписком.Attribute.КраткийСоставДокумента</references>
+    <references>Document.УвольнениеСписком.Attribute.КраткийСоставДокумента</references>
+  </columns>
+  <columns uuid="59312560-77a6-4746-8e94-3b8af6660382">
+    <name>ДатаСобытия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата события</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Event date</value>
+    </synonym>
+    <references>Document.КадровыйПеревод.Attribute.ДатаНачала</references>
+    <references>Document.ПриемНаРаботу.Attribute.ДатаПриема</references>
+    <references>Document.Увольнение.Attribute.ДатаУвольнения</references>
+    <references>Document.ПриемНаРаботуСписком.Attribute.ДатаСобытия</references>
+    <references>Document.КадровыйПереводСписком.Attribute.ДатаСобытия</references>
+    <references>Document.УвольнениеСписком.Attribute.ДатаСобытия</references>
+  </columns>
+  <columns uuid="4143cb7b-975f-4cd2-a807-f920e0e9205a">
+    <name>Утвержден</name>
+    <synonym>
+      <key>ru</key>
+      <value>Утвержден</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Confirmed</value>
+    </synonym>
+    <references>Document.ПриемНаРаботу.Attribute.НачисленияУтверждены</references>
+  </columns>
+  <columns uuid="4d40df50-dbf2-47f4-a7fa-0ad3d0a3219b">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Responsible person</value>
+    </synonym>
+    <references>Document.КадровыйПеревод.Attribute.Ответственный</references>
+    <references>Document.ПриемНаРаботу.Attribute.Ответственный</references>
+    <references>Document.Увольнение.Attribute.Ответственный</references>
+    <references>Document.ПриемНаРаботуСписком.Attribute.Ответственный</references>
+    <references>Document.КадровыйПереводСписком.Attribute.Ответственный</references>
+    <references>Document.УвольнениеСписком.Attribute.Ответственный</references>
+  </columns>
+  <columns uuid="2fefacd0-ec2d-4266-9e1b-30a83a9a286e">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Comment</value>
+    </synonym>
+    <references>Document.КадровыйПеревод.Attribute.Комментарий</references>
+    <references>Document.ПриемНаРаботу.Attribute.Комментарий</references>
+    <references>Document.Увольнение.Attribute.Комментарий</references>
+    <references>Document.ПриемНаРаботуСписком.Attribute.Комментарий</references>
+    <references>Document.КадровыйПереводСписком.Attribute.Комментарий</references>
+    <references>Document.УвольнениеСписком.Attribute.Комментарий</references>
+  </columns>
+  <columns uuid="f3dcb28a-c05c-4244-a427-9782b5948a13">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <references>Document.КадровыйПеревод.Attribute.Подразделение</references>
+    <references>Document.ПриемНаРаботу.Attribute.Подразделение</references>
+    <references>Document.Увольнение.Attribute.Подразделение</references>
+  </columns>
+  <forms uuid="17e473a5-deb8-4808-a948-12e18f935938">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>List form</value>
+    </synonym>
+    <includeHelpInContents>true</includeHelpInContents>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>

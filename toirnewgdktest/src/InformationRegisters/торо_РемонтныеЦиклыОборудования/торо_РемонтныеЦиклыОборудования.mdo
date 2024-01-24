@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d5c4abd7-2660-434b-bb68-ec01a0d2f762">
+  <producedTypes>
+    <selectionType typeId="172b1e2d-fa51-4d82-8c2d-ea45c1da71bf" valueTypeId="d29aabad-390d-417f-8d7f-9cd5dcedccfe"/>
+    <listType typeId="c3204db5-d34a-4ebe-9dbe-5f2bf4bff4d3" valueTypeId="f425cd43-9d3c-42b7-801a-b587171f9cd2"/>
+    <managerType typeId="37cb4b44-17df-42e4-9d2a-5aa1117ecf60" valueTypeId="7dc710e3-f4a9-4e6f-adff-464d487a9114"/>
+    <recordSetType typeId="a4c69455-45f1-4767-b879-cb971fba653e" valueTypeId="5c0c110d-cde8-459a-882c-47688bcf7817"/>
+    <recordKeyType typeId="03daabbf-cea2-491b-8d3c-c4f6a30f128b" valueTypeId="adb99aa6-a59d-43d4-ab5a-b58b9b23e4d7"/>
+    <recordType typeId="f3cb0a35-a6f2-4b8f-95a9-df2534509d1c" valueTypeId="c9c46501-b2f0-4bdb-8ac4-cc460bddd9b6"/>
+    <recordManagerType typeId="ef72ae63-e458-4094-aeb5-bd9b4a5f038a" valueTypeId="de8efa79-927b-4bf6-8187-cf8ab58dd868"/>
+  </producedTypes>
+  <name>торо_РемонтныеЦиклыОборудования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ремонтные циклы оборудования</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <resources uuid="072fc365-7202-4301-8123-014bfa726001">
+    <name>НеУчитыватьПростоиОборудования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать плановую наработка во время простоя</value>
+    </synonym>
+    <comment>Использовать плановую наработка во время простоя (т.е. планировать ТО по наработке во время простоя)</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Не будут учтены простои оборудования</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="37118583-c180-4e4f-902b-9eb202958910">
+    <name>ВидЦепочки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид цепочки</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ЦепочкиРемонта</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид цепочки ремонта</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="eed6975e-7d85-4797-8ad4-a8ce846bedd9">
+    <name>ГруппаОбъектовРемонтов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа объектов ремонтов</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ТиповыеОР</types>
+      <types>CatalogRef.торо_ОбъектыРемонта</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Группа объектов</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

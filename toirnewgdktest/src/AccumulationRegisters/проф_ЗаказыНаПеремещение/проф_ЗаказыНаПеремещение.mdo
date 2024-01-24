@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="51ed9839-f94d-4af6-a544-57ffe417672b">
+  <producedTypes>
+    <selectionType typeId="fa29916c-28d6-4537-aad4-2b90e18301f8" valueTypeId="ee621fe2-a433-4214-bb5d-2da6630d7a32"/>
+    <listType typeId="ff9f9b8a-1781-49aa-b5fe-2596f2edc54f" valueTypeId="e1dc5d67-343c-49b4-a72a-efeed83af551"/>
+    <managerType typeId="95b20f2e-1a21-4c8f-bd40-2ddf599b8dab" valueTypeId="3d0f8eaf-2150-4258-baaa-634f0074d02d"/>
+    <recordSetType typeId="a6da241e-b3d2-4cff-a56f-bc69460b9121" valueTypeId="0fb99e93-8e55-4f53-bb94-24e69ebc43e6"/>
+    <recordKeyType typeId="84f0a284-59c3-4407-8400-353c78355774" valueTypeId="f569efdf-9a0d-4f05-8814-5365d89bfac5"/>
+    <recordType typeId="99cbcd81-48b9-402b-b646-9b4395a9db8e" valueTypeId="59c1c25f-14ea-4018-98c5-fd39bb3ab8e5"/>
+  </producedTypes>
+  <name>проф_ЗаказыНаПеремещение</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заказы на перемещение (Проф-ИТ)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="8483efcb-bd12-4199-b41b-a539a1bcd4d1">
+    <name>КОформлению</name>
+    <synonym>
+      <key>ru</key>
+      <value>К оформлению</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="e3b3525f-0545-4111-ac65-eaac0c5abb62">
+    <name>ЗаказНаПеремещение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказ на перемещение</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.проф_ЗаказНаПеремещение</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="cae60078-65d0-4ea0-9220-bdfe3ac6144d">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Необходимо выбрать номенклатуру с видом Товар.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameters>
+      <name>Отбор.ТипНоменклатуры</name>
+      <value xsi:type="core:FixedArrayValue">
+        <values xsi:type="core:ReferenceValue">
+          <value>Enum.ТипыНоменклатуры.EnumValue.Товар</value>
+        </values>
+        <values xsi:type="core:ReferenceValue">
+          <value>Enum.ТипыНоменклатуры.EnumValue.МногооборотнаяТара</value>
+        </values>
+      </value>
+    </choiceParameters>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="ce63d106-6324-442a-8fa2-923a4213bb22">
+    <name>Характеристика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Характеристика</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ХарактеристикиНоменклатуры</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Если у выбранной номенклатуры используются характеристики, то необходимо выбрать характеристику номенклатуры.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="f7f84b90-fa15-42d6-b7c3-461dc7c7a18c">
+    <name>КодСтроки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код строки</value>
+    </synonym>
+    <comment>Код строки заказа</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Уникальный идентификатор строки заказа</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="38870122-b444-45e1-94ae-bf45efee7017">
+    <name>Серия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Серия</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СерииНоменклатуры</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Серия)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

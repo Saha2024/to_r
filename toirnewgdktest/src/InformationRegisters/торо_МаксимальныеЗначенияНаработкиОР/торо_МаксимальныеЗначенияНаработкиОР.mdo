@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4d59b585-78df-4900-998a-fb2752666700">
+  <producedTypes>
+    <selectionType typeId="c893a930-14e5-4b73-adc7-2a5c6003d99a" valueTypeId="161a21b7-361b-48d7-a729-3f71faa58ce4"/>
+    <listType typeId="0fe2320e-9e38-4775-9ce8-0ce6cbc43943" valueTypeId="f0aecec4-07b7-41c3-9406-028041b22fd2"/>
+    <managerType typeId="aebf9f20-64a7-4289-a6d4-33bfbece6251" valueTypeId="be223c37-459b-48ec-ae21-737ea370fcd4"/>
+    <recordSetType typeId="8bef01d7-c37f-4136-81dd-d5c178de51ba" valueTypeId="ef255ed5-4b8c-43ae-889c-dd8054b337a8"/>
+    <recordKeyType typeId="ee2c7f40-b6a9-4ed7-94b1-403ea9f2b777" valueTypeId="8c38ee36-b6cb-4eef-9a61-5113f61d0d38"/>
+    <recordType typeId="e2a53be5-1ca4-4ce2-8f27-132186af3e34" valueTypeId="061df272-20c4-492e-ac17-9564182a1e83"/>
+    <recordManagerType typeId="256b3cf7-f8ae-4152-ac43-5ea16975d25a" valueTypeId="d008e621-e629-4b4f-9106-a361e39afa87"/>
+  </producedTypes>
+  <name>торо_МаксимальныеЗначенияНаработкиОР</name>
+  <synonym>
+    <key>ru</key>
+    <value>Максимальные значения наработки объектов ремонта</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="4dc81ec1-cefd-4479-a1b3-4cb056e33408">
+    <name>МаксимальноеЗначение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Максимальное значение</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Максимальное значение показателя наработки для объекта ремонта</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="505ce38b-c0a0-46dd-9459-08db6b8e4b73">
+    <name>НазначенныйРесурс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Назначенный ресурс</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Назначенный ресурс)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="9793789c-24b2-4c21-a555-f16eba1bbbd1">
+    <name>Удален</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удален</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Удален)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="70aa15af-eb4f-4d17-ae72-d8d8c1b9669a">
+    <name>ОбъектРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект ремонта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ТиповыеОР</types>
+      <types>CatalogRef.торо_ОбъектыРемонта</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Объект ремонта или типовой объект ремонта</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="431961cf-c6de-4d74-8ff8-241c23a7e643">
+    <name>Показатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПараметрыВыработкиОС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Показатель наработки объекта ремонта</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

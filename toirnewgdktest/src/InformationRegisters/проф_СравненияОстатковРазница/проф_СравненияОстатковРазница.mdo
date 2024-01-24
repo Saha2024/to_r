@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7630ee8b-baf5-4204-b76e-36e37cc93b3d">
+  <producedTypes>
+    <selectionType typeId="400a179a-6f57-4992-b8aa-5e2123c3b328" valueTypeId="0ce41d2b-b8e3-4b6f-aabd-bf3b610c2a18"/>
+    <listType typeId="ca96a1ad-ed11-4829-9250-5bd51309adff" valueTypeId="55c01f6e-479e-4f61-9eee-a4577b47c86c"/>
+    <managerType typeId="e2ae7acb-0ca7-4e03-b6a5-c1eb22514315" valueTypeId="e9cca1ca-4459-4e31-902b-6ca98335c820"/>
+    <recordSetType typeId="a4027514-38ae-47e1-bb5b-a4a3eb184771" valueTypeId="c0956b45-e738-46e9-b457-1c30aee597ed"/>
+    <recordKeyType typeId="62993817-ad07-49f8-b39e-51b0251b4537" valueTypeId="3cbf5308-d48f-478a-ae8b-e3e4eb4991e4"/>
+    <recordType typeId="de88ede6-1e03-4b10-b616-958b1daede11" valueTypeId="4be1d863-378e-4d4d-b20c-de1c86b698f3"/>
+    <recordManagerType typeId="4bc68909-60f6-4625-83a2-7a7defbd1ae2" valueTypeId="217c47d4-82de-4457-aacd-63374a760871"/>
+  </producedTypes>
+  <name>проф_СравненияОстатковРазница</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сравнения остатков разница (Проф-ИТ)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="0b3eadb6-5354-46e8-bc62-24f6ecd4fe8d">
+    <name>Хранилище</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хранилище</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="68fb6f7c-b00f-4695-8cf2-1476eb049cba">
+    <name>ПризнакРасхождения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Признак расхождения</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="de549a95-b102-456b-950f-cbb43f30a4cb">
+    <name>НомерПакета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер пакета</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

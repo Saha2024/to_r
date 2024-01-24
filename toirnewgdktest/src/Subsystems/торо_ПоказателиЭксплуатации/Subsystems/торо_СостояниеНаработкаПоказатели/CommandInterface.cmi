@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
+  <commandsVisibility>
+    <visibilityFragments>
+      <command>DataProcessor.торо_ВводНачальногоСостоянияПоОбъектамРемонта.StandardCommand.Open</command>
+      <visible/>
+    </visibilityFragments>
+    <visibilityFragments>
+      <command>DataProcessor.торо_РабочееМестоУчетаПоказателейЭксплуатации.StandardCommand.Open</command>
+      <visible/>
+    </visibilityFragments>
+  </commandsVisibility>
+  <commandsOrder>
+    <orderFragments>
+      <group>NavigationPanelImportant</group>
+      <commands>DataProcessor.торо_РабочееМестоУчетаПоказателейЭксплуатации.Command.РабочееМестоУчетаПоказателейЭксплуатации</commands>
+      <commands>DataProcessor.торо_ВводНачальногоСостоянияПоОбъектамРемонта.Command.ВводНачальногоСостоянияПоОбъектамРемонта</commands>
+    </orderFragments>
+    <orderFragments>
+      <group>NavigationPanelOrdinary</group>
+      <commands>Document.торо_СостоянияОбъектовРемонта.StandardCommand.OpenList</commands>
+      <commands>Document.торо_УчетКонтролируемыхПоказателей.StandardCommand.OpenList</commands>
+      <commands>Document.торо_УчетНаработкиОборудования.StandardCommand.OpenList</commands>
+      <commands>Document.торо_УстановкаПроизвольногоЗначенияНаработки.StandardCommand.OpenList</commands>
+    </orderFragments>
+  </commandsOrder>
+  <subsystemsOrder>
+    <subsystems>Subsystem.торо_ПоказателиЭксплуатации.Subsystem.торо_СостояниеНаработкаПоказатели.Subsystem.торо_КонтролируемыеПоказателиОборудования</subsystems>
+    <subsystems>Subsystem.торо_ПоказателиЭксплуатации.Subsystem.торо_СостояниеНаработкаПоказатели.Subsystem.торо_НаработкаОборудования</subsystems>
+    <subsystems>Subsystem.торо_ПоказателиЭксплуатации.Subsystem.торо_СостояниеНаработкаПоказатели.Subsystem.торо_СостояниеОборудования</subsystems>
+  </subsystemsOrder>
+</cmi:CommandInterface>

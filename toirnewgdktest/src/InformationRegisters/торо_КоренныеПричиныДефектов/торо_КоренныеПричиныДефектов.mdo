@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2d7f204d-51ae-4c97-84e6-02d895884066">
+  <producedTypes>
+    <selectionType typeId="56747fbc-40fa-4dd0-84d8-9982b3ad51dc" valueTypeId="1a0878ec-f891-4211-8a55-3939bcf30889"/>
+    <listType typeId="68d34166-9b01-4114-8830-09e33e87598e" valueTypeId="385bf09e-6a8f-4c23-bcce-3c01342992ca"/>
+    <managerType typeId="4e71f423-40ec-4883-9bb9-15383eed56ee" valueTypeId="3ca09220-de0b-4064-bd90-468391b01c18"/>
+    <recordSetType typeId="ea3a730e-2a27-427d-a702-6f87b501a91e" valueTypeId="412e51b0-3ccd-4108-8462-773c1c2f5578"/>
+    <recordKeyType typeId="1155ad98-af6b-45ef-8439-063bc11650de" valueTypeId="476c60e9-cc74-4383-81eb-6aedd7def85a"/>
+    <recordType typeId="a053c888-780e-4ce6-b96c-31006f4ec4e1" valueTypeId="500f844f-94c8-4d22-9162-daa65c8b2a93"/>
+    <recordManagerType typeId="ad367bd1-e404-4bc1-82ac-46cd8a5e5978" valueTypeId="2040ea9b-4c99-4571-bc39-bdf1cd9c7c26"/>
+  </producedTypes>
+  <name>торо_КоренныеПричиныДефектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Причины дефектов</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <writeMode>RecorderSubordinate</writeMode>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <attributes uuid="6369e3e7-f3cd-45a3-9c07-47828aacf546">
+    <name>ОбъектРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект ремонта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ОбъектыРемонта</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="7b0a04da-78ec-4ff3-84a9-4bdc0698460e">
+    <name>ДатаСобытия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата события</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="2914a1aa-71fd-4fc1-8f2f-2af7aaff0cc9">
+    <name>ИДРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>ИДРемонта</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="193aa194-caed-439d-b45c-a05ac26acd5d">
+    <name>НепосредственнаяПричина</name>
+    <synonym>
+      <key>ru</key>
+      <value>Непосредственная причина</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ПричиныДефектов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="bdb3481c-2e86-4e3f-ae10-043c0b614b9a">
+    <name>КореннаяПричина</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коренная причина</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_КоренныеПричиныДефектов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

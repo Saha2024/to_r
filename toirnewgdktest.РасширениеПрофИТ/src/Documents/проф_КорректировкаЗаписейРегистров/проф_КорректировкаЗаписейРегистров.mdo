@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="52844c06-0ce5-4be7-90c1-e68a05ec247a" extendedConfigurationObject="a0006937-9ba6-4814-91e0-9fa328551c76">
+  <producedTypes>
+    <objectType typeId="8673b262-106d-45b9-938a-c076d841e2ef" valueTypeId="665695c4-19f5-4a3d-b326-755bb2f31045"/>
+    <refType typeId="2df3cf66-c3aa-4bbe-ac89-ae656617845c" valueTypeId="d7cd5593-62a7-49a5-b7bc-d395d0bb2b9f"/>
+    <selectionType typeId="55aadc80-2ec6-4e86-8a90-feeac58de9d3" valueTypeId="5f12cd22-983d-4601-988b-a72db79def8d"/>
+    <listType typeId="4299312e-61dd-4719-9e85-3da0ac49f7ad" valueTypeId="50e4b276-993e-449e-a856-cf0b6dd5ea86"/>
+    <managerType typeId="fbb5e1ac-be4c-48b5-9469-bb59e29eda3f" valueTypeId="ef567710-f1c7-42fd-805b-b3ea1594081e"/>
+  </producedTypes>
+  <name>проф_КорректировкаЗаписейРегистров</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <objectModule>Extended</objectModule>
+    <defaultObjectForm>Extended</defaultObjectForm>
+    <defaultListForm>Extended</defaultListForm>
+  </extension>
+  <defaultObjectForm>Document.проф_КорректировкаЗаписейРегистров.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.проф_КорректировкаЗаписейРегистров.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="c12d2c3a-db41-47ed-b896-20121bda4822" extendedConfigurationObject="089ec7c7-3519-4940-8d41-e3b928726292">
+    <name>Комментарий</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>String</type>
+        </types>
+        <stringQualifiers/>
+      </typeExtension>
+    </extension>
+    <type/>
+  </attributes>
+  <attributes uuid="fd9be751-91eb-428c-88c1-893141f336d2" extendedConfigurationObject="f7e61fe9-4d00-49f3-938d-24e58babb335">
+    <name>Ответственный</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>CatalogRef.Пользователи</type>
+        </types>
+      </typeExtension>
+    </extension>
+    <type/>
+  </attributes>
+  <attributes uuid="1e464372-7bbc-4df5-bbd9-f4aeea8ffab6" extendedConfigurationObject="1e5499e2-b8ea-457e-a890-77a6d9647211">
+    <name>НаименованиеДокумента</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>String</type>
+        </types>
+        <stringQualifiers>
+          <length>150</length>
+        </stringQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </attributes>
+  <forms uuid="e03437aa-516a-4109-a03c-bc5b057ee73e">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Document form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="96fa951d-39ac-458e-9c31-2e4723655de9">
+    <name>ФормаВыбораРегистра</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора регистра</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Register choice form</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="14f311b4-2879-425a-9851-11b6b8a10bf8">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="6837a1ca-a588-4545-bda4-6d118d17c58c" extendedConfigurationObject="305187f2-cef0-4641-a2cf-e849f6820a98">
+    <producedTypes>
+      <objectType typeId="85e851b7-7caf-4d1e-83b5-438bbe94d9a5" valueTypeId="ddae3ace-ad03-4ed3-9a62-1183021a1bf4"/>
+      <rowType typeId="89a6c48d-77b2-4952-8d42-d293b74b7ceb" valueTypeId="6de95a25-d1ae-4202-8b23-972e0a7d3d74"/>
+    </producedTypes>
+    <name>ТаблицаРегистров</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+    <attributes uuid="51674de5-75a2-43dc-ad79-54dd1d51de57" extendedConfigurationObject="02d25c0e-d869-4744-8b8d-0991817dd3fc">
+      <name>Имя</name>
+      <objectBelonging>Adopted</objectBelonging>
+      <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+        <extendedConfigurationObject>Checked</extendedConfigurationObject>
+        <typeExtension>
+          <types>
+            <state>Checked</state>
+            <type>String</type>
+          </types>
+          <stringQualifiers/>
+        </typeExtension>
+      </extension>
+      <type/>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="08248071-8cf3-49e1-9aef-7738d1174295">
+  <producedTypes>
+    <selectionType typeId="a96e94fc-6e4a-473d-9cec-6635615dffe7" valueTypeId="1d39bc96-6001-43d2-8431-67f02b6aa44b"/>
+    <listType typeId="ce5750fe-51fc-4a23-9f93-41f9f0499a0b" valueTypeId="50b6f8f4-5237-45f1-b077-c577c729badd"/>
+    <managerType typeId="3c2cf6c9-c255-406e-a46f-ed02565e6ffd" valueTypeId="f25ec3d5-1186-4e75-94f4-32c1ff5b02d2"/>
+    <recordSetType typeId="fc3349ee-c4bf-41e3-b363-80c677289e4d" valueTypeId="d485cca9-b83c-4fd9-b5be-81b0c8f63676"/>
+    <recordKeyType typeId="6c8433be-de41-410e-b4d5-04f7f81abe29" valueTypeId="0892a57e-a76a-48d6-a6be-1262af2a04db"/>
+    <recordType typeId="fc00a3c8-927a-4f5d-804d-6bee99ed51a9" valueTypeId="6d7f7388-9098-41ff-a175-44984ae2b27e"/>
+    <recordManagerType typeId="1ffacba1-9af3-4b42-886e-177118718d5a" valueTypeId="0b705c12-7d98-49bf-8ed2-93e51ac203d8"/>
+  </producedTypes>
+  <name>торо_СоответствиеДокументовДиспетчер</name>
+  <synonym>
+    <key>ru</key>
+    <value>Соответствие документов с АИС Диспетчер</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="6acbf614-aed0-4836-b4cb-160d0727cb8a">
+    <name>ДокументТОИР</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ ТОИР</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.торо_УчетКонтролируемыхПоказателей</types>
+      <types>DocumentRef.торо_ВыявленныеДефекты</types>
+      <types>DocumentRef.торо_УчетНаработкиОборудования</types>
+      <types>DocumentRef.торо_СостоянияОбъектовРемонта</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="296dab51-02ad-4f03-b7de-be7faca7177f">
+    <name>ДатаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата документа</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3e097301-bffb-47ab-b718-af6aaf0a8774">
+    <name>ДатаЗагрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата загрузки</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="469aa34c-1c00-421d-9820-86fb04ea4c63">
+    <name>ТипДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип документа</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="7742488e-e21b-46c5-b991-ca50b8be7077">
+    <name>УникальныйИдентификаторДиспетчер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Уникальный идентификатор из АИС Диспетчера</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

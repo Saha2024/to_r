@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="070db835-7c66-4415-82c4-dac6432d1f16">
+  <producedTypes>
+    <objectType typeId="c8384edd-481e-4989-b8e9-68641a489bff" valueTypeId="95930a96-c9a6-4537-890a-478094cb0a52"/>
+    <refType typeId="6b0fc0af-c8ad-484e-85e1-9b78b3bff09d" valueTypeId="fc5b68be-9d34-4a7f-a412-ab7d8a193e5b"/>
+    <selectionType typeId="e5545006-ebfb-4a55-a982-16831d3a6b46" valueTypeId="f36faf0d-a6e5-44e3-9333-a12fa92a0bfb"/>
+    <listType typeId="ff4721ec-c993-48b5-8a19-9e0ea3236a7a" valueTypeId="29db5b8a-d7d9-4f4a-95a1-a4e53c59a977"/>
+    <managerType typeId="96f28c4f-0198-47bf-89e8-a31ed664f914" valueTypeId="3240af32-c845-4afc-9b2a-d5d24349f3fc"/>
+  </producedTypes>
+  <name>торо_ОбъектыВоздействия</name>
+  <synonym>
+    <key>ru</key>
+    <value>Объекты воздействия</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.торо_ОбъектыВоздействия.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.торо_ОбъектыВоздействия.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Объект воздействия</value>
+  </objectPresentation>
+  <extendedObjectPresentation>
+    <key>ru</key>
+    <value>Объект воздействия</value>
+  </extendedObjectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Объекты воздействия</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Объекты воздействия</value>
+  </extendedListPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>10</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.торо_ОбъектыВоздействия.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.торо_ОбъектыВоздействия.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.торо_ОбъектыВоздействия.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="0eac79da-46ec-4cf6-a75f-9d6f59984113">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="98bdb94d-4d9e-4e87-950f-91d358d5666f">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <includeHelpInContents>true</includeHelpInContents>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="168175ef-0efe-464d-9692-efb74d9c4ca4">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <includeHelpInContents>true</includeHelpInContents>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b9016a5e-46a4-4acd-96c3-f44b21f16a7b">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <includeHelpInContents>true</includeHelpInContents>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="4c0afc62-75bb-47cb-a332-a83c67906545">
+    <name>НачальноеЗаполнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начальное заполнение</value>
+    </synonym>
+  </templates>
+</mdclass:Catalog>

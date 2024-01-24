@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="47fd90c5-ea08-4288-911d-7856e5eed183">
+  <producedTypes>
+    <selectionType typeId="3479e483-fc77-4814-8f24-d4fa55ee6a87" valueTypeId="63319a2e-a1f0-4a4d-956b-c263b4b05ab6"/>
+    <listType typeId="5ae5eb8d-574e-4e3a-975d-40d9f843fc33" valueTypeId="04982dea-d335-4d46-8a9f-0d4212dd8a87"/>
+    <managerType typeId="639bc450-47f3-497f-851a-28be7e1d88b9" valueTypeId="e71b0594-c43a-4dd5-882a-2556568e1a69"/>
+    <recordSetType typeId="58d9c82c-7ed0-44d4-afd2-3e31a4b57b0a" valueTypeId="64bcde17-2df9-48a8-86ce-d02fc5689abc"/>
+    <recordKeyType typeId="aeddfa96-aa43-4097-9a96-468bb80ede09" valueTypeId="f1a3c3ad-0a54-47c0-97e2-26c5400c68da"/>
+    <recordType typeId="dfaf1e72-7ca0-4f0d-8c92-e011f5bce7db" valueTypeId="ad547f5f-ad20-48c9-850e-ff86b1a6997a"/>
+    <recordManagerType typeId="922655be-069f-4d33-8137-36534fa2a399" valueTypeId="63060a29-a691-4d68-b511-3a053dbb6550"/>
+  </producedTypes>
+  <name>торо_ОбъектыДляПроверкиТребованийФМ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Объекты для проверки требований функциональных мест</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="2faa52cf-6d34-4a89-8388-d19205733c46">
+    <name>Объект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ТиповыеОР</types>
+      <types>CatalogRef.торо_ОбъектыРемонта</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="27ea4080-2f68-4181-9529-156973c793d1">
+  <producedTypes>
+    <selectionType typeId="54cabb4c-7c2d-45d8-9524-18afb13bcb04" valueTypeId="b836c34c-b725-4ca0-a4ed-a034b25f7114"/>
+    <listType typeId="b6195839-cdae-4b0a-8d68-f6db5aa3c91e" valueTypeId="b64ec1a4-9d91-4f18-b11f-72344e94525e"/>
+    <managerType typeId="86b26c3d-2555-401d-abcb-f3b1268e0cdd" valueTypeId="587d4100-e3ab-460c-9a57-1f32e1a85561"/>
+    <recordSetType typeId="b3694292-73b2-4791-8bd7-551de93ee404" valueTypeId="cc6e67bf-4eb6-4203-bee6-008ab64d2c18"/>
+    <recordKeyType typeId="fbe3cc40-9723-41a9-89f8-fee142df4a94" valueTypeId="bb2cc9f9-5935-4dcf-a801-adfbb3145c45"/>
+    <recordType typeId="ef443993-e761-438d-80ce-27625fc603e7" valueTypeId="f5d67e96-55e1-42f7-a3c7-1a02cce69ff2"/>
+    <recordManagerType typeId="c7b60a52-6a90-4f1b-8034-488180449ddc" valueTypeId="f5f40af7-811e-4a4d-993f-7efd2d22198e"/>
+  </producedTypes>
+  <name>торо_ППРДляРасчетаВФоновомРежиме</name>
+  <synonym>
+    <key>ru</key>
+    <value>ППР для расчета в фоновом режиме</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.торо_ППРДляРасчетаВФоновомРежиме.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.торо_ППРДляРасчетаВФоновомРежиме.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Период записи регистра</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="f3a918f7-e4e4-4e69-b544-b45bd4f1c82d">
+    <name>Рассчитан</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рассчитан</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак того, что расчет уже выполнен</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="5614a10f-c356-4461-9bf6-97460245fbbd">
+    <name>ВыборочныйРасчет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выборочный расчет</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Выборочный расчет)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="2842d5fb-2f32-4bd4-b6bb-af101d00105e">
+    <name>ОписаниеОшибки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание ошибки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Ошибки при выполнении расчета</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <dimensions uuid="638e2f72-4117-402b-9e9a-ed6027129412">
+    <name>ДокументППР</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ ППР</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.торо_ПланГрафикРемонта</types>
+      <types>DocumentRef.торо_ГрафикРегламентныхМероприятийТОиР</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Документ, который необходимо рассчитать в фоне</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="042134f5-f769-4edb-9005-5ec3cad407ad">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <includeHelpInContents>true</includeHelpInContents>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="301ad894-d40a-4fb9-b376-587a0cf13115">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <includeHelpInContents>true</includeHelpInContents>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="6ac98443-6ab8-4bb7-b321-19cdddb90310">
+    <name>ППРДляРасчетаВФоновомРежиме</name>
+    <synonym>
+      <key>ru</key>
+      <value>ППР для расчета в фоновом режиме</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:InformationRegister>

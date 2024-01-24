@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="93350bc1-9346-429c-9e68-10fffb53bcb7">
+  <name>торо_СогласованиеПередЗаписьюДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Согласование, перед записью документа</value>
+  </synonym>
+  <source>
+    <types>DefinedType.торо_СогласуемыеДокументыОбъекты</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.торо_РаботаССогласованиями.торо_СогласованиеПроверкиПередЗаписьюДокументаОбработчик</handler>
+</mdclass:EventSubscription>

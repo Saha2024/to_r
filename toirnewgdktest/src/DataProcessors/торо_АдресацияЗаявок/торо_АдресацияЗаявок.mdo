@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="92475f37-3b28-4612-9534-f5c191c9aaf8">
+  <producedTypes>
+    <objectType typeId="92f2bd2d-d9c9-4fb6-be35-ae8cb04d8f45" valueTypeId="96224695-4f32-4fe9-8e2f-030bcbf87613"/>
+    <managerType typeId="201a4324-bed4-4eea-8ef7-c962f3b62146" valueTypeId="3bf2b10f-20c6-41ec-a97a-e106c3207263"/>
+  </producedTypes>
+  <name>торо_АдресацияЗаявок</name>
+  <synonym>
+    <key>ru</key>
+    <value>Адресация заявок</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.торо_АдресацияЗаявок.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="6684505c-e1bf-4888-8a05-696649352572">
+    <name>ВариантОтображения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вариант отображения</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="64b05155-d431-407f-a326-502d8f109085">
+    <name>ОтборПодразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтруктураПредприятия</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="6f8d86d5-c1c6-4abd-acca-b179bf9c863f">
+    <name>ОтборПодразделениеИспользование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отбор подразделение использование</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="2d397a1c-893b-4530-9e84-0b798011dcae">
+    <name>ОтборБригада</name>
+    <synonym>
+      <key>ru</key>
+      <value>Бригада</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_РемонтныеБригады</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="2f4778da-0bb5-4e60-aa3b-74d716f1c3af">
+    <name>ОтборБригадаИспользование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отбор бригада использование</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="3712206b-175f-41be-84f7-8f8156eed627">
+    <name>ОтборКонтрагент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контрагент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="89847205-d18c-40e7-8a40-f8ca1ce615d6">
+    <name>ОтборКонтрагентИспользование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отбор контрагент использование</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="38ca330f-388b-49df-b57c-244aee1439b3">
+    <name>ОтборДоговор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ДоговорыКонтрагентов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="09f07783-a430-4495-b062-f7b9e9e29db6">
+    <name>ОтборДоговорИспользование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отбор договор использование</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e30918ce-c698-4c64-90db-5081bf2c1b03">
+    <name>ОтборСтатус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.торо_СтатусыРемонтов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5f87f4c2-f7eb-4731-80d0-863f5341de09">
+    <name>ОтборСтатусИспользование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отбор статус использование</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="002cd27e-9520-4a08-9379-bea6c9bb109c">
+    <name>ОтборПериодИспользование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отбор период использование</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="7a70d4f3-cebe-48da-93d9-9a69eaed5c5f">
+    <name>ОтборНачалоПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начало периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="8eed4e77-f2b7-430c-9c4e-b88fe878d305">
+    <name>ОтборКонецПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конец периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c3a1a5fe-cc28-4818-9f8c-fdfc9a12debb">
+    <name>ОтборППР</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отбор по план-графикам ремонта</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="527f616a-ff78-4f74-92d1-7715f7eb509f">
+    <name>ОтборВО</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отбор по внешним основаниям</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="ea0f3561-1d4c-4ac5-bcef-b50c20386431">
+    <name>ОтборВД</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отбор по выявленным дефектам</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="24a4b6df-81fd-4634-a0e5-09b928e5ef60">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <includeHelpInContents>true</includeHelpInContents>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="819c88db-c617-4fe6-8c60-e722cf9920f7">
+    <name>АдресацияЗаявок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адресация заявок</value>
+    </synonym>
+    <group>NavigationPanelImportant</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

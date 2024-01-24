@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3046535e-e54d-462d-bd93-8f7d2a163f1b">
+  <producedTypes>
+    <selectionType typeId="e4a38f94-1032-493d-863b-46aa0a7e9284" valueTypeId="22eb3711-c425-453a-9c19-471c99f9b53c"/>
+    <listType typeId="0a101db1-b78f-42fe-b795-3c60ddee8f50" valueTypeId="ed91c14f-33cc-4001-b3ee-2bf0cfa16429"/>
+    <managerType typeId="406110ae-cdbb-49e6-a382-a9a638109a47" valueTypeId="16f5433f-4cc8-487c-81f5-19c6589ddb15"/>
+    <recordSetType typeId="f3f9ec38-9fa2-4533-89d3-fb1f19886a60" valueTypeId="0b754c13-a0f6-4108-87a7-4488eacb30d7"/>
+    <recordKeyType typeId="c4983e8c-5a93-432b-85aa-9545db6813de" valueTypeId="f6810787-6b50-4bba-8809-1ad6fd072294"/>
+    <recordType typeId="b07e8be9-90e3-4de7-a955-532ef46ba7c4" valueTypeId="7e83dbe7-3e55-4aa8-b709-6969b4bde1f3"/>
+    <recordManagerType typeId="81043e46-9f5d-45ea-8ac6-6735989b28d2" valueTypeId="398df8cb-77a0-4748-891b-6dc41c4d779d"/>
+  </producedTypes>
+  <name>торо_ВсеДокументыПоРемонтам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Все документы по ремонтам</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <writeMode>RecorderSubordinate</writeMode>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="9992c4fc-67f7-431e-b2c6-22a7e4d26fc4">
+    <name>ДатаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата документа</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="3fa7ef1d-5178-4f29-b06b-7b8dfdfd060a">
+    <name>Организация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="7ba8a0a8-7d7d-43d7-b377-0c29d77f1b60">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтруктураПредприятия</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="f3d149da-2b66-4648-af01-8be8ff6face4">
+    <name>IDРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>IDРемонта</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Идентификатор ремонта в документе</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="9ce4bfed-f3ba-4a88-8fa5-2308f7c116a7">
+    <name>ДокументПоРемонту</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ по ремонту</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.торо_ВнешнееОснованиеДляРабот</types>
+      <types>DocumentRef.торо_ЗакрытиеЗаявокИРемонтов</types>
+      <types>DocumentRef.торо_НарядНаРегламентноеМероприятие</types>
+      <types>DocumentRef.торо_ПланГрафикРемонта</types>
+      <types>DocumentRef.торо_НарядНаВыполнениеРемонтныхРабот</types>
+      <types>DocumentRef.торо_ГрафикРегламентныхМероприятийТОиР</types>
+      <types>DocumentRef.торо_АктОВыполненииРегламентногоМероприятия</types>
+      <types>DocumentRef.торо_ОстановочныеРемонты</types>
+      <types>DocumentRef.торо_ВыявленныеДефекты</types>
+      <types>DocumentRef.торо_АктОВыполненииЭтапаРабот</types>
+      <types>DocumentRef.торо_ПланРаботПодразделения</types>
+      <types>DocumentRef.торо_ЗаявкаНаРемонт</types>
+      <types>DocumentRef.торо_АктПриемкиОборудования</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="02c5e4b8-54ff-4a13-a192-4f3a8b680c95">
+  <name>торо_ОбменТОИР30ЕРП20_ЗарегистрироватьИзменение</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен ТОИР 3.0 ERP 2.0 зарегистрировать изменение</value>
+  </synonym>
+  <source>
+    <types>CatalogObject.торо_ТиповыеОР</types>
+    <types>CatalogObject.проф_Назначения</types>
+    <types>CatalogObject.ПараметрыВыработкиОС</types>
+    <types>CatalogObject.торо_НаправленияОбъектовРемонтныхРабот</types>
+    <types>CatalogObject.торо_ОбъектыРемонта</types>
+    <types>CatalogObject.торо_КритичностьДефекта</types>
+    <types>CatalogObject.торо_ВидыРемонтов</types>
+    <types>ChartOfCharacteristicTypesObject.ДополнительныеРеквизитыИСведения</types>
+    <types>CatalogObject.торо_ВидыДефектов</types>
+    <types>CatalogObject.торо_ВидыЭксплуатации</types>
+    <types>CatalogObject.проф_МоделиУзлов</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.торо_ОбменТОИР30ЕРП20События.ОбменТОиР30ЕРП20_ЗарегистрироватьИзменениеПередЗаписью</handler>
+</mdclass:EventSubscription>

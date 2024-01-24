@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ec8b0ca2-0517-4d4a-a950-459312644e6b">
+  <name>торо_ОбменТОИРRCM_ЗарегистрироватьИзменениеСправочника</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен ТОИР - RCM зарегистрировать изменение справочника</value>
+  </synonym>
+  <source>
+    <types>CatalogObject.торо_ТиповыеОР</types>
+    <types>CatalogObject.торо_ИдентификаторыТехКарт</types>
+    <types>CatalogObject.ПараметрыВыработкиОС</types>
+    <types>CatalogObject.торо_ТехнологическиеОперации</types>
+    <types>CatalogObject.торо_ОбъектыРемонта</types>
+    <types>CatalogObject.торо_КритичностьДефекта</types>
+    <types>CatalogObject.Валюты</types>
+    <types>CatalogObject.ЕдиницыИзмерения</types>
+    <types>CatalogObject.торо_ПриоритетыОбъектовРемонта</types>
+    <types>CatalogObject.торо_СпособыПланированияРемонтныхРабот</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.торо_ОбменДаннымиТОИР20RCM.ЗарегистрироватьИзменениеДляRCMПередЗаписью</handler>
+</mdclass:EventSubscription>

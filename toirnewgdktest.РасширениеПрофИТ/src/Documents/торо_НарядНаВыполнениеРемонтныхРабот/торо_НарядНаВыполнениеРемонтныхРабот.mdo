@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="0c367333-f484-4318-8c4f-3c4be88e403f" extendedConfigurationObject="91a3657a-5af9-486c-bdd1-67ccd3de7fce">
+  <producedTypes>
+    <objectType typeId="b0cb6fb7-103c-48f4-bbf1-fc8df06e5b38" valueTypeId="a3ab56f6-9c51-4880-a788-b86e1f169813"/>
+    <refType typeId="4b76d0cf-c516-404a-8bcb-9af06e617be6" valueTypeId="7f3d5897-bdb8-4e74-910a-0608b3407de3"/>
+    <selectionType typeId="f908aab8-b4f1-4f1c-a43b-1195b24e03e3" valueTypeId="82a3cb61-ed70-493d-9d20-ac6fa13e42c0"/>
+    <listType typeId="845e5f4d-7d99-4a3c-a8bc-b057511f3136" valueTypeId="70cd4ca1-6eb7-4de8-8532-eafe14d00195"/>
+    <managerType typeId="48a18101-5613-4356-b7b7-e370096ac9d7" valueTypeId="f041b481-641d-4b1b-8411-5fb1e69508ef"/>
+  </producedTypes>
+  <name>торо_НарядНаВыполнениеРемонтныхРабот</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <objectModule>Extended</objectModule>
+    <managerModule>Extended</managerModule>
+  </extension>
+  <forms uuid="2ddc1631-9309-49a8-91f2-e10f77e4fb90" extendedConfigurationObject="dea5d785-a32c-4891-a472-e0484e5cddce">
+    <name>ФормаДокумента</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFormExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <form>Extended</form>
+    </extension>
+  </forms>
+  <tabularSections uuid="d19a8d4f-5d5c-49de-8feb-47b5667c5892" extendedConfigurationObject="f70fd13e-81a3-43b3-9a2a-08cc80f978c7">
+    <producedTypes>
+      <objectType typeId="405db732-f415-4ce3-8553-76d8fdcf7877" valueTypeId="b7155be3-7fb0-4708-8dfe-cd92887a0503"/>
+      <rowType typeId="76ed449e-988c-431a-846f-af31a1d81e51" valueTypeId="8fc53e3f-6f53-4994-8d1c-5978cff17d11"/>
+    </producedTypes>
+    <name>РемонтыОборудования</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+    <attributes uuid="5a0c416d-4fa2-43fd-88c7-6041a45a6172" extendedConfigurationObject="5e090819-3bf8-4a64-a7d2-0ab585ce4316">
+      <name>ID</name>
+      <objectBelonging>Adopted</objectBelonging>
+      <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+        <extendedConfigurationObject>Checked</extendedConfigurationObject>
+        <typeExtension>
+          <types>
+            <state>Checked</state>
+            <type>String</type>
+          </types>
+          <stringQualifiers>
+            <length>36</length>
+          </stringQualifiers>
+        </typeExtension>
+      </extension>
+      <type/>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="abc49107-ac6d-46d3-b96e-eae133c29a80">
+  <name>торо_ОбменТОИРRCM_ЗарегистрироватьИзменениеДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен ТОИР - RCM зарегистрировать изменение документа</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.торо_УчетНаработкиОборудования</types>
+    <types>DocumentObject.торо_ВыявленныеДефекты</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.торо_ОбменДаннымиТОИР20RCM.ЗарегистрироватьИзменениеДокументаДляRCMПередЗаписью</handler>
+</mdclass:EventSubscription>

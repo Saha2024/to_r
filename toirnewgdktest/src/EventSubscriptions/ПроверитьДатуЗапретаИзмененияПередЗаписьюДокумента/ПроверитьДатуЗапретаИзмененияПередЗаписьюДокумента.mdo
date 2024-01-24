@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ceb2c892-758b-4021-84c5-9f75e0c4b4a4">
+  <name>ПроверитьДатуЗапретаИзмененияПередЗаписьюДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проверить дату запрета изменения перед записью документа</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.торо_ВводНачальныхДанных</types>
+    <types>DocumentObject.ВнутреннееПотреблениеТоваров</types>
+    <types>DocumentObject.торо_ПланГрафикРемонта</types>
+    <types>DocumentObject.торо_АктОВыполненииРегламентногоМероприятия</types>
+    <types>DocumentObject.торо_НарядНаВыполнениеРемонтныхРабот</types>
+    <types>DocumentObject.торо_ВнешнееОснованиеДляРабот</types>
+    <types>DocumentObject.СписаниеНедостачТоваров</types>
+    <types>DocumentObject.торо_ЗакрытиеЗаявокИРемонтов</types>
+    <types>DocumentObject.торо_УчетНаработкиОборудования</types>
+    <types>DocumentObject.КадровыйПеревод</types>
+    <types>DocumentObject.торо_АктПриемкиОборудования</types>
+    <types>DocumentObject.торо_УстановкаЛимитаНаПлановыеРемонтныеРаботы</types>
+    <types>DocumentObject.ПоступлениеТоваровУслуг</types>
+    <types>DocumentObject.торо_СостоянияОбъектовРемонта</types>
+    <types>DocumentObject.торо_УстановкаПроизвольногоЗначенияНаработки</types>
+    <types>DocumentObject.торо_ПланРаботПодразделения</types>
+    <types>DocumentObject.торо_ПлановаяДоступностьПерсонала</types>
+    <types>DocumentObject.ОприходованиеИзлишковТоваров</types>
+    <types>DocumentObject.торо_НарядНаРегламентноеМероприятие</types>
+    <types>DocumentObject.торо_ВыявленныеДефекты</types>
+    <types>DocumentObject.торо_ГрафикРегламентныхМероприятийТОиР</types>
+    <types>DocumentObject.ПриемНаРаботу</types>
+    <types>DocumentObject.торо_ОстановочныеРемонты</types>
+    <types>DocumentObject.Увольнение</types>
+    <types>DocumentObject.торо_УчетКонтролируемыхПоказателей</types>
+    <types>DocumentObject.ПеремещениеТоваров</types>
+    <types>DocumentObject.торо_АктОВыполненииЭтапаРабот</types>
+    <types>DocumentObject.ЗаказНаВнутреннееПотребление</types>
+    <types>DocumentObject.торо_ЗаявкаНаРемонт</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.ДатыЗапретаИзменения.ПроверитьДатуЗапретаИзмененияПередЗаписьюДокумента</handler>
+</mdclass:EventSubscription>

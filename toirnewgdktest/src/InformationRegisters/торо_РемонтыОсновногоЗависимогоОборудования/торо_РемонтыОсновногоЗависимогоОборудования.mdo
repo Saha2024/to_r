@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e04654c7-6dd9-4d75-a6b3-5b328c784f12">
+  <producedTypes>
+    <selectionType typeId="401d213e-9462-4537-a9c2-012a0ec2bd3d" valueTypeId="e89e13db-d43c-4430-ace0-d91cf51dfbbf"/>
+    <listType typeId="58ad4724-5b84-4ada-9059-908dddd0e3fd" valueTypeId="b2c13847-d493-4754-af0a-0b10bc2d661e"/>
+    <managerType typeId="ec4b0190-d903-4130-8325-6bbbec4900dd" valueTypeId="8860742d-a16a-4063-b690-a7f069c35d80"/>
+    <recordSetType typeId="c111f865-a4bf-4c9d-bfc9-288336150f99" valueTypeId="66a30973-9592-4754-aea8-ef3b1179db37"/>
+    <recordKeyType typeId="959dbd6f-40fe-429f-9233-7d14b01a96cd" valueTypeId="c61e4edb-50d1-48f2-9d2c-5abcdfdf47a2"/>
+    <recordType typeId="fb3b2fef-2d29-4935-87cd-2239eadb854b" valueTypeId="8155e302-6f15-453e-93b8-4e98527b764f"/>
+    <recordManagerType typeId="c09eebdb-0bcd-460b-a8b1-a466bb2633da" valueTypeId="90be57dd-d090-412d-8039-5693aa9b7a9c"/>
+  </producedTypes>
+  <name>торо_РемонтыОсновногоЗависимогоОборудования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ремонты основного зависимого оборудования</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="4dbaa5ea-0e27-4748-b9fa-47f437c90d1a">
+    <name>ОсновнойОбъектРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основной объект ремонта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ОбъектыРемонта</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Основной объект ремонта)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="f18d50f9-7dfb-4f98-af05-047938dfb7cd">
+    <name>СвязанныйОбъектРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Связанный объект ремонта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ОбъектыРемонта</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Связанный объект ремонта)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="404f010a-c5ff-46fe-9247-a0ae2faed0f7">
+    <name>ВидРемонтаОсновногоОбъекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид ремонта основного объекта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ВидыРемонтов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Вид ремонта основного объекта)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="9d737546-568a-4bee-8624-1c4e40e2ed67">
+    <name>ВидРемонтаЗависимогоОбъекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид ремонта зависимого объекта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ВидыРемонтов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Вид ремонта зависимого объекта)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

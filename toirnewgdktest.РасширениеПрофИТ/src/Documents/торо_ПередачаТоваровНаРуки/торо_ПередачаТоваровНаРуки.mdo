@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="f1b236d8-4549-4bb7-b4ac-4d7960d1d78a" extendedConfigurationObject="99e5f936-5829-4953-96e6-d76dc4e425e9">
+  <producedTypes>
+    <objectType typeId="9dc8c6e6-db4a-43a1-b19d-e21b7b76f3c9" valueTypeId="ea4eaeb3-4e72-4927-b7b9-ef56627a0997"/>
+    <refType typeId="0cad5a83-8953-4a94-a89e-7137cdbed898" valueTypeId="682d84f5-d373-444c-8919-938a1c24062a"/>
+    <selectionType typeId="536a973f-f5e1-476b-b0ec-a77332381c8f" valueTypeId="a5d24f69-ac32-42b8-9ad8-a14c77a2e8b2"/>
+    <listType typeId="75eca4e0-6ffe-4360-bd2a-2f5778c23cc8" valueTypeId="45434a87-ca18-4da0-82ef-6a77e353df29"/>
+    <managerType typeId="7d0b7f26-c27c-4650-aee3-acf2d3e42430" valueTypeId="f3fa70e4-d463-43ba-afd0-073e2bff36fd"/>
+  </producedTypes>
+  <name>торо_ПередачаТоваровНаРуки</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <objectModule>Extended</objectModule>
+  </extension>
+  <attributes uuid="5b5ee2f3-4c7c-4d31-8212-0890896872aa" extendedConfigurationObject="ecd21722-6a6a-492c-867a-cc51b0ba13ac">
+    <name>Склад</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>CatalogRef.Склады</type>
+        </types>
+      </typeExtension>
+    </extension>
+    <type/>
+  </attributes>
+  <forms uuid="46df5d73-e722-4112-9a1c-75087d7bf828" extendedConfigurationObject="0263a68f-d81e-44ff-b015-9a468342a484">
+    <name>ФормаДокумента</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFormExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <form>Extended</form>
+    </extension>
+  </forms>
+  <tabularSections uuid="50f77f53-79a8-4682-960b-88e1c2300545" extendedConfigurationObject="b45ade93-be90-4467-9543-f1b513f06347">
+    <producedTypes>
+      <objectType typeId="7193bccf-9374-4e5c-bd9d-b9930b4c6740" valueTypeId="d94e0563-f7ae-4499-bebc-35f2338159fe"/>
+      <rowType typeId="74c32a2f-a312-456f-af42-0b05edcd775c" valueTypeId="5aaceafd-d36e-4a67-abc8-934ea8b8671c"/>
+    </producedTypes>
+    <name>Товары</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+  </tabularSections>
+</mdclass:Document>

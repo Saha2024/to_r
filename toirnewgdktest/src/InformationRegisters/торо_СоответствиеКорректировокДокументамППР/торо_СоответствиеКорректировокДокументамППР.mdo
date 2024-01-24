@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="81ea9e56-54a7-42e6-8277-18bf7c22e462">
+  <producedTypes>
+    <selectionType typeId="6a990769-2864-43c0-a31e-fe4f3fafcd98" valueTypeId="515593d7-98be-4543-99a4-fbf4d8305e58"/>
+    <listType typeId="0c435068-c684-4373-a14d-279b31dbff5f" valueTypeId="8fb62ab6-5169-41e9-85ad-a00d50db389b"/>
+    <managerType typeId="cf5d0a13-2a4e-40d3-b4cd-177f96980fea" valueTypeId="04f172c8-919f-4115-8720-dea61c304c04"/>
+    <recordSetType typeId="3590d047-ee10-4e40-9903-77140e93502a" valueTypeId="4f7fb543-74df-4943-ac73-80f1512c2db4"/>
+    <recordKeyType typeId="792bb50c-bc73-45ed-a48c-0651d39a49b3" valueTypeId="5f136973-46c6-47f9-a06a-1eb87610c7c4"/>
+    <recordType typeId="828cb9a7-6cb6-4c94-97df-4b0a08d64a41" valueTypeId="62863311-b671-4be2-bc40-01f60bc8f971"/>
+    <recordManagerType typeId="d7cc4f0a-a98a-48d0-b667-5126a22d1975" valueTypeId="def65063-3fe6-497a-9b0b-3161381cc859"/>
+  </producedTypes>
+  <name>торо_СоответствиеКорректировокДокументамППР</name>
+  <synonym>
+    <key>ru</key>
+    <value>Соответствие корректировок документам ППР</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <writeMode>RecorderSubordinate</writeMode>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dimensions uuid="1779b8c6-7fe6-4ef5-a578-09b6d83e1e66">
+    <name>Корректировка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Корректировка</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.торо_ПланГрафикРемонта</types>
+      <types>DocumentRef.торо_ГрафикРегламентныхМероприятийТОиР</types>
+      <types>DocumentRef.торо_ОстановочныеРемонты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>План график ремонта корректирующий</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="5f044779-037f-41fc-b619-3a2542a87fec">
+    <name>Корректируемый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Корректируемый</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.торо_ПланГрафикРемонта</types>
+      <types>DocumentRef.торо_ГрафикРегламентныхМероприятийТОиР</types>
+      <types>DocumentRef.торо_ОстановочныеРемонты</types>
+      <types>DocumentRef.торо_ЗаявкаНаРемонт</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>План график ремонта корректируемый</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

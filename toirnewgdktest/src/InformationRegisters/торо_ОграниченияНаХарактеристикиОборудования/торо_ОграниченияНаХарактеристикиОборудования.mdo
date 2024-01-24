@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d65a8d0e-edd7-4f43-b7ff-8fc3cfcf228f">
+  <producedTypes>
+    <selectionType typeId="f332f597-6a5b-456e-9cee-e5dc86799cce" valueTypeId="cebd3ca4-a0af-45a0-9271-5c2aca9c97a0"/>
+    <listType typeId="c45e7f87-2d83-4fdb-83a2-3c385d9120d3" valueTypeId="389152b7-e8c5-4a9d-b6fd-098eea480651"/>
+    <managerType typeId="dde2bef2-b0ea-4b8f-8639-75a6b776f475" valueTypeId="fc540a07-0620-4eb8-a316-ce69fcfac5f4"/>
+    <recordSetType typeId="423eb5fc-6ea3-4bd8-b109-016e38b60d72" valueTypeId="1d738a81-07a0-4588-8612-4a009f78bb2a"/>
+    <recordKeyType typeId="83aee791-8256-4459-83c7-c7f5a0cb378e" valueTypeId="d960b165-b5b7-4dd7-ad76-5790ea67a73c"/>
+    <recordType typeId="699c24ba-8260-4dcf-bc43-affff9ae8ff3" valueTypeId="cd390c53-d967-46ee-ace7-4778e05665e4"/>
+    <recordManagerType typeId="6c8c5fd1-8339-4ddc-8378-46bb770d95e0" valueTypeId="fb697d6c-9321-4df0-9c0e-8289632535b2"/>
+  </producedTypes>
+  <name>торо_ОграниченияНаХарактеристикиОборудования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ограничения на характеристики оборудования</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="73a6d114-453e-415e-84fc-603d27fb28e9">
+    <name>ФункциональноеМесто</name>
+    <synonym>
+      <key>ru</key>
+      <value>Функциональное место</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ОбъектыРемонта</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="653b185d-2830-45d7-ae0d-ac90ceab0a3e">
+    <name>СтруктураИерархии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Структура иерархии</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_СтруктурыОР</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+  </dimensions>
+  <dimensions uuid="f3c46fa3-4221-4522-9d4c-4d09d4280e9b">
+    <name>Ограничение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ограничение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ОграниченияНаХарактеристикиОборудования</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

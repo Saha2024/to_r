@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="07b3c5f6-218c-46bf-962e-fcb6ddfdafb1" extendedConfigurationObject="3f6dfe26-bc2b-4902-8fd6-7e0e11d5e88d">
+  <producedTypes>
+    <selectionType typeId="16fa4c0b-5000-4c53-865a-b09c4e78cac5" valueTypeId="f457784d-2cd9-4a13-a067-6a7b477ac161"/>
+    <listType typeId="69b128dc-d7f6-4f84-a252-8bbdb3819dab" valueTypeId="871c8d30-95e8-4211-b946-5c5ebc5d1f29"/>
+    <managerType typeId="f643d52f-79db-46d8-80f0-734b79a66413" valueTypeId="a547d652-c939-476e-ac62-c6677a573b43"/>
+    <recordSetType typeId="0a03c369-2604-4338-9f05-337a0195f385" valueTypeId="4d8cb331-45a8-4822-9348-dfb9f8d427a4"/>
+    <recordKeyType typeId="cedc1f31-b8b8-41f9-b663-b43fd73b9dea" valueTypeId="5357389a-cd2b-40ed-bb28-a54aa43afb62"/>
+    <recordType typeId="029cc5a0-24f1-41f8-9882-d7c4d40452a2" valueTypeId="76e6af0c-a27c-44e0-8864-7c0bd5903049"/>
+    <recordManagerType typeId="cfccbcc8-2fe0-4633-a33e-3907443d8233" valueTypeId="e4c5fbcf-0cf8-43f5-b3a3-cf2b13d7c1f0"/>
+  </producedTypes>
+  <name>проф_ПараметрыНаработкиОбъектовРемонтаКэш</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:InformationRegisterExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <informationRegisterPeriodicity>Checked</informationRegisterPeriodicity>
+    <writeMode>Checked</writeMode>
+    <recordSetModule>Extended</recordSetModule>
+  </extension>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <resources uuid="7c568522-96fc-43cd-83de-37737932bb0f" extendedConfigurationObject="a4cf6444-a829-4a08-aeb9-07dfbcd2c51b">
+    <name>ПлановаяНаработка</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Number</type>
+        </types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>4</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </resources>
+  <resources uuid="9bd8e264-fb54-4a5b-9b30-b0bc0f776e72" extendedConfigurationObject="5283313d-46b8-4de3-a4e0-90d60286c2c1">
+    <name>ПериодПлановойНаработки</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>EnumRef.Периодичность</type>
+        </types>
+      </typeExtension>
+    </extension>
+    <type/>
+  </resources>
+  <resources uuid="b5d3faaf-82ec-495e-ace7-fd866466f6ba" extendedConfigurationObject="26470480-cdb7-4f59-8a3b-fa8f5e532af8">
+    <name>ПродолжительностьПериодаПлановойНаработки</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Number</type>
+        </types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </resources>
+  <resources uuid="6658c4ac-8055-445a-9e95-c0d3cd5f38cd" extendedConfigurationObject="77b80dc5-fa1a-4f8c-874f-53001e93d5d5">
+    <name>КоэффициентИспользованияОборудования</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Number</type>
+        </types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>3</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </resources>
+  <resources uuid="ceeb81ee-052d-40ff-8602-4e94b37da42c" extendedConfigurationObject="a550ba2b-4743-46a6-9ddd-4adafe539c07">
+    <name>Основной</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Boolean</type>
+        </types>
+      </typeExtension>
+    </extension>
+    <type/>
+  </resources>
+  <dimensions uuid="307af4d7-3279-4851-8b07-0d9ff9713d9e" extendedConfigurationObject="b1ca037f-3c27-4cd8-8ab1-c4e71fa9df75">
+    <name>ОбъектРемонта</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>AnyRef</type>
+        </types>
+      </typeExtension>
+    </extension>
+    <type/>
+  </dimensions>
+  <dimensions uuid="deec5526-7064-4e3f-9673-30f8bd936fbb" extendedConfigurationObject="212bf668-8e55-411c-8c4d-f11d2b02e993">
+    <name>Показатель</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>CatalogRef.ПараметрыВыработкиОС</type>
+        </types>
+      </typeExtension>
+    </extension>
+    <type/>
+  </dimensions>
+</mdclass:InformationRegister>

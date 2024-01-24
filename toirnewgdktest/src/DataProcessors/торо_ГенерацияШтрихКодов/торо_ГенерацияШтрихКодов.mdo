@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="829cbd63-4e1c-4471-bc47-5f73638744bc">
+  <producedTypes>
+    <objectType typeId="65d81442-d87c-4c6b-bf97-87c8d08c7627" valueTypeId="c66dd5aa-6c8d-4d6d-9cb2-251415655972"/>
+    <managerType typeId="2aba46a3-db9c-4bcb-a547-fc0d326d24ee" valueTypeId="b46ca94e-4f5d-4be8-98c1-38b416af6756"/>
+  </producedTypes>
+  <name>торо_ГенерацияШтрихКодов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Генерация штрихкодов объектов ремонта</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.торо_ГенерацияШтрихКодов.Form.ФормаМассовойГенерации</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="3850df45-fcb4-415e-a402-bf776f7fda98">
+    <name>ФормаШтрихкода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма штрихкода</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="89d87ba7-7fbb-4d36-a435-72594fff75b6">
+    <name>ФормаМассовойГенерации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Генерация штрихкодов объектов ремонтов</value>
+    </synonym>
+    <includeHelpInContents>true</includeHelpInContents>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b557243a-33a7-481b-b519-18a866fedb5c">
+    <name>ФормаПечатиШтрихКодов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма печати штрих кодов</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="602ae436-3f56-411d-ad32-9e8f5f87861f">
+    <name>МакетДляОпределенияКоэффициентовЕдиницИзмерения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет для определения коэффициентов единиц измерения</value>
+    </synonym>
+  </templates>
+  <templates uuid="4ddfb8bd-1701-4f41-9462-cdbd425c105d">
+    <name>МакетВыводаШтрихКода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет вывода штрих кода</value>
+    </synonym>
+  </templates>
+  <templates uuid="ef6c7201-b52f-42e2-a59c-a797fe6c5134">
+    <name>ШтрихКодОР</name>
+    <synonym>
+      <key>ru</key>
+      <value>Штрихкод объекта ремонта</value>
+    </synonym>
+  </templates>
+  <commands uuid="0b736574-8ecb-4a77-aa69-ccd61b994a45">
+    <name>ГенерацияШтрихКодовОбъектовРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Генерация штрих-кодов объектов ремонта</value>
+    </synonym>
+    <group>NavigationPanelOrdinary</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

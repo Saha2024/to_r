@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1c255281-68e5-4b15-a230-76e5648c37de">
+  <producedTypes>
+    <selectionType typeId="540ea78d-9e77-4e5d-98be-78de69d3075d" valueTypeId="fef814f7-993f-4b08-806f-e92d0ad702cc"/>
+    <listType typeId="20d44aa4-3baf-4cd7-8942-f44d7b44588d" valueTypeId="b518bb53-e290-4ecc-9a6c-79e111cc5f15"/>
+    <managerType typeId="179af54c-c268-4866-ba8e-2b89de8a8706" valueTypeId="18f811ce-2d18-4215-8a09-856ac378a157"/>
+    <recordSetType typeId="65e42574-604a-419e-8afd-4dda22b90a08" valueTypeId="33989e1c-73a6-46c6-9b5c-f5d2a17f479c"/>
+    <recordKeyType typeId="36898cf2-16f9-409c-a1dc-3f01d166b447" valueTypeId="35d6384b-1d6d-434c-8cdd-45b90e951bed"/>
+    <recordType typeId="71ed2225-7000-4360-8e97-1d031c2a362d" valueTypeId="4a4cfa19-a8fb-4f4e-9aca-811ac943cc17"/>
+  </producedTypes>
+  <name>торо_ПроцентВыполненныхРабот</name>
+  <synonym>
+    <key>ru</key>
+    <value>Процент выполненных работ</value>
+  </synonym>
+  <registerType>Turnovers</registerType>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="dbca6dfc-01a1-44ff-918a-199aa627c8f5">
+    <name>Процент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Процент</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="f455e265-6086-4c67-b83e-8b5e68f4b683">
+    <name>IDРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>ID ремонта</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="f84b6c2e-51fc-41e5-9309-be51a967930f">
+    <name>IDОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>ID операции</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="2e6d0d1f-c341-4994-967f-3ffaab5f7eb1">
+    <name>ВидДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид документа</value>
+    </synonym>
+    <type>
+      <types>EnumRef.торо_ВидДокумента</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="11cc0d52-26f3-409b-a07e-57642dec5e1f">
+    <name>Операция</name>
+    <synonym>
+      <key>ru</key>
+      <value>Операция</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ТехнологическиеОперации</types>
+      <types>CatalogRef.торо_ТехКарты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="e0e58a11-e9e8-4fa7-9cb4-4e651a1a2271">
+    <name>IDРодителя</name>
+    <synonym>
+      <key>ru</key>
+      <value>ID родителя</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

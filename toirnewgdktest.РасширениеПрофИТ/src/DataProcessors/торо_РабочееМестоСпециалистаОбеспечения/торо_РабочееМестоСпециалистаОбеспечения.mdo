@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="1ff1aa22-0f95-45ea-ad62-a6bcce2eefc9" extendedConfigurationObject="4b8166aa-cc94-48b5-b133-e5b863512d7a">
+  <producedTypes>
+    <objectType typeId="6cb6f13e-ad8f-4e29-8c7e-8d208d738865" valueTypeId="328748a7-3b06-451b-be28-18a5d72624e7"/>
+    <managerType typeId="a4f6c0cf-8d66-43ec-8569-2014fb903a25" valueTypeId="e741a7fd-26d6-40ca-a8f4-18b5bd414929"/>
+  </producedTypes>
+  <name>торо_РабочееМестоСпециалистаОбеспечения</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DataProcessorExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <forms uuid="0793972a-168c-4ff5-a003-e63d3069fb51" extendedConfigurationObject="05f2761d-b3de-4e3e-b22a-a197a3b59110">
+    <name>Форма</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFormExtension">
+      <extendedConfigurationObject>Notify</extendedConfigurationObject>
+      <form>Extended</form>
+    </extension>
+  </forms>
+  <forms uuid="4017b315-1bd3-4f45-a297-28b2d91cf1e2" extendedConfigurationObject="a56903af-8318-4c0f-a233-2de2e8e1aadc">
+    <name>ФормаВыбораПоставщиковДляЗаказа</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFormExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <form>Extended</form>
+    </extension>
+  </forms>
+  <forms uuid="dc638228-5fef-4d59-a191-13c1c71397c6" extendedConfigurationObject="d68732fe-0a62-43f8-9b78-6373bc77e936">
+    <name>ФормаВыбораСкладовДляПеремещения</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFormExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <form>Extended</form>
+    </extension>
+  </forms>
+  <forms uuid="a2f8a61e-989d-4a83-b5dc-c2260f6503a2">
+    <name>проф_ФормаЗаменаАналогом</name>
+    <synonym>
+      <key>ru</key>
+      <value>Замена аналогом</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

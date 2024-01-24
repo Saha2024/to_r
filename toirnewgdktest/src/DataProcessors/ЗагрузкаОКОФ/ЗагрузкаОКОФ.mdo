@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="07ca00fe-0f77-4d83-9424-9d61f5392e50">
+  <producedTypes>
+    <objectType typeId="64a1da5d-5fa9-4cab-ad03-ecdf5cfc7b98" valueTypeId="aa7de6ad-7380-484e-aece-45b1e1f8ec2e"/>
+    <managerType typeId="04ed41cb-c69a-46a8-9487-bbca52c1a5f3" valueTypeId="c73f5810-bb68-4f06-a108-230a897a48d5"/>
+  </producedTypes>
+  <name>ЗагрузкаОКОФ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка ОКОФ</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="d8f6a189-1886-4c8e-986a-0a484600aa01">
+    <name>Загружать</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загрузить классификатор в информационную базу</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5dcefb21-5321-49c0-b905-00922a634a96">
+    <name>ЗагружатьПолностью</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запретить интерактивную настройку</value>
+    </synonym>
+    <comment>Загружать полностью (запрет настройки)</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="9456178a-9d8b-4f15-bbd9-ab21bc74a0c3">
+    <name>ПерезаписыватьОбъекты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обновлять существующие</value>
+    </synonym>
+    <comment>Обновлять существующие в базе позиции</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="d9425813-29d0-43df-840c-1d808829e4d5">
+    <name>ПерезаписыватьЭтоГруппа</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разрешить замену элементов группами</value>
+    </synonym>
+    <comment>Разрешить замену элементов группами (и наоборот) в случае конфликта</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="817c1723-35f6-4739-8dc2-439b471269cf">
+    <name>УдалятьНеактуальные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удалять неактуальные элементы при полной загрузке</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="26fd9317-de18-4592-940f-5c685474c920">
+    <name>ИдентификаторКлассификатора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор классификатора</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="b5659bdb-b65f-4a40-ad04-e6d6e073e295">
+    <name>Источник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Источник</value>
+    </synonym>
+    <comment>Имя файла, URL или путь на диске ИТС, префиксованный строкой &quot;its:&quot;</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>260</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="bd71f5f8-740e-487d-8aad-33a4258c16ca">
+    <name>НаименованиеКлассификатора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование классификатора</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="056db66f-6337-4bbf-a314-52ae99827197">
+    <name>Редакция</name>
+    <synonym>
+      <key>ru</key>
+      <value>Редакция</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="186a4135-926f-43a4-b480-ed2565c5929e">
+    <name>Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата обновления</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e565cca5-2b49-4a4f-903b-14389a8e94d1">
+    <name>АдресВХранилище</name>
+    <synonym>
+      <key>ru</key>
+      <value>Адрес в хранилище</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="43f65a1f-25b9-459d-8fe5-a68df100efee">
+    <name>ДопустимыеТипыКлассификаторов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Допустимые типы классификаторов</value>
+    </synonym>
+    <type>
+      <types>ValueList</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="b63bb751-2d73-4465-b53f-cc316367f3ce">
+    <name>КоличествоЭлементов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество элементов</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="82fadbb3-6f94-4ed8-bc24-fcb129679d60">
+    <name>Обработано</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обработано</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a258c1a5-01e1-4635-9acf-7bbc117ae770">
+    <name>Обновлено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обновлено</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <tabularSections uuid="4a85ddd3-86a7-4058-80a0-1d4600c3ae1e">
+    <producedTypes>
+      <objectType typeId="d2e96819-64b8-42b1-b96d-800d38b5216a" valueTypeId="11370ab6-2e3d-4b4b-a443-2580197b5f38"/>
+      <rowType typeId="c246cdad-ff47-4339-af84-f37918795a73" valueTypeId="305a9e64-4df7-43f7-8207-926cfda3150d"/>
+    </producedTypes>
+    <name>Классификаторы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Классификаторы для загрузки</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="3ea07f48-eeb9-4878-b10b-a2845cecdd7e">
+      <name>Загружать</name>
+      <synonym>
+        <key>ru</key>
+        <value>Загрузить классификатор в информационную базу</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="2a0df5c4-9f8a-41fe-9aad-c49327e6fb8f">
+      <name>ЗагружатьПолностью</name>
+      <synonym>
+        <key>ru</key>
+        <value>Запретить интерактивную настройку</value>
+      </synonym>
+      <comment>Загружать полностью (запрет настройки)</comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="7e75d34a-ca16-45c7-8445-d8829e14d1d3">
+      <name>ПерезаписыватьОбъекты</name>
+      <synonym>
+        <key>ru</key>
+        <value>Обновлять существующие</value>
+      </synonym>
+      <comment>Обновлять существующие в базе позиции</comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="c6bc00b6-bf0f-4af0-8f08-1291bfbe7143">
+      <name>ПерезаписыватьЭтоГруппа</name>
+      <synonym>
+        <key>ru</key>
+        <value>Разрешить замену элементов группами</value>
+      </synonym>
+      <comment>Разрешить замену элементов группами (и наоборот) в случае конфликта</comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="6d95e7a0-52ef-4ed9-82be-d6bf1e4a2d43">
+      <name>УдалятьНеактуальные</name>
+      <synonym>
+        <key>ru</key>
+        <value>Удалять неактуальные элементы при полной загрузке</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="c4f72332-75d0-492f-91d4-3fa32c93bb0b">
+      <name>Идентификатор</name>
+      <synonym>
+        <key>ru</key>
+        <value>Идентификатор</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>10</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="bcf7acd8-4fb6-440f-a969-b36551a7e2fc">
+      <name>Источник</name>
+      <synonym>
+        <key>ru</key>
+        <value>Источник</value>
+      </synonym>
+      <comment>Имя файла, URL или путь на диске ИТС, префиксованный строкой &quot;its:&quot;</comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>260</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="e8f1d6ef-b142-4ac1-aa67-b0ae7c5ef781">
+      <name>Наименование</name>
+      <synonym>
+        <key>ru</key>
+        <value>Наименование классификатора</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>200</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="bc37163f-bb3f-47cd-a5b1-76565a3e754a">
+      <name>Редакция</name>
+      <synonym>
+        <key>ru</key>
+        <value>Редакция</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>200</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="cc52a65f-67cd-40b0-b538-4875a56049ba">
+      <name>Дата</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата обновления</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="626ada86-1c4c-4cd8-984f-fc3db225e441">
+      <name>АдресВХранилище</name>
+      <synonym>
+        <key>ru</key>
+        <value>Адрес в хранилище</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>100</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:StringValue">
+        <value></value>
+      </fillValue>
+    </attributes>
+  </tabularSections>
+  <templates uuid="771b84eb-7a79-4276-b889-957f71eed82c">
+    <name>МодельXDTO</name>
+    <synonym>
+      <key>ru</key>
+      <value>Модель XDTO по умолчанию</value>
+    </synonym>
+    <comment>Содержит модель типов явно используемых объектов XDTO</comment>
+    <templateType>TextDocument</templateType>
+  </templates>
+</mdclass:DataProcessor>

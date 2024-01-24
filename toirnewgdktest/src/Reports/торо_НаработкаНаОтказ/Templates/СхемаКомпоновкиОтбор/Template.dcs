@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>Данные</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъектРемонта</dataPath>
+			<field>ОбъектРемонта</field>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.торо_ОбъектыРемонта</v8:Type>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ID</dataPath>
+			<field>ID</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаОбнаружения</dataPath>
+			<field>ДатаОбнаружения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата обнаружения</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидРемонта</dataPath>
+			<field>ВидРемонта</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидРемонтаПредыдущийДефект</dataPath>
+			<field>ВидРемонтаПредыдущийДефект</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид ремонта предыдущий дефект</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаУстранения</dataPath>
+			<field>ДатаУстранения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата устранения</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъектИерархии</dataPath>
+			<field>ОбъектИерархии</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объект иерархии</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+			<inHierarchyDataSet>Контроль</inHierarchyDataSet>
+			<inHierarchyDataSetParameter>Родитель</inHierarchyDataSetParameter>
+			<inputParameters>
+				<dcscor:item>
+					<dcscor:parameter>СвязиПараметровВыбора</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:ChoiceParameterLinks">
+						<dcscor:item>
+							<dcscor:choiceParameter>СтруктураИерархии</dcscor:choiceParameter>
+							<dcscor:value>ПараметрыДанных.ИерархияТип</dcscor:value>
+							<dcscor:mode xmlns:d8p1="http://v8.1c.ru/8.1/data/enterprise" xsi:type="d8p1:LinkedValueChangeMode">Clear</dcscor:mode>
+						</dcscor:item>
+					</dcscor:value>
+				</dcscor:item>
+				<dcscor:item>
+					<dcscor:parameter>СвязьПоТипу</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:TypeLink">
+						<dcscor:field>ПараметрыДанных.ИерархияТип</dcscor:field>
+					</dcscor:value>
+				</dcscor:item>
+			</inputParameters>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПлановыйГрафикРаботы</dataPath>
+			<field>ПлановыйГрафикРаботы</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Плановый график работы</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Подразделение</dataPath>
+			<field>Подразделение</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подразделение</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаОбнаруженияПредыдущийДефект</dataPath>
+			<field>ДатаОбнаруженияПредыдущийДефект</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата обнаружения предыдущий дефект</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	торо_ОбщиеДанныеПоРемонтам.IDРемонта КАК ID,
+	торо_ОбщиеДанныеПоРемонтам.ОбъектРемонта КАК ОбъектРемонта,
+	ВЫБОР
+		КОГДА торо_ОбщиеДанныеПоРемонтам.ВидРемонта = ЗНАЧЕНИЕ(Справочник.торо_ВидыРемонтов.ПустаяСсылка)
+			ТОГДА торо_ВидРемонтаПриВводеНаОснованииВыявленныхДефектов.Значение
+		ИНАЧЕ торо_ОбщиеДанныеПоРемонтам.ВидРемонта
+	КОНЕЦ КАК ВидРемонта,
+	торо_ВыявленныеДефекты.Регистратор КАК Регистратор,
+	торо_ВыявленныеДефекты.Период КАК ДатаОбнаружения,
+	ЕСТЬNULL(торо_СвернутыеФактическиеДатыРемонтов.ДатаОкончания, ДАТАВРЕМЯ(1, 1, 1)) КАК ДатаУстранения
+ПОМЕСТИТЬ ВТ_СписокРемонтов
+ИЗ
+	РегистрСведений.торо_ВыявленныеДефекты КАК торо_ВыявленныеДефекты
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.торо_ОбщиеДанныеПоРемонтам КАК торо_ОбщиеДанныеПоРемонтам
+		ПО торо_ВыявленныеДефекты.ID = торо_ОбщиеДанныеПоРемонтам.IDРемонта 
+		И торо_ОбщиеДанныеПоРемонтам.ВидДокументаНачалаЦепочки = ЗНАЧЕНИЕ(Перечисление.торо_ВидыДокументовНачалаЦепочкиРемонтов.ВыявленныйДефект)
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.торо_СвернутыеФактическиеДатыРемонтов КАК торо_СвернутыеФактическиеДатыРемонтов
+		ПО торо_ВыявленныеДефекты.ID = торо_СвернутыеФактическиеДатыРемонтов.IDРемонта
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.торо_ОбъектыРемонта КАК торо_ОбъектыРемонта
+		ПО торо_ВыявленныеДефекты.ОтказавшийЭлемент = торо_ОбъектыРемонта.Ссылка,
+	Константа.торо_ВидРемонтаПриВводеНаОснованииВыявленныхДефектов КАК торо_ВидРемонтаПриВводеНаОснованииВыявленныхДефектов
+{ГДЕ
+	(торо_ВыявленныеДефекты.Период &gt;= &amp;ДатаНачала),
+	(торо_ВыявленныеДефекты.Период &lt;= &amp;ДатаОкончания)}
+
+ИНДЕКСИРОВАТЬ ПО
+	ОбъектРемонта,
+	ДатаОбнаружения
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	МИНИМУМ(ВТ_СписокРемонтов.ДатаОбнаружения) КАК ДатаОбнаружения,
+	ВТ_СписокРемонтов.ОбъектРемонта КАК ОбъектРемонта
+ПОМЕСТИТЬ ВТ_ДатыПервыхРемонтов
+ИЗ
+	ВТ_СписокРемонтов КАК ВТ_СписокРемонтов
+
+СГРУППИРОВАТЬ ПО
+	ВТ_СписокРемонтов.ОбъектРемонта
+
+ИНДЕКСИРОВАТЬ ПО
+	ОбъектРемонта,
+	ДатаОбнаружения
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	торо_СвернутыеФактическиеДатыРемонтов.ОбъектРемонта КАК ОбъектРемонта,
+	МАКСИМУМ(торо_СвернутыеФактическиеДатыРемонтов.ДатаОкончания) КАК ДатаОкончанияФакт
+ПОМЕСТИТЬ ВТ_ДатыПоследнихРемонтовНачальная
+ИЗ
+	РегистрСведений.торо_СвернутыеФактическиеДатыРемонтов КАК торо_СвернутыеФактическиеДатыРемонтов
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВТ_ДатыПервыхРемонтов КАК ВТ_ДатыПервыхРемонтов
+		ПО торо_СвернутыеФактическиеДатыРемонтов.ОбъектРемонта = ВТ_ДатыПервыхРемонтов.ОбъектРемонта
+			И торо_СвернутыеФактическиеДатыРемонтов.ДатаОкончания &lt; ВТ_ДатыПервыхРемонтов.ДатаОбнаружения
+
+СГРУППИРОВАТЬ ПО
+	торо_СвернутыеФактическиеДатыРемонтов.ОбъектРемонта
+
+ИНДЕКСИРОВАТЬ ПО
+	ОбъектРемонта,
+	ДатаОкончанияФакт
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ВТ_ДатыПоследнихРемонтовНачальная.ОбъектРемонта КАК ОбъектРемонта,
+	ВТ_ДатыПоследнихРемонтовНачальная.ДатаОкончанияФакт КАК ДатаПрошлогоРемонта,
+	торо_СвернутыеФактическиеДатыРемонтов.ВидРемонта КАК ВидРемонта,
+	торо_СвернутыеФактическиеДатыРемонтов.IDРемонта КАК IDРемонта
+ПОМЕСТИТЬ ВТ_ДатыПоследнихРемонтовПолная
+ИЗ
+	ВТ_ДатыПоследнихРемонтовНачальная КАК ВТ_ДатыПоследнихРемонтовНачальная
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.торо_СвернутыеФактическиеДатыРемонтов КАК торо_СвернутыеФактическиеДатыРемонтов
+		ПО ВТ_ДатыПоследнихРемонтовНачальная.ОбъектРемонта = торо_СвернутыеФактическиеДатыРемонтов.ОбъектРемонта
+			И ВТ_ДатыПоследнихРемонтовНачальная.ДатаОкончанияФакт = торо_СвернутыеФактическиеДатыРемонтов.ДатаОкончания
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ВТ_СписокРемонтов.ОбъектРемонта,
+	ВТ_СписокРемонтов.ДатаОбнаружения,
+	ВТ_СписокРемонтов.ВидРемонта,
+	ВТ_СписокРемонтов.ID
+ИЗ
+	ВТ_СписокРемонтов КАК ВТ_СписокРемонтов
+
+ИНДЕКСИРОВАТЬ ПО
+	ОбъектРемонта,
+	ДатаПрошлогоРемонта
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ВТ_СписокРемонтов.ID КАК ID,
+	ВТ_СписокРемонтов.ОбъектРемонта КАК ОбъектРемонта,
+	ВТ_СписокРемонтов.ВидРемонта КАК ВидРемонта,
+	ВТ_СписокРемонтов.Регистратор КАК Регистратор,
+	ВТ_СписокРемонтов.ДатаОбнаружения КАК ДатаОбнаружения,
+	ВТ_СписокРемонтов.ДатаУстранения КАК ДатаУстранения,
+	МАКСИМУМ(ЕСТЬNULL(ВТ_ДатыПоследнихРемонтовПолная.ДатаПрошлогоРемонта, ВТ_СписокРемонтов.ОбъектРемонта.ДатаВводаВЭксплуатацию)) КАК ДатаПрошлогоРемонта
+ПОМЕСТИТЬ ВТ_ДатыПоследнихРемонтовМаксимальные
+ИЗ
+	ВТ_СписокРемонтов КАК ВТ_СписокРемонтов
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ДатыПоследнихРемонтовПолная КАК ВТ_ДатыПоследнихРемонтовПолная
+		ПО ВТ_СписокРемонтов.ОбъектРемонта = ВТ_ДатыПоследнихРемонтовПолная.ОбъектРемонта
+			И ВТ_СписокРемонтов.ДатаОбнаружения &gt; ВТ_ДатыПоследнихРемонтовПолная.ДатаПрошлогоРемонта
+
+СГРУППИРОВАТЬ ПО
+	ВТ_СписокРемонтов.ID,
+	ВТ_СписокРемонтов.ОбъектРемонта,
+	ВТ_СписокРемонтов.ВидРемонта,
+	ВТ_СписокРемонтов.Регистратор,
+	ВТ_СписокРемонтов.ДатаОбнаружения,
+	ВТ_СписокРемонтов.ДатаУстранения
+
+ИНДЕКСИРОВАТЬ ПО
+	ОбъектРемонта,
+	ДатаПрошлогоРемонта
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ВТ_ДатыПоследнихРемонтовМаксимальные.ID КАК ID,
+	ВТ_ДатыПоследнихРемонтовМаксимальные.ОбъектРемонта КАК ОбъектРемонта,
+	ВЫБОР
+		КОГДА ВТ_ДатыПоследнихРемонтовМаксимальные.ВидРемонта = ЗНАЧЕНИЕ(Справочник.торо_ВидыРемонтов.ПустаяСсылка)
+			ТОГДА торо_ВидРемонтаПриВводеНаОснованииВыявленныхДефектов.Значение
+		ИНАЧЕ ВТ_ДатыПоследнихРемонтовМаксимальные.ВидРемонта
+	КОНЕЦ КАК ВидРемонта,
+	ВТ_ДатыПоследнихРемонтовМаксимальные.ДатаОбнаружения КАК ДатаОбнаружения,
+	ВТ_ДатыПоследнихРемонтовМаксимальные.ДатаУстранения КАК ДатаУстранения,
+	ВТ_ДатыПоследнихРемонтовМаксимальные.ДатаПрошлогоРемонта КАК ДатаОбнаруженияПредыдущийДефект,
+	ВЫБОР
+		КОГДА ВТ_ДатыПоследнихРемонтовПолная.ВидРемонта = ЗНАЧЕНИЕ(Справочник.торо_ВидыРемонтов.ПустаяСсылка)
+			ТОГДА торо_ВидРемонтаПриВводеНаОснованииВыявленныхДефектов.Значение
+		ИНАЧЕ ВТ_ДатыПоследнихРемонтовПолная.ВидРемонта
+	КОНЕЦ КАК ВидРемонтаПредыдущийДефект,
+	ВТ_ДатыПоследнихРемонтовМаксимальные.ОбъектРемонта.ПлановыйГрафикРаботы КАК ПлановыйГрафикРаботы,
+	ВТ_ДатыПоследнихРемонтовМаксимальные.ОбъектРемонта.Организация КАК Организация,
+	ВТ_ДатыПоследнихРемонтовМаксимальные.ОбъектРемонта.Подразделение КАК Подразделение,
+	&amp;ПолеОбъектИерархии КАК ОбъектИерархии
+ИЗ
+	ВТ_ДатыПоследнихРемонтовМаксимальные КАК ВТ_ДатыПоследнихРемонтовМаксимальные
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ДатыПоследнихРемонтовПолная КАК ВТ_ДатыПоследнихРемонтовПолная
+		ПО ВТ_ДатыПоследнихРемонтовМаксимальные.ОбъектРемонта = ВТ_ДатыПоследнихРемонтовПолная.ОбъектРемонта
+			И ВТ_ДатыПоследнихРемонтовМаксимальные.ДатаПрошлогоРемонта = ВТ_ДатыПоследнихРемонтовПолная.ДатаПрошлогоРемонта,
+	Константа.торо_ВидРемонтаПриВводеНаОснованииВыявленныхДефектов КАК торо_ВидРемонтаПриВводеНаОснованииВыявленныхДефектов</query>
+	</dataSet>
+	<dataSet xsi:type="DataSetQuery">
+		<name>Иерархия</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъектИерархии</dataPath>
+			<field>ОбъектИерархии</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РодительИерархии</dataPath>
+			<field>РодительИерархии</field>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	Документами.ОбъектИерархии КАК ОбъектИерархии,
+	Документами.РодительИерархии КАК РодительИерархии
+ИЗ
+	РегистрСведений.торо_РасположениеОРВСтруктуреИерархии КАК Документами
+ГДЕ
+	Документами.ОбъектИерархии В(&amp;Элемент)</query>
+	</dataSet>
+	<dataSet xsi:type="DataSetQuery">
+		<name>Контроль</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЭлементКонтроль</dataPath>
+			<field>ЭлементКонтроль</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Элемент контроль</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РодительКонтроль</dataPath>
+			<field>РодительКонтроль</field>
+			<useRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+			<attributeUseRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</attributeUseRestriction>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	Документами.ОбъектИерархии КАК ЭлементКонтроль,
+	Документами.РодительИерархии КАК РодительКонтроль
+ИЗ
+	РегистрСведений.торо_РасположениеОРВСтруктуреИерархии КАК Документами
+ГДЕ
+	Документами.РодительИерархии В(&amp;Родитель)</query>
+	</dataSet>
+	<dataSetLink>
+		<sourceDataSet>Иерархия</sourceDataSet>
+		<destinationDataSet>Иерархия</destinationDataSet>
+		<sourceExpression>РодительИерархии</sourceExpression>
+		<destinationExpression>ОбъектИерархии</destinationExpression>
+		<parameter>Элемент</parameter>
+		<parameterListAllowed>true</parameterListAllowed>
+	</dataSetLink>
+	<dataSetLink>
+		<sourceDataSet>Данные</sourceDataSet>
+		<destinationDataSet>Иерархия</destinationDataSet>
+		<sourceExpression>ОбъектИерархии</sourceExpression>
+		<destinationExpression>ОбъектИерархии</destinationExpression>
+		<parameter>Элемент</parameter>
+		<parameterListAllowed>true</parameterListAllowed>
+	</dataSetLink>
+	<dataSetLink>
+		<sourceDataSet>Контроль</sourceDataSet>
+		<destinationDataSet>Контроль</destinationDataSet>
+		<sourceExpression>ЭлементКонтроль</sourceExpression>
+		<destinationExpression>РодительКонтроль</destinationExpression>
+		<parameter>Родитель</parameter>
+		<parameterListAllowed>true</parameterListAllowed>
+	</dataSetLink>
+	<parameter>
+		<name>ДатаНачала</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата начала</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;ПериодОтчета.ДатаНачала</expression>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>ДатаОкончания</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата окончания</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;ПериодОтчета.ДатаОкончания</expression>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>Элемент</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Элемент</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.торо_ОбъектыРемонта</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>Родитель</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Родитель</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.торо_ОбъектыРемонта</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>ИерархияТип</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Структура иерархии</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.торо_СтруктурыОР</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+		<inputParameters>
+			<dcscor:item>
+				<dcscor:parameter>ВыборГруппИЭлементов</dcscor:parameter>
+				<dcscor:value xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise" xsi:type="d5p1:FoldersAndItemsUse">Items</dcscor:value>
+			</dcscor:item>
+		</inputParameters>
+		<denyIncompleteValues>true</denyIncompleteValues>
+		<use>Always</use>
+	</parameter>
+	<parameter>
+		<name>ПолеОбъектИерархии</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Поле объект иерархии</v8:content>
+			</v8:item>
+		</title>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>ПериодОтчета</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период отчета</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+			<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+			<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+		</value>
+		<useRestriction>true</useRestriction>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Основной</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ID</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВидРемонта</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВидРемонтаПредыдущийДефект</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаОбнаружения</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаОбнаруженияПредыдущийДефект</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОбъектРемонта</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПлановыйГрафикРаботы</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Организация</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Подразделение</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОбъектИерархии</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаУстранения</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ИерархияТип</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>008f6365-0e8c-44f1-a3bd-dab5e268caa0</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>ДатаОбнаруженияПредыдущийДефект</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наработка на отказ</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

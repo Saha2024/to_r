@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f4e366b2-c558-4c6b-adff-f1c827f45874">
+  <producedTypes>
+    <selectionType typeId="75448357-b278-43d3-a8e0-db7105a67373" valueTypeId="49c83d60-8c8c-4750-901f-1bfb02c18970"/>
+    <listType typeId="a05885aa-d260-4536-9b9a-7ec17bf719c1" valueTypeId="24af7475-e55e-455a-9d3b-6a61ec14ffac"/>
+    <managerType typeId="366fb96b-f8e3-4b80-a308-0aee4f7522d0" valueTypeId="47617593-45da-4cfd-a885-052e4316a9ff"/>
+    <recordSetType typeId="f6ee4169-6e68-437d-87e9-61c7658c98a9" valueTypeId="238b9f80-241b-4360-8158-82305f3d9e86"/>
+    <recordKeyType typeId="7a239282-c226-4ad6-b99c-1db32e6c7a30" valueTypeId="4f7d2e4b-3916-456c-a72f-c4e33115ed9e"/>
+    <recordType typeId="b0cf8548-ee29-4216-8939-8fd5e2f19d19" valueTypeId="6c94beec-aaed-4cd8-b1e4-4ae991821e90"/>
+    <recordManagerType typeId="ac8a5b82-5673-4461-b8e2-fbb850920a51" valueTypeId="da072248-9c1d-488e-ab57-32db5c95d7ce"/>
+  </producedTypes>
+  <name>торо_РегламентныеМероприятияИСпискиОбъектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Регламентные мероприятия и списки объектов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="e0ebedd5-0937-4301-842b-d9ec446897a1">
+    <name>НормативныйРемонт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Нормативный ремонт</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ИдентификаторыТехКарт</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Тех карта ремонта</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="152511c2-8934-415b-b7cf-0a25ec593b9e">
+    <name>СпособПланирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ планирования</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_СпособыПланированияРемонтныхРабот</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Способ планирования ремонтных работ</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a4178659-3c7f-42ce-8f4c-2afe6ec7ef90">
+    <name>ГрафикРемонтныхРабот</name>
+    <synonym>
+      <key>ru</key>
+      <value>График ремонтных работ</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Календари</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>График ремонтных работ оборудования</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e1b99bae-2555-4a65-8407-600c4ba197fe">
+    <name>СпособВыполнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ выполнения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СпособыСтроительства</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Способ выполнения работ</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="1a640779-78ab-404c-9ad1-a12e170e011d">
+    <name>СпособУчетаДатыОтсчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ учета даты отсчета</value>
+    </synonym>
+    <type>
+      <types>EnumRef.торо_СпособыУчетаДатыОтсчетаПриПланированииРемонтныхРабот</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Способ учета даты отсчета при планировании ремонтных работ</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="64eeda97-5ad1-4182-8924-323fa7ff074a">
+    <name>НеУчаствуетВПланировании</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не участвует в планировании</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Не будет участвовать в планировании</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="87c54f23-d8a7-4d50-9d1d-306e60061a65">
+    <name>РазрешитьСокращатьМежремонтныйПериодПриПланировании</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разрешить сокращать период между ремонтами при планировании</value>
+    </synonym>
+    <comment>Разрешить сокращать период между ремонтами в случае, если начало ремонта приходится на выходной день</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Будет разрешено сокращать интервал между ремонтами если начало ремонта приходится на выходной день</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e63b3298-1d1f-4614-8faa-a2111c3595cc">
+    <name>НеУчитыватьПриПланированииГрафикРаботыОборудования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не учитывать при планировании график работы оборудования</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>При планировании не будет учтен график работы оборудования</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="cf04f862-7103-4de8-8c3e-8b2cf8d5c23d">
+    <name>НеУчитыватьПриПланированииГрафикРемонтныхРабот</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не учитывать при планировании график ремонтных работ</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>При планировании не будет учтен график ремонтных работ</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a0a7580d-64bb-4b4b-8400-316e823cfc6a">
+    <name>НеУчитыватьПродолжительность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не учитывать продолжительность</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Продолжительность не будет учитываться</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="250af0ac-db43-48a9-b786-3b026837dbca">
+    <name>Продолжительность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Продолжительность</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Продолжительность ремонта</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="bb424c18-6490-4b04-9077-dcc6c4a5573b">
+    <name>ИспользоватьКоэффициентыРемонтныхОсобенностей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать коэффициенты ремонтных особенностей</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Будут использованы коэффициенты ремонтных особенностей</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="529af4cd-125e-46d6-963c-52177bc425a0">
+    <name>СпособРасчетаПродолжительности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ расчета продолжительности</value>
+    </synonym>
+    <type>
+      <types>EnumRef.торо_СпособыРасчетаПродолжительности</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Способ расчета продолжительности ремонта</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="fffd2112-88a6-4310-aaff-cda7f087c6ef">
+    <name>СписокОбъектов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список объектов</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_СписокОбъектовРегламентногоМероприятия</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Список объектов регламентного мероприятия</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="87c49cb8-747c-4011-a82c-ac290932dc2c">
+    <name>ВидМероприятия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид мероприятия</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ВидыРемонтов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид ремонтного мероприятия</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

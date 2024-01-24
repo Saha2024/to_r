@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="30a3f1ea-d7d2-44b1-91d1-29d177cf42b2">
+  <name>ПереопределитьПолучаемуюФормуПрисоединенногоФайла</name>
+  <synonym>
+    <key>ru</key>
+    <value>Переопределить получаемую форму присоединенного файла</value>
+  </synonym>
+  <source>
+    <types>CatalogManager.ДоговорыКонтрагентовПрисоединенныеФайлы</types>
+    <types>CatalogManager.торо_ТехКартыПрисоединенныеФайлы</types>
+    <types>CatalogManager.НоменклатураПрисоединенныеФайлы</types>
+    <types>CatalogManager.торо_АнализКоренныхПричинПрисоединенныеФайлы</types>
+    <types>CatalogManager.ЗаданиеПрисоединенныеФайлы</types>
+    <types>CatalogManager.торо_ТиповыеОРПрисоединенныеФайлы</types>
+    <types>CatalogManager.торо_ГрафикРегламентныхМероприятийТОиРПрисоединенныеФайлы</types>
+    <types>CatalogManager.ВнутреннееПотреблениеТоваровПрисоединенныеФайлы</types>
+    <types>CatalogManager.торо_СостоянияОбъектовРемонтаПрисоединенныеФайлы</types>
+    <types>CatalogManager.торо_МерыБезопасностиПрисоединенныеФайлы</types>
+    <types>CatalogManager.торо_АктОВыполненииРегламентногоМероприятияПрисоединенныеФайлы</types>
+    <types>CatalogManager.торо_УчетКонтролируемыхПоказателейПрисоединенныеФайлы</types>
+    <types>CatalogManager.торо_ТехнологическиеОперацииПрисоединенныеФайлы</types>
+    <types>CatalogManager.торо_ЗаявкаНаРемонтПрисоединенныеФайлы</types>
+    <types>CatalogManager.торо_УчетНаработкиОборудованияПрисоединенныеФайлы</types>
+    <types>CatalogManager.торо_НарядНаРегламентноеМероприятиеПрисоединенныеФайлы</types>
+    <types>CatalogManager.торо_АктПриемкиОборудованияПрисоединенныеФайлы</types>
+    <types>CatalogManager.торо_ПланГрафикРемонтаПрисоединенныеФайлы</types>
+    <types>CatalogManager.торо_ВыбытиеОбъектаРемонтаПрисоединенныеФайлы</types>
+    <types>CatalogManager.торо_АктОВыполненииЭтапаРаботПрисоединенныеФайлы</types>
+    <types>CatalogManager.ВерсииФайлов</types>
+    <types>CatalogManager.торо_НарядНаВыполнениеРемонтныхРаботПрисоединенныеФайлы</types>
+    <types>CatalogManager.торо_ОбъектыРемонтаПрисоединенныеФайлы</types>
+    <types>CatalogManager.торо_ВнешнееОснованиеДляРаботПрисоединенныеФайлы</types>
+    <types>CatalogManager.торо_ВыявленныеДефектыПрисоединенныеФайлы</types>
+    <types>CatalogManager.торо_ПринятиеОРКУчетуПрисоединенныеФайлы</types>
+  </source>
+  <event>FormGetProcessing</event>
+  <handler>CommonModule.РаботаСФайламиКлиентСервер.ОпределитьФормуПрисоединенногоФайла</handler>
+</mdclass:EventSubscription>

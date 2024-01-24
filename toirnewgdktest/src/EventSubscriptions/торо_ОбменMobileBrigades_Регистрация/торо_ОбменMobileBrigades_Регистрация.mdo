@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4647463b-3beb-4d57-966b-725acdd89f3b">
+  <name>торо_ОбменMobileBrigades_Регистрация</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен &quot;мобильная бригада&quot; зарегистрировать изменение</value>
+  </synonym>
+  <source>
+    <types>CatalogObject.торо_ТиповыеОР</types>
+    <types>ChartOfCharacteristicTypesObject.торо_ИзмеряемыеПоказателиОбъектовРемонта</types>
+    <types>CatalogObject.торо_ВидыПусковОР</types>
+    <types>CatalogObject.торо_ИдентификаторыТехКарт</types>
+    <types>CatalogObject.торо_ПричиныДефектов</types>
+    <types>CatalogObject.торо_ТехКартыПрисоединенныеФайлы</types>
+    <types>CatalogObject.Склады</types>
+    <types>CatalogObject.торо_ОбъектыРемонтаПрисоединенныеФайлы</types>
+    <types>CatalogObject.ПараметрыВыработкиОС</types>
+    <types>CatalogObject.торо_НаправленияОбъектовРемонтныхРабот</types>
+    <types>CatalogObject.торо_УсловияВыявленияДефекта</types>
+    <types>CatalogObject.торо_ТиповыеОРПрисоединенныеФайлы</types>
+    <types>CatalogObject.торо_ТехнологическиеОперации</types>
+    <types>CatalogObject.торо_ОбъектыРемонта</types>
+    <types>CatalogObject.торо_ТехКарты</types>
+    <types>CatalogObject.Организации</types>
+    <types>CatalogObject.торо_КритичностьДефекта</types>
+    <types>CatalogObject.Номенклатура</types>
+    <types>CatalogObject.торо_ВидыРемонтов</types>
+    <types>CatalogObject.ЕдиницыИзмерения</types>
+    <types>CatalogObject.Сотрудники</types>
+    <types>CatalogObject.ВидыНоменклатуры</types>
+    <types>CatalogObject.торо_СписокОбъектовРегламентногоМероприятия</types>
+    <types>CatalogObject.СтруктураПредприятия</types>
+    <types>CatalogObject.торо_ПричиныПростояОборудования</types>
+    <types>CatalogObject.торо_ТиповыеДефектыОборудования</types>
+    <types>CatalogObject.торо_ВидыДефектов</types>
+    <types>CatalogObject.торо_ПриоритетыОбъектовРемонта</types>
+    <types>CatalogObject.ХарактеристикиНоменклатуры</types>
+    <types>CatalogObject.торо_ВидыЭксплуатации</types>
+    <types>CatalogObject.торо_РемонтныеБригады</types>
+    <types>CatalogObject.торо_ЗначенияИзмеряемыхПоказателейОбъектовРемонта</types>
+    <types>CatalogObject.Пользователи</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.торо_ОбменMobileBrigadesСобытия.Обмен_mobileBrigades_ЗарегистрироватьИзменениеПередЗаписью</handler>
+</mdclass:EventSubscription>

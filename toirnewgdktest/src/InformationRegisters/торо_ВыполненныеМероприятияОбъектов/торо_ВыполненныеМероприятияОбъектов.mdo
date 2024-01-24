@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7a9f0f89-4e8c-4f2b-9f2d-29efda869006">
+  <producedTypes>
+    <selectionType typeId="fa7c14b8-72fa-446f-a1e6-8a6ea1724422" valueTypeId="9c0235f6-cff5-46f3-8a8c-ce438ec1fffe"/>
+    <listType typeId="a3537663-c7b8-4529-802b-0755a59a4263" valueTypeId="4808dfea-3a3b-4df8-b60b-6fef28d4c90e"/>
+    <managerType typeId="e4bfbf0b-2e2c-46ab-9657-34bdde0989d5" valueTypeId="c1302b9a-75f3-469a-9e5d-32021ef2ea22"/>
+    <recordSetType typeId="588b9da0-2261-43bc-b5e6-1da1843108d4" valueTypeId="f69ccbea-0d1f-401a-a800-be500313edd7"/>
+    <recordKeyType typeId="64404383-025f-423d-a941-83581e37695f" valueTypeId="cdbcbcdd-dad0-4a27-a2f5-a5e86f821833"/>
+    <recordType typeId="161d639e-ab0b-4ee9-88af-36d7f10b881e" valueTypeId="e039c189-7dc1-49b6-bfde-56bfae154ea5"/>
+    <recordManagerType typeId="303c6400-0422-4bcc-aefc-d309e9aafe26" valueTypeId="b2d8f70d-7eb5-46d4-bfaa-0c247fb4a68c"/>
+  </producedTypes>
+  <name>торо_ВыполненныеМероприятияОбъектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выполненные мероприятия объектов</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <writeMode>RecorderSubordinate</writeMode>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="aff55c66-84d9-4f0b-a801-ccf12d21a325">
+    <name>ID</name>
+    <synonym>
+      <key>ru</key>
+      <value>ID</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Идентификатор мероприятия</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="01af1f76-f66b-4291-a2da-6bec4f1882b6">
+    <name>ОбъектРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект ремонта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ОбъектыРемонта</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Объект ремонта из списка объектов мероприятия</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="30d8797b-f297-48d6-996f-43aac4c2012c">
+  <producedTypes>
+    <objectType typeId="43d81926-2d03-432d-a247-43584712f037" valueTypeId="39896735-feeb-4a2b-82de-66995630d900"/>
+    <refType typeId="9882f972-f7ce-4435-b153-05bdc4d2cfc6" valueTypeId="7bd56983-7de9-4d5f-9590-5270aa25fa61"/>
+    <selectionType typeId="9ae90190-f127-45f2-b79f-1faf8856bbbc" valueTypeId="3c5751be-589d-483d-874e-e35cfc91e8b4"/>
+    <listType typeId="bb47212b-4553-4b3c-a54d-b269e7069604" valueTypeId="8812f32a-f667-4b17-afc5-a55a7c5f3002"/>
+    <managerType typeId="c0860156-f263-452b-8240-83c47c947325" valueTypeId="e7aa8405-5ccb-411c-83a1-0a1079acf98d"/>
+  </producedTypes>
+  <name>проф_СпособыПогрузки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Способы погрузки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.проф_СпособыПогрузки.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.проф_СпособыПогрузки.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>8</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="619645d5-afeb-449e-9e33-6b424f9e4b74">
+      <name>Сверху</name>
+      <description>Сверху</description>
+      <code xsi:type="core:StringValue">
+        <value>00000001</value>
+      </code>
+    </items>
+    <items id="3f9f0436-b4f0-4655-b1b9-6691fde1107d">
+      <name>Сзади</name>
+      <description>Сзади</description>
+      <code xsi:type="core:StringValue">
+        <value>00000002</value>
+      </code>
+    </items>
+    <items id="a056648e-54f4-48ba-a141-3fcd8958cd0b">
+      <name>Слева</name>
+      <description>Слева</description>
+      <code xsi:type="core:StringValue">
+        <value>00000003</value>
+      </code>
+    </items>
+    <items id="ef951a15-344c-4ad2-a3e4-ac1d9aedc159">
+      <name>Справа</name>
+      <description>Справа</description>
+      <code xsi:type="core:StringValue">
+        <value>00000004</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

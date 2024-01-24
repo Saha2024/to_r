@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="be3a9cfa-9127-4d78-a409-c0cbdf8436b4" extendedConfigurationObject="6e97bacd-581f-457e-8194-0e56df384c90">
+  <producedTypes>
+    <objectType typeId="4eaaa9fa-53fb-40b7-98d8-05029fc6f9bc" valueTypeId="38c92458-e661-4c3c-9c15-c5c40613acbf"/>
+    <refType typeId="d1e97238-ea43-45d3-83ca-ffccd47c9825" valueTypeId="0cbd3c9f-052e-4dcb-810c-df6ce94e08ed"/>
+    <selectionType typeId="dc9e20ff-93dc-438d-9421-f148c54b632f" valueTypeId="cd3c9385-7f6e-4aef-8e55-d47fb82e52c0"/>
+    <listType typeId="a020708a-e2f3-496e-98ec-68717f9b4b53" valueTypeId="c08e1ced-6a82-45c6-b7db-4a9ff3d87662"/>
+    <managerType typeId="5b263f41-5b83-4ce5-9380-91c022650e76" valueTypeId="5f61f287-d106-4c70-8096-f732c4a938df"/>
+  </producedTypes>
+  <name>проф_НастройкиСистемы</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:CatalogExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <managerModule>Extended</managerModule>
+    <defaultObjectForm>Extended</defaultObjectForm>
+  </extension>
+  <defaultObjectForm>Catalog.проф_НастройкиСистемы.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="d6732f37-2f59-4b75-b522-4707e970b9e8" extendedConfigurationObject="eabacba6-c7c4-412a-966b-4fb545be0373">
+    <name>Значение</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>DefinedType.проф_ЗначенияНастроекСистемы</type>
+        </types>
+      </typeExtension>
+    </extension>
+    <type/>
+  </attributes>
+  <attributes uuid="ef2a6d74-ae92-44bb-9f20-58a059205f00" extendedConfigurationObject="4c4e4dd9-9400-4bf0-9b2e-c1573d654f58">
+    <name>СодержитСписок</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Boolean</type>
+        </types>
+      </typeExtension>
+    </extension>
+    <type/>
+  </attributes>
+  <tabularSections uuid="6ae98df8-bc38-4487-8a6e-b4b09a985afa" extendedConfigurationObject="f7730688-f0b4-4a4e-bd02-3164755a6070">
+    <producedTypes>
+      <objectType typeId="eeac1dd4-fa93-4f9d-b7f8-e5b68b820d0a" valueTypeId="e88a4336-6689-4ebc-97da-575fea2db38b"/>
+      <rowType typeId="43a77db1-df6f-439a-bc6d-2a40c418a572" valueTypeId="0a13730e-def4-4cd2-b1d0-3613768612e2"/>
+    </producedTypes>
+    <name>Список</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+    <attributes uuid="584eb85d-1c40-4029-ab2c-23c0b7bc3bc4" extendedConfigurationObject="ab1fcde9-7b4c-4938-b9c2-6ef7d23645d2">
+      <name>Значение</name>
+      <objectBelonging>Adopted</objectBelonging>
+      <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+        <extendedConfigurationObject>Checked</extendedConfigurationObject>
+        <typeExtension>
+          <types>
+            <state>Checked</state>
+            <type>DefinedType.проф_ЗначенияНастроекСистемы</type>
+          </types>
+        </typeExtension>
+      </extension>
+      <type/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="4d2115cf-c9eb-42c7-8b64-12506e68418d">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="1e19b8c9-6a2a-41a0-8435-2af066154872">
+    <name>проф_НастройкиСистемы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки системы (Проф-ИТ)</value>
+    </synonym>
+    <extension xsi:type="mdclassExtension:BasicCommandExtension">
+      <group>Checked</group>
+      <commandParameterType>Checked</commandParameterType>
+    </extension>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Catalog>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1d02d703-b842-47b1-a440-f57eef756a37">
+  <name>торо_УстановитьНомерДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Установить номер документа</value>
+  </synonym>
+  <source>
+    <types>DocumentObject</types>
+  </source>
+  <event>OnSetNewNumber</event>
+  <handler>CommonModule.торо_ЗаполнениеДокументов.торо_УстановитьНомерДокументаПриУстановкеНовогоНомера</handler>
+</mdclass:EventSubscription>

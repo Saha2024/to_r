@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="f37b4b28-9d92-46db-bbe6-a4db8dcf9423" extendedConfigurationObject="576271cf-4949-49fd-b6ac-15dba97adcaf">
+  <producedTypes>
+    <objectType typeId="48bec176-b001-4e29-acd9-ac0fab33a37b" valueTypeId="3210af2b-9837-4d2c-8aa4-ca8677286816"/>
+    <refType typeId="3a063ab6-08db-4e08-b59f-d2bf260d3730" valueTypeId="45d18cf1-104d-4990-bb23-130a751e6c5b"/>
+    <selectionType typeId="764dc23e-4700-4ea8-a7b0-a365666f1dd0" valueTypeId="c52db23f-6f69-4999-a8ec-d2879f03cc77"/>
+    <listType typeId="1b98f284-30df-454b-b115-41a8783d4218" valueTypeId="d3b63d44-0140-48f9-a8cc-a0e3ce2ff124"/>
+    <managerType typeId="9571bd08-f761-4f71-aba0-73e74e6a3b27" valueTypeId="819d398c-79af-4cce-93d1-07869aad5a32"/>
+  </producedTypes>
+  <name>проф_СводныйПланГрафикППР</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <objectModule>Extended</objectModule>
+    <defaultObjectForm>Extended</defaultObjectForm>
+    <defaultListForm>Extended</defaultListForm>
+    <defaultChoiceForm>Extended</defaultChoiceForm>
+  </extension>
+  <defaultObjectForm>Document.проф_СводныйПланГрафикППР.Form.ФормаДокумента</defaultObjectForm>
+  <defaultListForm>Document.проф_СводныйПланГрафикППР.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Document.проф_СводныйПланГрафикППР.Form.ФормаСписка</defaultChoiceForm>
+  <attributes uuid="1408d90b-bb8f-4094-b077-75fbdce2620f" extendedConfigurationObject="027c3586-1374-4754-b789-8232dc64a3c0">
+    <name>НачалоПериодаПланирования</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Date</type>
+        </types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </attributes>
+  <attributes uuid="bb254bac-01f8-4b48-b46b-6f87384bcc32" extendedConfigurationObject="f261372a-0877-4e94-94b0-44e34dcbadb1">
+    <name>Организация</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>CatalogRef.Организации</type>
+        </types>
+      </typeExtension>
+    </extension>
+    <type/>
+  </attributes>
+  <attributes uuid="d1b6485c-1bca-4a81-bf5a-7da8c8e893e1" extendedConfigurationObject="00852d02-f1e5-4d28-a2f6-7479a468d382">
+    <name>ИнтервалПересчетаПланГрафикаППР</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Number</type>
+        </types>
+        <numberQualifiers>
+          <precision>10</precision>
+        </numberQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </attributes>
+  <attributes uuid="eb3322ac-3391-4503-8c1f-72983366eed0" extendedConfigurationObject="1500600d-46b2-4306-9786-f3642ef14e52">
+    <name>ИспользоватьНольДляРасчета</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Boolean</type>
+        </types>
+      </typeExtension>
+    </extension>
+    <type/>
+  </attributes>
+  <forms uuid="063f449b-6616-41cd-98e7-d57e97dfa0c2">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="31090ea3-8fe1-49d4-9e18-4de42d6bf223">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="2ade2f49-2667-41b1-b708-218d26cc4c83" extendedConfigurationObject="c731ff01-b76d-4bfc-a728-46ed1983e650">
+    <producedTypes>
+      <objectType typeId="ff1f5946-bb45-41da-8eb2-11dd16bfa357" valueTypeId="fa2f02dc-4db8-4113-ad3e-10686e4f1ab9"/>
+      <rowType typeId="2d3a7507-dcb9-4b82-ac26-8c975351c308" valueTypeId="07163863-734c-4702-9389-35e8633f6e70"/>
+    </producedTypes>
+    <name>СписокППР</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+    <attributes uuid="dd8e4906-5ab5-4ef5-9292-a7c42b52608c" extendedConfigurationObject="c2f1c321-bf9b-4415-8702-730e3fcec79e">
+      <name>ПланГрафикППР</name>
+      <objectBelonging>Adopted</objectBelonging>
+      <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+        <extendedConfigurationObject>Checked</extendedConfigurationObject>
+        <typeExtension>
+          <types>
+            <state>Checked</state>
+            <type>DocumentRef.торо_ПланГрафикРемонта</type>
+          </types>
+        </typeExtension>
+      </extension>
+      <type/>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

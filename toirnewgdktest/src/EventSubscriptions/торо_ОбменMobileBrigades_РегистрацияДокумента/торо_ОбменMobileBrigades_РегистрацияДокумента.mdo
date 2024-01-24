@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2618885f-9262-4207-a1ea-f28de9965849">
+  <name>торо_ОбменMobileBrigades_РегистрацияДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен &quot;мобильная бригада&quot; зарегистрировать изменение</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.торо_НарядНаРегламентноеМероприятие</types>
+    <types>DocumentObject.торо_АктОВыполненииЭтапаРабот</types>
+    <types>DocumentObject.торо_ЗаявкаНаРемонт</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.торо_ОбменMobileBrigadesСобытия.Обмен_mobileBrigades_ЗарегистрироватьИзменениеПриЗаписи</handler>
+</mdclass:EventSubscription>

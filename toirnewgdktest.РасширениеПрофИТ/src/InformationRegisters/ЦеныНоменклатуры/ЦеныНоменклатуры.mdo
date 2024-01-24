@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="7db12da4-beb8-409b-b449-e820ac1e06f9" extendedConfigurationObject="14bdc774-4023-4716-9f09-d781c7bbfaa3">
+  <producedTypes>
+    <selectionType typeId="11b45ed0-9afe-4886-ac13-8d73093ea112" valueTypeId="8ea19574-8def-420a-b29f-7a7daa806448"/>
+    <listType typeId="ac2d6820-e11e-4c2a-ad09-d186d885ec25" valueTypeId="3795e2bd-d5e3-4a8b-bc9e-675c1cf59609"/>
+    <managerType typeId="1fd28f15-fd66-433a-9e9c-d02891cea06d" valueTypeId="7fa87cfb-7cb9-4797-ba80-c66bf4bd5135"/>
+    <recordSetType typeId="d242904c-b0a0-4da7-b017-63f880bacf56" valueTypeId="1141d6c5-c9ac-4d01-8bb2-9c7fef471a9c"/>
+    <recordKeyType typeId="00e9a0f8-29c9-4bfe-a403-76ee4a130143" valueTypeId="a53338aa-5552-430b-b93a-457dea53e6f8"/>
+    <recordType typeId="2378980c-f7bc-49ce-bbcb-9dad6927d397" valueTypeId="d9070fc0-7a4c-479a-a8db-d0c05d43e585"/>
+    <recordManagerType typeId="3c2c4ef3-0fa1-4d74-a24b-4369343ef10e" valueTypeId="3c72456c-8ae1-444d-b893-75a16b41cda3"/>
+  </producedTypes>
+  <name>ЦеныНоменклатуры</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:InformationRegisterExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <informationRegisterPeriodicity>Checked</informationRegisterPeriodicity>
+    <writeMode>Checked</writeMode>
+  </extension>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <resources uuid="7f636241-4def-4d1e-81f9-6d1fda5a34ce" extendedConfigurationObject="e5c19e7b-9d94-485e-a787-06a5e549f3a3">
+    <name>Цена</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Number</type>
+        </types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </resources>
+  <resources uuid="ab6944c3-a05d-4a98-94a6-ebd9724cb4f1" extendedConfigurationObject="feb44686-9afe-4012-82e8-e2e090412480">
+    <name>ЕдиницаИзмерения</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>CatalogRef.ЕдиницыИзмерения</type>
+        </types>
+      </typeExtension>
+    </extension>
+    <type/>
+  </resources>
+  <resources uuid="8d286e46-61ef-4f20-8848-c83aaa955e51" extendedConfigurationObject="b3a0ce45-03a8-440c-8d44-e71cbb504596">
+    <name>Валюта</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>CatalogRef.Валюты</type>
+        </types>
+      </typeExtension>
+    </extension>
+    <type/>
+  </resources>
+  <dimensions uuid="50dd6855-9792-4ebf-92d9-5723f06394fd" extendedConfigurationObject="7bae5f7e-d12f-42ac-85bb-ef8f585e5de0">
+    <name>Номенклатура</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>CatalogRef.Номенклатура</type>
+        </types>
+      </typeExtension>
+    </extension>
+    <type/>
+  </dimensions>
+  <dimensions uuid="43b9ad93-506f-4086-8180-5e8b79a6228f" extendedConfigurationObject="c494d197-1312-4754-a0ef-be70a3b0680e">
+    <name>ВидЦены</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>CatalogRef.ВидыЦен</type>
+        </types>
+      </typeExtension>
+    </extension>
+    <type/>
+  </dimensions>
+  <dimensions uuid="72501e94-577a-4d66-b974-248905c34dc3" extendedConfigurationObject="59d10202-2ada-40ff-99e3-6f93a4ebcc29">
+    <name>Характеристика</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>CatalogRef.ХарактеристикиНоменклатуры</type>
+        </types>
+      </typeExtension>
+    </extension>
+    <type/>
+  </dimensions>
+</mdclass:InformationRegister>

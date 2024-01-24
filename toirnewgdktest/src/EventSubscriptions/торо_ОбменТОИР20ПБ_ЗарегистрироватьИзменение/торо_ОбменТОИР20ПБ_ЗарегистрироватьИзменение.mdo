@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b9f6d916-3d9a-42ca-bc48-dc44246250ba">
+  <name>торо_ОбменТОИР20ПБ_ЗарегистрироватьИзменение</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен ТОИР 3.0 Промышленная безопасность 1.0 зарегистрировать изменение</value>
+  </synonym>
+  <source>
+    <types>CatalogObject.торо_ТехнологическиеОперации</types>
+    <types>CatalogObject.торо_ОбъектыРемонта</types>
+    <types>CatalogObject.Должности</types>
+    <types>CatalogObject.Организации</types>
+    <types>CatalogObject.торо_ВидыРемонтов</types>
+    <types>CatalogObject.Сотрудники</types>
+    <types>CatalogObject.СтруктураПредприятия</types>
+    <types>CatalogObject.Пользователи</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.торо_ОбменТОИР20БПСобытия.ОбменТОиР20ПБ_ЗарегистрироватьИзменениеПередЗаписью</handler>
+</mdclass:EventSubscription>

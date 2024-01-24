@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2232cf11-5364-478b-a6f7-ab7b1fae92d7">
+  <producedTypes>
+    <objectType typeId="d0eaf320-f5b7-4721-a2a9-6cc6809fdd58" valueTypeId="4f9eaa6c-da8f-4aed-b139-807738bf915f"/>
+    <refType typeId="5c228894-7f9b-4731-bc05-e9731b869f5a" valueTypeId="3a7c4b6f-a799-4080-ab09-1f9b871ff607"/>
+    <selectionType typeId="62e525ee-4ac9-4c9f-9a16-9c38074e1a03" valueTypeId="96995021-7304-4ced-975a-39dd4d3d0a84"/>
+    <listType typeId="53360f3b-7d1b-4a96-8526-836843510cbe" valueTypeId="962a01ed-5f08-4ab7-8ce8-f4116a9168bd"/>
+    <managerType typeId="1ec05303-e049-4b19-9f50-d709caf6a666" valueTypeId="f023fc78-00de-4f96-a64d-b3bc7c15d217"/>
+  </producedTypes>
+  <name>торо_КатегорииТяжестиПоследствий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Категории тяжести последствий</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.торо_КатегорииТяжестиПоследствий.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.торо_КатегорииТяжестиПоследствий.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Категория тяжести последствий</value>
+  </objectPresentation>
+  <extendedObjectPresentation>
+    <key>ru</key>
+    <value>Категория тяжести последствий</value>
+  </extendedObjectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Категории тяжести последствий</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Категории тяжести последствий</value>
+  </extendedListPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>10</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.торо_КатегорииТяжестиПоследствий.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.торо_КатегорииТяжестиПоследствий.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.торо_КатегорииТяжестиПоследствий.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="2feaec3f-8ee3-4540-8164-a5a669c626b1">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8617fc19-5bf7-4416-9fcf-61aaa8f416c2">
+    <name>РеквизитДопУпорядочивания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порядок</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>IndexWithAdditionalOrder</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="0170e3c6-0c81-44c8-b20b-0460c4d53b7a">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <includeHelpInContents>true</includeHelpInContents>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a5ccbc9a-8977-4289-8b8c-858e8392e4d0">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <includeHelpInContents>true</includeHelpInContents>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c463dc8b-e635-45b0-8519-ce520ef89713">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <includeHelpInContents>true</includeHelpInContents>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="354a1696-bd11-41c6-976c-8e01410ba7af">
+    <name>НачальноеЗаполнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начальное заполнение</value>
+    </synonym>
+  </templates>
+</mdclass:Catalog>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8f169951-43df-4116-90ee-329ba900c173">
+  <producedTypes>
+    <selectionType typeId="072911f7-ebdb-4a0b-9d6e-7a95cee9fe7d" valueTypeId="65e682c2-0a59-4180-90c0-31836899796b"/>
+    <listType typeId="597ad7e6-1264-4d1b-9d8a-6343a02fbb6c" valueTypeId="31a02672-ae96-4aca-a9a3-fa5abf584af2"/>
+    <managerType typeId="b5be734b-ed86-4b92-a67c-e7c1b5522572" valueTypeId="64d6e9a4-77d9-4f10-b898-933fdbf023a7"/>
+    <recordSetType typeId="4262bddd-6e3b-4a7a-a22a-be64023c6f60" valueTypeId="f8ba7d6c-0c69-49b7-a82d-32b1b0e7fb8f"/>
+    <recordKeyType typeId="00b4f460-c8ee-404c-97e2-a39acb86cf98" valueTypeId="07cd48f1-54dc-462e-8d7f-2d6675ae9317"/>
+    <recordType typeId="7adc71fd-d3f7-4cd5-b5be-0ba53b50ed96" valueTypeId="38ad9f10-a458-4ee7-ba52-0ccdaf68a45d"/>
+  </producedTypes>
+  <name>торо_ВремяНахожденияВСостоянииПоДатам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Время нахождения в состоянии по датам</value>
+  </synonym>
+  <comment>Время нахождения в состоянии по датам</comment>
+  <registerType>Turnovers</registerType>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Период записи регистра</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="5d012e80-55ec-4839-8121-ec845b0a785a">
+    <name>ВремяНахожденияВСостоянии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время нахождения в состоянии</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Время нахождения объекта ремонта в указанном состоянии</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="6721132a-7817-4ee1-8f58-a2c51d7a31ab">
+    <name>ДатаНачала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Время начала состояния, согласно документам &quot;Состояние объектов ремонта&quot;</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="85f6a87f-8f99-4a23-853f-6b619443cb11">
+    <name>ДатаОкончания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Время окончания состояния, согласно документам &quot;Состояние объектов ремонта&quot;</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <attributes uuid="14089515-bc13-4292-a1cc-f06b049eb7b4">
+    <name>ГрафикРаботы</name>
+    <synonym>
+      <key>ru</key>
+      <value>График работы</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Календари</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>График, по которому рассчитано время нахождения в состоянии</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="ee647d81-cfe9-4063-946e-7f0529da67f0">
+    <name>ОбъектРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект ремонта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ОбъектыРемонта</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Объект ремонта для отражения состояния</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="3b85e159-9336-4a31-b78f-752841cb75de">
+    <name>ТипЭксплуатации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип эксплуатации</value>
+    </synonym>
+    <type>
+      <types>EnumRef.торо_ТипЭксплуатации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Тип эксплуатации из вида эксплуатации</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="a37ba8d5-99c8-4091-af5b-fe875bfbeade">
+    <name>ВидЭксплуатации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид эксплуатации</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ВидыЭксплуатации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид эксплуатации объекта ремонта</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="fc5e626c-02f9-4c82-ab24-557b0f78a0df">
+    <name>ПричинаПростоя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Причина простоя</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ПричиныПростояОборудования</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Причина простоя объекта ремонта</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

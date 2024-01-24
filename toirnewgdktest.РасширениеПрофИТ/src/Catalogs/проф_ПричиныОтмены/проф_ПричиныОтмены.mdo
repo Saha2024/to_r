@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="e7d604fa-257b-4d62-a1db-b7cd3ab3373d" extendedConfigurationObject="4c11a86a-38d5-4b29-8aff-2b6050b86aa2">
+  <producedTypes>
+    <objectType typeId="f692ca55-4c16-476e-98eb-a3d414da7388" valueTypeId="a63a3534-6974-44c6-8693-a747cb0cc192"/>
+    <refType typeId="61051c43-4918-4d45-83ea-7c6954188a1d" valueTypeId="3aa01912-81df-4a1c-a3f4-c46286b5ac0e"/>
+    <selectionType typeId="1d2acebb-f46c-40b1-8c02-e11eecd3c53c" valueTypeId="b0d71c89-a16d-4295-ae11-f72849effda2"/>
+    <listType typeId="816aa66e-1c72-468e-8a95-797db72fb513" valueTypeId="ea229afd-a2f5-40d8-9f86-733edd800e66"/>
+    <managerType typeId="1da84d82-bbb9-4f0d-9ce7-b19059b33bdb" valueTypeId="48418ec4-ba3e-499a-a4dd-10aa4ee1eec0"/>
+  </producedTypes>
+  <name>проф_ПричиныОтмены</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:CatalogExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <defaultChoiceForm>Extended</defaultChoiceForm>
+  </extension>
+  <defaultChoiceForm>Catalog.проф_ПричиныОтмены.Form.проф_ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="5e176411-be78-49d4-8011-e97dff3cdc55" extendedConfigurationObject="39744f63-c5b0-4db1-9602-a47cc43bba48">
+    <name>NT_Техническая</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Boolean</type>
+        </types>
+      </typeExtension>
+    </extension>
+    <type/>
+  </attributes>
+  <attributes uuid="0a4c0f45-865a-494c-b707-5cab7bdf8409" extendedConfigurationObject="e06f32bf-73c9-4290-bc02-4216fed9d1f5">
+    <name>ИнициаторОтменыЗаказовПоставщикам</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>EnumRef.проф_ИнициаторОтменыЗаказовПоставщикам</type>
+        </types>
+      </typeExtension>
+    </extension>
+    <type/>
+  </attributes>
+  <attributes uuid="3f003ce4-986b-4fa8-85b7-1ec1f8181831" extendedConfigurationObject="fc854089-3261-4b76-a473-975262415b2f">
+    <name>Описание</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>String</type>
+        </types>
+        <stringQualifiers/>
+      </typeExtension>
+    </extension>
+    <type/>
+  </attributes>
+  <forms uuid="3a55f03c-8b8a-4fd7-9517-7d897329e715">
+    <name>проф_ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

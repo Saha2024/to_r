@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f703c857-ca95-4d9c-b150-6a56ce88152a">
+  <producedTypes>
+    <selectionType typeId="5ecc4831-007e-47d9-9db1-8f8f1a2e0fff" valueTypeId="ca4d6ba0-4aec-4c52-ab8d-45821ea26387"/>
+    <listType typeId="95b291ba-918c-41d6-845a-50e0bcc07426" valueTypeId="4aa1ebea-3457-4278-b85a-82b899c60c73"/>
+    <managerType typeId="fc66c988-e777-4628-8dd5-e5b02b4281fe" valueTypeId="8ff7e666-fac6-4aba-be67-308b4ad4fbfc"/>
+    <recordSetType typeId="3c68467c-623a-463b-beaf-c6f402c924ac" valueTypeId="bb64c422-fcad-4d5b-95f6-1b90cba48679"/>
+    <recordKeyType typeId="efeb156e-c570-43a3-8cf3-cbf51cd365a5" valueTypeId="400e9edf-fda7-4b37-9d31-87be35f0ecf4"/>
+    <recordType typeId="2df76cac-8cfd-4515-9432-27a37aad783b" valueTypeId="5e29390a-4b4d-4916-895a-14e61371e940"/>
+    <recordManagerType typeId="e40354ea-9bd0-41db-83df-5661aea3353e" valueTypeId="6e767457-f0fe-41a0-9b23-ab9158948b1f"/>
+  </producedTypes>
+  <name>проф_НевыполненныеРемонтныеРаботы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Невыполненные ремонтные работы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="dafac964-4015-465c-bbaf-bf06f0099c40">
+    <name>ПроцентВыполнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Процент выполнения</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Процент выполнения работ</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="6fc8334e-ac59-44d7-b0df-2ab297e637ee">
+    <name>IDРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>IDРемонта</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Идентификатор ремонта</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="3d678e60-ebb9-44c9-9067-e815e213765c">
+    <name>IDОперации</name>
+    <synonym>
+      <key>ru</key>
+      <value>IDОперации</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Идентификатор ремонтной работы</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="b741aad6-77f3-40fd-a270-9171cf8e9984">
+    <name>Родитель_ID</name>
+    <synonym>
+      <key>ru</key>
+      <value>Родитель ID</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Идентификатор родителя ремонтной работы</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="87d102ec-2fca-477b-81ae-62104db3f5d3" extendedConfigurationObject="ce06b1de-37c5-45a1-b242-abbb3d7b19ba">
+  <producedTypes>
+    <objectType typeId="93319053-3052-4db7-87c7-608353baefc7" valueTypeId="880c9ffb-100a-43b1-9a8e-46ad2bf0b96b"/>
+    <refType typeId="45edb376-4754-40aa-a222-f4b8f1998c1c" valueTypeId="1d03b56f-e4f9-4969-9ece-659f63f79ec2"/>
+    <selectionType typeId="4c65d0f5-767f-46da-bf0a-077651f0a4fc" valueTypeId="44046994-8129-4209-9a52-16517b36b641"/>
+    <listType typeId="2a46550c-0b88-4283-8f6e-2aae0594feec" valueTypeId="3d416cf0-15e9-4529-91c0-877edc91907a"/>
+    <managerType typeId="39fced48-a81d-4401-a9c8-6164a1434a70" valueTypeId="be579016-650d-4888-b5f6-a44a2dd0d031"/>
+  </producedTypes>
+  <name>торо_ВводНачальныхДанных</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <attributes uuid="d2da47ca-b6cd-4800-83ff-e900774f54d7" extendedConfigurationObject="69bc05c6-fe0c-48a0-a92b-837ba74e3530">
+    <name>ВидОперации</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>EnumRef.торо_ВидыДокументаВводНачДанных</type>
+        </types>
+      </typeExtension>
+    </extension>
+    <type/>
+  </attributes>
+  <attributes uuid="ca45a94f-6179-42da-b0bb-5ddf0d44fc10" extendedConfigurationObject="2f16c5f7-e78d-4635-9312-7265cb7aff2f">
+    <name>Организация</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>CatalogRef.Организации</type>
+        </types>
+      </typeExtension>
+    </extension>
+    <type/>
+  </attributes>
+  <forms uuid="62d0c05b-aaad-44d7-acd9-6b4787b082f8" extendedConfigurationObject="8df8a197-e35c-4cb9-9efa-35c8f7d12dc1">
+    <name>ФормаДокумента</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFormExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <form>Extended</form>
+    </extension>
+  </forms>
+</mdclass:Document>

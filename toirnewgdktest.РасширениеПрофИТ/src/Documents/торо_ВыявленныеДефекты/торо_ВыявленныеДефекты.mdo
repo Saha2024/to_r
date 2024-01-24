@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="352e10fe-a20d-4e78-b8af-9f0823cfcc29" extendedConfigurationObject="bf35ff03-c641-42bf-90fc-6469235dafc0">
+  <producedTypes>
+    <objectType typeId="aa34d95e-1b18-4bfa-8abd-2e98174d26f0" valueTypeId="bea64362-8a94-4db2-862a-769b4dc1d07b"/>
+    <refType typeId="a5783599-5e04-4215-acce-048085c866b4" valueTypeId="8e3a05c8-90d0-43c2-946d-686ec5ddd970"/>
+    <selectionType typeId="aa6b606a-6132-4d27-bc79-d550d46d7d22" valueTypeId="519acb61-f1ed-4e6c-a14c-0b636a4d6572"/>
+    <listType typeId="fdd1cdc3-8d28-4e16-9ce4-b1ae70b0c6bf" valueTypeId="9e8215e5-cf91-4fbb-9690-04a8b4bdb831"/>
+    <managerType typeId="829e3693-8e9d-463d-8697-04dd50d86ca5" valueTypeId="bf3c0cc7-d7c9-46db-ba30-604c24c96f34"/>
+  </producedTypes>
+  <name>торо_ВыявленныеДефекты</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <objectModule>Extended</objectModule>
+    <managerModule>Extended</managerModule>
+  </extension>
+  <forms uuid="65d71dbb-51cc-46e3-8baa-15b66c86acc1" extendedConfigurationObject="128f8c3e-dbbe-43df-bb3d-da8ac011dca6">
+    <name>ФормаДокумента</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFormExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <form>Extended</form>
+    </extension>
+  </forms>
+  <forms uuid="96f30556-08f2-466c-bd60-df5dbba87542" extendedConfigurationObject="41a43fe1-0968-4599-866c-cb6882ec418b">
+    <name>ФормаСписка</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFormExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <form>Extended</form>
+    </extension>
+  </forms>
+  <tabularSections uuid="acede2aa-c7dc-4f94-aabb-5281f97f07ec" extendedConfigurationObject="8b164589-2f76-44c2-86db-13b16b9df744">
+    <producedTypes>
+      <objectType typeId="2e7c9ca7-99f6-4f5d-bb4c-27b28d447043" valueTypeId="61800b7c-f1ba-4140-9ac0-cf93299b40ae"/>
+      <rowType typeId="3ab9be2f-6624-4113-9c86-240d58600d24" valueTypeId="f387d567-5a17-4a4a-a3e3-50cd75dd9727"/>
+    </producedTypes>
+    <name>СписокДефектов</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+    <attributes uuid="4339ab86-66a6-4e2e-b185-7f0df9651da2" extendedConfigurationObject="2cd062c3-ed73-4f60-acc5-8ad2b64fc56a">
+      <name>ID</name>
+      <objectBelonging>Adopted</objectBelonging>
+      <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+        <extendedConfigurationObject>Checked</extendedConfigurationObject>
+        <typeExtension>
+          <types>
+            <state>Checked</state>
+            <type>String</type>
+          </types>
+          <stringQualifiers>
+            <length>36</length>
+          </stringQualifiers>
+        </typeExtension>
+      </extension>
+      <type/>
+    </attributes>
+  </tabularSections>
+  <templates uuid="13b050f8-b54d-4915-a1fa-fa4e60254944">
+    <name>проф_ВедомостьДефектов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ведомость дефектов</value>
+    </synonym>
+  </templates>
+  <templates uuid="5c05e262-23d7-445d-b89b-4c11a86fe848">
+    <name>проф_ПФ_MXL_АктСлужебногоРасследованияПоФактуАварийногоОтказаАТиДСТ</name>
+    <synonym>
+      <key>ru</key>
+      <value>П ф MXL акт служебного расследования по факту аварийного отказа АТ и ДСТ</value>
+    </synonym>
+  </templates>
+</mdclass:Document>

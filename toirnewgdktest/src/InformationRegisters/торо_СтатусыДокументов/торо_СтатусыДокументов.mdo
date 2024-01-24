@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="eaf8d15c-3851-43bd-9623-96311c38a810">
+  <producedTypes>
+    <selectionType typeId="8fb9f015-06de-4953-848b-dd218fb4f8d7" valueTypeId="7f7c283d-c020-4885-9f17-d4f452cf2f12"/>
+    <listType typeId="da639a39-dab1-4bb6-b42c-bd8f6a095de9" valueTypeId="8b66e61c-e55c-446d-8e4d-e73a852789d0"/>
+    <managerType typeId="63796afe-3c54-40d0-98f7-508afa9dfcec" valueTypeId="bac653f1-a82e-4f2a-a187-d2ade0addf55"/>
+    <recordSetType typeId="9adb94ae-d67c-4723-b269-5bc828e1b33a" valueTypeId="17bd60bb-5a90-469d-b0c7-6d26096b155c"/>
+    <recordKeyType typeId="28f08e82-d3c0-41e1-822e-dd70da85322b" valueTypeId="547b2df9-eea9-4c2c-9844-a16ec2eba1a4"/>
+    <recordType typeId="3c06e686-b793-420f-9821-3cea9b946646" valueTypeId="01dbd92e-f6a6-4ed3-af3b-fb7a81d6be20"/>
+    <recordManagerType typeId="04d143f4-bea6-413d-93aa-2b4e680d9fc2" valueTypeId="e13d9cd1-287f-43ba-bc87-b8e649b8e740"/>
+  </producedTypes>
+  <name>торо_СтатусыДокументов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы документов</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="6536ff75-8624-4a74-ba97-3befdbfc5d60">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.торо_СтатусыДокументов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="958c8b09-b061-4350-92ca-9e8a330fe6e1">
+    <name>ДокументИсточник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ источник</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.торо_ВнешнееОснованиеДляРабот</types>
+      <types>DocumentRef.торо_ЗакрытиеЗаявокИРемонтов</types>
+      <types>DocumentRef.торо_НарядНаРегламентноеМероприятие</types>
+      <types>DocumentRef.торо_НарядНаВыполнениеРемонтныхРабот</types>
+      <types>DocumentRef.торо_АктОВыполненииРегламентногоМероприятия</types>
+      <types>DocumentRef.торо_ВыявленныеДефекты</types>
+      <types>DocumentRef.торо_АктОВыполненииЭтапаРабот</types>
+      <types>DocumentRef.торо_ЗаявкаНаРемонт</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="593f6585-abe8-42d1-90a7-9dec402e25f1">
+    <name>ИзменяемыйДокумент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изменяемый документ</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.торо_ВнешнееОснованиеДляРабот</types>
+      <types>DocumentRef.торо_НарядНаРегламентноеМероприятие</types>
+      <types>DocumentRef.торо_НарядНаВыполнениеРемонтныхРабот</types>
+      <types>DocumentRef.торо_ВыявленныеДефекты</types>
+      <types>DocumentRef.торо_ЗаявкаНаРемонт</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4927ea4b-ea00-4d85-96ff-dc709c5bd831">
+  <name>торо_СостояниеНаработкаПоказатели</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояние, наработка, показатели</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Document.торо_СостоянияОбъектовРемонта</content>
+  <content>Document.торо_УчетКонтролируемыхПоказателей</content>
+  <content>Document.торо_УчетНаработкиОборудования</content>
+  <content>Document.торо_УстановкаПроизвольногоЗначенияНаработки</content>
+  <content>DataProcessor.торо_ВводНачальногоСостоянияПоОбъектамРемонта</content>
+  <content>DataProcessor.торо_РабочееМестоУчетаПоказателейЭксплуатации</content>
+  <content>Role.торо_ИспользоватьРабочееМестоУчетаПоказателейЭксплуатации</content>
+  <content>Role.торо_ИспользованиеВводаНачальногоСостоянияПоОбъектамРемонта</content>
+  <subsystems>торо_КонтролируемыеПоказателиОборудования</subsystems>
+  <subsystems>торо_НаработкаОборудования</subsystems>
+  <subsystems>торо_СостояниеОборудования</subsystems>
+  <parentSubsystem>Subsystem.торо_ПоказателиЭксплуатации</parentSubsystem>
+</mdclass:Subsystem>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dc671c1c-e890-46b3-856d-4aefda6ed658">
+  <producedTypes>
+    <objectType typeId="920c5e9d-5d8c-4db6-b8dd-eb8f7f50f6e7" valueTypeId="2aeb63f9-ab01-4f56-99ce-1abacf7a436b"/>
+    <refType typeId="7b7fc8ab-88d5-4389-8edb-ca8977f88778" valueTypeId="9142204c-e3ae-4942-baad-89aeb1ac0199"/>
+    <selectionType typeId="ea207834-38a3-4dfb-9db0-65ddb3992f3f" valueTypeId="50c9bcf7-cfef-4b44-a767-0f5c796914e8"/>
+    <listType typeId="9b827274-9e88-404f-9c53-fc7dc06c6dab" valueTypeId="4396ce70-868d-4cfc-b14f-41c770590e79"/>
+    <managerType typeId="ec27eb55-8346-443a-94ce-5359af6f332e" valueTypeId="6e3d4e05-3929-401b-9261-f17253b68ce0"/>
+  </producedTypes>
+  <name>торо_СтратегииОбслуживания</name>
+  <synonym>
+    <key>ru</key>
+    <value>Стратегии обслуживания</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.торо_СтратегииОбслуживания.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.торо_СтратегииОбслуживания.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Стратегия обслуживания</value>
+  </objectPresentation>
+  <extendedObjectPresentation>
+    <key>ru</key>
+    <value>Стратегия обслуживания</value>
+  </extendedObjectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Стратегии обслуживания</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Стратегии обслуживания</value>
+  </extendedListPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.торо_СтратегииОбслуживания.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.торо_СтратегииОбслуживания.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="ab990c4a-7090-4c49-ac2c-85450bdcc033">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="eca7141c-4c88-48eb-8c90-d32f8adc2fac">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <includeHelpInContents>true</includeHelpInContents>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b9793a5c-4512-45ba-b73e-df12ce89688e">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <includeHelpInContents>true</includeHelpInContents>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

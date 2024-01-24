@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cd6bfaeb-bff7-4935-8169-ecd40dcf13eb">
+  <producedTypes>
+    <objectType typeId="e3bdf5b8-7368-4cd6-bfa0-ac9dee8d94a9" valueTypeId="ecd09592-d450-42fc-9150-b1adf511df5a"/>
+    <managerType typeId="930518a0-50f1-436f-b8c2-6e9b0f7a9182" valueTypeId="509d6575-745b-435f-b9ef-721084b4b212"/>
+  </producedTypes>
+  <name>торо_ОбщийПланРабот</name>
+  <synonym>
+    <key>ru</key>
+    <value>Общий план работ</value>
+  </synonym>
+  <defaultForm>DataProcessor.торо_ОбщийПланРабот.Form.Форма</defaultForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <tabularSections uuid="71d75ce9-a59a-4fa8-aa53-c5d2e798cc01">
+    <producedTypes>
+      <objectType typeId="ffef3f1c-8484-4308-867b-364f5028e991" valueTypeId="a64dfff5-a7e3-43e3-af1f-8b6820c74758"/>
+      <rowType typeId="814ad90c-4452-463f-9e93-5194f0183ee8" valueTypeId="b4d7172e-5c85-4cda-a493-c18895901387"/>
+    </producedTypes>
+    <name>ВидыРемонтов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Виды ремонтов</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="9654fcf9-5c45-463e-9d8d-1c62e1dbc858">
+      <name>ВидСкользящегоПлана</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид скользящего плана</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.торо_ВидыСкользящихПланов</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="51d802c0-24ee-4472-bb6e-69c50d3489e4">
+      <name>ВидРемонта</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид ремонта</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.торо_ВидыРемонтов</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillChecking>ShowError</fillChecking>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="1f3c12e9-c329-4afa-9b6b-7f6630e61031">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <includeHelpInContents>true</includeHelpInContents>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="92d68a6b-a914-41de-abb3-2c58c4a462f6">
+    <name>ФормаНастройки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма настройки</value>
+    </synonym>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="8e4c422c-03e5-49bf-842e-dd6fc248c9a5">
+    <name>ПФ_MXL_МакетПланаРемонтовНаПериод</name>
+    <synonym>
+      <key>ru</key>
+      <value>План ремонтов на период</value>
+    </synonym>
+  </templates>
+  <commands uuid="0d7f313b-8859-4b56-9d51-18b31df4881d">
+    <name>ОбщийПланРаботПодразделения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Общий план работ</value>
+    </synonym>
+    <group>NavigationPanelImportant</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="00ec5507-7cdc-4e8c-b878-556e4a0594fe">
+  <producedTypes>
+    <selectionType typeId="76c45065-b170-4967-a826-f531c1425e26" valueTypeId="60471b35-e543-487d-8178-de1d13ad3718"/>
+    <listType typeId="330a4287-2189-40f4-862e-d7780840344f" valueTypeId="0f2f186f-4a47-4bbe-80f8-9ecc83be1387"/>
+    <managerType typeId="dbad7904-72c5-481b-8928-116116822f46" valueTypeId="ae98b3d0-b5ef-4df0-bbd7-6451d1a484c8"/>
+    <recordSetType typeId="774d62dd-121c-4e56-b7e8-8f30aaafec83" valueTypeId="56402138-c63f-46e1-b69e-13cddb304877"/>
+    <recordKeyType typeId="c6bf97e4-9829-4193-93a4-3a354982d84b" valueTypeId="fec6c8fc-6fec-43e2-b3c0-0f35e0893e43"/>
+    <recordType typeId="95566e53-7161-46f9-a919-869be5763da2" valueTypeId="77a22dca-52ff-4fcd-9378-dc8277d09ca7"/>
+    <recordManagerType typeId="35d133d2-f0fb-4d11-9c0a-8cb2768c3825" valueTypeId="79604534-d41a-4153-8b29-8d15f8021b72"/>
+  </producedTypes>
+  <name>торо_ТекущееСостояниеОР</name>
+  <synonym>
+    <key>ru</key>
+    <value>Текущее состояние ОР</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Период на который указывается текущее состояние объекта ремонта</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <resources uuid="e9a26f8c-9998-4a42-81dd-3ee1d6aeff1d">
+    <name>ВидЭксплуатации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид эксплуатации</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ВидыЭксплуатации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид эксплуатации объекта ремонта</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="468cb81a-e0a2-470a-9830-d5b50311fdc4">
+    <name>ПричинаПростоя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Причина простоя</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ПричиныПростояОборудования</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Причина простоя оборудования</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="c9dc9ccf-8b2a-4003-a429-decfc540b84c">
+    <name>Примечание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Примечание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1000</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Примечание изменению состояния объекта ремонта</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <dimensions uuid="0e38bb1d-9134-4c4f-bd09-4b7f85c24749">
+    <name>ОбъектРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект ремонта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ОбъектыРемонта</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Объект ремонта для которого указывается текущее состояние</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

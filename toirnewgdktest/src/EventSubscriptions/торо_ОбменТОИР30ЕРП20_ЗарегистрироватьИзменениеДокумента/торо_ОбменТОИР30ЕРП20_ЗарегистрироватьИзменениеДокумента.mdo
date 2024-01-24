@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="afad82ba-d44a-40af-8963-f3e19ea6542d">
+  <name>торо_ОбменТОИР30ЕРП20_ЗарегистрироватьИзменениеДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен ТОИР 3.0 ERP 2.0 зарегистрировать изменение</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.ВнутреннееПотреблениеТоваров</types>
+    <types>DocumentObject.торо_УстановкаАналоговНоменклатурыДляРемонтов</types>
+    <types>DocumentObject.торо_РезервПодВнутреннийЗаказ</types>
+    <types>DocumentObject.торо_УчетНаработкиОборудования</types>
+    <types>DocumentObject.торо_СостоянияОбъектовРемонта</types>
+    <types>DocumentObject.торо_УстановкаПроизвольногоЗначенияНаработки</types>
+    <types>DocumentObject.проф_ЗаказНаПеремещение</types>
+    <types>DocumentObject.торо_ПринятиеОРКУчету</types>
+    <types>DocumentObject.торо_ВыявленныеДефекты</types>
+    <types>DocumentObject.торо_ВыбытиеОбъектаРемонта</types>
+    <types>DocumentObject.торо_АктОВыполненииЭтапаРабот</types>
+    <types>DocumentObject.ЗаказНаВнутреннееПотребление</types>
+    <types>DocumentObject.торо_ЗаявкаНаРемонт</types>
+  </source>
+  <event>BeforeWrite</event>
+  <handler>CommonModule.торо_ОбменТОИР30ЕРП20События.ОбменТОиР30ЕРП20_ЗарегистрироватьИзменениеДокументаПередЗаписью</handler>
+</mdclass:EventSubscription>

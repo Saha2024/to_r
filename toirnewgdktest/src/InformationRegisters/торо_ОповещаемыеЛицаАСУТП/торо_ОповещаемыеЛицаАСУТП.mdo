@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d63e7a40-edce-47a1-9f11-a92d6fcec35e">
+  <producedTypes>
+    <selectionType typeId="1d365087-52b4-4d79-8565-a4420d920518" valueTypeId="20b4855f-5ae8-4d4b-8a16-cfce1d7ce8cf"/>
+    <listType typeId="1c471e07-ec03-49ea-ae8c-47482f643173" valueTypeId="ef7b414a-50be-4cb0-b4e6-cdd8ea176961"/>
+    <managerType typeId="5b2e4854-f4ed-4d67-9b24-0ad746a6f704" valueTypeId="ad07f677-36b8-4563-ac32-80e1eddd6af1"/>
+    <recordSetType typeId="a2dd593f-0396-4250-ab81-c5962996d87b" valueTypeId="57066441-af7d-42be-a333-5fb6ae62e3fb"/>
+    <recordKeyType typeId="20882eb7-dd27-4164-b7e4-7011f846210e" valueTypeId="59514114-7f62-4bc6-aec6-d9e2f390249c"/>
+    <recordType typeId="e7f2e4b6-ba12-4dc9-b83a-a8a2b1e65297" valueTypeId="35015feb-8a9e-4f58-aa09-69707185ec7a"/>
+    <recordManagerType typeId="9539e979-09bb-4173-8e49-b6199799be06" valueTypeId="1811ce88-480d-4774-93e4-c9ba786c724c"/>
+  </producedTypes>
+  <name>торо_ОповещаемыеЛицаАСУТП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Оповещаемые лица АСУ ТП</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="148bf96c-b533-48d6-a5b6-dec4930d5d87">
+    <name>ОповещаемоеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оповещаемое лицо</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <types>CatalogRef.Пользователи</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

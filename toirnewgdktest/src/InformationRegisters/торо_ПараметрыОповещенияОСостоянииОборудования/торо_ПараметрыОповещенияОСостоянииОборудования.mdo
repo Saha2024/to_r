@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="27583cd7-02a0-4fd1-81ea-078a8495dae9">
+  <producedTypes>
+    <selectionType typeId="bcdd78ae-c5ed-4361-aab7-0ffaa96d2b47" valueTypeId="804cc31a-d62b-42e5-9367-e13858ae64b7"/>
+    <listType typeId="a3f25939-8aec-4651-b0a4-36e916c40011" valueTypeId="d8730987-992e-4888-90a1-d99ce7c0ded3"/>
+    <managerType typeId="b3f6b29e-cf68-42ba-b30d-2194c3c9dfe3" valueTypeId="55ce083d-c0e9-4321-bdbb-cc0bc92aa607"/>
+    <recordSetType typeId="e38607bd-a0b0-40ca-b7d3-e5452d8fff13" valueTypeId="2e37ea9a-6ab6-4e5f-9aa9-645ac8e98980"/>
+    <recordKeyType typeId="57aaab8f-b67b-4c6f-9780-5aa0fd55a228" valueTypeId="a98fbc7b-660d-4113-a216-6d4da37f6edb"/>
+    <recordType typeId="352bde9d-0d49-493a-ab8a-d18e351bd761" valueTypeId="3bbc6958-edbd-496d-bf26-cebaf0c7506f"/>
+    <recordManagerType typeId="bb250bb6-0a68-4466-a8f8-ec2b770fffb1" valueTypeId="54150436-3995-4e76-9925-a98aa916c70a"/>
+  </producedTypes>
+  <name>торо_ПараметрыОповещенияОСостоянииОборудования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Параметры оповещения о состоянии оборудования</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="bd827be7-fb77-49df-b96b-9671bf68de7a">
+    <name>ПараметрыВводаДефекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры ввода дефекта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ПараметрыАвтоматическойФиксацииДефектов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Настройки для ввода документа Дефект</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="fe5e95f3-d4cc-44c4-b159-e98ed538e3c1">
+    <name>СобытиеВозникновенияОповещения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Событие возникновения оповещения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_СобытияУведомленийВДокументах</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Событие, при котором формируется оповещение</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="ac9a2d14-5cbf-4039-adc9-7c363187f48e">
+    <name>ВидСравнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид сравнения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.торо_ВидыСравнения</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вариант сравнения значений</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="41ae6b35-b0a0-4051-9820-8385aa26f236">
+    <name>Значение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <types>CatalogRef.торо_ЗначенияИзмеряемыхПоказателейОбъектовРемонта</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Первое значение</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b03b13db-5c9c-4611-947b-0859e612faa9">
+    <name>ВариантЗначения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вариант значения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.торо_ВариантыЗначенийКонтролируемыхПоказателей</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Источник первого значения</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="6d335524-61e7-469e-877d-5f33b6af1c2f">
+    <name>Значение1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение1</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Второе значение</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="054821ab-8872-4120-9fda-cf015241c205">
+    <name>ВариантЗначения1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вариант значения1</value>
+    </synonym>
+    <type>
+      <types>EnumRef.торо_ВариантыЗначенийКонтролируемыхПоказателей</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Источник второго значения</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="9d07e5be-6c41-4e3c-b520-11cd239e5184">
+    <name>ОбъектРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект ремонта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ОбъектыРемонта</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Объект ремонта, для которого устанавливаются параметры</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="57357a29-d149-4570-8fea-4404eb6a961f">
+    <name>Показатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатель</value>
+    </synonym>
+    <type>
+      <types>ChartOfCharacteristicTypesRef.торо_ИзмеряемыеПоказателиОбъектовРемонта</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Контролируемый показатель объекта ремонта</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="7c634d53-5738-46e7-8c43-063e06691020">
+    <name>ТиповойОР</name>
+    <synonym>
+      <key>ru</key>
+      <value>Типовой ОР</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ТиповыеОР</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Типовой объект ремонта, для которого устанавливаются параметры</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="0b283af4-9926-4624-9397-f1ee2e77ad34">
+    <name>ID</name>
+    <synonym>
+      <key>ru</key>
+      <value>ID</value>
+    </synonym>
+    <comment>Поле необходимо только, чтобы обойти контроль уникальности по измерениям.</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+        <fixed>true</fixed>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Идентификатор строки</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value>                                    </value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

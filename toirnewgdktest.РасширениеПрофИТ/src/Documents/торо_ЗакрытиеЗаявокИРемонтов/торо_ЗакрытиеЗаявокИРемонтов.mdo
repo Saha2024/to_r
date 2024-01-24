@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="03cb2ee8-ed5f-44ee-bafe-97a8cbcb5655" extendedConfigurationObject="f2d2d47e-1265-4258-9a50-0a6385b69f21">
+  <producedTypes>
+    <objectType typeId="9c9df988-d0d1-4a3e-961f-37c3a533459f" valueTypeId="78a56ab3-8309-4437-8277-da92bc0600ed"/>
+    <refType typeId="57507636-25e5-4f90-8e82-dde56edda46e" valueTypeId="3262a291-33e8-4f21-a0b0-f251e620730c"/>
+    <selectionType typeId="85c78b74-cdd9-497b-aa38-3546a7af630f" valueTypeId="d754311e-fd7c-41cb-b678-982afff0f969"/>
+    <listType typeId="c6343358-63eb-4253-87bb-5e9dc338df9a" valueTypeId="75db325f-420b-470c-bdda-50b8aa4eb618"/>
+    <managerType typeId="0aeb54db-a1e9-49e4-949a-4ef5caf85b77" valueTypeId="c302e613-f712-4ac0-a4df-12a97e338f99"/>
+  </producedTypes>
+  <name>торо_ЗакрытиеЗаявокИРемонтов</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <tabularSections uuid="d49004a2-22cd-4b09-b827-b7b7f5863171" extendedConfigurationObject="007823c2-bb3a-4d9b-87d1-b5d3444f3df5">
+    <producedTypes>
+      <objectType typeId="cb7fbfd9-4b47-482c-9a9e-17b375a49217" valueTypeId="68352d29-dcbe-4fc4-b9a5-6e16d91bb7da"/>
+      <rowType typeId="637b0620-0c14-4a0d-8efe-6c054721fc63" valueTypeId="166a0b69-4d69-412b-b1d0-f5eae0e5c643"/>
+    </producedTypes>
+    <name>ЗакрываемыеРемонты</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+    <attributes uuid="0a430ac7-ba34-46b5-ab27-e72a08c9436b" extendedConfigurationObject="ad8bf9c9-0087-44cc-849d-67c3762f7c6f">
+      <name>ID</name>
+      <objectBelonging>Adopted</objectBelonging>
+      <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+        <extendedConfigurationObject>Checked</extendedConfigurationObject>
+        <typeExtension>
+          <types>
+            <state>Checked</state>
+            <type>String</type>
+          </types>
+          <stringQualifiers>
+            <length>36</length>
+          </stringQualifiers>
+        </typeExtension>
+      </extension>
+      <type/>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="dd0a0d74-8bec-4549-b64c-7421a906bfac" extendedConfigurationObject="1b6212e2-26ba-4550-804d-6c85664e4b5a">
+    <producedTypes>
+      <objectType typeId="164745b6-f12f-44de-8181-ba00fa63d4bc" valueTypeId="152ca6c7-c3d5-4af0-bffd-545af6c5223c"/>
+      <rowType typeId="322dac6e-13d9-4407-b611-1de3ded04643" valueTypeId="9868cd38-948b-4fcd-ab70-4ede8c462bcd"/>
+    </producedTypes>
+    <name>ЗакрываемыеЗаявки</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+    <attributes uuid="a973779f-dc56-44ed-8c4e-db627e7eb743" extendedConfigurationObject="03569a66-f6d0-4337-b177-f5df27401535">
+      <name>ИДРемонта</name>
+      <objectBelonging>Adopted</objectBelonging>
+      <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+        <extendedConfigurationObject>Checked</extendedConfigurationObject>
+        <typeExtension>
+          <types>
+            <state>Checked</state>
+            <type>String</type>
+          </types>
+          <stringQualifiers>
+            <length>36</length>
+          </stringQualifiers>
+        </typeExtension>
+      </extension>
+      <type/>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

@@ -1,0 +1,1097 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъектРемонта</dataPath>
+			<field>ОбъектРемонта</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДопустимыйМинимум</dataPath>
+			<field>ДопустимыйМинимум</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КритическийМаксимум</dataPath>
+			<field>КритическийМаксимум</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КритическийМинимум</dataPath>
+			<field>КритическийМинимум</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДопустимыйМаксимум</dataPath>
+			<field>ДопустимыйМаксимум</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИзмеряемыйПоказатель</dataPath>
+			<field>ИзмеряемыйПоказатель</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Измеряемый показатель</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗначениеИзмеряемогоПоказателя</dataPath>
+			<field>ЗначениеИзмеряемогоПоказателя</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Значение измеряемого показателя</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПоказательДата</dataPath>
+			<field>ПоказательДата</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показатель дата</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗЛИЧНЫЕ
+	ОбъектыРемонта.Ссылка КАК ОбъектРемонта,
+	ОбъектыРемонта.ТиповойОР КАК ТиповойОбъектРемонта
+ПОМЕСТИТЬ ТиповойОР
+ИЗ
+	Справочник.торо_ОбъектыРемонта КАК ОбъектыРемонта
+ГДЕ
+	ОбъектыРемонта.Ссылка В (&amp;ОбъектРемонта)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ТиповойОР.ОбъектРемонта,
+	торо_ИзмеряемыеПоказателиОбъектовРемонта.Показатель,
+	торо_ИзмеряемыеПоказателиОбъектовРемонта.ДопустимыйМинимум,
+	торо_ИзмеряемыеПоказателиОбъектовРемонта.ДопустимыйМаксимум,
+	торо_ИзмеряемыеПоказателиОбъектовРемонта.КритическийМинимум,
+	торо_ИзмеряемыеПоказателиОбъектовРемонта.КритическийМаксимум,
+	торо_ИзмеряемыеПоказателиОбъектовРемонта.ЗначенияКонтролируемыхПоказателейИзОР,
+	1 КАК Приоритет,
+	торо_ИзмеряемыеПоказателиОбъектовРемонта.Удален
+ПОМЕСТИТЬ ПриоритетыПоказателей
+ИЗ
+	РегистрСведений.торо_ИзмеряемыеПоказателиОбъектовРемонта КАК торо_ИзмеряемыеПоказателиОбъектовРемонта
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ТиповойОР КАК ТиповойОР
+		ПО торо_ИзмеряемыеПоказателиОбъектовРемонта.ОбъектРемонта = ТиповойОР.ТиповойОбъектРемонта
+ГДЕ
+	торо_ИзмеряемыеПоказателиОбъектовРемонта.Показатель В(&amp;КонтролируемыеПоказатели)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	торо_ИзмеряемыеПоказателиОбъектовРемонта.ОбъектРемонта,
+	торо_ИзмеряемыеПоказателиОбъектовРемонта.Показатель,
+	торо_ИзмеряемыеПоказателиОбъектовРемонта.ДопустимыйМинимум,
+	торо_ИзмеряемыеПоказателиОбъектовРемонта.ДопустимыйМаксимум,
+	торо_ИзмеряемыеПоказателиОбъектовРемонта.КритическийМинимум,
+	торо_ИзмеряемыеПоказателиОбъектовРемонта.КритическийМаксимум,
+	торо_ИзмеряемыеПоказателиОбъектовРемонта.ЗначенияКонтролируемыхПоказателейИзОР,
+	0,
+	торо_ИзмеряемыеПоказателиОбъектовРемонта.Удален
+ИЗ
+	РегистрСведений.торо_ИзмеряемыеПоказателиОбъектовРемонта КАК торо_ИзмеряемыеПоказателиОбъектовРемонта
+ГДЕ
+	торо_ИзмеряемыеПоказателиОбъектовРемонта.ОбъектРемонта В(&amp;ОбъектРемонта)
+	И торо_ИзмеряемыеПоказателиОбъектовРемонта.Показатель В(&amp;КонтролируемыеПоказатели)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ПриоритетыПоказателей.ОбъектРемонта,
+	ПриоритетыПоказателей.Показатель,
+	МИНИМУМ(ПриоритетыПоказателей.Приоритет) КАК Приоритет
+ПОМЕСТИТЬ ТабМинПриоритетов
+ИЗ
+	ПриоритетыПоказателей КАК ПриоритетыПоказателей
+
+СГРУППИРОВАТЬ ПО
+	ПриоритетыПоказателей.ОбъектРемонта,
+	ПриоритетыПоказателей.Показатель
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ПриоритетыПоказателей.ОбъектРемонта,
+	ПриоритетыПоказателей.Показатель,
+	ПриоритетыПоказателей.ДопустимыйМинимум,
+	ПриоритетыПоказателей.ДопустимыйМаксимум,
+	ПриоритетыПоказателей.КритическийМинимум,
+	ПриоритетыПоказателей.КритическийМаксимум,
+	ПриоритетыПоказателей.ЗначенияКонтролируемыхПоказателейИзОР
+ПОМЕСТИТЬ ДопустимыеЗначенияПоказателей
+ИЗ
+	ПриоритетыПоказателей КАК ПриоритетыПоказателей
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ТабМинПриоритетов КАК ТабМинПриоритетов
+		ПО ПриоритетыПоказателей.ОбъектРемонта = ТабМинПриоритетов.ОбъектРемонта
+			И ПриоритетыПоказателей.Показатель = ТабМинПриоритетов.Показатель
+			И ПриоритетыПоказателей.Приоритет = ТабМинПриоритетов.Приоритет
+ГДЕ
+	НЕ ПриоритетыПоказателей.Удален
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	торо_ЗначенияКонтролируемыхПоказателей.ОбъектРемонта,
+	торо_ЗначенияКонтролируемыхПоказателей.Показатель КАК ИзмеряемыйПоказатель,
+	торо_ЗначенияКонтролируемыхПоказателей.ДатаКонтроля КАК ПоказательДата,
+	торо_ЗначенияКонтролируемыхПоказателей.Значение КАК ЗначениеИзмеряемогоПоказателя,
+	ЕСТЬNULL(торо_ИзмеряемыеПоказателиОбъектовРемонта1.ДопустимыйМинимум, торо_ИзмеряемыеПоказателиОбъектовРемонта.ДопустимыйМинимум) КАК ДопустимыйМинимум,
+	ЕСТЬNULL(торо_ИзмеряемыеПоказателиОбъектовРемонта1.ДопустимыйМаксимум, торо_ИзмеряемыеПоказателиОбъектовРемонта.ДопустимыйМаксимум) КАК ДопустимыйМаксимум,
+	ЕСТЬNULL(торо_ИзмеряемыеПоказателиОбъектовРемонта1.КритическийМинимум, торо_ИзмеряемыеПоказателиОбъектовРемонта.КритическийМинимум) КАК КритическийМинимум,
+	ЕСТЬNULL(торо_ИзмеряемыеПоказателиОбъектовРемонта1.КритическийМаксимум, торо_ИзмеряемыеПоказателиОбъектовРемонта.КритическийМаксимум) КАК КритическийМаксимум
+ПОМЕСТИТЬ ТаблицаПоказателейИтого
+ИЗ
+	РегистрСведений.торо_ЗначенияКонтролируемыхПоказателей КАК торо_ЗначенияКонтролируемыхПоказателей
+		ЛЕВОЕ СОЕДИНЕНИЕ ДопустимыеЗначенияПоказателей КАК торо_ИзмеряемыеПоказателиОбъектовРемонта
+		ПО (торо_ИзмеряемыеПоказателиОбъектовРемонта.ОбъектРемонта = торо_ЗначенияКонтролируемыхПоказателей.ОбъектРемонта)
+			И (торо_ИзмеряемыеПоказателиОбъектовРемонта.Показатель = торо_ЗначенияКонтролируемыхПоказателей.Показатель)
+		ЛЕВОЕ СОЕДИНЕНИЕ ПланВидовХарактеристик.торо_ИзмеряемыеПоказателиОбъектовРемонта КАК торо_ИзмеряемыеПоказателиОбъектовРемонта1
+		ПО (торо_ИзмеряемыеПоказателиОбъектовРемонта.ЗначенияКонтролируемыхПоказателейИзОР)
+			И (торо_ЗначенияКонтролируемыхПоказателей.Показатель = торо_ИзмеряемыеПоказателиОбъектовРемонта1.Ссылка)
+ГДЕ
+	торо_ЗначенияКонтролируемыхПоказателей.ОбъектРемонта В(&amp;ОбъектРемонта)
+	И торо_ЗначенияКонтролируемыхПоказателей.Показатель В(&amp;КонтролируемыеПоказатели)
+	И ТИПЗНАЧЕНИЯ(торо_ЗначенияКонтролируемыхПоказателей.Значение) = ТИП(ЧИСЛО)
+{ГДЕ
+	(торо_ЗначенияКонтролируемыхПоказателей.ДатаКонтроля &gt; &amp;ДатаНачала
+			И торо_ЗначенияКонтролируемыхПоказателей.ДатаКонтроля &lt; &amp;ДатаОкончания)}
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ТаблицаПоказателейИтого.ОбъектРемонта,
+	ТаблицаПоказателейИтого.ИзмеряемыйПоказатель,
+	ТаблицаПоказателейИтого.ПоказательДата,
+	ТаблицаПоказателейИтого.ЗначениеИзмеряемогоПоказателя,
+	ТаблицаПоказателейИтого.ДопустимыйМинимум,
+	ТаблицаПоказателейИтого.ДопустимыйМаксимум,
+	ТаблицаПоказателейИтого.КритическийМинимум,
+	ТаблицаПоказателейИтого.КритическийМаксимум
+ИЗ
+	ТаблицаПоказателейИтого КАК ТаблицаПоказателейИтого
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	торо_ЗначенияКонтролируемыхПоказателей.ОбъектРемонта,
+	торо_ЗначенияКонтролируемыхПоказателей.Показатель,
+	&amp;ДатаНачала,
+	0,
+	торо_ИзмеряемыеПоказателиОбъектовРемонта.ДопустимыйМинимум,
+	торо_ИзмеряемыеПоказателиОбъектовРемонта.ДопустимыйМаксимум,
+	торо_ИзмеряемыеПоказателиОбъектовРемонта.КритическийМинимум,
+	торо_ИзмеряемыеПоказателиОбъектовРемонта.КритическийМаксимум
+ИЗ
+	РегистрСведений.торо_ЗначенияКонтролируемыхПоказателей КАК торо_ЗначенияКонтролируемыхПоказателей
+		ЛЕВОЕ СОЕДИНЕНИЕ ДопустимыеЗначенияПоказателей КАК торо_ИзмеряемыеПоказателиОбъектовРемонта
+		ПО (торо_ИзмеряемыеПоказателиОбъектовРемонта.ОбъектРемонта = торо_ЗначенияКонтролируемыхПоказателей.ОбъектРемонта)
+			И (торо_ИзмеряемыеПоказателиОбъектовРемонта.Показатель = торо_ЗначенияКонтролируемыхПоказателей.Показатель)
+ГДЕ
+	торо_ЗначенияКонтролируемыхПоказателей.ОбъектРемонта В(&amp;ОбъектРемонта)
+	И торо_ЗначенияКонтролируемыхПоказателей.Показатель В(&amp;КонтролируемыеПоказатели)
+	И &amp;ДатаНачала &gt; ДАТАВРЕМЯ(1,1,1)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ТаблицаПоказателейИтого.ОбъектРемонта,
+	ТаблицаПоказателейИтого.ИзмеряемыйПоказатель,
+	&amp;ДатаОкончания,
+	ТаблицаПоказателейИтого.ЗначениеИзмеряемогоПоказателя,
+	торо_ИзмеряемыеПоказателиОбъектовРемонта.ДопустимыйМинимум,
+	торо_ИзмеряемыеПоказателиОбъектовРемонта.ДопустимыйМаксимум,
+	торо_ИзмеряемыеПоказателиОбъектовРемонта.КритическийМинимум,
+	торо_ИзмеряемыеПоказателиОбъектовРемонта.КритическийМаксимум
+ИЗ
+	ТаблицаПоказателейИтого КАК ТаблицаПоказателейИтого
+		ЛЕВОЕ СОЕДИНЕНИЕ ДопустимыеЗначенияПоказателей КАК торо_ИзмеряемыеПоказателиОбъектовРемонта
+		ПО (торо_ИзмеряемыеПоказателиОбъектовРемонта.ОбъектРемонта = ТаблицаПоказателейИтого.ОбъектРемонта)
+			И (торо_ИзмеряемыеПоказателиОбъектовРемонта.Показатель = ТаблицаПоказателейИтого.ИзмеряемыйПоказатель)
+ГДЕ
+	ТаблицаПоказателейИтого.ПоказательДата В
+			(ВЫБРАТЬ
+				МАКСИМУМ(ТаблицаПоказателейИтого.ПоказательДата) КАК ПоказательДата
+			ИЗ
+				ТаблицаПоказателейИтого КАК ТаблицаПоказателейИтого
+			СГРУППИРОВАТЬ ПО
+				ТаблицаПоказателейИтого.ИзмеряемыйПоказатель)</query>
+	</dataSet>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных2</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъектРемонта</dataPath>
+			<field>ОбъектРемонта</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Показатель</dataPath>
+			<field>Показатель</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НаработкаДата</dataPath>
+			<field>НаработкаДата</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наработка дата</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗначениеПараметраНаработки</dataPath>
+			<field>ЗначениеПараметраНаработки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Значение параметра наработки</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПараметрНаработки</dataPath>
+			<field>ПараметрНаработки</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметр наработки</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗЛИЧНЫЕ
+	торо_НаработкаОбъектовРемонта.Период КАК Период
+ПОМЕСТИТЬ Дни
+ИЗ
+	РегистрСведений.торо_ПериодыНаработкиОР КАК торо_НаработкаОбъектовРемонта
+{ГДЕ
+	(&amp;СредняяНаработка = 0),
+	(торо_НаработкаОбъектовРемонта.Период МЕЖДУ &amp;ДатаНачала И &amp;ДатаОкончания)}
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	НАЧАЛОПЕРИОДА(торо_НаработкаОбъектовРемонта.Период, ДЕНЬ) КАК Период,
+	НАЧАЛОПЕРИОДА(МАКСИМУМ(торо_НаработкаОбъектовРемонта1.Период), ДЕНЬ) КАК Период1
+ПОМЕСТИТЬ ДниСредние
+ИЗ
+	РегистрСведений.торо_ПериодыНаработкиОР КАК торо_НаработкаОбъектовРемонта
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.торо_ПериодыНаработкиОР КАК торо_НаработкаОбъектовРемонта1
+		ПО торо_НаработкаОбъектовРемонта.ОбъектРемонта = торо_НаработкаОбъектовРемонта1.ОбъектРемонта
+			И торо_НаработкаОбъектовРемонта.Показатель = торо_НаработкаОбъектовРемонта1.Показатель
+			И (торо_НаработкаОбъектовРемонта1.Период &lt; торо_НаработкаОбъектовРемонта.Период)
+ГДЕ
+	торо_НаработкаОбъектовРемонта.ОбъектРемонта В(&amp;ОбъектРемонта)
+	И торо_НаработкаОбъектовРемонта.Показатель В(&amp;ПоказательНаработки)
+{ГДЕ
+	(&amp;СредняяНаработка = 1
+			И (торо_НаработкаОбъектовРемонта.Период &gt; &amp;ДатаНачала
+				И торо_НаработкаОбъектовРемонта.Период &lt; &amp;ДатаОкончания))}
+
+СГРУППИРОВАТЬ ПО
+	торо_НаработкаОбъектовРемонта.Период
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	Движения.ОбъектРемонта КАК ОбъектРемонта,
+	Движения.Показатель КАК ПараметрНаработки,
+	ДНИ.Период КАК НаработкаДата,
+	ВЫБОР
+		КОГДА Движения.ПериодСекунда = &amp;ДатаНачала
+			ТОГДА Движения.НаработкаНачальныйОстаток
+		КОГДА ЕСТЬNULL(ДНИ.Период1, 0) = 0
+			ТОГДА Движения.НаработкаОборот / РАЗНОСТЬДАТ(&amp;ДатаНачала, ДНИ.Период, ДЕНЬ)
+		ИНАЧЕ Движения.НаработкаОборот / РАЗНОСТЬДАТ(ДНИ.Период1, ДНИ.Период, ДЕНЬ)
+	КОНЕЦ КАК ЗначениеПараметраНаработки
+ПОМЕСТИТЬ СреднееПОДням
+ИЗ
+	ДниСредние КАК ДНИ
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрНакопления.торо_НаработкаОбъектовРемонта.ОстаткиИОбороты({(&amp;ДатаНачала)}, {(&amp;ДатаОкончания)}, АВТО, , ) КАК Движения
+		ПО (Движения.ПериодДень = ДНИ.Период)
+ГДЕ
+	&amp;СредняяНаработка = 1
+	И Движения.ОбъектРемонта В(&amp;ОбъектРемонта)
+	И Движения.Показатель В(&amp;ПоказательНаработки)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	Движения.ОбъектРемонта КАК ОбъектРемонта,
+	Движения.Показатель КАК ПараметрНаработки,
+	ДНИ.Период КАК НаработкаДата,
+	СУММА(ВЫБОР
+			КОГДА Движения.ПериодСекунда = &amp;ДатаНачала
+				ТОГДА Движения.НаработкаКонечныйОстаток
+			ИНАЧЕ ВЫБОР
+					КОГДА Движения.ПериодСекунда &lt;= ДНИ.Период
+						ТОГДА Движения.НаработкаОборот
+					ИНАЧЕ 0
+				КОНЕЦ
+		КОНЕЦ) КАК ЗначениеПараметраНаработки
+ИЗ
+	Дни КАК ДНИ
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрНакопления.торо_НаработкаОбъектовРемонта.ОстаткиИОбороты({(&amp;ДатаНачала)}, {(&amp;ДатаОкончания)}, АВТО, , ) КАК Движения
+		ПО (Движения.ПериодДень &lt;= ДНИ.Период)
+ГДЕ
+	&amp;СредняяНаработка = 0
+	И Движения.ОбъектРемонта В(&amp;ОбъектРемонта)
+	И Движения.Показатель В(&amp;ПоказательНаработки)
+
+СГРУППИРОВАТЬ ПО
+	Движения.ОбъектРемонта,
+	Движения.Показатель,
+	ДНИ.Период
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	торо_ЗначенияКонтролируемыхПоказателей.ОбъектРемонта,
+	торо_ЗначенияКонтролируемыхПоказателей.Показатель,
+	&amp;ДатаНачала,
+	0
+ИЗ
+	РегистрНакопления.торо_НаработкаОбъектовРемонта КАК торо_ЗначенияКонтролируемыхПоказателей
+ГДЕ
+	&amp;СредняяНаработка = 0
+	И &amp;ДатаНачала &gt; ДАТАВРЕМЯ(1, 1, 1)
+	И торо_ЗначенияКонтролируемыхПоказателей.ОбъектРемонта В(&amp;ОбъектРемонта)
+	И торо_ЗначенияКонтролируемыхПоказателей.Показатель В(&amp;ПоказательНаработки)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	торо_ЗначенияКонтролируемыхПоказателей.ОбъектРемонта,
+	торо_ЗначенияКонтролируемыхПоказателей.Показатель,
+	&amp;ДатаОкончания,
+	торо_ЗначенияКонтролируемыхПоказателей.НаработкаОстаток
+ИЗ
+	РегистрНакопления.торо_НаработкаОбъектовРемонта.Остатки(&amp;ДатаОкончания, ) КАК торо_ЗначенияКонтролируемыхПоказателей
+ГДЕ
+	&amp;СредняяНаработка = 0
+	И &amp;ДатаОкончания &gt; ДАТАВРЕМЯ(1, 1, 1)
+	И торо_ЗначенияКонтролируемыхПоказателей.ОбъектРемонта В(&amp;ОбъектРемонта)
+	И торо_ЗначенияКонтролируемыхПоказателей.Показатель В(&amp;ПоказательНаработки)
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	СреднееПОДням.ОбъектРемонта,
+	СреднееПОДням.ПараметрНаработки,
+	СреднееПОДням.НаработкаДата,
+	СреднееПОДням.ЗначениеПараметраНаработки
+ИЗ
+	СреднееПОДням КАК СреднееПОДням
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ ПЕРВЫЕ 1
+	СреднееПОДням.ОбъектРемонта,
+	СреднееПОДням.ПараметрНаработки,
+	&amp;ДатаНачала,
+	0
+ИЗ
+	СреднееПОДням КАК СреднееПОДням
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	СреднееПОДням.ОбъектРемонта,
+	СреднееПОДням.ПараметрНаработки,
+	&amp;ДатаОкончания,
+	СреднееПОДням1.ЗначениеПараметраНаработки
+ИЗ
+	СреднееПОДням КАК СреднееПОДням
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ (ВЫБРАТЬ ПЕРВЫЕ 1
+			СреднееПОДням1.ЗначениеПараметраНаработки КАК ЗначениеПараметраНаработки,
+			СреднееПОДням1.НаработкаДата КАК НаработкаДата
+		ИЗ
+			СреднееПОДням КАК СреднееПОДням1
+		
+		УПОРЯДОЧИТЬ ПО
+			СреднееПОДням1.НаработкаДата УБЫВ) КАК СреднееПОДням1
+		ПО (СреднееПОДням1.НаработкаДата = СреднееПОДням.НаработкаДата)</query>
+	</dataSet>
+	<totalField>
+		<dataPath>ДопустимыйМаксимум</dataPath>
+		<expression>ДопустимыйМаксимум</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ДопустимыйМинимум</dataPath>
+		<expression>ДопустимыйМинимум</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ЗначениеИзмеряемогоПоказателя</dataPath>
+		<expression>ЗначениеИзмеряемогоПоказателя</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ЗначениеПараметраНаработки</dataPath>
+		<expression>ЗначениеПараметраНаработки</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КритическийМаксимум</dataPath>
+		<expression>КритическийМаксимум</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КритическийМинимум</dataPath>
+		<expression>КритическийМинимум</expression>
+	</totalField>
+	<parameter>
+		<name>ОбъектРемонта</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Объект ремонта</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.торо_ОбъектыРемонта</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+		<availableAsField>false</availableAsField>
+		<denyIncompleteValues>true</denyIncompleteValues>
+		<use>Always</use>
+	</parameter>
+	<parameter>
+		<name>ПериодВыполнени</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период отчета</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+			<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+			<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+		</value>
+		<useRestriction>false</useRestriction>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>ДатаНачала</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата начала</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;ПериодВыполнени.ДатаНачала</expression>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>ДатаОкончания</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата окончания</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;ПериодВыполнени.ДатаОкончания</expression>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>КонтролируемыеПоказатели</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Контролируемые показатели</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:ChartOfCharacteristicTypesRef.торо_ИзмеряемыеПоказателиОбъектовРемонта</v8:Type>
+		</valueType>
+		<useRestriction>false</useRestriction>
+		<valueListAllowed>true</valueListAllowed>
+		<availableAsField>false</availableAsField>
+		<use>Always</use>
+	</parameter>
+	<parameter>
+		<name>ПоказательНаработки</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Показатели наработки</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.ПараметрыВыработкиОС</v8:Type>
+		</valueType>
+		<useRestriction>false</useRestriction>
+		<valueListAllowed>true</valueListAllowed>
+		<availableAsField>false</availableAsField>
+		<use>Always</use>
+	</parameter>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>СредняяНаработка</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Выводить </v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>0</v8:Digits>
+				<v8:FractionDigits>0</v8:FractionDigits>
+				<v8:AllowedSign>Any</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+		<value xsi:type="xs:decimal">0</value>
+		<useRestriction>true</useRestriction>
+		<availableValue>
+			<value xsi:type="xs:decimal">0</value>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>фактическое значение наработки</v8:content>
+				</v8:item>
+			</presentation>
+		</availableValue>
+		<availableValue>
+			<value xsi:type="xs:decimal">1</value>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>среднюю наработку за сутки</v8:content>
+				</v8:item>
+			</presentation>
+		</availableValue>
+		<availableAsField>false</availableAsField>
+		<use>Always</use>
+	</parameter>
+	<parameter>
+		<name>ТиповойОР</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Типовой ОР</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.торо_ТиповыеОР</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;ОбъектРемонта.ТиповойОР</expression>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Состояние оборудования</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ОбъектРемонта</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>5b312c9a-d7e0-4503-a413-6e6eb6751425</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ПериодВыполнени</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">ThisMonth</v8:variant>
+					</dcscor:value>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>8e6b1e91-3f17-4345-9b59-e361a53cbc98</dcsset:userSettingID>
+					<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Период отчета</v8:content>
+						</v8:item>
+					</dcsset:userSettingPresentation>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>КонтролируемыеПоказатели</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>6aad565b-5611-47e1-9e5e-74264969f637</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ПоказательНаработки</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>63ef2b58-1b08-4f5d-a5bc-68d8af0ab665</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>СредняяНаработка</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>94771515-ef9a-4d37-9140-ceb4fac85c6a</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>ТипПоказателя</dcsset:field>
+					<dcsset:orderType>Desc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:conditionalAppearance>
+				<dcsset:item>
+					<dcsset:use>false</dcsset:use>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ИзмеряемыйПоказатель</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветТекста</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">#FF0000</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+						</dcscor:item>
+					</dcsset:appearance>
+					<dcsset:useInOverall>DontUse</dcsset:useInOverall>
+					<dcsset:useInFilter>DontUse</dcsset:useInFilter>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>НаработкаДата</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>ПоказательДата</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ОриентацияТекста</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">90</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Формат</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ДФ=dd.MM.yyyy; ДЛФ=D</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+			</dcsset:conditionalAppearance>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>РасположениеИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ТипДиаграммы</dcscor:parameter>
+					<dcscor:value xsi:type="v8ui:ChartType">StackedLine</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">Output</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состояние оборудования</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>ИзмеряемыйПоказатель</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>КритическийМаксимум</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ДопустимыйМаксимум</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ЗначениеИзмеряемогоПоказателя</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ДопустимыйМинимум</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>КритическийМинимум</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ИзмеряемыйПоказатель</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:conditionalAppearance>
+					<dcsset:item>
+						<dcsset:selection>
+							<dcsset:item>
+								<dcsset:field>ИзмеряемыйПоказатель</dcsset:field>
+							</dcsset:item>
+						</dcsset:selection>
+						<dcsset:filter/>
+						<dcsset:appearance>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ЦветТекста</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Color">#008000</dcscor:value>
+							</dcscor:item>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>Шрифт</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+							</dcscor:item>
+						</dcsset:appearance>
+					</dcsset:item>
+				</dcsset:conditionalAppearance>
+				<dcsset:outputParameters>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ТипДиаграммы</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:ChartType">Step</dcscor:value>
+					</dcscor:item>
+				</dcsset:outputParameters>
+				<dcsset:item xsi:type="dcsset:StructureItemChart">
+					<dcsset:point>
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>ПоказательДата</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="dcscor:Field">ПараметрыДанных.ДатаНачала</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="dcscor:Field">ПараметрыДанных.ДатаОкончания</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+					</dcsset:point>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>КритическийМаксимум</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ДопустимыйМаксимум</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ЗначениеИзмеряемогоПоказателя</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ДопустимыйМинимум</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>КритическийМинимум</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>ЗначениеИзмеряемогоПоказателя</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter/>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветВДиаграмме</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">#008000</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>ДопустимыйМаксимум</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter/>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветВДиаграмме</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">#FF9900</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>ДопустимыйМинимум</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter/>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветВДиаграмме</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">#33CCCC</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>КритическийМаксимум</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter/>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветВДиаграмме</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">#FF0000</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>КритическийМинимум</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter/>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветВДиаграмме</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">#0000FF</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+					</dcsset:conditionalAppearance>
+					<dcsset:outputParameters>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ТипДиаграммы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:ChartType">Line</dcscor:value>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:use>false</dcscor:use>
+								<dcscor:parameter>ТипДиаграммы.ПолосыИзмерительнойДиаграммы</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:GaugeChartQualityBands" useTextStr="false" useTooltipStr="false">
+									<v8ui:item>
+										<v8ui:begin>20</v8ui:begin>
+										<v8ui:end>150</v8ui:end>
+										<v8ui:backColor>#32CD32</v8ui:backColor>
+										<v8ui:text>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Ололо</v8:content>
+											</v8:item>
+										</v8ui:text>
+										<v8ui:tooltip/>
+									</v8ui:item>
+								</dcscor:value>
+							</dcscor:item>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ТипДиаграммы.РежимСглаживания</dcscor:parameter>
+								<dcscor:value xmlns:d9p1="http://v8.1c.ru/8.2/data/chart" xsi:type="d9p1:ChartSplineMode">SmoothCurve</dcscor:value>
+							</dcscor:item>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ТипДиаграммы.НатяжениеСглаживания</dcscor:parameter>
+								<dcscor:value xsi:type="xs:decimal">95</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+							<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">Output</dcscor:value>
+						</dcscor:item>
+					</dcsset:outputParameters>
+				</dcsset:item>
+			</dcsset:item>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>ПараметрНаработки</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ЗначениеПараметраНаработки</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ПараметрНаработки</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:conditionalAppearance>
+					<dcsset:item>
+						<dcsset:selection>
+							<dcsset:item>
+								<dcsset:field>ПараметрНаработки</dcsset:field>
+							</dcsset:item>
+						</dcsset:selection>
+						<dcsset:filter/>
+						<dcsset:appearance>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ЦветТекста</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Color">#0F64E7</dcscor:value>
+							</dcscor:item>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>Шрифт</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+							</dcscor:item>
+						</dcsset:appearance>
+					</dcsset:item>
+				</dcsset:conditionalAppearance>
+				<dcsset:item xsi:type="dcsset:StructureItemChart">
+					<dcsset:point>
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>НаработкаДата</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>ЗначениеПараметраНаработки</dcsset:field>
+							</dcsset:item>
+						</dcsset:selection>
+					</dcsset:point>
+					<dcsset:series>
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>ПараметрНаработки</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+					</dcsset:series>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ЗначениеПараметраНаработки</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:selection>
+								<dcsset:item>
+									<dcsset:field>ЗначениеПараметраНаработки</dcsset:field>
+								</dcsset:item>
+							</dcsset:selection>
+							<dcsset:filter/>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветВДиаграмме</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">#1080F3</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+					</dcsset:conditionalAppearance>
+					<dcsset:outputParameters>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ТипДиаграммы</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:ChartType">Line</dcscor:value>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ТипДиаграммы.ОтображатьТаблицуДанных</dcscor:parameter>
+								<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+							</dcscor:item>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ТипДиаграммы.РежимСглаживания</dcscor:parameter>
+								<dcscor:value xmlns:d9p1="http://v8.1c.ru/8.2/data/chart" xsi:type="d9p1:ChartSplineMode">SmoothCurve</dcscor:value>
+							</dcscor:item>
+							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+								<dcscor:parameter>ТипДиаграммы.НатяжениеСглаживания</dcscor:parameter>
+								<dcscor:value xsi:type="xs:decimal">95</dcscor:value>
+							</dcscor:item>
+						</dcscor:item>
+					</dcsset:outputParameters>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

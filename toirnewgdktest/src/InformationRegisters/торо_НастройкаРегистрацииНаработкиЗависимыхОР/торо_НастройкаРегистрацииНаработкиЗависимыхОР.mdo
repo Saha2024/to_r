@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9ab91577-2800-439f-bacb-46721a515b5d">
+  <producedTypes>
+    <selectionType typeId="ef2c8cac-24e2-4958-b1cd-f146bdf84eb3" valueTypeId="1953bfeb-3575-4274-ba3e-abdceeb58faf"/>
+    <listType typeId="4e0d8b74-9eeb-472c-bc0a-57ceedfe5c65" valueTypeId="c6724acd-b82c-40c2-84e9-4734739cf29c"/>
+    <managerType typeId="7ae2283c-9ae2-4375-9f9c-4a7365c84961" valueTypeId="1235dc64-e3f8-4596-849c-45b4611b1223"/>
+    <recordSetType typeId="21a841b1-e3c1-411a-b19a-73ed67d140de" valueTypeId="3ba5895c-c590-4914-b444-2c292f09e4a0"/>
+    <recordKeyType typeId="319a5ddd-6258-48b7-adea-3a4bd573cc6b" valueTypeId="9f79ed56-6f99-4091-a272-d9332b9eb6ad"/>
+    <recordType typeId="7ad056cd-4e0c-41b9-bc42-4a8dde22039b" valueTypeId="1f937645-c600-4b8f-9cce-659b97aba2d5"/>
+    <recordManagerType typeId="8352faef-2381-4454-a697-d185fa42ed8e" valueTypeId="ddc6d7af-4819-42ae-b205-bf668b258994"/>
+  </producedTypes>
+  <name>торо_НастройкаРегистрацииНаработкиЗависимыхОР</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройка регистрации наработки зависимых ОР</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Период записи регистра</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="20435642-cb07-4cd0-b255-6bb7a9e56092">
+    <name>КоэффициентПересчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коэффициент пересчета</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Значение коэффициента</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="13a6b773-b04c-4554-96f0-0fd25be64267">
+    <name>ОбъектРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект ремонта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ОбъектыРемонта</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Объект ремонта для указания коэффициента перерасчета</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="3a54ae30-d4d3-4430-a71b-a6c1673f7b93">
+    <name>ЗависимыйОбъектРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Зависимый объект ремонта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ОбъектыРемонта</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Объект, для которого будет учитываться значение коэффициента</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="f7d232f8-5ef5-4e15-bb67-58b657dd5f79">
+    <name>ПараметрНаработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметр наработки</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПараметрыВыработкиОС</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Параметр наработки объекта ремонта</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="cdcd9f3a-a203-4422-9e17-4a2f86b27ea6">
+    <name>ТипОРЗависимогоОбъектаРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип объекта ремонта зависимого объекта ремонта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ТиповыеОР</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Типовой объект ремонта, для объектов ремонта из которого будет учитываться значение коэффициента</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="6dfbdcb9-48d1-43da-99f5-829fe9cb230d">
+    <name>Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата начала действия коэффициентов</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="67db4d5d-9dfb-41de-9f64-bbbea988f136">
+    <name>НаправлениеЗависимогоОР</name>
+    <synonym>
+      <key>ru</key>
+      <value>Направление зависимого объекта ремонта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_НаправленияОбъектовРемонтныхРабот</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Направление, для объектов ремонта из которого будет учитываться коэффициент</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="4aef6a0d-dcb4-4694-8797-fe80411790e2">
+    <name>ОрганизацияЗависимогоОР</name>
+    <synonym>
+      <key>ru</key>
+      <value>Организация зависимого объекта ремонта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Организации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Организация, для объектов ремонта из которой будет учитываться значение коэффициента</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="7589a02c-c570-4d3a-9f71-fb7ca919afb2">
+    <name>ПодразделениеЗависимогоОР</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение зависимого объекта ремонта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтруктураПредприятия</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Организация, для объектов ремонта из которого будет учитываться значение коэффициента</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

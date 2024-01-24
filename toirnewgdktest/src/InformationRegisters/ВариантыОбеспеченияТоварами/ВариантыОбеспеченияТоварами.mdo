@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9a9328f1-c139-47b3-8a3a-e2dda4be60bc">
+  <producedTypes>
+    <selectionType typeId="9b416845-0332-4fed-87dd-b9129ce2acca" valueTypeId="0bc12333-5876-4344-a5c8-5d3cf10cfb64"/>
+    <listType typeId="8852b14f-5869-4d03-bfaf-c78a13af5469" valueTypeId="9ee87a02-6076-4c20-bd74-1496e7106f34"/>
+    <managerType typeId="1dfcf61b-4864-457d-8625-8ce07014ae0c" valueTypeId="33a441dd-30d5-4159-99e9-4a3a2805d6a5"/>
+    <recordSetType typeId="77be02bc-7c2b-49a2-b943-a2ff8524c2c8" valueTypeId="74658947-fa1a-49a9-b33b-1917960f8345"/>
+    <recordKeyType typeId="679d708c-c20b-4994-8ba0-e810b265a4d0" valueTypeId="c9dd8c2e-6f88-4911-9037-86c359cbca98"/>
+    <recordType typeId="61c60c17-a11c-4a98-9e26-c9c54be087b1" valueTypeId="eb9f6ec8-5e6d-4989-ab0c-9f4b43a63bf5"/>
+    <recordManagerType typeId="1b115340-cf69-41c8-a5b7-303d7e0d74c5" valueTypeId="f0190ff9-bf0e-4a06-a72d-6a370afadf2c"/>
+  </producedTypes>
+  <name>ВариантыОбеспеченияТоварами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Варианты обеспечения товарами</value>
+  </synonym>
+  <synonym>
+    <key>en</key>
+    <value>Goods procurement strategy</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="77120da2-2b4c-423b-b837-561b18bac4bb">
+    <name>РеквизитДопУпорядочивания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порядок применения</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Application procedure</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Для способа обеспечения определяет последовательность применения.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>It determines the application sequence for the procurement strategy.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>IndexWithAdditionalOrder</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:NumberValue">
+      <value>0</value>
+    </fillValue>
+  </attributes>
+  <dimensions uuid="43448689-077e-4c0d-bf4b-4338e5ffd501">
+    <name>Склад</name>
+    <synonym>
+      <key>ru</key>
+      <value>Склад</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Warehouse</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Склады</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Склад получатель, для которого определяются способы обеспечения потребностей.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Destination warehouse to have procurement strategies determined.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.Склады.EmptyRef</value>
+    </fillValue>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="1a87ecf1-912f-48e1-a0c7-53c6e657616b">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Item</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Номенклатура, для которой определяются способы обеспечения потребностей.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Product to have procurement strategies determined.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.ТипНоменклатуры</name>
+      <value xsi:type="core:FixedArrayValue">
+        <values xsi:type="core:ReferenceValue">
+          <value>Enum.ТипыНоменклатуры.EnumValue.Товар</value>
+        </values>
+        <values xsi:type="core:ReferenceValue">
+          <value>Enum.ТипыНоменклатуры.EnumValue.МногооборотнаяТара</value>
+        </values>
+      </value>
+    </choiceParameters>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.Номенклатура.EmptyRef</value>
+    </fillValue>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="c9b7d9c1-ab9d-416d-9068-4e43d0f48df8">
+    <name>Характеристика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Характеристика</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Variant</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ХарактеристикиНоменклатуры</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Характеристика номенклатуры, для которой определяются способы обеспечения потребностей.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Item variant to have procurement strategies determined.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Номенклатура</name>
+      <changeMode>DontChange</changeMode>
+      <field>InformationRegister.ВариантыОбеспеченияТоварами.Dimension.Номенклатура</field>
+    </choiceParameterLinks>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.ХарактеристикиНоменклатуры.EmptyRef</value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="60092fde-0fd8-4bc6-a0e4-83bfba656d7a">
+    <name>СпособОбеспеченияПотребностей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ обеспечения потребностей</value>
+    </synonym>
+    <synonym>
+      <key>en</key>
+      <value>Procurement strategy</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СпособыОбеспеченияПотребностей</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Способ обеспечения потребностей, используемый для пополнения запаса товара на складе.</value>
+    </toolTip>
+    <toolTip>
+      <key>en</key>
+      <value>Procurement strategy used for warehouse stock replenishment.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.СпособыОбеспеченияПотребностей.EmptyRef</value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

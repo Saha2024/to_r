@@ -1,0 +1,3730 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://schemas.microsoft.com/project/2010">
+	<property name="Project">
+		<typeDef xsi:type="ObjectType">
+			<property name="SaveVersion" type="xs:integer"/>
+			<property name="UID" lowerBound="0">
+				<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="16"/>
+			</property>
+			<property name="Name" lowerBound="0">
+				<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="255"/>
+			</property>
+			<property name="Title" lowerBound="0">
+				<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+			</property>
+			<property name="Subject" lowerBound="0">
+				<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+			</property>
+			<property name="Category" lowerBound="0">
+				<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+			</property>
+			<property name="Company" lowerBound="0">
+				<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+			</property>
+			<property name="Manager" lowerBound="0">
+				<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+			</property>
+			<property name="Author" lowerBound="0">
+				<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+			</property>
+			<property name="CreationDate" type="xs:dateTime" lowerBound="0"/>
+			<property name="Revision" type="xs:integer" lowerBound="0"/>
+			<property name="LastSaved" type="xs:dateTime" lowerBound="0"/>
+			<property name="ScheduleFromStart" type="xs:boolean" lowerBound="0" fixed="false" default="true"/>
+			<property name="StartDate" type="xs:dateTime" lowerBound="0"/>
+			<property name="FinishDate" type="xs:dateTime" lowerBound="0"/>
+			<property name="FYStartDate" lowerBound="0">
+				<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+					<enumeration>1</enumeration>
+					<enumeration>2</enumeration>
+					<enumeration>3</enumeration>
+					<enumeration>4</enumeration>
+					<enumeration>5</enumeration>
+					<enumeration>6</enumeration>
+					<enumeration>7</enumeration>
+					<enumeration>8</enumeration>
+					<enumeration>9</enumeration>
+					<enumeration>10</enumeration>
+					<enumeration>11</enumeration>
+					<enumeration>12</enumeration>
+				</typeDef>
+			</property>
+			<property name="CriticalSlackLimit" type="xs:integer" lowerBound="0"/>
+			<property name="CurrencyDigits" type="xs:integer" lowerBound="0"/>
+			<property name="CurrencySymbol" lowerBound="0">
+				<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="20"/>
+			</property>
+			<property name="CurrencyCode">
+				<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="3"/>
+			</property>
+			<property name="CurrencySymbolPosition" lowerBound="0">
+				<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+					<enumeration>0</enumeration>
+					<enumeration>1</enumeration>
+					<enumeration>2</enumeration>
+					<enumeration>3</enumeration>
+				</typeDef>
+			</property>
+			<property name="CalendarUID" type="xs:integer" lowerBound="0"/>
+			<property name="DefaultStartTime" type="xs:time" lowerBound="0"/>
+			<property name="DefaultFinishTime" type="xs:time" lowerBound="0"/>
+			<property name="MinutesPerDay" type="xs:integer" lowerBound="0"/>
+			<property name="MinutesPerWeek" type="xs:integer" lowerBound="0"/>
+			<property name="DaysPerMonth" type="xs:integer" lowerBound="0"/>
+			<property name="DefaultTaskType" lowerBound="0" fixed="false" default="1">
+				<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+					<enumeration>0</enumeration>
+					<enumeration>1</enumeration>
+					<enumeration>2</enumeration>
+				</typeDef>
+			</property>
+			<property name="DefaultFixedCostAccrual" lowerBound="0">
+				<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+					<enumeration>1</enumeration>
+					<enumeration>2</enumeration>
+					<enumeration>3</enumeration>
+				</typeDef>
+			</property>
+			<property name="DefaultStandardRate" type="xs:float" lowerBound="0"/>
+			<property name="DefaultOvertimeRate" type="xs:float" lowerBound="0"/>
+			<property name="DurationFormat" lowerBound="0">
+				<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+					<enumeration>3</enumeration>
+					<enumeration>4</enumeration>
+					<enumeration>5</enumeration>
+					<enumeration>6</enumeration>
+					<enumeration>7</enumeration>
+					<enumeration>8</enumeration>
+					<enumeration>9</enumeration>
+					<enumeration>10</enumeration>
+					<enumeration>11</enumeration>
+					<enumeration>12</enumeration>
+					<enumeration>19</enumeration>
+					<enumeration>20</enumeration>
+					<enumeration>21</enumeration>
+					<enumeration>35</enumeration>
+					<enumeration>36</enumeration>
+					<enumeration>37</enumeration>
+					<enumeration>38</enumeration>
+					<enumeration>39</enumeration>
+					<enumeration>40</enumeration>
+					<enumeration>41</enumeration>
+					<enumeration>42</enumeration>
+					<enumeration>43</enumeration>
+					<enumeration>44</enumeration>
+					<enumeration>51</enumeration>
+					<enumeration>52</enumeration>
+					<enumeration>53</enumeration>
+				</typeDef>
+			</property>
+			<property name="WorkFormat" lowerBound="0">
+				<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+					<enumeration>1</enumeration>
+					<enumeration>2</enumeration>
+					<enumeration>3</enumeration>
+					<enumeration>4</enumeration>
+					<enumeration>5</enumeration>
+				</typeDef>
+			</property>
+			<property name="EditableActualCosts" type="xs:boolean" lowerBound="0" fixed="false" default="false"/>
+			<property name="HonorConstraints" type="xs:boolean" lowerBound="0" fixed="false" default="true"/>
+			<property name="EarnedValueMethod" lowerBound="0">
+				<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+					<enumeration>0</enumeration>
+					<enumeration>1</enumeration>
+				</typeDef>
+			</property>
+			<property name="InsertedProjectsLikeSummary" type="xs:boolean" lowerBound="0" fixed="false" default="true"/>
+			<property name="MultipleCriticalPaths" type="xs:boolean" lowerBound="0" fixed="false" default="false"/>
+			<property name="NewTasksEffortDriven" type="xs:boolean" lowerBound="0" fixed="false" default="true"/>
+			<property name="NewTasksEstimated" type="xs:boolean" lowerBound="0" fixed="false" default="true"/>
+			<property name="SplitsInProgressTasks" type="xs:boolean" lowerBound="0" fixed="false" default="true"/>
+			<property name="SpreadActualCost" type="xs:boolean" lowerBound="0" fixed="false" default="true"/>
+			<property name="SpreadPercentComplete" type="xs:boolean" lowerBound="0" fixed="false" default="false"/>
+			<property name="TaskUpdatesResource" type="xs:boolean" lowerBound="0"/>
+			<property name="FiscalYearStart" type="xs:boolean" lowerBound="0"/>
+			<property name="WeekStartDay" lowerBound="0">
+				<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+					<enumeration>0</enumeration>
+					<enumeration>1</enumeration>
+					<enumeration>2</enumeration>
+					<enumeration>3</enumeration>
+					<enumeration>4</enumeration>
+					<enumeration>5</enumeration>
+					<enumeration>6</enumeration>
+				</typeDef>
+			</property>
+			<property name="MoveCompletedEndsBack" type="xs:boolean" lowerBound="0" fixed="false" default="false"/>
+			<property name="MoveRemainingStartsBack" type="xs:boolean" lowerBound="0" fixed="false" default="false"/>
+			<property name="MoveRemainingStartsForward" type="xs:boolean" lowerBound="0" fixed="false" default="false"/>
+			<property name="MoveCompletedEndsForward" type="xs:boolean" lowerBound="0" fixed="false" default="false"/>
+			<property name="BaselineForEarnedValue" lowerBound="0">
+				<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+					<enumeration>0</enumeration>
+					<enumeration>1</enumeration>
+					<enumeration>2</enumeration>
+					<enumeration>3</enumeration>
+					<enumeration>4</enumeration>
+					<enumeration>5</enumeration>
+					<enumeration>6</enumeration>
+					<enumeration>7</enumeration>
+					<enumeration>8</enumeration>
+					<enumeration>9</enumeration>
+					<enumeration>10</enumeration>
+				</typeDef>
+			</property>
+			<property name="AutoAddNewResourcesAndTasks" type="xs:boolean" lowerBound="0" fixed="false" default="true"/>
+			<property name="StatusDate" type="xs:dateTime" lowerBound="0"/>
+			<property name="CurrentDate" type="xs:dateTime" lowerBound="0"/>
+			<property name="MicrosoftProjectServerURL" type="xs:boolean" lowerBound="0"/>
+			<property name="Autolink" type="xs:boolean" lowerBound="0"/>
+			<property name="NewTaskStartDate" lowerBound="0">
+				<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+					<enumeration>0</enumeration>
+					<enumeration>1</enumeration>
+				</typeDef>
+			</property>
+			<property name="DefaultTaskEVMethod" lowerBound="0">
+				<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+					<enumeration>0</enumeration>
+					<enumeration>1</enumeration>
+				</typeDef>
+			</property>
+			<property name="ProjectExternallyEdited" type="xs:boolean" lowerBound="0"/>
+			<property name="ExtendedCreationDate" type="xs:dateTime" lowerBound="0"/>
+			<property name="ActualsInSync" type="xs:boolean" lowerBound="0"/>
+			<property name="RemoveFileProperties" type="xs:boolean" lowerBound="0"/>
+			<property name="AdminProject" type="xs:boolean" lowerBound="0"/>
+			<property name="BaslineCalendar" type="xs:string" lowerBound="0"/>
+			<property name="NewTasksAreManual" type="xs:boolean" lowerBound="0"/>
+			<property name="UpdateManuallyScheduledTasksWhenEditingLinks" type="xs:boolean" lowerBound="0"/>
+			<property name="KeepTaskOnNearestWorkingTimeWhenMadeAutoScheduled" type="xs:boolean" lowerBound="0"/>
+			<property name="OutlineCodes" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property name="OutlineCode" lowerBound="0" upperBound="-1">
+						<typeDef xsi:type="ObjectType">
+							<property name="Guid" type="xs:string"/>
+							<property name="FieldID" type="xs:string" lowerBound="0"/>
+							<property name="FieldName" type="xs:string" lowerBound="0"/>
+							<property name="Alias" type="xs:string" lowerBound="0"/>
+							<property name="PhoneticAlias" type="xs:string" lowerBound="0"/>
+							<property name="Values" lowerBound="0">
+								<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+									<property name="Value" lowerBound="0" upperBound="-1">
+										<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+											<property name="ValueID" type="xs:integer" lowerBound="0"/>
+											<property name="FieldGUID" type="xs:string"/>
+											<property name="Type">
+												<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+													<enumeration>4</enumeration>
+													<enumeration>6</enumeration>
+													<enumeration>9</enumeration>
+													<enumeration>15</enumeration>
+													<enumeration>17</enumeration>
+													<enumeration>21</enumeration>
+													<enumeration>27</enumeration>
+												</typeDef>
+											</property>
+											<property name="IsCollapsed" type="xs:boolean" lowerBound="0"/>
+											<property name="ParentValueID" type="xs:integer" lowerBound="0"/>
+											<property name="Value" type="xs:string" lowerBound="0"/>
+											<property name="Description" type="xs:string" lowerBound="0"/>
+										</typeDef>
+									</property>
+								</typeDef>
+							</property>
+							<property name="Enterprise" type="xs:boolean" lowerBound="0"/>
+							<property name="EnterpriseOutlineCodeAlias" type="xs:integer" lowerBound="0"/>
+							<property name="ResourceSubstitutionEnabled" type="xs:boolean" lowerBound="0"/>
+							<property name="LeafOnly" type="xs:boolean" lowerBound="0"/>
+							<property name="AllLevelsRequired" type="xs:boolean" lowerBound="0"/>
+							<property name="OnlyTableValuesAllowed" type="xs:boolean" lowerBound="0"/>
+							<property name="ShowIndent" type="xs:boolean" lowerBound="0"/>
+							<property name="Masks" lowerBound="0">
+								<typeDef xsi:type="ObjectType">
+									<property name="Mask" lowerBound="0" upperBound="-1">
+										<typeDef xsi:type="ObjectType">
+											<property name="Level" type="xs:integer" lowerBound="0"/>
+											<property name="Type" lowerBound="0">
+												<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+													<enumeration>0</enumeration>
+													<enumeration>1</enumeration>
+													<enumeration>2</enumeration>
+													<enumeration>3</enumeration>
+												</typeDef>
+											</property>
+											<property name="Length" type="xs:integer" lowerBound="0"/>
+											<property name="Separator" type="xs:string" lowerBound="0"/>
+										</typeDef>
+									</property>
+								</typeDef>
+							</property>
+						</typeDef>
+					</property>
+				</typeDef>
+			</property>
+			<property name="WBSMasks" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property name="VerifyUniqueCodes" type="xs:boolean" lowerBound="0" fixed="false" default="false"/>
+					<property name="GenerateCodes" type="xs:boolean" lowerBound="0" fixed="false" default="false"/>
+					<property name="Prefix" lowerBound="0">
+						<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="50"/>
+					</property>
+					<property name="WBSMask" lowerBound="0" upperBound="-1">
+						<typeDef xsi:type="ObjectType">
+							<property name="Level" type="xs:integer"/>
+							<property name="Type">
+								<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+									<enumeration>0</enumeration>
+									<enumeration>1</enumeration>
+									<enumeration>2</enumeration>
+									<enumeration>3</enumeration>
+								</typeDef>
+							</property>
+							<property name="Length" type="xs:string"/>
+							<property name="Separator" type="xs:string"/>
+						</typeDef>
+					</property>
+				</typeDef>
+			</property>
+			<property name="ExtendedAttributes" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property name="ExtendedAttribute" lowerBound="0" upperBound="-1">
+						<typeDef xsi:type="ObjectType">
+							<property name="FieldID" type="xs:string" lowerBound="0"/>
+							<property name="FieldName" type="xs:string" lowerBound="0"/>
+							<property name="CFType" lowerBound="0">
+								<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+									<enumeration>0</enumeration>
+									<enumeration>1</enumeration>
+									<enumeration>2</enumeration>
+									<enumeration>3</enumeration>
+									<enumeration>4</enumeration>
+									<enumeration>5</enumeration>
+									<enumeration>6</enumeration>
+									<enumeration>7</enumeration>
+								</typeDef>
+							</property>
+							<property name="Guid" type="xs:string" lowerBound="0"/>
+							<property name="ElemType" lowerBound="0">
+								<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+									<enumeration>20</enumeration>
+									<enumeration>21</enumeration>
+									<enumeration>22</enumeration>
+									<enumeration>23</enumeration>
+								</typeDef>
+							</property>
+							<property name="MaxMultiValues" type="xs:integer" lowerBound="0"/>
+							<property name="UserDef" type="xs:boolean" lowerBound="0"/>
+							<property name="Alias" lowerBound="0">
+								<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="50"/>
+							</property>
+							<property name="SecondaryPID" type="xs:string" lowerBound="0"/>
+							<property name="AutoRollDown" type="xs:boolean" lowerBound="0"/>
+							<property name="DefaultGuid" type="xs:string" lowerBound="0"/>
+							<property name="Ltuid" type="xs:string" lowerBound="0"/>
+							<property name="SecondaryGuid" type="xs:string" lowerBound="0"/>
+							<property name="PhoneticAlias" lowerBound="0">
+								<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="50"/>
+							</property>
+							<property name="RollupType" lowerBound="0">
+								<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+									<enumeration>0</enumeration>
+									<enumeration>1</enumeration>
+									<enumeration>2</enumeration>
+									<enumeration>3</enumeration>
+									<enumeration>4</enumeration>
+									<enumeration>5</enumeration>
+									<enumeration>6</enumeration>
+									<enumeration>7</enumeration>
+								</typeDef>
+							</property>
+							<property name="CalculationType" lowerBound="0">
+								<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+									<enumeration>0</enumeration>
+									<enumeration>1</enumeration>
+									<enumeration>2</enumeration>
+								</typeDef>
+							</property>
+							<property name="Formula" type="xs:string" lowerBound="0"/>
+							<property name="RestrictValues" type="xs:boolean" lowerBound="0"/>
+							<property name="ValuelistSortOrder" lowerBound="0">
+								<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+									<enumeration>0</enumeration>
+									<enumeration>1</enumeration>
+								</typeDef>
+							</property>
+							<property name="AppendNewValues" type="xs:boolean" lowerBound="0"/>
+							<property name="Default" type="xs:string" lowerBound="0"/>
+							<property name="ValueList" lowerBound="0">
+								<typeDef xsi:type="ObjectType">
+									<property name="Value" upperBound="-1">
+										<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+											<property name="ID" type="xs:integer"/>
+											<property name="Value" type="xs:string" lowerBound="0"/>
+											<property name="Description" type="xs:string" lowerBound="0"/>
+											<property name="Phonetic" type="xs:string" lowerBound="0"/>
+										</typeDef>
+									</property>
+								</typeDef>
+							</property>
+						</typeDef>
+					</property>
+				</typeDef>
+			</property>
+			<property name="Calendars" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property name="Calendar" upperBound="-1">
+						<typeDef xsi:type="ObjectType">
+							<property name="UID" type="xs:integer"/>
+							<property name="Name" lowerBound="0">
+								<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+							</property>
+							<property name="IsBaseCalendar" type="xs:boolean" lowerBound="0"/>
+							<property name="IsBaselineCalendar" type="xs:boolean" lowerBound="0"/>
+							<property name="BaseCalendarUID" type="xs:integer" lowerBound="0"/>
+							<property name="WeekDays" lowerBound="0">
+								<typeDef xsi:type="ObjectType">
+									<property name="WeekDay" lowerBound="0" upperBound="-1">
+										<typeDef xsi:type="ObjectType">
+											<property name="DayType">
+												<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+													<enumeration>0</enumeration>
+													<enumeration>1</enumeration>
+													<enumeration>2</enumeration>
+													<enumeration>3</enumeration>
+													<enumeration>4</enumeration>
+													<enumeration>5</enumeration>
+													<enumeration>6</enumeration>
+													<enumeration>7</enumeration>
+												</typeDef>
+											</property>
+											<property name="DayWorking" type="xs:boolean" lowerBound="0"/>
+											<property name="TimePeriod" lowerBound="0">
+												<typeDef xsi:type="ObjectType">
+													<property name="FromDate" type="xs:dateTime" lowerBound="0"/>
+													<property name="ToDate" type="xs:dateTime" lowerBound="0"/>
+												</typeDef>
+											</property>
+											<property name="WorkingTimes" lowerBound="0">
+												<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+													<property name="WorkingTime" lowerBound="0" upperBound="5">
+														<typeDef xsi:type="ObjectType">
+															<property name="FromTime" type="xs:time" lowerBound="0"/>
+															<property name="ToTime" type="xs:time" lowerBound="0"/>
+														</typeDef>
+													</property>
+												</typeDef>
+											</property>
+										</typeDef>
+									</property>
+								</typeDef>
+							</property>
+							<property name="Exceptions" lowerBound="0">
+								<typeDef xsi:type="ObjectType">
+									<property name="Exception" lowerBound="0" upperBound="-1">
+										<typeDef xsi:type="ObjectType">
+											<property name="EnteredByOccurrences" type="xs:boolean" lowerBound="0"/>
+											<property name="TimePeriod" lowerBound="0">
+												<typeDef xsi:type="ObjectType">
+													<property name="FromDate" type="xs:dateTime" lowerBound="0"/>
+													<property name="ToDate" type="xs:dateTime" lowerBound="0"/>
+												</typeDef>
+											</property>
+											<property name="Occurrences" type="xs:integer" lowerBound="0"/>
+											<property name="Name" lowerBound="0">
+												<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+											</property>
+											<property name="Type" lowerBound="0">
+												<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+													<enumeration>1</enumeration>
+													<enumeration>2</enumeration>
+													<enumeration>3</enumeration>
+													<enumeration>4</enumeration>
+													<enumeration>5</enumeration>
+													<enumeration>6</enumeration>
+													<enumeration>7</enumeration>
+													<enumeration>8</enumeration>
+													<enumeration>9</enumeration>
+												</typeDef>
+											</property>
+											<property name="Period" type="xs:integer" lowerBound="0"/>
+											<property name="DaysOfWeek" type="xs:integer" lowerBound="0"/>
+											<property name="MonthItem" lowerBound="0">
+												<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+													<enumeration>0</enumeration>
+													<enumeration>1</enumeration>
+													<enumeration>2</enumeration>
+													<enumeration>3</enumeration>
+													<enumeration>4</enumeration>
+													<enumeration>5</enumeration>
+													<enumeration>6</enumeration>
+													<enumeration>7</enumeration>
+													<enumeration>8</enumeration>
+													<enumeration>9</enumeration>
+												</typeDef>
+											</property>
+											<property name="MonthPosition" lowerBound="0">
+												<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+													<enumeration>0</enumeration>
+													<enumeration>1</enumeration>
+													<enumeration>2</enumeration>
+													<enumeration>3</enumeration>
+													<enumeration>4</enumeration>
+												</typeDef>
+											</property>
+											<property name="Month" lowerBound="0">
+												<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+													<enumeration>0</enumeration>
+													<enumeration>1</enumeration>
+													<enumeration>2</enumeration>
+													<enumeration>3</enumeration>
+													<enumeration>4</enumeration>
+													<enumeration>5</enumeration>
+													<enumeration>6</enumeration>
+													<enumeration>7</enumeration>
+													<enumeration>8</enumeration>
+													<enumeration>9</enumeration>
+													<enumeration>10</enumeration>
+													<enumeration>11</enumeration>
+												</typeDef>
+											</property>
+											<property name="MonthDay" type="xs:integer" lowerBound="0"/>
+											<property name="DayWorking" type="xs:boolean" lowerBound="0"/>
+											<property name="WorkingTimes" lowerBound="0">
+												<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+													<property name="WorkingTime" lowerBound="0" upperBound="5">
+														<typeDef xsi:type="ObjectType">
+															<property name="FromTime" type="xs:time" lowerBound="0"/>
+															<property name="ToTime" type="xs:time" lowerBound="0"/>
+														</typeDef>
+													</property>
+												</typeDef>
+											</property>
+										</typeDef>
+									</property>
+								</typeDef>
+							</property>
+							<property name="WorkWeeks" lowerBound="0">
+								<typeDef xsi:type="ObjectType">
+									<property name="WorkWeek" lowerBound="0" upperBound="-1">
+										<typeDef xsi:type="ObjectType">
+											<property name="TimePeriod" lowerBound="0">
+												<typeDef xsi:type="ObjectType">
+													<property name="FromDate" type="xs:dateTime" lowerBound="0"/>
+													<property name="ToDate" type="xs:dateTime" lowerBound="0"/>
+												</typeDef>
+											</property>
+											<property name="Name" lowerBound="0">
+												<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+											</property>
+											<property name="WeekDay" lowerBound="0" upperBound="-1">
+												<typeDef xsi:type="ObjectType">
+													<property name="DayType">
+														<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+															<enumeration>0</enumeration>
+															<enumeration>1</enumeration>
+															<enumeration>2</enumeration>
+															<enumeration>3</enumeration>
+															<enumeration>4</enumeration>
+															<enumeration>5</enumeration>
+															<enumeration>6</enumeration>
+															<enumeration>7</enumeration>
+														</typeDef>
+													</property>
+													<property name="DayWorking" type="xs:boolean" lowerBound="0"/>
+												</typeDef>
+											</property>
+										</typeDef>
+									</property>
+								</typeDef>
+							</property>
+						</typeDef>
+					</property>
+				</typeDef>
+			</property>
+			<property name="Tasks" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property name="Task" lowerBound="0" upperBound="-1">
+						<typeDef xsi:type="ObjectType">
+							<property name="UID" type="xs:integer"/>
+							<property name="ID" type="xs:integer" lowerBound="0"/>
+							<property name="Active" type="xs:boolean" lowerBound="0"/>
+							<property name="Name" lowerBound="0">
+								<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+							</property>
+							<property name="Type" lowerBound="0">
+								<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+									<enumeration>0</enumeration>
+									<enumeration>1</enumeration>
+									<enumeration>2</enumeration>
+								</typeDef>
+							</property>
+							<property name="IsNull" type="xs:boolean" lowerBound="0"/>
+							<property name="CreateDate" type="xs:dateTime" lowerBound="0"/>
+							<property name="Contact" lowerBound="0">
+								<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+							</property>
+							<property name="WBS" type="xs:string" lowerBound="0"/>
+							<property name="WBSLevel" type="xs:string" lowerBound="0"/>
+							<property name="OutlineNumber" lowerBound="0">
+								<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+							</property>
+							<property name="OutlineLevel" type="xs:integer" lowerBound="0"/>
+							<property name="Priority" type="xs:integer" lowerBound="0"/>
+							<property name="Start" type="xs:dateTime" lowerBound="0"/>
+							<property name="Finish" type="xs:dateTime" lowerBound="0"/>
+							<property name="Duration" type="xs:duration" lowerBound="0"/>
+							<property name="DurationFormat" lowerBound="0">
+								<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+									<enumeration>3</enumeration>
+									<enumeration>4</enumeration>
+									<enumeration>5</enumeration>
+									<enumeration>6</enumeration>
+									<enumeration>7</enumeration>
+									<enumeration>8</enumeration>
+									<enumeration>9</enumeration>
+									<enumeration>10</enumeration>
+									<enumeration>11</enumeration>
+									<enumeration>12</enumeration>
+									<enumeration>19</enumeration>
+									<enumeration>20</enumeration>
+									<enumeration>21</enumeration>
+									<enumeration>35</enumeration>
+									<enumeration>36</enumeration>
+									<enumeration>37</enumeration>
+									<enumeration>38</enumeration>
+									<enumeration>39</enumeration>
+									<enumeration>40</enumeration>
+									<enumeration>41</enumeration>
+									<enumeration>42</enumeration>
+									<enumeration>43</enumeration>
+									<enumeration>44</enumeration>
+									<enumeration>51</enumeration>
+									<enumeration>52</enumeration>
+									<enumeration>53</enumeration>
+								</typeDef>
+							</property>
+							<property name="Work" type="xs:duration" lowerBound="0"/>
+							<property name="Stop" type="xs:dateTime" lowerBound="0"/>
+							<property name="Resume" type="xs:dateTime" lowerBound="0"/>
+							<property name="ResumeValid" type="xs:boolean" lowerBound="0"/>
+							<property name="EffortDriven" type="xs:boolean" lowerBound="0"/>
+							<property name="Recurring" type="xs:boolean" lowerBound="0"/>
+							<property name="OverAllocated" type="xs:boolean" lowerBound="0"/>
+							<property name="Estimated" type="xs:boolean" lowerBound="0"/>
+							<property name="Milestone" type="xs:boolean" lowerBound="0"/>
+							<property name="Summary" type="xs:boolean" lowerBound="0"/>
+							<property name="DisplayAsSummary" type="xs:boolean" lowerBound="0"/>
+							<property name="Critical" type="xs:boolean" lowerBound="0"/>
+							<property name="IsSubproject" type="xs:boolean" lowerBound="0"/>
+							<property name="IsSubprojectReadOnly" type="xs:boolean" lowerBound="0"/>
+							<property name="SubprojectName" lowerBound="0">
+								<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+							</property>
+							<property name="ExternalTask" type="xs:boolean" lowerBound="0"/>
+							<property name="ExternalTaskProject" lowerBound="0">
+								<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+							</property>
+							<property name="EarlyStart" type="xs:dateTime" lowerBound="0"/>
+							<property name="EarlyFinish" type="xs:dateTime" lowerBound="0"/>
+							<property name="LateStart" type="xs:dateTime" lowerBound="0"/>
+							<property name="LateFinish" type="xs:dateTime" lowerBound="0"/>
+							<property name="StartVariance" type="xs:integer" lowerBound="0"/>
+							<property name="FinishVariance" type="xs:integer" lowerBound="0"/>
+							<property name="WorkVariance" type="xs:float" lowerBound="0"/>
+							<property name="FreeSlack" type="xs:integer" lowerBound="0"/>
+							<property name="TotalSlack" type="xs:integer" lowerBound="0"/>
+							<property name="StartSlack" type="xs:integer" lowerBound="0"/>
+							<property name="FinishSlack" type="xs:integer" lowerBound="0"/>
+							<property name="FixedCost" type="xs:float" lowerBound="0"/>
+							<property name="FixedCostAccrual" lowerBound="0">
+								<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic">
+									<enumeration>1</enumeration>
+									<enumeration>2</enumeration>
+									<enumeration>3</enumeration>
+								</typeDef>
+							</property>
+							<property name="PercentComplete" type="xs:integer" lowerBound="0"/>
+							<property name="PercentWorkComplete" type="xs:integer" lowerBound="0"/>
+							<property name="Cost" type="xs:decimal" lowerBound="0"/>
+							<property name="OvertimeCost" type="xs:decimal" lowerBound="0"/>
+							<property name="OvertimeWork" type="xs:duration" lowerBound="0"/>
+							<property name="ActualStart" type="xs:dateTime" lowerBound="0"/>
+							<property name="ActualFinish" type="xs:dateTime" lowerBound="0"/>
+							<property name="ActualDuration" type="xs:duration" lowerBound="0"/>
+							<property name="ActualCost" type="xs:decimal" lowerBound="0"/>
+							<property name="ActualOvertimeCost" type="xs:decimal" lowerBound="0"/>
+							<property name="ActualWork" type="xs:duration" lowerBound="0"/>
+							<property name="ActualOvertimeWork" type="xs:duration" lowerBound="0"/>
+							<property name="RegularWork" type="xs:duration" lowerBound="0"/>
+							<property name="RemainingDuration" type="xs:duration" lowerBound="0"/>
+							<property name="RemainingCost" type="xs:decimal" lowerBound="0"/>
+							<property name="RemainingWork" type="xs:duration" lowerBound="0"/>
+							<property name="RemainingOvertimeCost" type="xs:decimal" lowerBound="0"/>
+							<property name="RemainingOvertimeWork" type="xs:duration" lowerBound="0"/>
+							<property name="ACWP" type="xs:float" lowerBound="0"/>
+							<property name="CV" type="xs:float" lowerBound="0"/>
+							<property name="ConstraintType" lowerBound="0">
+								<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+									<enumeration>0</enumeration>
+									<enumeration>1</enumeration>
+									<enumeration>2</enumeration>
+									<enumeration>3</enumeration>
+									<enumeration>4</enumeration>
+									<enumeration>5</enumeration>
+									<enumeration>6</enumeration>
+									<enumeration>7</enumeration>
+								</typeDef>
+							</property>
+							<property name="CalendarUID" type="xs:integer" lowerBound="0"/>
+							<property name="ConstraintDate" type="xs:dateTime" lowerBound="0"/>
+							<property name="Deadline" type="xs:dateTime" lowerBound="0"/>
+							<property name="LevelAssignments" type="xs:boolean" lowerBound="0"/>
+							<property name="LevelingCanSplit" type="xs:boolean" lowerBound="0"/>
+							<property name="LevelingDelay" type="xs:integer" lowerBound="0"/>
+							<property name="LevelingDelayFormat" lowerBound="0">
+								<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+									<enumeration>3</enumeration>
+									<enumeration>4</enumeration>
+									<enumeration>5</enumeration>
+									<enumeration>6</enumeration>
+									<enumeration>7</enumeration>
+									<enumeration>8</enumeration>
+									<enumeration>9</enumeration>
+									<enumeration>10</enumeration>
+									<enumeration>11</enumeration>
+									<enumeration>12</enumeration>
+									<enumeration>19</enumeration>
+									<enumeration>20</enumeration>
+									<enumeration>21</enumeration>
+									<enumeration>35</enumeration>
+									<enumeration>36</enumeration>
+									<enumeration>37</enumeration>
+									<enumeration>38</enumeration>
+									<enumeration>39</enumeration>
+									<enumeration>40</enumeration>
+									<enumeration>41</enumeration>
+									<enumeration>42</enumeration>
+									<enumeration>43</enumeration>
+									<enumeration>44</enumeration>
+									<enumeration>51</enumeration>
+									<enumeration>52</enumeration>
+									<enumeration>53</enumeration>
+								</typeDef>
+							</property>
+							<property name="PreLeveledStart" type="xs:dateTime" lowerBound="0"/>
+							<property name="PreLeveledFinish" type="xs:dateTime" lowerBound="0"/>
+							<property name="Hyperlink" lowerBound="0">
+								<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+							</property>
+							<property name="HyperlinkAddress" lowerBound="0">
+								<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+							</property>
+							<property name="HyperlinkSubAddress" lowerBound="0">
+								<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+							</property>
+							<property name="IgnoreResourceCalendar" type="xs:boolean" lowerBound="0"/>
+							<property name="Notes" type="xs:string" lowerBound="0"/>
+							<property name="HideBar" type="xs:boolean" lowerBound="0"/>
+							<property name="Rollup" type="xs:boolean" lowerBound="0"/>
+							<property name="BCWS" type="xs:float" lowerBound="0"/>
+							<property name="BCWP" type="xs:float" lowerBound="0"/>
+							<property name="PhysicalPercentComplete" type="xs:integer" lowerBound="0"/>
+							<property name="EarnedValueMethod" lowerBound="0">
+								<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+									<enumeration>0</enumeration>
+									<enumeration>1</enumeration>
+								</typeDef>
+							</property>
+							<property name="PredecessorLink" lowerBound="0" upperBound="-1">
+								<typeDef xsi:type="ObjectType">
+									<property name="PredecessorUID" type="xs:integer" lowerBound="0"/>
+									<property name="Type" lowerBound="0">
+										<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+											<enumeration>0</enumeration>
+											<enumeration>1</enumeration>
+											<enumeration>2</enumeration>
+											<enumeration>3</enumeration>
+										</typeDef>
+									</property>
+									<property name="CrossProject" type="xs:boolean" lowerBound="0"/>
+									<property name="CrossProjectName" type="xs:string" lowerBound="0"/>
+									<property name="LinkLag" type="xs:integer" lowerBound="0"/>
+									<property name="LagFormat" lowerBound="0">
+										<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+											<enumeration>3</enumeration>
+											<enumeration>4</enumeration>
+											<enumeration>5</enumeration>
+											<enumeration>6</enumeration>
+											<enumeration>7</enumeration>
+											<enumeration>8</enumeration>
+											<enumeration>9</enumeration>
+											<enumeration>10</enumeration>
+											<enumeration>11</enumeration>
+											<enumeration>12</enumeration>
+											<enumeration>19</enumeration>
+											<enumeration>20</enumeration>
+											<enumeration>35</enumeration>
+											<enumeration>36</enumeration>
+											<enumeration>37</enumeration>
+											<enumeration>38</enumeration>
+											<enumeration>39</enumeration>
+											<enumeration>40</enumeration>
+											<enumeration>41</enumeration>
+											<enumeration>42</enumeration>
+											<enumeration>43</enumeration>
+											<enumeration>44</enumeration>
+											<enumeration>51</enumeration>
+											<enumeration>52</enumeration>
+											<enumeration>53</enumeration>
+										</typeDef>
+									</property>
+								</typeDef>
+							</property>
+							<property name="ActualWorkProtected" type="xs:duration" lowerBound="0"/>
+							<property name="ActualOvertimeWorkProtected" type="xs:duration" lowerBound="0"/>
+							<property name="ExtendedAttribute" lowerBound="0" upperBound="-1">
+								<typeDef xsi:type="ObjectType">
+									<property name="FieldID" type="xs:string" lowerBound="0"/>
+									<property name="Value" type="xs:string" lowerBound="0"/>
+									<property name="ValueGUID" type="xs:integer" lowerBound="0"/>
+									<property name="DurationFormat" lowerBound="0">
+										<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+											<enumeration>3</enumeration>
+											<enumeration>4</enumeration>
+											<enumeration>5</enumeration>
+											<enumeration>6</enumeration>
+											<enumeration>7</enumeration>
+											<enumeration>8</enumeration>
+											<enumeration>9</enumeration>
+											<enumeration>10</enumeration>
+											<enumeration>11</enumeration>
+											<enumeration>12</enumeration>
+											<enumeration>19</enumeration>
+											<enumeration>20</enumeration>
+											<enumeration>21</enumeration>
+											<enumeration>35</enumeration>
+											<enumeration>36</enumeration>
+											<enumeration>37</enumeration>
+											<enumeration>38</enumeration>
+											<enumeration>39</enumeration>
+											<enumeration>40</enumeration>
+											<enumeration>41</enumeration>
+											<enumeration>42</enumeration>
+											<enumeration>43</enumeration>
+											<enumeration>44</enumeration>
+											<enumeration>51</enumeration>
+											<enumeration>52</enumeration>
+											<enumeration>53</enumeration>
+										</typeDef>
+									</property>
+								</typeDef>
+							</property>
+							<property name="Baseline" lowerBound="0" upperBound="-1">
+								<typeDef xsi:type="ObjectType">
+									<property xmlns:d10p1="http://schemas.microsoft.com/project/2010" name="TimephasedData" type="d10p1:TimephasedDataType" lowerBound="0" upperBound="-1"/>
+									<property name="Number" type="xs:integer" lowerBound="0"/>
+									<property name="Interim" type="xs:boolean" lowerBound="0" fixed="false" default="false"/>
+									<property name="Start" type="xs:dateTime" lowerBound="0"/>
+									<property name="Finish" type="xs:dateTime" lowerBound="0"/>
+									<property name="Duration" type="xs:duration" lowerBound="0"/>
+									<property name="DurationFormat" lowerBound="0">
+										<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+											<enumeration>3</enumeration>
+											<enumeration>4</enumeration>
+											<enumeration>5</enumeration>
+											<enumeration>6</enumeration>
+											<enumeration>7</enumeration>
+											<enumeration>8</enumeration>
+											<enumeration>9</enumeration>
+											<enumeration>10</enumeration>
+											<enumeration>11</enumeration>
+											<enumeration>12</enumeration>
+											<enumeration>19</enumeration>
+											<enumeration>20</enumeration>
+											<enumeration>21</enumeration>
+											<enumeration>35</enumeration>
+											<enumeration>36</enumeration>
+											<enumeration>37</enumeration>
+											<enumeration>38</enumeration>
+											<enumeration>39</enumeration>
+											<enumeration>40</enumeration>
+											<enumeration>41</enumeration>
+											<enumeration>42</enumeration>
+											<enumeration>43</enumeration>
+											<enumeration>44</enumeration>
+											<enumeration>51</enumeration>
+											<enumeration>52</enumeration>
+											<enumeration>53</enumeration>
+										</typeDef>
+									</property>
+									<property name="EstimatedDuration" type="xs:boolean" lowerBound="0"/>
+									<property name="Work" type="xs:duration" lowerBound="0"/>
+									<property name="Cost" type="xs:decimal" lowerBound="0"/>
+									<property name="BCWS" type="xs:float" lowerBound="0"/>
+									<property name="BCWP" type="xs:float" lowerBound="0"/>
+									<property name="FixedCost" type="xs:float" lowerBound="0"/>
+								</typeDef>
+							</property>
+							<property name="OutlineCode" lowerBound="0" upperBound="-1">
+								<typeDef xsi:type="ObjectType">
+									<property name="FieldID" type="xs:string" lowerBound="0"/>
+									<property name="ValueID" type="xs:integer" lowerBound="0"/>
+									<property name="ValueGUID" type="xs:integer" lowerBound="0"/>
+								</typeDef>
+							</property>
+							<property name="IsPublished" type="xs:boolean" lowerBound="0"/>
+							<property name="StatusManager" type="xs:string" lowerBound="0"/>
+							<property name="CommitmentStart" type="xs:dateTime" lowerBound="0"/>
+							<property name="CommitmentFinish" type="xs:dateTime" lowerBound="0"/>
+							<property name="CommitmentType" lowerBound="0">
+								<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+									<enumeration>0</enumeration>
+									<enumeration>1</enumeration>
+									<enumeration>2</enumeration>
+								</typeDef>
+							</property>
+							<property name="Pinned" type="xs:boolean" lowerBound="0"/>
+							<property name="PinnedStart" type="xs:string" lowerBound="0"/>
+							<property name="PinnedFinish" type="xs:string" lowerBound="0"/>
+							<property name="PinnedDuration" type="xs:string" lowerBound="0"/>
+							<property xmlns:d8p1="http://schemas.microsoft.com/project/2010" name="TimephasedData" type="d8p1:TimephasedDataType" lowerBound="0" upperBound="-1"/>
+						</typeDef>
+					</property>
+				</typeDef>
+			</property>
+			<property name="Resources" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property name="Resource" lowerBound="0" upperBound="-1">
+						<typeDef xsi:type="ObjectType">
+							<property name="UID" type="xs:integer"/>
+							<property name="ID" type="xs:integer" lowerBound="0"/>
+							<property name="Name" lowerBound="0">
+								<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+							</property>
+							<property name="Type" lowerBound="0">
+								<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+									<enumeration>0</enumeration>
+									<enumeration>1</enumeration>
+								</typeDef>
+							</property>
+							<property name="IsNull" type="xs:boolean" lowerBound="0"/>
+							<property name="Initials" lowerBound="0">
+								<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+							</property>
+							<property name="Phonetics" lowerBound="0">
+								<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+							</property>
+							<property name="NTAccount" lowerBound="0">
+								<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+							</property>
+							<property name="MaterialLabel" lowerBound="0">
+								<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+							</property>
+							<property name="Code" lowerBound="0">
+								<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+							</property>
+							<property name="Group" lowerBound="0">
+								<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+							</property>
+							<property name="WorkGroup" lowerBound="0">
+								<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+									<enumeration>0</enumeration>
+									<enumeration>1</enumeration>
+									<enumeration>2</enumeration>
+									<enumeration>3</enumeration>
+								</typeDef>
+							</property>
+							<property name="EmailAddress" lowerBound="0">
+								<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+							</property>
+							<property name="Hyperlink" lowerBound="0">
+								<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+							</property>
+							<property name="HyperlinkAddress" lowerBound="0">
+								<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+							</property>
+							<property name="HyperlinkSubAddress" lowerBound="0">
+								<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+							</property>
+							<property name="MaxUnits" type="xs:float" lowerBound="0" fixed="false" default="1.0"/>
+							<property name="PeakUnits" type="xs:float" lowerBound="0"/>
+							<property name="OverAllocated" type="xs:boolean" lowerBound="0"/>
+							<property name="AvailableFrom" type="xs:dateTime" lowerBound="0"/>
+							<property name="AvailableTo" type="xs:dateTime" lowerBound="0"/>
+							<property name="Start" type="xs:dateTime" lowerBound="0"/>
+							<property name="Finish" type="xs:dateTime" lowerBound="0"/>
+							<property name="CanLevel" type="xs:boolean" lowerBound="0"/>
+							<property name="AccrueAt" lowerBound="0">
+								<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+									<enumeration>1</enumeration>
+									<enumeration>2</enumeration>
+									<enumeration>3</enumeration>
+									<enumeration>4</enumeration>
+								</typeDef>
+							</property>
+							<property name="Work" type="xs:duration" lowerBound="0"/>
+							<property name="RegularWork" type="xs:duration" lowerBound="0"/>
+							<property name="OvertimeWork" type="xs:duration" lowerBound="0"/>
+							<property name="ActualWork" type="xs:duration" lowerBound="0"/>
+							<property name="RemainingWork" type="xs:duration" lowerBound="0"/>
+							<property name="ActualOvertimeWork" type="xs:duration" lowerBound="0"/>
+							<property name="RemainingOvertimeWork" type="xs:duration" lowerBound="0"/>
+							<property name="PercentWorkComplete" type="xs:integer" lowerBound="0"/>
+							<property name="StandardRate" type="xs:decimal" lowerBound="0"/>
+							<property name="StandardRateFormat" lowerBound="0">
+								<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+									<enumeration>1</enumeration>
+									<enumeration>2</enumeration>
+									<enumeration>3</enumeration>
+									<enumeration>4</enumeration>
+									<enumeration>5</enumeration>
+									<enumeration>7</enumeration>
+									<enumeration>8</enumeration>
+								</typeDef>
+							</property>
+							<property name="Cost" type="xs:decimal" lowerBound="0"/>
+							<property name="OvertimeRate" type="xs:decimal" lowerBound="0"/>
+							<property name="OvertimeRateFormat" lowerBound="0">
+								<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+									<enumeration>1</enumeration>
+									<enumeration>2</enumeration>
+									<enumeration>3</enumeration>
+									<enumeration>4</enumeration>
+									<enumeration>5</enumeration>
+									<enumeration>7</enumeration>
+								</typeDef>
+							</property>
+							<property name="OvertimeCost" type="xs:decimal" lowerBound="0"/>
+							<property name="CostPerUse" type="xs:decimal" lowerBound="0"/>
+							<property name="ActualCost" type="xs:decimal" lowerBound="0"/>
+							<property name="ActualOvertimeCost" type="xs:decimal" lowerBound="0"/>
+							<property name="RemainingCost" type="xs:decimal" lowerBound="0"/>
+							<property name="RemainingOvertimeCost" type="xs:decimal" lowerBound="0"/>
+							<property name="WorkVariance" type="xs:float" lowerBound="0"/>
+							<property name="CostVariance" type="xs:float" lowerBound="0"/>
+							<property name="SV" type="xs:float" lowerBound="0"/>
+							<property name="CV" type="xs:float" lowerBound="0"/>
+							<property name="ACWP" type="xs:float" lowerBound="0"/>
+							<property name="CalendarUID" type="xs:integer" lowerBound="0"/>
+							<property name="Notes" type="xs:string" lowerBound="0"/>
+							<property name="BCWS" type="xs:float" lowerBound="0"/>
+							<property name="BCWP" type="xs:float" lowerBound="0"/>
+							<property name="IsGeneric" type="xs:boolean" lowerBound="0"/>
+							<property name="IsInactive" type="xs:boolean" lowerBound="0"/>
+							<property name="IsEnterprise" type="xs:boolean" lowerBound="0"/>
+							<property name="BookingType" lowerBound="0">
+								<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+									<enumeration>0</enumeration>
+									<enumeration>1</enumeration>
+								</typeDef>
+							</property>
+							<property name="ActualWorkProtected" type="xs:duration" lowerBound="0"/>
+							<property name="ActualOvertimeWorkProtected" type="xs:duration" lowerBound="0"/>
+							<property name="ActiveDirectoryGUID" lowerBound="0">
+								<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="16"/>
+							</property>
+							<property name="CreationDate" type="xs:dateTime" lowerBound="0"/>
+							<property name="ExtendedAttribute" lowerBound="0" upperBound="-1">
+								<typeDef xsi:type="ObjectType">
+									<property name="FieldID" type="xs:string" lowerBound="0"/>
+									<property name="Value" type="xs:string" lowerBound="0"/>
+									<property name="ValueGUID" type="xs:integer" lowerBound="0"/>
+									<property name="DurationFormat" lowerBound="0">
+										<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+											<enumeration>3</enumeration>
+											<enumeration>4</enumeration>
+											<enumeration>5</enumeration>
+											<enumeration>6</enumeration>
+											<enumeration>7</enumeration>
+											<enumeration>8</enumeration>
+											<enumeration>9</enumeration>
+											<enumeration>10</enumeration>
+											<enumeration>11</enumeration>
+											<enumeration>12</enumeration>
+											<enumeration>19</enumeration>
+											<enumeration>20</enumeration>
+											<enumeration>21</enumeration>
+											<enumeration>35</enumeration>
+											<enumeration>36</enumeration>
+											<enumeration>37</enumeration>
+											<enumeration>38</enumeration>
+											<enumeration>39</enumeration>
+											<enumeration>40</enumeration>
+											<enumeration>41</enumeration>
+											<enumeration>42</enumeration>
+											<enumeration>43</enumeration>
+											<enumeration>44</enumeration>
+											<enumeration>51</enumeration>
+											<enumeration>52</enumeration>
+											<enumeration>53</enumeration>
+										</typeDef>
+									</property>
+								</typeDef>
+							</property>
+							<property name="Baseline" lowerBound="0" upperBound="-1">
+								<typeDef xsi:type="ObjectType">
+									<property name="Number" type="xs:integer"/>
+									<property name="Work" type="xs:duration" lowerBound="0"/>
+									<property name="Cost" type="xs:float" lowerBound="0"/>
+									<property name="BCWS" type="xs:float" lowerBound="0"/>
+									<property name="BCWP" type="xs:float" lowerBound="0"/>
+								</typeDef>
+							</property>
+							<property name="OutlineCode" lowerBound="0" upperBound="-1">
+								<typeDef xsi:type="ObjectType">
+									<property name="FieldID" type="xs:string" lowerBound="0"/>
+									<property name="ValueID" type="xs:integer" lowerBound="0"/>
+									<property name="ValueGUID" type="xs:integer" lowerBound="0"/>
+								</typeDef>
+							</property>
+							<property name="IsCostResource" type="xs:boolean" lowerBound="0"/>
+							<property name="AssnOwner" type="xs:string" lowerBound="0"/>
+							<property name="AssnOwnerGuid" type="xs:string" lowerBound="0"/>
+							<property name="IsBudget" type="xs:boolean" lowerBound="0"/>
+							<property name="AvailabilityPeriods" lowerBound="0">
+								<typeDef xsi:type="ObjectType">
+									<property name="AvailabilityPeriod" lowerBound="0" upperBound="-1">
+										<typeDef xsi:type="ObjectType">
+											<property name="AvailableFrom" type="xs:dateTime" lowerBound="0"/>
+											<property name="AvailableTo" type="xs:dateTime" lowerBound="0"/>
+											<property name="AvailableUnits" type="xs:float" lowerBound="0"/>
+										</typeDef>
+									</property>
+								</typeDef>
+							</property>
+							<property name="Rates" lowerBound="0">
+								<typeDef xsi:type="ObjectType">
+									<property name="Rate" lowerBound="0" upperBound="25">
+										<typeDef xsi:type="ObjectType">
+											<property name="RatesFrom" type="xs:dateTime"/>
+											<property name="RatesTo" type="xs:dateTime"/>
+											<property name="RateTable" lowerBound="0">
+												<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+													<enumeration>0</enumeration>
+													<enumeration>1</enumeration>
+													<enumeration>2</enumeration>
+													<enumeration>3</enumeration>
+													<enumeration>4</enumeration>
+												</typeDef>
+											</property>
+											<property name="StandardRate" type="xs:decimal" lowerBound="0"/>
+											<property name="StandardRateFormat" lowerBound="0">
+												<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+													<enumeration>1</enumeration>
+													<enumeration>2</enumeration>
+													<enumeration>3</enumeration>
+													<enumeration>4</enumeration>
+													<enumeration>5</enumeration>
+													<enumeration>7</enumeration>
+												</typeDef>
+											</property>
+											<property name="OvertimeRate" type="xs:decimal" lowerBound="0"/>
+											<property name="OvertimeRateFormat" lowerBound="0">
+												<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+													<enumeration>1</enumeration>
+													<enumeration>2</enumeration>
+													<enumeration>3</enumeration>
+													<enumeration>4</enumeration>
+													<enumeration>5</enumeration>
+													<enumeration>7</enumeration>
+												</typeDef>
+											</property>
+											<property name="CostPerUse" type="xs:decimal" lowerBound="0"/>
+										</typeDef>
+									</property>
+								</typeDef>
+							</property>
+							<property xmlns:d8p1="http://schemas.microsoft.com/project/2010" name="TimephasedData" type="d8p1:TimephasedDataType" lowerBound="0" upperBound="-1"/>
+						</typeDef>
+					</property>
+				</typeDef>
+			</property>
+			<property name="Assignments" lowerBound="0">
+				<typeDef xsi:type="ObjectType">
+					<property name="Assignment" lowerBound="0" upperBound="-1">
+						<typeDef xsi:type="ObjectType">
+							<property name="UID" type="xs:integer"/>
+							<property name="TaskUID" type="xs:integer" lowerBound="0"/>
+							<property name="ResourceUID" type="xs:integer" lowerBound="0"/>
+							<property name="PercentWorkComplete" type="xs:integer" lowerBound="0"/>
+							<property name="ActualCost" type="xs:decimal" lowerBound="0"/>
+							<property name="ActualOvertimeWork" type="xs:duration" lowerBound="0"/>
+							<property name="ActualWork" type="xs:duration" lowerBound="0"/>
+							<property name="ACWP" type="xs:float" lowerBound="0"/>
+							<property name="Confirmed" type="xs:boolean" lowerBound="0"/>
+							<property name="RateScale" type="xs:integer" lowerBound="0"/>
+							<property name="Cost" type="xs:decimal" lowerBound="0"/>
+							<property name="CostRateTable" lowerBound="0">
+								<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+									<enumeration>0</enumeration>
+									<enumeration>1</enumeration>
+									<enumeration>2</enumeration>
+									<enumeration>3</enumeration>
+									<enumeration>4</enumeration>
+								</typeDef>
+							</property>
+							<property name="CostVariance" type="xs:float" lowerBound="0"/>
+							<property name="CV" type="xs:float" lowerBound="0"/>
+							<property name="Delay" type="xs:integer" lowerBound="0"/>
+							<property name="Finish" type="xs:dateTime" lowerBound="0"/>
+							<property name="FinishVariance" type="xs:integer" lowerBound="0"/>
+							<property name="WorkVariance" type="xs:float" lowerBound="0"/>
+							<property name="HasFixedRateUnits" type="xs:boolean" lowerBound="0"/>
+							<property name="FixedMaterial" type="xs:boolean" lowerBound="0"/>
+							<property name="LevelingDelay" type="xs:integer" lowerBound="0"/>
+							<property name="LevelingDelayFormat" lowerBound="0">
+								<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+									<enumeration>3</enumeration>
+									<enumeration>4</enumeration>
+									<enumeration>5</enumeration>
+									<enumeration>6</enumeration>
+									<enumeration>7</enumeration>
+									<enumeration>8</enumeration>
+									<enumeration>9</enumeration>
+									<enumeration>10</enumeration>
+									<enumeration>11</enumeration>
+									<enumeration>12</enumeration>
+									<enumeration>19</enumeration>
+									<enumeration>20</enumeration>
+									<enumeration>21</enumeration>
+									<enumeration>35</enumeration>
+									<enumeration>36</enumeration>
+									<enumeration>37</enumeration>
+									<enumeration>38</enumeration>
+									<enumeration>39</enumeration>
+									<enumeration>40</enumeration>
+									<enumeration>41</enumeration>
+									<enumeration>42</enumeration>
+									<enumeration>43</enumeration>
+									<enumeration>44</enumeration>
+									<enumeration>51</enumeration>
+									<enumeration>52</enumeration>
+									<enumeration>53</enumeration>
+								</typeDef>
+							</property>
+							<property name="LinkedFields" type="xs:boolean" lowerBound="0"/>
+							<property name="Milestone" type="xs:boolean" lowerBound="0"/>
+							<property name="Overallocated" type="xs:boolean" lowerBound="0"/>
+							<property name="OvertimeWork" type="xs:duration" lowerBound="0"/>
+							<property name="RegularWork" type="xs:duration" lowerBound="0"/>
+							<property name="RemainingCost" type="xs:decimal" lowerBound="0"/>
+							<property name="RemainingOvertimeWork" type="xs:duration" lowerBound="0"/>
+							<property name="RemainingWork" type="xs:duration" lowerBound="0"/>
+							<property name="ResponsePending" type="xs:boolean" lowerBound="0"/>
+							<property name="Start" type="xs:dateTime" lowerBound="0"/>
+							<property name="StartVariance" type="xs:integer" lowerBound="0"/>
+							<property name="Units" type="xs:float" lowerBound="0"/>
+							<property name="UpdateNeeded" type="xs:boolean" lowerBound="0"/>
+							<property name="VAC" type="xs:float" lowerBound="0"/>
+							<property name="Work" type="xs:duration" lowerBound="0"/>
+							<property name="WorkContour" lowerBound="0">
+								<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+									<enumeration>0</enumeration>
+									<enumeration>1</enumeration>
+									<enumeration>2</enumeration>
+									<enumeration>3</enumeration>
+									<enumeration>4</enumeration>
+									<enumeration>5</enumeration>
+									<enumeration>6</enumeration>
+									<enumeration>7</enumeration>
+									<enumeration>8</enumeration>
+								</typeDef>
+							</property>
+							<property name="BCWS" type="xs:float" lowerBound="0"/>
+							<property name="BCWP" type="xs:float" lowerBound="0"/>
+							<property name="BookingType" lowerBound="0">
+								<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+									<enumeration>0</enumeration>
+									<enumeration>1</enumeration>
+								</typeDef>
+							</property>
+							<property name="CreationDate" type="xs:dateTime" lowerBound="0"/>
+							<property name="BudgetCost" type="xs:decimal" lowerBound="0"/>
+							<property name="BudgetWork" type="xs:duration" lowerBound="0"/>
+							<property name="Hyperlink" lowerBound="0">
+								<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+							</property>
+							<property name="HyperlinkAddress" lowerBound="0">
+								<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+							</property>
+							<property name="HyperlinkSubAddress" lowerBound="0">
+								<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+							</property>
+							<property name="Notes" type="xs:string" lowerBound="0"/>
+							<property name="OvertimeCost" type="xs:decimal" lowerBound="0"/>
+							<property name="PeakUnits" type="xs:float" lowerBound="0"/>
+							<property name="RemainingOvertimeCost" type="xs:decimal" lowerBound="0"/>
+							<property name="Stop" type="xs:dateTime" lowerBound="0"/>
+							<property name="Resume" type="xs:dateTime" lowerBound="0"/>
+							<property name="Summary" type="xs:boolean" lowerBound="0"/>
+							<property name="SV" type="xs:float" lowerBound="0"/>
+							<property name="ActualFinish" type="xs:dateTime" lowerBound="0"/>
+							<property name="ActualStart" type="xs:dateTime" lowerBound="0"/>
+							<property name="ActualOvertimeCost" type="xs:decimal" lowerBound="0"/>
+							<property name="ActualWorkProtected" type="xs:duration" lowerBound="0"/>
+							<property name="ActualOvertimeWorkProtected" type="xs:duration" lowerBound="0"/>
+							<property name="AssnOwner" type="xs:string" lowerBound="0"/>
+							<property name="AssnOwnerGuid" type="xs:string" lowerBound="0"/>
+							<property name="ExtendedAttribute" lowerBound="0" upperBound="-1">
+								<typeDef xsi:type="ObjectType">
+									<property name="FieldID" type="xs:string" lowerBound="0"/>
+									<property name="Value" type="xs:string" lowerBound="0"/>
+									<property name="ValueGUID" type="xs:integer" lowerBound="0"/>
+									<property name="DurationFormat" lowerBound="0">
+										<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+											<enumeration>3</enumeration>
+											<enumeration>4</enumeration>
+											<enumeration>5</enumeration>
+											<enumeration>6</enumeration>
+											<enumeration>7</enumeration>
+											<enumeration>8</enumeration>
+											<enumeration>9</enumeration>
+											<enumeration>10</enumeration>
+											<enumeration>11</enumeration>
+											<enumeration>12</enumeration>
+											<enumeration>19</enumeration>
+											<enumeration>20</enumeration>
+											<enumeration>21</enumeration>
+											<enumeration>35</enumeration>
+											<enumeration>36</enumeration>
+											<enumeration>37</enumeration>
+											<enumeration>38</enumeration>
+											<enumeration>39</enumeration>
+											<enumeration>40</enumeration>
+											<enumeration>41</enumeration>
+											<enumeration>42</enumeration>
+											<enumeration>43</enumeration>
+											<enumeration>44</enumeration>
+											<enumeration>51</enumeration>
+											<enumeration>52</enumeration>
+											<enumeration>53</enumeration>
+										</typeDef>
+									</property>
+								</typeDef>
+							</property>
+							<property name="Baseline" lowerBound="0" upperBound="-1">
+								<typeDef xsi:type="ObjectType">
+									<property xmlns:d10p1="http://schemas.microsoft.com/project/2010" name="TimephasedData" type="d10p1:TimephasedDataType" lowerBound="0" upperBound="-1"/>
+									<property name="Number" type="xs:string"/>
+									<property name="Start" type="xs:string" lowerBound="0"/>
+									<property name="Finish" type="xs:string" lowerBound="0"/>
+									<property name="Work" type="xs:duration" lowerBound="0"/>
+									<property name="Cost" type="xs:string" lowerBound="0"/>
+									<property name="BCWS" type="xs:float" lowerBound="0"/>
+									<property name="BCWP" type="xs:float" lowerBound="0"/>
+								</typeDef>
+							</property>
+							<property name="f404000" type="xs:anyType" lowerBound="0"/>
+							<property name="f404001" type="xs:anyType" lowerBound="0"/>
+							<property name="f404002" type="xs:anyType" lowerBound="0"/>
+							<property name="f404003" type="xs:anyType" lowerBound="0"/>
+							<property name="f404004" type="xs:anyType" lowerBound="0"/>
+							<property name="f404005" type="xs:anyType" lowerBound="0"/>
+							<property name="f404006" type="xs:anyType" lowerBound="0"/>
+							<property name="f404007" type="xs:anyType" lowerBound="0"/>
+							<property name="f404008" type="xs:anyType" lowerBound="0"/>
+							<property name="f404009" type="xs:anyType" lowerBound="0"/>
+							<property name="f40400a" type="xs:anyType" lowerBound="0"/>
+							<property name="f40400b" type="xs:anyType" lowerBound="0"/>
+							<property name="f40400c" type="xs:anyType" lowerBound="0"/>
+							<property name="f40400d" type="xs:anyType" lowerBound="0"/>
+							<property name="f40400e" type="xs:anyType" lowerBound="0"/>
+							<property name="f40400f" type="xs:anyType" lowerBound="0"/>
+							<property name="f404010" type="xs:anyType" lowerBound="0"/>
+							<property name="f404011" type="xs:anyType" lowerBound="0"/>
+							<property name="f404012" type="xs:anyType" lowerBound="0"/>
+							<property name="f404013" type="xs:anyType" lowerBound="0"/>
+							<property name="f404014" type="xs:anyType" lowerBound="0"/>
+							<property name="f404015" type="xs:anyType" lowerBound="0"/>
+							<property name="f404016" type="xs:anyType" lowerBound="0"/>
+							<property name="f404017" type="xs:anyType" lowerBound="0"/>
+							<property name="f404018" type="xs:anyType" lowerBound="0"/>
+							<property name="f404019" type="xs:anyType" lowerBound="0"/>
+							<property name="f40401a" type="xs:anyType" lowerBound="0"/>
+							<property name="f40401b" type="xs:anyType" lowerBound="0"/>
+							<property name="f40401c" type="xs:anyType" lowerBound="0"/>
+							<property name="f40401d" type="xs:anyType" lowerBound="0"/>
+							<property name="f40401e" type="xs:anyType" lowerBound="0"/>
+							<property name="f40401f" type="xs:anyType" lowerBound="0"/>
+							<property name="f404020" type="xs:anyType" lowerBound="0"/>
+							<property name="f404021" type="xs:anyType" lowerBound="0"/>
+							<property name="f404022" type="xs:anyType" lowerBound="0"/>
+							<property name="f404023" type="xs:anyType" lowerBound="0"/>
+							<property name="f404024" type="xs:anyType" lowerBound="0"/>
+							<property name="f404025" type="xs:anyType" lowerBound="0"/>
+							<property name="f404026" type="xs:anyType" lowerBound="0"/>
+							<property name="f404027" type="xs:anyType" lowerBound="0"/>
+							<property name="f404028" type="xs:anyType" lowerBound="0"/>
+							<property name="f404029" type="xs:anyType" lowerBound="0"/>
+							<property name="f40402a" type="xs:anyType" lowerBound="0"/>
+							<property name="f40402b" type="xs:anyType" lowerBound="0"/>
+							<property name="f40402c" type="xs:anyType" lowerBound="0"/>
+							<property name="f40402d" type="xs:anyType" lowerBound="0"/>
+							<property name="f40402e" type="xs:anyType" lowerBound="0"/>
+							<property name="f40402f" type="xs:anyType" lowerBound="0"/>
+							<property name="f404030" type="xs:anyType" lowerBound="0"/>
+							<property name="f404031" type="xs:anyType" lowerBound="0"/>
+							<property name="f404032" type="xs:anyType" lowerBound="0"/>
+							<property name="f404033" type="xs:anyType" lowerBound="0"/>
+							<property name="f404034" type="xs:anyType" lowerBound="0"/>
+							<property name="f404035" type="xs:anyType" lowerBound="0"/>
+							<property name="f404036" type="xs:anyType" lowerBound="0"/>
+							<property name="f404037" type="xs:anyType" lowerBound="0"/>
+							<property name="f404038" type="xs:anyType" lowerBound="0"/>
+							<property name="f404039" type="xs:anyType" lowerBound="0"/>
+							<property name="f40403a" type="xs:anyType" lowerBound="0"/>
+							<property name="f40403b" type="xs:anyType" lowerBound="0"/>
+							<property name="f40403c" type="xs:anyType" lowerBound="0"/>
+							<property name="f40403d" type="xs:anyType" lowerBound="0"/>
+							<property name="f40403e" type="xs:anyType" lowerBound="0"/>
+							<property name="f40403f" type="xs:anyType" lowerBound="0"/>
+							<property name="f404040" type="xs:anyType" lowerBound="0"/>
+							<property name="f404041" type="xs:anyType" lowerBound="0"/>
+							<property name="f404042" type="xs:anyType" lowerBound="0"/>
+							<property name="f404043" type="xs:anyType" lowerBound="0"/>
+							<property name="f404044" type="xs:anyType" lowerBound="0"/>
+							<property name="f404045" type="xs:anyType" lowerBound="0"/>
+							<property name="f404046" type="xs:anyType" lowerBound="0"/>
+							<property name="f404047" type="xs:anyType" lowerBound="0"/>
+							<property name="f404048" type="xs:anyType" lowerBound="0"/>
+							<property name="f404049" type="xs:anyType" lowerBound="0"/>
+							<property name="f40404a" type="xs:anyType" lowerBound="0"/>
+							<property name="f40404b" type="xs:anyType" lowerBound="0"/>
+							<property name="f40404c" type="xs:anyType" lowerBound="0"/>
+							<property name="f40404d" type="xs:anyType" lowerBound="0"/>
+							<property name="f40404e" type="xs:anyType" lowerBound="0"/>
+							<property name="f40404f" type="xs:anyType" lowerBound="0"/>
+							<property name="f404050" type="xs:anyType" lowerBound="0"/>
+							<property name="f404051" type="xs:anyType" lowerBound="0"/>
+							<property name="f404052" type="xs:anyType" lowerBound="0"/>
+							<property name="f404053" type="xs:anyType" lowerBound="0"/>
+							<property name="f404054" type="xs:anyType" lowerBound="0"/>
+							<property name="f404055" type="xs:anyType" lowerBound="0"/>
+							<property name="f404056" type="xs:anyType" lowerBound="0"/>
+							<property name="f404057" type="xs:anyType" lowerBound="0"/>
+							<property name="f404058" type="xs:anyType" lowerBound="0"/>
+							<property name="f404059" type="xs:anyType" lowerBound="0"/>
+							<property name="f40405a" type="xs:anyType" lowerBound="0"/>
+							<property name="f40405b" type="xs:anyType" lowerBound="0"/>
+							<property name="f40405c" type="xs:anyType" lowerBound="0"/>
+							<property name="f40405d" type="xs:anyType" lowerBound="0"/>
+							<property name="f40405e" type="xs:anyType" lowerBound="0"/>
+							<property name="f40405f" type="xs:anyType" lowerBound="0"/>
+							<property name="f404060" type="xs:anyType" lowerBound="0"/>
+							<property name="f404061" type="xs:anyType" lowerBound="0"/>
+							<property name="f404062" type="xs:anyType" lowerBound="0"/>
+							<property name="f404063" type="xs:anyType" lowerBound="0"/>
+							<property name="f404064" type="xs:anyType" lowerBound="0"/>
+							<property name="f404065" type="xs:anyType" lowerBound="0"/>
+							<property name="f404066" type="xs:anyType" lowerBound="0"/>
+							<property name="f404067" type="xs:anyType" lowerBound="0"/>
+							<property name="f404068" type="xs:anyType" lowerBound="0"/>
+							<property name="f404069" type="xs:anyType" lowerBound="0"/>
+							<property name="f40406a" type="xs:anyType" lowerBound="0"/>
+							<property name="f40406b" type="xs:anyType" lowerBound="0"/>
+							<property name="f40406c" type="xs:anyType" lowerBound="0"/>
+							<property name="f40406d" type="xs:anyType" lowerBound="0"/>
+							<property name="f40406e" type="xs:anyType" lowerBound="0"/>
+							<property name="f40406f" type="xs:anyType" lowerBound="0"/>
+							<property name="f404070" type="xs:anyType" lowerBound="0"/>
+							<property name="f404071" type="xs:anyType" lowerBound="0"/>
+							<property name="f404072" type="xs:anyType" lowerBound="0"/>
+							<property name="f404073" type="xs:anyType" lowerBound="0"/>
+							<property name="f404074" type="xs:anyType" lowerBound="0"/>
+							<property name="f404075" type="xs:anyType" lowerBound="0"/>
+							<property name="f404076" type="xs:anyType" lowerBound="0"/>
+							<property name="f404077" type="xs:anyType" lowerBound="0"/>
+							<property name="f404078" type="xs:anyType" lowerBound="0"/>
+							<property name="f404079" type="xs:anyType" lowerBound="0"/>
+							<property name="f40407a" type="xs:anyType" lowerBound="0"/>
+							<property name="f40407b" type="xs:anyType" lowerBound="0"/>
+							<property name="f40407c" type="xs:anyType" lowerBound="0"/>
+							<property name="f40407d" type="xs:anyType" lowerBound="0"/>
+							<property name="f40407e" type="xs:anyType" lowerBound="0"/>
+							<property name="f40407f" type="xs:anyType" lowerBound="0"/>
+							<property name="f404080" type="xs:anyType" lowerBound="0"/>
+							<property name="f404081" type="xs:anyType" lowerBound="0"/>
+							<property name="f404082" type="xs:anyType" lowerBound="0"/>
+							<property name="f404083" type="xs:anyType" lowerBound="0"/>
+							<property name="f404084" type="xs:anyType" lowerBound="0"/>
+							<property name="f404085" type="xs:anyType" lowerBound="0"/>
+							<property name="f404086" type="xs:anyType" lowerBound="0"/>
+							<property name="f404087" type="xs:anyType" lowerBound="0"/>
+							<property name="f404088" type="xs:anyType" lowerBound="0"/>
+							<property name="f404089" type="xs:anyType" lowerBound="0"/>
+							<property name="f40408a" type="xs:anyType" lowerBound="0"/>
+							<property name="f40408b" type="xs:anyType" lowerBound="0"/>
+							<property name="f40408c" type="xs:anyType" lowerBound="0"/>
+							<property name="f40408d" type="xs:anyType" lowerBound="0"/>
+							<property name="f40408e" type="xs:anyType" lowerBound="0"/>
+							<property name="f40408f" type="xs:anyType" lowerBound="0"/>
+							<property name="f404090" type="xs:anyType" lowerBound="0"/>
+							<property name="f404091" type="xs:anyType" lowerBound="0"/>
+							<property name="f404092" type="xs:anyType" lowerBound="0"/>
+							<property name="f404093" type="xs:anyType" lowerBound="0"/>
+							<property name="f404094" type="xs:anyType" lowerBound="0"/>
+							<property name="f404095" type="xs:anyType" lowerBound="0"/>
+							<property name="f404096" type="xs:anyType" lowerBound="0"/>
+							<property name="f404097" type="xs:anyType" lowerBound="0"/>
+							<property name="f404098" type="xs:anyType" lowerBound="0"/>
+							<property name="f404099" type="xs:anyType" lowerBound="0"/>
+							<property name="f40409a" type="xs:anyType" lowerBound="0"/>
+							<property name="f40409b" type="xs:anyType" lowerBound="0"/>
+							<property name="f40409c" type="xs:anyType" lowerBound="0"/>
+							<property name="f40409d" type="xs:anyType" lowerBound="0"/>
+							<property name="f40409e" type="xs:anyType" lowerBound="0"/>
+							<property name="f40409f" type="xs:anyType" lowerBound="0"/>
+							<property name="f4040a0" type="xs:anyType" lowerBound="0"/>
+							<property name="f4040a1" type="xs:anyType" lowerBound="0"/>
+							<property name="f4040a2" type="xs:anyType" lowerBound="0"/>
+							<property name="f4040a3" type="xs:anyType" lowerBound="0"/>
+							<property name="f4040a4" type="xs:anyType" lowerBound="0"/>
+							<property name="f4040a5" type="xs:anyType" lowerBound="0"/>
+							<property name="f4040a6" type="xs:anyType" lowerBound="0"/>
+							<property name="f4040a7" type="xs:anyType" lowerBound="0"/>
+							<property name="f4040a8" type="xs:anyType" lowerBound="0"/>
+							<property name="f4040a9" type="xs:anyType" lowerBound="0"/>
+							<property name="f4040aa" type="xs:anyType" lowerBound="0"/>
+							<property name="f4040ab" type="xs:anyType" lowerBound="0"/>
+							<property name="f4040ac" type="xs:anyType" lowerBound="0"/>
+							<property name="f4040ad" type="xs:anyType" lowerBound="0"/>
+							<property name="f4040ae" type="xs:anyType" lowerBound="0"/>
+							<property name="f4040af" type="xs:anyType" lowerBound="0"/>
+							<property name="f4040b0" type="xs:anyType" lowerBound="0"/>
+							<property name="f4040b1" type="xs:anyType" lowerBound="0"/>
+							<property name="f4040b2" type="xs:anyType" lowerBound="0"/>
+							<property name="f4040b3" type="xs:anyType" lowerBound="0"/>
+							<property name="f4040b4" type="xs:anyType" lowerBound="0"/>
+							<property name="f4040b5" type="xs:anyType" lowerBound="0"/>
+							<property name="f4040b6" type="xs:anyType" lowerBound="0"/>
+							<property name="f4040b7" type="xs:anyType" lowerBound="0"/>
+							<property name="f4040b8" type="xs:anyType" lowerBound="0"/>
+							<property name="f4040b9" type="xs:anyType" lowerBound="0"/>
+							<property name="f4040ba" type="xs:anyType" lowerBound="0"/>
+							<property name="f4040bb" type="xs:anyType" lowerBound="0"/>
+							<property name="f4040bc" type="xs:anyType" lowerBound="0"/>
+							<property name="f4040bd" type="xs:anyType" lowerBound="0"/>
+							<property name="f4040be" type="xs:anyType" lowerBound="0"/>
+							<property name="f4040bf" type="xs:anyType" lowerBound="0"/>
+							<property name="f4040c0" type="xs:anyType" lowerBound="0"/>
+							<property name="f4040c1" type="xs:anyType" lowerBound="0"/>
+							<property name="f4040c2" type="xs:anyType" lowerBound="0"/>
+							<property name="f4040c3" type="xs:anyType" lowerBound="0"/>
+							<property name="f4040c4" type="xs:anyType" lowerBound="0"/>
+							<property name="f4040c5" type="xs:anyType" lowerBound="0"/>
+							<property name="f4040c6" type="xs:anyType" lowerBound="0"/>
+							<property name="f4040c7" type="xs:anyType" lowerBound="0"/>
+							<property name="f4040c8" type="xs:anyType" lowerBound="0"/>
+							<property xmlns:d8p1="http://schemas.microsoft.com/project/2010" name="TimephasedData" type="d8p1:TimephasedDataType" lowerBound="0" upperBound="-1"/>
+						</typeDef>
+					</property>
+				</typeDef>
+			</property>
+		</typeDef>
+	</property>
+	<objectType name="TimephasedDataType">
+		<property name="Type" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+				<enumeration>1</enumeration>
+				<enumeration>2</enumeration>
+				<enumeration>3</enumeration>
+				<enumeration>4</enumeration>
+				<enumeration>5</enumeration>
+				<enumeration>6</enumeration>
+				<enumeration>7</enumeration>
+				<enumeration>8</enumeration>
+				<enumeration>9</enumeration>
+				<enumeration>10</enumeration>
+				<enumeration>11</enumeration>
+				<enumeration>16</enumeration>
+				<enumeration>17</enumeration>
+				<enumeration>18</enumeration>
+				<enumeration>19</enumeration>
+				<enumeration>20</enumeration>
+				<enumeration>21</enumeration>
+				<enumeration>22</enumeration>
+				<enumeration>23</enumeration>
+				<enumeration>24</enumeration>
+				<enumeration>25</enumeration>
+				<enumeration>26</enumeration>
+				<enumeration>27</enumeration>
+				<enumeration>28</enumeration>
+				<enumeration>29</enumeration>
+				<enumeration>30</enumeration>
+				<enumeration>31</enumeration>
+				<enumeration>32</enumeration>
+				<enumeration>33</enumeration>
+				<enumeration>34</enumeration>
+				<enumeration>35</enumeration>
+				<enumeration>36</enumeration>
+				<enumeration>37</enumeration>
+				<enumeration>38</enumeration>
+				<enumeration>39</enumeration>
+				<enumeration>40</enumeration>
+				<enumeration>41</enumeration>
+				<enumeration>42</enumeration>
+				<enumeration>43</enumeration>
+				<enumeration>44</enumeration>
+				<enumeration>45</enumeration>
+				<enumeration>46</enumeration>
+				<enumeration>47</enumeration>
+				<enumeration>48</enumeration>
+				<enumeration>49</enumeration>
+				<enumeration>50</enumeration>
+				<enumeration>51</enumeration>
+				<enumeration>52</enumeration>
+				<enumeration>53</enumeration>
+				<enumeration>54</enumeration>
+				<enumeration>55</enumeration>
+				<enumeration>56</enumeration>
+				<enumeration>57</enumeration>
+				<enumeration>58</enumeration>
+				<enumeration>59</enumeration>
+				<enumeration>60</enumeration>
+				<enumeration>61</enumeration>
+				<enumeration>62</enumeration>
+				<enumeration>63</enumeration>
+				<enumeration>64</enumeration>
+				<enumeration>65</enumeration>
+				<enumeration>66</enumeration>
+				<enumeration>67</enumeration>
+				<enumeration>68</enumeration>
+				<enumeration>69</enumeration>
+				<enumeration>70</enumeration>
+				<enumeration>71</enumeration>
+				<enumeration>72</enumeration>
+				<enumeration>73</enumeration>
+				<enumeration>74</enumeration>
+				<enumeration>75</enumeration>
+				<enumeration>76</enumeration>
+			</typeDef>
+		</property>
+		<property name="UID" type="xs:integer"/>
+		<property name="Start" type="xs:dateTime" lowerBound="0"/>
+		<property name="Finish" type="xs:dateTime" lowerBound="0"/>
+		<property name="Unit" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+				<enumeration>0</enumeration>
+				<enumeration>1</enumeration>
+				<enumeration>2</enumeration>
+				<enumeration>3</enumeration>
+				<enumeration>5</enumeration>
+				<enumeration>8</enumeration>
+			</typeDef>
+		</property>
+		<property name="Value" type="xs:string" lowerBound="0"/>
+	</objectType>
+	<objectType name="Resource">
+		<property name="UID" type="xs:integer"/>
+		<property name="ID" type="xs:integer" lowerBound="0"/>
+		<property name="Name" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+		</property>
+		<property name="Type" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+				<enumeration>0</enumeration>
+				<enumeration>1</enumeration>
+			</typeDef>
+		</property>
+		<property name="IsNull" type="xs:boolean" lowerBound="0"/>
+		<property name="Initials" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+		</property>
+		<property name="Phonetics" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+		</property>
+		<property name="NTAccount" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+		</property>
+		<property name="MaterialLabel" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+		</property>
+		<property name="Code" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+		</property>
+		<property name="Group" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+		</property>
+		<property name="WorkGroup" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+				<enumeration>0</enumeration>
+				<enumeration>1</enumeration>
+				<enumeration>2</enumeration>
+				<enumeration>3</enumeration>
+			</typeDef>
+		</property>
+		<property name="EmailAddress" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+		</property>
+		<property name="Hyperlink" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+		</property>
+		<property name="HyperlinkAddress" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+		</property>
+		<property name="HyperlinkSubAddress" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+		</property>
+		<property name="MaxUnits" type="xs:float" lowerBound="0" fixed="false" default="1.0"/>
+		<property name="PeakUnits" type="xs:float" lowerBound="0"/>
+		<property name="OverAllocated" type="xs:boolean" lowerBound="0"/>
+		<property name="AvailableFrom" type="xs:dateTime" lowerBound="0"/>
+		<property name="AvailableTo" type="xs:dateTime" lowerBound="0"/>
+		<property name="Start" type="xs:dateTime" lowerBound="0"/>
+		<property name="Finish" type="xs:dateTime" lowerBound="0"/>
+		<property name="CanLevel" type="xs:boolean" lowerBound="0"/>
+		<property name="AccrueAt" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+				<enumeration>1</enumeration>
+				<enumeration>2</enumeration>
+				<enumeration>3</enumeration>
+				<enumeration>4</enumeration>
+			</typeDef>
+		</property>
+		<property name="Work" type="xs:duration" lowerBound="0"/>
+		<property name="RegularWork" type="xs:duration" lowerBound="0"/>
+		<property name="OvertimeWork" type="xs:duration" lowerBound="0"/>
+		<property name="ActualWork" type="xs:duration" lowerBound="0"/>
+		<property name="RemainingWork" type="xs:duration" lowerBound="0"/>
+		<property name="ActualOvertimeWork" type="xs:duration" lowerBound="0"/>
+		<property name="RemainingOvertimeWork" type="xs:duration" lowerBound="0"/>
+		<property name="PercentWorkComplete" type="xs:integer" lowerBound="0"/>
+		<property name="StandardRate" type="xs:decimal" lowerBound="0"/>
+		<property name="StandardRateFormat" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+				<enumeration>1</enumeration>
+				<enumeration>2</enumeration>
+				<enumeration>3</enumeration>
+				<enumeration>4</enumeration>
+				<enumeration>5</enumeration>
+				<enumeration>7</enumeration>
+				<enumeration>8</enumeration>
+			</typeDef>
+		</property>
+		<property name="Cost" type="xs:decimal" lowerBound="0"/>
+		<property name="OvertimeRate" type="xs:decimal" lowerBound="0"/>
+		<property name="OvertimeRateFormat" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+				<enumeration>1</enumeration>
+				<enumeration>2</enumeration>
+				<enumeration>3</enumeration>
+				<enumeration>4</enumeration>
+				<enumeration>5</enumeration>
+				<enumeration>7</enumeration>
+			</typeDef>
+		</property>
+		<property name="OvertimeCost" type="xs:decimal" lowerBound="0"/>
+		<property name="CostPerUse" type="xs:decimal" lowerBound="0"/>
+		<property name="ActualCost" type="xs:decimal" lowerBound="0"/>
+		<property name="ActualOvertimeCost" type="xs:decimal" lowerBound="0"/>
+		<property name="RemainingCost" type="xs:decimal" lowerBound="0"/>
+		<property name="RemainingOvertimeCost" type="xs:decimal" lowerBound="0"/>
+		<property name="WorkVariance" type="xs:float" lowerBound="0"/>
+		<property name="CostVariance" type="xs:float" lowerBound="0"/>
+		<property name="SV" type="xs:float" lowerBound="0"/>
+		<property name="CV" type="xs:float" lowerBound="0"/>
+		<property name="ACWP" type="xs:float" lowerBound="0"/>
+		<property name="CalendarUID" type="xs:integer" lowerBound="0"/>
+		<property name="Notes" type="xs:string" lowerBound="0"/>
+		<property name="BCWS" type="xs:float" lowerBound="0"/>
+		<property name="BCWP" type="xs:float" lowerBound="0"/>
+		<property name="IsGeneric" type="xs:boolean" lowerBound="0"/>
+		<property name="IsInactive" type="xs:boolean" lowerBound="0"/>
+		<property name="IsEnterprise" type="xs:boolean" lowerBound="0"/>
+		<property name="BookingType" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+				<enumeration>0</enumeration>
+				<enumeration>1</enumeration>
+			</typeDef>
+		</property>
+		<property name="ActualWorkProtected" type="xs:duration" lowerBound="0"/>
+		<property name="ActualOvertimeWorkProtected" type="xs:duration" lowerBound="0"/>
+		<property name="ActiveDirectoryGUID" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="16"/>
+		</property>
+		<property name="CreationDate" type="xs:dateTime" lowerBound="0"/>
+		<property name="ExtendedAttribute" lowerBound="0" upperBound="-1">
+			<typeDef xsi:type="ObjectType">
+				<property name="FieldID" type="xs:string" lowerBound="0"/>
+				<property name="Value" type="xs:string" lowerBound="0"/>
+				<property name="ValueGUID" type="xs:integer" lowerBound="0"/>
+				<property name="DurationFormat" lowerBound="0">
+					<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+						<enumeration>3</enumeration>
+						<enumeration>4</enumeration>
+						<enumeration>5</enumeration>
+						<enumeration>6</enumeration>
+						<enumeration>7</enumeration>
+						<enumeration>8</enumeration>
+						<enumeration>9</enumeration>
+						<enumeration>10</enumeration>
+						<enumeration>11</enumeration>
+						<enumeration>12</enumeration>
+						<enumeration>19</enumeration>
+						<enumeration>20</enumeration>
+						<enumeration>21</enumeration>
+						<enumeration>35</enumeration>
+						<enumeration>36</enumeration>
+						<enumeration>37</enumeration>
+						<enumeration>38</enumeration>
+						<enumeration>39</enumeration>
+						<enumeration>40</enumeration>
+						<enumeration>41</enumeration>
+						<enumeration>42</enumeration>
+						<enumeration>43</enumeration>
+						<enumeration>44</enumeration>
+						<enumeration>51</enumeration>
+						<enumeration>52</enumeration>
+						<enumeration>53</enumeration>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+		<property name="Baseline" lowerBound="0" upperBound="-1">
+			<typeDef xsi:type="ObjectType">
+				<property name="Number" type="xs:integer"/>
+				<property name="Work" type="xs:duration" lowerBound="0"/>
+				<property name="Cost" type="xs:float" lowerBound="0"/>
+				<property name="BCWS" type="xs:float" lowerBound="0"/>
+				<property name="BCWP" type="xs:float" lowerBound="0"/>
+			</typeDef>
+		</property>
+		<property name="OutlineCode" lowerBound="0" upperBound="-1">
+			<typeDef xsi:type="ObjectType">
+				<property name="FieldID" type="xs:string" lowerBound="0"/>
+				<property name="ValueID" type="xs:integer" lowerBound="0"/>
+				<property name="ValueGUID" type="xs:integer" lowerBound="0"/>
+			</typeDef>
+		</property>
+		<property name="IsCostResource" type="xs:boolean" lowerBound="0"/>
+		<property name="AssnOwner" type="xs:string" lowerBound="0"/>
+		<property name="AssnOwnerGuid" type="xs:string" lowerBound="0"/>
+		<property name="IsBudget" type="xs:boolean" lowerBound="0"/>
+		<property name="AvailabilityPeriods" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property name="AvailabilityPeriod" lowerBound="0" upperBound="-1">
+					<typeDef xsi:type="ObjectType">
+						<property name="AvailableFrom" type="xs:dateTime" lowerBound="0"/>
+						<property name="AvailableTo" type="xs:dateTime" lowerBound="0"/>
+						<property name="AvailableUnits" type="xs:float" lowerBound="0"/>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+		<property name="Rates" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property name="Rate" lowerBound="0" upperBound="25">
+					<typeDef xsi:type="ObjectType">
+						<property name="RatesFrom" type="xs:dateTime"/>
+						<property name="RatesTo" type="xs:dateTime"/>
+						<property name="RateTable" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+								<enumeration>0</enumeration>
+								<enumeration>1</enumeration>
+								<enumeration>2</enumeration>
+								<enumeration>3</enumeration>
+								<enumeration>4</enumeration>
+							</typeDef>
+						</property>
+						<property name="StandardRate" type="xs:decimal" lowerBound="0"/>
+						<property name="StandardRateFormat" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+								<enumeration>1</enumeration>
+								<enumeration>2</enumeration>
+								<enumeration>3</enumeration>
+								<enumeration>4</enumeration>
+								<enumeration>5</enumeration>
+								<enumeration>7</enumeration>
+							</typeDef>
+						</property>
+						<property name="OvertimeRate" type="xs:decimal" lowerBound="0"/>
+						<property name="OvertimeRateFormat" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+								<enumeration>1</enumeration>
+								<enumeration>2</enumeration>
+								<enumeration>3</enumeration>
+								<enumeration>4</enumeration>
+								<enumeration>5</enumeration>
+								<enumeration>7</enumeration>
+							</typeDef>
+						</property>
+						<property name="CostPerUse" type="xs:decimal" lowerBound="0"/>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+		<property xmlns:d3p1="http://schemas.microsoft.com/project/2010" name="TimephasedData" type="d3p1:TimephasedDataType" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="Task">
+		<property name="UID" type="xs:integer"/>
+		<property name="ID" type="xs:integer" lowerBound="0"/>
+		<property name="Name" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+		</property>
+		<property name="Type" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+				<enumeration>0</enumeration>
+				<enumeration>1</enumeration>
+				<enumeration>2</enumeration>
+			</typeDef>
+		</property>
+		<property name="IsNull" type="xs:boolean" lowerBound="0"/>
+		<property name="CreateDate" type="xs:dateTime" lowerBound="0"/>
+		<property name="Contact" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+		</property>
+		<property name="WBS" type="xs:string" lowerBound="0"/>
+		<property name="WBSLevel" type="xs:string" lowerBound="0"/>
+		<property name="OutlineNumber" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+		</property>
+		<property name="OutlineLevel" type="xs:integer" lowerBound="0"/>
+		<property name="Priority" type="xs:integer" lowerBound="0"/>
+		<property name="Start" type="xs:dateTime" lowerBound="0"/>
+		<property name="Finish" type="xs:dateTime" lowerBound="0"/>
+		<property name="Duration" type="xs:duration" lowerBound="0"/>
+		<property name="DurationFormat" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+				<enumeration>3</enumeration>
+				<enumeration>4</enumeration>
+				<enumeration>5</enumeration>
+				<enumeration>6</enumeration>
+				<enumeration>7</enumeration>
+				<enumeration>8</enumeration>
+				<enumeration>9</enumeration>
+				<enumeration>10</enumeration>
+				<enumeration>11</enumeration>
+				<enumeration>12</enumeration>
+				<enumeration>19</enumeration>
+				<enumeration>20</enumeration>
+				<enumeration>21</enumeration>
+				<enumeration>35</enumeration>
+				<enumeration>36</enumeration>
+				<enumeration>37</enumeration>
+				<enumeration>38</enumeration>
+				<enumeration>39</enumeration>
+				<enumeration>40</enumeration>
+				<enumeration>41</enumeration>
+				<enumeration>42</enumeration>
+				<enumeration>43</enumeration>
+				<enumeration>44</enumeration>
+				<enumeration>51</enumeration>
+				<enumeration>52</enumeration>
+				<enumeration>53</enumeration>
+			</typeDef>
+		</property>
+		<property name="Work" type="xs:duration" lowerBound="0"/>
+		<property name="Stop" type="xs:dateTime" lowerBound="0"/>
+		<property name="Resume" type="xs:dateTime" lowerBound="0"/>
+		<property name="ResumeValid" type="xs:boolean" lowerBound="0"/>
+		<property name="EffortDriven" type="xs:boolean" lowerBound="0"/>
+		<property name="Recurring" type="xs:boolean" lowerBound="0"/>
+		<property name="OverAllocated" type="xs:boolean" lowerBound="0"/>
+		<property name="Estimated" type="xs:boolean" lowerBound="0"/>
+		<property name="Milestone" type="xs:boolean" lowerBound="0"/>
+		<property name="Summary" type="xs:boolean" lowerBound="0"/>
+		<property name="DisplayAsSummary" type="xs:boolean" lowerBound="0"/>
+		<property name="Critical" type="xs:boolean" lowerBound="0"/>
+		<property name="IsSubproject" type="xs:boolean" lowerBound="0"/>
+		<property name="IsSubprojectReadOnly" type="xs:boolean" lowerBound="0"/>
+		<property name="SubprojectName" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+		</property>
+		<property name="ExternalTask" type="xs:boolean" lowerBound="0"/>
+		<property name="ExternalTaskProject" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+		</property>
+		<property name="EarlyStart" type="xs:dateTime" lowerBound="0"/>
+		<property name="EarlyFinish" type="xs:dateTime" lowerBound="0"/>
+		<property name="LateStart" type="xs:dateTime" lowerBound="0"/>
+		<property name="LateFinish" type="xs:dateTime" lowerBound="0"/>
+		<property name="StartVariance" type="xs:integer" lowerBound="0"/>
+		<property name="FinishVariance" type="xs:integer" lowerBound="0"/>
+		<property name="WorkVariance" type="xs:float" lowerBound="0"/>
+		<property name="FreeSlack" type="xs:integer" lowerBound="0"/>
+		<property name="StartSlack" type="xs:integer" lowerBound="0"/>
+		<property name="FinishSlack" type="xs:integer" lowerBound="0"/>
+		<property name="TotalSlack" type="xs:integer" lowerBound="0"/>
+		<property name="FixedCost" type="xs:float" lowerBound="0"/>
+		<property name="FixedCostAccrual" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic">
+				<enumeration>1</enumeration>
+				<enumeration>2</enumeration>
+				<enumeration>3</enumeration>
+			</typeDef>
+		</property>
+		<property name="PercentComplete" type="xs:integer" lowerBound="0"/>
+		<property name="PercentWorkComplete" type="xs:integer" lowerBound="0"/>
+		<property name="Cost" type="xs:decimal" lowerBound="0"/>
+		<property name="OvertimeCost" type="xs:decimal" lowerBound="0"/>
+		<property name="OvertimeWork" type="xs:duration" lowerBound="0"/>
+		<property name="ActualStart" type="xs:dateTime" lowerBound="0"/>
+		<property name="ActualFinish" type="xs:dateTime" lowerBound="0"/>
+		<property name="ActualDuration" type="xs:duration" lowerBound="0"/>
+		<property name="ActualCost" type="xs:decimal" lowerBound="0"/>
+		<property name="ActualOvertimeCost" type="xs:decimal" lowerBound="0"/>
+		<property name="ActualWork" type="xs:duration" lowerBound="0"/>
+		<property name="ActualOvertimeWork" type="xs:duration" lowerBound="0"/>
+		<property name="RegularWork" type="xs:duration" lowerBound="0"/>
+		<property name="RemainingDuration" type="xs:duration" lowerBound="0"/>
+		<property name="RemainingCost" type="xs:decimal" lowerBound="0"/>
+		<property name="RemainingWork" type="xs:duration" lowerBound="0"/>
+		<property name="RemainingOvertimeCost" type="xs:decimal" lowerBound="0"/>
+		<property name="RemainingOvertimeWork" type="xs:duration" lowerBound="0"/>
+		<property name="ACWP" type="xs:float" lowerBound="0"/>
+		<property name="CV" type="xs:float" lowerBound="0"/>
+		<property name="ConstraintType" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+				<enumeration>0</enumeration>
+				<enumeration>1</enumeration>
+				<enumeration>2</enumeration>
+				<enumeration>3</enumeration>
+				<enumeration>4</enumeration>
+				<enumeration>5</enumeration>
+				<enumeration>6</enumeration>
+				<enumeration>7</enumeration>
+			</typeDef>
+		</property>
+		<property name="CalendarUID" type="xs:integer" lowerBound="0"/>
+		<property name="ConstraintDate" type="xs:dateTime" lowerBound="0"/>
+		<property name="Deadline" type="xs:dateTime" lowerBound="0"/>
+		<property name="LevelAssignments" type="xs:boolean" lowerBound="0"/>
+		<property name="LevelingCanSplit" type="xs:boolean" lowerBound="0"/>
+		<property name="LevelingDelay" type="xs:integer" lowerBound="0"/>
+		<property name="LevelingDelayFormat" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+				<enumeration>3</enumeration>
+				<enumeration>4</enumeration>
+				<enumeration>5</enumeration>
+				<enumeration>6</enumeration>
+				<enumeration>7</enumeration>
+				<enumeration>8</enumeration>
+				<enumeration>9</enumeration>
+				<enumeration>10</enumeration>
+				<enumeration>11</enumeration>
+				<enumeration>12</enumeration>
+				<enumeration>19</enumeration>
+				<enumeration>20</enumeration>
+				<enumeration>21</enumeration>
+				<enumeration>35</enumeration>
+				<enumeration>36</enumeration>
+				<enumeration>37</enumeration>
+				<enumeration>38</enumeration>
+				<enumeration>39</enumeration>
+				<enumeration>40</enumeration>
+				<enumeration>41</enumeration>
+				<enumeration>42</enumeration>
+				<enumeration>43</enumeration>
+				<enumeration>44</enumeration>
+				<enumeration>51</enumeration>
+				<enumeration>52</enumeration>
+				<enumeration>53</enumeration>
+			</typeDef>
+		</property>
+		<property name="PreLeveledStart" type="xs:dateTime" lowerBound="0"/>
+		<property name="PreLeveledFinish" type="xs:dateTime" lowerBound="0"/>
+		<property name="Hyperlink" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+		</property>
+		<property name="HyperlinkAddress" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+		</property>
+		<property name="HyperlinkSubAddress" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+		</property>
+		<property name="IgnoreResourceCalendar" type="xs:boolean" lowerBound="0"/>
+		<property name="Notes" type="xs:string" lowerBound="0"/>
+		<property name="HideBar" type="xs:boolean" lowerBound="0"/>
+		<property name="Rollup" type="xs:boolean" lowerBound="0"/>
+		<property name="BCWS" type="xs:float" lowerBound="0"/>
+		<property name="BCWP" type="xs:float" lowerBound="0"/>
+		<property name="PhysicalPercentComplete" type="xs:integer" lowerBound="0"/>
+		<property name="EarnedValueMethod" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+				<enumeration>0</enumeration>
+				<enumeration>1</enumeration>
+			</typeDef>
+		</property>
+		<property name="PredecessorLink" lowerBound="0" upperBound="-1">
+			<typeDef xsi:type="ObjectType">
+				<property name="PredecessorUID" type="xs:integer" lowerBound="0"/>
+				<property name="Type" lowerBound="0">
+					<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+						<enumeration>0</enumeration>
+						<enumeration>1</enumeration>
+						<enumeration>2</enumeration>
+						<enumeration>3</enumeration>
+					</typeDef>
+				</property>
+				<property name="CrossProject" type="xs:boolean" lowerBound="0"/>
+				<property name="CrossProjectName" type="xs:string" lowerBound="0"/>
+				<property name="LinkLag" type="xs:integer" lowerBound="0"/>
+				<property name="LagFormat" lowerBound="0">
+					<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+						<enumeration>3</enumeration>
+						<enumeration>4</enumeration>
+						<enumeration>5</enumeration>
+						<enumeration>6</enumeration>
+						<enumeration>7</enumeration>
+						<enumeration>8</enumeration>
+						<enumeration>9</enumeration>
+						<enumeration>10</enumeration>
+						<enumeration>11</enumeration>
+						<enumeration>12</enumeration>
+						<enumeration>19</enumeration>
+						<enumeration>20</enumeration>
+						<enumeration>35</enumeration>
+						<enumeration>36</enumeration>
+						<enumeration>37</enumeration>
+						<enumeration>38</enumeration>
+						<enumeration>39</enumeration>
+						<enumeration>40</enumeration>
+						<enumeration>41</enumeration>
+						<enumeration>42</enumeration>
+						<enumeration>43</enumeration>
+						<enumeration>44</enumeration>
+						<enumeration>51</enumeration>
+						<enumeration>52</enumeration>
+						<enumeration>53</enumeration>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+		<property name="ActualWorkProtected" type="xs:duration" lowerBound="0"/>
+		<property name="ActualOvertimeWorkProtected" type="xs:duration" lowerBound="0"/>
+		<property name="ExtendedAttribute" lowerBound="0" upperBound="-1">
+			<typeDef xsi:type="ObjectType">
+				<property name="FieldID" type="xs:string" lowerBound="0"/>
+				<property name="Value" type="xs:string" lowerBound="0"/>
+				<property name="ValueGUID" type="xs:string" lowerBound="0"/>
+				<property name="DurationFormat" lowerBound="0">
+					<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+						<enumeration>3</enumeration>
+						<enumeration>4</enumeration>
+						<enumeration>5</enumeration>
+						<enumeration>6</enumeration>
+						<enumeration>7</enumeration>
+						<enumeration>8</enumeration>
+						<enumeration>9</enumeration>
+						<enumeration>10</enumeration>
+						<enumeration>11</enumeration>
+						<enumeration>12</enumeration>
+						<enumeration>19</enumeration>
+						<enumeration>20</enumeration>
+						<enumeration>21</enumeration>
+						<enumeration>35</enumeration>
+						<enumeration>36</enumeration>
+						<enumeration>37</enumeration>
+						<enumeration>38</enumeration>
+						<enumeration>39</enumeration>
+						<enumeration>40</enumeration>
+						<enumeration>41</enumeration>
+						<enumeration>42</enumeration>
+						<enumeration>43</enumeration>
+						<enumeration>44</enumeration>
+						<enumeration>51</enumeration>
+						<enumeration>52</enumeration>
+						<enumeration>53</enumeration>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+		<property name="Baseline" lowerBound="0" upperBound="-1">
+			<typeDef xsi:type="ObjectType">
+				<property xmlns:d5p1="http://schemas.microsoft.com/project/2010" name="TimephasedData" type="d5p1:TimephasedDataType" lowerBound="0" upperBound="-1"/>
+				<property name="Number" type="xs:integer" lowerBound="0"/>
+				<property name="Interim" type="xs:boolean" lowerBound="0" fixed="false" default="false"/>
+				<property name="Start" type="xs:dateTime" lowerBound="0"/>
+				<property name="Finish" type="xs:dateTime" lowerBound="0"/>
+				<property name="Duration" type="xs:duration" lowerBound="0"/>
+				<property name="DurationFormat" lowerBound="0">
+					<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+						<enumeration>3</enumeration>
+						<enumeration>4</enumeration>
+						<enumeration>5</enumeration>
+						<enumeration>6</enumeration>
+						<enumeration>7</enumeration>
+						<enumeration>8</enumeration>
+						<enumeration>9</enumeration>
+						<enumeration>10</enumeration>
+						<enumeration>11</enumeration>
+						<enumeration>12</enumeration>
+						<enumeration>19</enumeration>
+						<enumeration>20</enumeration>
+						<enumeration>21</enumeration>
+						<enumeration>35</enumeration>
+						<enumeration>36</enumeration>
+						<enumeration>37</enumeration>
+						<enumeration>38</enumeration>
+						<enumeration>39</enumeration>
+						<enumeration>40</enumeration>
+						<enumeration>41</enumeration>
+						<enumeration>42</enumeration>
+						<enumeration>43</enumeration>
+						<enumeration>44</enumeration>
+						<enumeration>51</enumeration>
+						<enumeration>52</enumeration>
+						<enumeration>53</enumeration>
+					</typeDef>
+				</property>
+				<property name="EstimatedDuration" type="xs:boolean" lowerBound="0"/>
+				<property name="Work" type="xs:duration" lowerBound="0"/>
+				<property name="Cost" type="xs:decimal" lowerBound="0"/>
+				<property name="BCWS" type="xs:float" lowerBound="0"/>
+				<property name="BCWP" type="xs:float" lowerBound="0"/>
+				<property name="FixedCost" type="xs:float" lowerBound="0"/>
+			</typeDef>
+		</property>
+		<property name="OutlineCode" lowerBound="0" upperBound="-1">
+			<typeDef xsi:type="ObjectType">
+				<property name="FieldID" type="xs:string" lowerBound="0"/>
+				<property name="ValueID" type="xs:integer" lowerBound="0"/>
+				<property name="ValueGUID" type="xs:integer" lowerBound="0"/>
+			</typeDef>
+		</property>
+		<property name="IsPublished" type="xs:boolean" lowerBound="0"/>
+		<property name="StatusManager" type="xs:string" lowerBound="0"/>
+		<property name="CommitmentStart" type="xs:dateTime" lowerBound="0"/>
+		<property name="CommitmentFinish" type="xs:dateTime" lowerBound="0"/>
+		<property name="CommitmentType" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+				<enumeration>0</enumeration>
+				<enumeration>1</enumeration>
+				<enumeration>2</enumeration>
+			</typeDef>
+		</property>
+		<property name="Active" type="xs:boolean" lowerBound="0"/>
+		<property name="Pinned" type="xs:boolean" lowerBound="0"/>
+		<property name="PinnedStart" type="xs:string" lowerBound="0"/>
+		<property name="PinnedFinish" type="xs:string" lowerBound="0"/>
+		<property name="PinnedDuration" type="xs:string" lowerBound="0"/>
+		<property xmlns:d3p1="http://schemas.microsoft.com/project/2010" name="TimephasedData" type="d3p1:TimephasedDataType" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="Project">
+		<property name="SaveVersion" type="xs:integer"/>
+		<property name="UID" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="16"/>
+		</property>
+		<property name="Name" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="255"/>
+		</property>
+		<property name="Title" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+		</property>
+		<property name="Subject" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+		</property>
+		<property name="Category" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+		</property>
+		<property name="Company" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+		</property>
+		<property name="Manager" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+		</property>
+		<property name="Author" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+		</property>
+		<property name="CreationDate" type="xs:dateTime" lowerBound="0"/>
+		<property name="Revision" type="xs:integer" lowerBound="0"/>
+		<property name="LastSaved" type="xs:dateTime" lowerBound="0"/>
+		<property name="ScheduleFromStart" type="xs:boolean" lowerBound="0" fixed="false" default="true"/>
+		<property name="StartDate" type="xs:dateTime" lowerBound="0"/>
+		<property name="FinishDate" type="xs:dateTime" lowerBound="0"/>
+		<property name="FYStartDate" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+				<enumeration>1</enumeration>
+				<enumeration>2</enumeration>
+				<enumeration>3</enumeration>
+				<enumeration>4</enumeration>
+				<enumeration>5</enumeration>
+				<enumeration>6</enumeration>
+				<enumeration>7</enumeration>
+				<enumeration>8</enumeration>
+				<enumeration>9</enumeration>
+				<enumeration>10</enumeration>
+				<enumeration>11</enumeration>
+				<enumeration>12</enumeration>
+			</typeDef>
+		</property>
+		<property name="CriticalSlackLimit" type="xs:integer" lowerBound="0"/>
+		<property name="CurrencyDigits" type="xs:integer" lowerBound="0"/>
+		<property name="CurrencySymbol" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="20"/>
+		</property>
+		<property name="CurrencyCode">
+			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="3"/>
+		</property>
+		<property name="CurrencySymbolPosition" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+				<enumeration>0</enumeration>
+				<enumeration>1</enumeration>
+				<enumeration>2</enumeration>
+				<enumeration>3</enumeration>
+			</typeDef>
+		</property>
+		<property name="CalendarUID" type="xs:integer" lowerBound="0"/>
+		<property name="DefaultStartTime" type="xs:time" lowerBound="0"/>
+		<property name="DefaultFinishTime" type="xs:time" lowerBound="0"/>
+		<property name="MinutesPerDay" type="xs:integer" lowerBound="0"/>
+		<property name="MinutesPerWeek" type="xs:integer" lowerBound="0"/>
+		<property name="DaysPerMonth" type="xs:integer" lowerBound="0"/>
+		<property name="DefaultTaskType" lowerBound="0" fixed="false" default="1">
+			<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+				<enumeration>0</enumeration>
+				<enumeration>1</enumeration>
+				<enumeration>2</enumeration>
+			</typeDef>
+		</property>
+		<property name="DefaultFixedCostAccrual" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+				<enumeration>1</enumeration>
+				<enumeration>2</enumeration>
+				<enumeration>3</enumeration>
+			</typeDef>
+		</property>
+		<property name="DefaultStandardRate" type="xs:float" lowerBound="0"/>
+		<property name="DefaultOvertimeRate" type="xs:float" lowerBound="0"/>
+		<property name="DurationFormat" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+				<enumeration>3</enumeration>
+				<enumeration>4</enumeration>
+				<enumeration>5</enumeration>
+				<enumeration>6</enumeration>
+				<enumeration>7</enumeration>
+				<enumeration>8</enumeration>
+				<enumeration>9</enumeration>
+				<enumeration>10</enumeration>
+				<enumeration>11</enumeration>
+				<enumeration>12</enumeration>
+				<enumeration>19</enumeration>
+				<enumeration>20</enumeration>
+				<enumeration>21</enumeration>
+				<enumeration>35</enumeration>
+				<enumeration>36</enumeration>
+				<enumeration>37</enumeration>
+				<enumeration>38</enumeration>
+				<enumeration>39</enumeration>
+				<enumeration>40</enumeration>
+				<enumeration>41</enumeration>
+				<enumeration>42</enumeration>
+				<enumeration>43</enumeration>
+				<enumeration>44</enumeration>
+				<enumeration>51</enumeration>
+				<enumeration>52</enumeration>
+				<enumeration>53</enumeration>
+			</typeDef>
+		</property>
+		<property name="WorkFormat" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+				<enumeration>1</enumeration>
+				<enumeration>2</enumeration>
+				<enumeration>3</enumeration>
+				<enumeration>4</enumeration>
+				<enumeration>5</enumeration>
+			</typeDef>
+		</property>
+		<property name="EditableActualCosts" type="xs:boolean" lowerBound="0" fixed="false" default="false"/>
+		<property name="HonorConstraints" type="xs:boolean" lowerBound="0" fixed="false" default="true"/>
+		<property name="EarnedValueMethod" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+				<enumeration>0</enumeration>
+				<enumeration>1</enumeration>
+			</typeDef>
+		</property>
+		<property name="InsertedProjectsLikeSummary" type="xs:boolean" lowerBound="0" fixed="false" default="true"/>
+		<property name="MultipleCriticalPaths" type="xs:boolean" lowerBound="0" fixed="false" default="false"/>
+		<property name="NewTasksEffortDriven" type="xs:boolean" lowerBound="0" fixed="false" default="true"/>
+		<property name="NewTasksEstimated" type="xs:boolean" lowerBound="0" fixed="false" default="true"/>
+		<property name="SplitsInProgressTasks" type="xs:boolean" lowerBound="0" fixed="false" default="true"/>
+		<property name="SpreadActualCost" type="xs:boolean" lowerBound="0" fixed="false" default="true"/>
+		<property name="SpreadPercentComplete" type="xs:boolean" lowerBound="0" fixed="false" default="false"/>
+		<property name="TaskUpdatesResource" type="xs:boolean" lowerBound="0"/>
+		<property name="FiscalYearStart" type="xs:boolean" lowerBound="0"/>
+		<property name="WeekStartDay" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+				<enumeration>0</enumeration>
+				<enumeration>1</enumeration>
+				<enumeration>2</enumeration>
+				<enumeration>3</enumeration>
+				<enumeration>4</enumeration>
+				<enumeration>5</enumeration>
+				<enumeration>6</enumeration>
+			</typeDef>
+		</property>
+		<property name="MoveCompletedEndsBack" type="xs:boolean" lowerBound="0" fixed="false" default="false"/>
+		<property name="MoveRemainingStartsBack" type="xs:boolean" lowerBound="0" fixed="false" default="false"/>
+		<property name="MoveRemainingStartsForward" type="xs:boolean" lowerBound="0" fixed="false" default="false"/>
+		<property name="MoveCompletedEndsForward" type="xs:boolean" lowerBound="0" fixed="false" default="false"/>
+		<property name="BaselineForEarnedValue" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+				<enumeration>0</enumeration>
+				<enumeration>1</enumeration>
+				<enumeration>2</enumeration>
+				<enumeration>3</enumeration>
+				<enumeration>4</enumeration>
+				<enumeration>5</enumeration>
+				<enumeration>6</enumeration>
+				<enumeration>7</enumeration>
+				<enumeration>8</enumeration>
+				<enumeration>9</enumeration>
+				<enumeration>10</enumeration>
+			</typeDef>
+		</property>
+		<property name="AutoAddNewResourcesAndTasks" type="xs:boolean" lowerBound="0" fixed="false" default="true"/>
+		<property name="StatusDate" type="xs:dateTime" lowerBound="0"/>
+		<property name="CurrentDate" type="xs:dateTime" lowerBound="0"/>
+		<property name="MicrosoftProjectServerURL" type="xs:boolean" lowerBound="0"/>
+		<property name="Autolink" type="xs:boolean" lowerBound="0"/>
+		<property name="NewTaskStartDate" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+				<enumeration>0</enumeration>
+				<enumeration>1</enumeration>
+			</typeDef>
+		</property>
+		<property name="DefaultTaskEVMethod" lowerBound="0">
+			<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+				<enumeration>0</enumeration>
+				<enumeration>1</enumeration>
+			</typeDef>
+		</property>
+		<property name="ProjectExternallyEdited" type="xs:boolean" lowerBound="0"/>
+		<property name="ExtendedCreationDate" type="xs:dateTime" lowerBound="0"/>
+		<property name="ActualsInSync" type="xs:boolean" lowerBound="0"/>
+		<property name="RemoveFileProperties" type="xs:boolean" lowerBound="0"/>
+		<property name="AdminProject" type="xs:boolean" lowerBound="0"/>
+		<property name="BaslineCalendar" type="xs:string" lowerBound="0"/>
+		<property name="NewTasksAreManual" type="xs:boolean" lowerBound="0"/>
+		<property name="UpdateManuallyScheduledTasksWhenEditingLinks" type="xs:boolean" lowerBound="0"/>
+		<property name="KeepTaskOnNearestWorkingTimeWhenMadeAutoScheduled" type="xs:boolean" lowerBound="0"/>
+		<property name="OutlineCodes" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property name="OutlineCode" lowerBound="0" upperBound="-1">
+					<typeDef xsi:type="ObjectType">
+						<property name="Guid" type="xs:string"/>
+						<property name="FieldID" type="xs:string" lowerBound="0"/>
+						<property name="FieldName" type="xs:string" lowerBound="0"/>
+						<property name="Alias" type="xs:string" lowerBound="0"/>
+						<property name="PhoneticAlias" type="xs:string" lowerBound="0"/>
+						<property name="Values" lowerBound="0">
+							<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+								<property name="Value" lowerBound="0" upperBound="-1">
+									<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+										<property name="ValueID" type="xs:integer" lowerBound="0"/>
+										<property name="FieldGUID" type="xs:string"/>
+										<property name="Type">
+											<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+												<enumeration>4</enumeration>
+												<enumeration>6</enumeration>
+												<enumeration>9</enumeration>
+												<enumeration>15</enumeration>
+												<enumeration>17</enumeration>
+												<enumeration>21</enumeration>
+												<enumeration>27</enumeration>
+											</typeDef>
+										</property>
+										<property name="IsCollapsed" type="xs:boolean" lowerBound="0"/>
+										<property name="ParentValueID" type="xs:integer" lowerBound="0"/>
+										<property name="Value" type="xs:string" lowerBound="0"/>
+										<property name="Description" type="xs:string" lowerBound="0"/>
+									</typeDef>
+								</property>
+							</typeDef>
+						</property>
+						<property name="Enterprise" type="xs:boolean" lowerBound="0"/>
+						<property name="EnterpriseOutlineCodeAlias" type="xs:integer" lowerBound="0"/>
+						<property name="ResourceSubstitutionEnabled" type="xs:boolean" lowerBound="0"/>
+						<property name="LeafOnly" type="xs:boolean" lowerBound="0"/>
+						<property name="AllLevelsRequired" type="xs:boolean" lowerBound="0"/>
+						<property name="OnlyTableValuesAllowed" type="xs:boolean" lowerBound="0"/>
+						<property name="ShowIndent" type="xs:boolean" lowerBound="0"/>
+						<property name="Masks" lowerBound="0">
+							<typeDef xsi:type="ObjectType">
+								<property name="Mask" lowerBound="0" upperBound="-1">
+									<typeDef xsi:type="ObjectType">
+										<property name="Level" type="xs:integer" lowerBound="0"/>
+										<property name="Type" lowerBound="0">
+											<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+												<enumeration>0</enumeration>
+												<enumeration>1</enumeration>
+												<enumeration>2</enumeration>
+												<enumeration>3</enumeration>
+											</typeDef>
+										</property>
+										<property name="Length" type="xs:integer" lowerBound="0"/>
+										<property name="Separator" type="xs:string" lowerBound="0"/>
+									</typeDef>
+								</property>
+							</typeDef>
+						</property>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+		<property name="WBSMasks" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property name="VerifyUniqueCodes" type="xs:boolean" lowerBound="0" fixed="false" default="false"/>
+				<property name="GenerateCodes" type="xs:boolean" lowerBound="0" fixed="false" default="false"/>
+				<property name="Prefix" lowerBound="0">
+					<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="50"/>
+				</property>
+				<property name="WBSMask" lowerBound="0" upperBound="-1">
+					<typeDef xsi:type="ObjectType">
+						<property name="Level" type="xs:integer"/>
+						<property name="Type">
+							<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+								<enumeration>0</enumeration>
+								<enumeration>1</enumeration>
+								<enumeration>2</enumeration>
+								<enumeration>3</enumeration>
+							</typeDef>
+						</property>
+						<property name="Length" type="xs:string"/>
+						<property name="Separator" type="xs:string"/>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+		<property name="ExtendedAttributes" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property name="ExtendedAttribute" lowerBound="0" upperBound="-1">
+					<typeDef xsi:type="ObjectType">
+						<property name="FieldID" type="xs:string" lowerBound="0"/>
+						<property name="FieldName" type="xs:string" lowerBound="0"/>
+						<property name="CFType" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+								<enumeration>0</enumeration>
+								<enumeration>1</enumeration>
+								<enumeration>2</enumeration>
+								<enumeration>3</enumeration>
+								<enumeration>4</enumeration>
+								<enumeration>5</enumeration>
+								<enumeration>6</enumeration>
+								<enumeration>7</enumeration>
+							</typeDef>
+						</property>
+						<property name="Guid" type="xs:string" lowerBound="0"/>
+						<property name="ElemType" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+								<enumeration>20</enumeration>
+								<enumeration>21</enumeration>
+								<enumeration>22</enumeration>
+								<enumeration>23</enumeration>
+							</typeDef>
+						</property>
+						<property name="MaxMultiValues" type="xs:integer" lowerBound="0"/>
+						<property name="UserDef" type="xs:boolean" lowerBound="0"/>
+						<property name="Alias" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="50"/>
+						</property>
+						<property name="SecondaryPID" type="xs:string" lowerBound="0"/>
+						<property name="AutoRollDown" type="xs:boolean" lowerBound="0"/>
+						<property name="DefaultGuid" type="xs:string" lowerBound="0"/>
+						<property name="Ltuid" type="xs:string" lowerBound="0"/>
+						<property name="SecondaryGuid" type="xs:string" lowerBound="0"/>
+						<property name="PhoneticAlias" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="50"/>
+						</property>
+						<property name="RollupType" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+								<enumeration>0</enumeration>
+								<enumeration>1</enumeration>
+								<enumeration>2</enumeration>
+								<enumeration>3</enumeration>
+								<enumeration>4</enumeration>
+								<enumeration>5</enumeration>
+								<enumeration>6</enumeration>
+								<enumeration>7</enumeration>
+							</typeDef>
+						</property>
+						<property name="CalculationType" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+								<enumeration>0</enumeration>
+								<enumeration>1</enumeration>
+								<enumeration>2</enumeration>
+							</typeDef>
+						</property>
+						<property name="Formula" type="xs:string" lowerBound="0"/>
+						<property name="RestrictValues" type="xs:boolean" lowerBound="0"/>
+						<property name="ValuelistSortOrder" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+								<enumeration>0</enumeration>
+								<enumeration>1</enumeration>
+							</typeDef>
+						</property>
+						<property name="AppendNewValues" type="xs:boolean" lowerBound="0"/>
+						<property name="Default" type="xs:string" lowerBound="0"/>
+						<property name="ValueList" lowerBound="0">
+							<typeDef xsi:type="ObjectType">
+								<property name="Value" upperBound="-1">
+									<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+										<property name="ID" type="xs:integer"/>
+										<property name="Value" type="xs:string" lowerBound="0"/>
+										<property name="Description" type="xs:string" lowerBound="0"/>
+										<property name="Phonetic" type="xs:string" lowerBound="0"/>
+									</typeDef>
+								</property>
+							</typeDef>
+						</property>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+		<property name="Calendars" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property name="Calendar" upperBound="-1">
+					<typeDef xsi:type="ObjectType">
+						<property name="UID" type="xs:integer"/>
+						<property name="Name" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+						</property>
+						<property name="IsBaseCalendar" type="xs:boolean" lowerBound="0"/>
+						<property name="IsBaselineCalendar" type="xs:boolean" lowerBound="0"/>
+						<property name="BaseCalendarUID" type="xs:integer" lowerBound="0"/>
+						<property name="WeekDays" lowerBound="0">
+							<typeDef xsi:type="ObjectType">
+								<property name="WeekDay" lowerBound="0" upperBound="-1">
+									<typeDef xsi:type="ObjectType">
+										<property name="DayType">
+											<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+												<enumeration>0</enumeration>
+												<enumeration>1</enumeration>
+												<enumeration>2</enumeration>
+												<enumeration>3</enumeration>
+												<enumeration>4</enumeration>
+												<enumeration>5</enumeration>
+												<enumeration>6</enumeration>
+												<enumeration>7</enumeration>
+											</typeDef>
+										</property>
+										<property name="DayWorking" type="xs:boolean" lowerBound="0"/>
+										<property name="TimePeriod" lowerBound="0">
+											<typeDef xsi:type="ObjectType">
+												<property name="FromDate" type="xs:dateTime" lowerBound="0"/>
+												<property name="ToDate" type="xs:dateTime" lowerBound="0"/>
+											</typeDef>
+										</property>
+										<property name="WorkingTimes" lowerBound="0">
+											<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+												<property name="WorkingTime" lowerBound="0" upperBound="5">
+													<typeDef xsi:type="ObjectType">
+														<property name="FromTime" type="xs:time" lowerBound="0"/>
+														<property name="ToTime" type="xs:time" lowerBound="0"/>
+													</typeDef>
+												</property>
+											</typeDef>
+										</property>
+									</typeDef>
+								</property>
+							</typeDef>
+						</property>
+						<property name="Exceptions" lowerBound="0">
+							<typeDef xsi:type="ObjectType">
+								<property name="Exception" lowerBound="0" upperBound="-1">
+									<typeDef xsi:type="ObjectType">
+										<property name="EnteredByOccurrences" type="xs:boolean" lowerBound="0"/>
+										<property name="TimePeriod" lowerBound="0">
+											<typeDef xsi:type="ObjectType">
+												<property name="FromDate" type="xs:dateTime" lowerBound="0"/>
+												<property name="ToDate" type="xs:dateTime" lowerBound="0"/>
+											</typeDef>
+										</property>
+										<property name="Occurrences" type="xs:integer" lowerBound="0"/>
+										<property name="Name" lowerBound="0">
+											<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+										</property>
+										<property name="Type" lowerBound="0">
+											<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+												<enumeration>1</enumeration>
+												<enumeration>2</enumeration>
+												<enumeration>3</enumeration>
+												<enumeration>4</enumeration>
+												<enumeration>5</enumeration>
+												<enumeration>6</enumeration>
+												<enumeration>7</enumeration>
+												<enumeration>8</enumeration>
+												<enumeration>9</enumeration>
+											</typeDef>
+										</property>
+										<property name="Period" type="xs:integer" lowerBound="0"/>
+										<property name="DaysOfWeek" type="xs:integer" lowerBound="0"/>
+										<property name="MonthItem" lowerBound="0">
+											<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+												<enumeration>0</enumeration>
+												<enumeration>1</enumeration>
+												<enumeration>2</enumeration>
+												<enumeration>3</enumeration>
+												<enumeration>4</enumeration>
+												<enumeration>5</enumeration>
+												<enumeration>6</enumeration>
+												<enumeration>7</enumeration>
+												<enumeration>8</enumeration>
+												<enumeration>9</enumeration>
+											</typeDef>
+										</property>
+										<property name="MonthPosition" lowerBound="0">
+											<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+												<enumeration>0</enumeration>
+												<enumeration>1</enumeration>
+												<enumeration>2</enumeration>
+												<enumeration>3</enumeration>
+												<enumeration>4</enumeration>
+											</typeDef>
+										</property>
+										<property name="Month" lowerBound="0">
+											<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+												<enumeration>0</enumeration>
+												<enumeration>1</enumeration>
+												<enumeration>2</enumeration>
+												<enumeration>3</enumeration>
+												<enumeration>4</enumeration>
+												<enumeration>5</enumeration>
+												<enumeration>6</enumeration>
+												<enumeration>7</enumeration>
+												<enumeration>8</enumeration>
+												<enumeration>9</enumeration>
+												<enumeration>10</enumeration>
+												<enumeration>11</enumeration>
+											</typeDef>
+										</property>
+										<property name="MonthDay" type="xs:integer" lowerBound="0"/>
+										<property name="DayWorking" type="xs:boolean" lowerBound="0"/>
+										<property name="WorkingTimes" lowerBound="0">
+											<typeDef xsi:type="ObjectType" ordered="false" sequenced="true">
+												<property name="WorkingTime" lowerBound="0" upperBound="5">
+													<typeDef xsi:type="ObjectType">
+														<property name="FromTime" type="xs:time" lowerBound="0"/>
+														<property name="ToTime" type="xs:time" lowerBound="0"/>
+													</typeDef>
+												</property>
+											</typeDef>
+										</property>
+									</typeDef>
+								</property>
+							</typeDef>
+						</property>
+						<property name="WorkWeeks" lowerBound="0">
+							<typeDef xsi:type="ObjectType">
+								<property name="WorkWeek" lowerBound="0" upperBound="-1">
+									<typeDef xsi:type="ObjectType">
+										<property name="TimePeriod" lowerBound="0">
+											<typeDef xsi:type="ObjectType">
+												<property name="FromDate" type="xs:dateTime" lowerBound="0"/>
+												<property name="ToDate" type="xs:dateTime" lowerBound="0"/>
+											</typeDef>
+										</property>
+										<property name="Name" lowerBound="0">
+											<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+										</property>
+										<property name="WeekDay" lowerBound="0" upperBound="-1">
+											<typeDef xsi:type="ObjectType">
+												<property name="DayType">
+													<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+														<enumeration>0</enumeration>
+														<enumeration>1</enumeration>
+														<enumeration>2</enumeration>
+														<enumeration>3</enumeration>
+														<enumeration>4</enumeration>
+														<enumeration>5</enumeration>
+														<enumeration>6</enumeration>
+														<enumeration>7</enumeration>
+													</typeDef>
+												</property>
+												<property name="DayWorking" type="xs:boolean" lowerBound="0"/>
+											</typeDef>
+										</property>
+									</typeDef>
+								</property>
+							</typeDef>
+						</property>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+		<property name="Tasks" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property name="Task" lowerBound="0" upperBound="-1">
+					<typeDef xsi:type="ObjectType">
+						<property name="UID" type="xs:integer"/>
+						<property name="ID" type="xs:integer" lowerBound="0"/>
+						<property name="Name" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+						</property>
+						<property name="Active" type="xs:boolean" lowerBound="0"/>
+						<property name="Manual" type="xs:boolean" lowerBound="0" upperBound="1"/>
+						<property name="Type" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+								<enumeration>0</enumeration>
+								<enumeration>1</enumeration>
+								<enumeration>2</enumeration>
+							</typeDef>
+						</property>
+						<property name="IsNull" type="xs:boolean" lowerBound="0"/>
+						<property name="CreateDate" type="xs:dateTime" lowerBound="0"/>
+						<property name="Contact" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+						</property>
+						<property name="WBS" type="xs:string" lowerBound="0"/>
+						<property name="WBSLevel" type="xs:string" lowerBound="0"/>
+						<property name="OutlineNumber" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+						</property>
+						<property name="OutlineLevel" type="xs:integer" lowerBound="0"/>
+						<property name="Priority" type="xs:integer" lowerBound="0"/>
+						<property name="Start" type="xs:dateTime" lowerBound="0"/>
+						<property name="Finish" type="xs:dateTime" lowerBound="0"/>
+						<property name="Duration" type="xs:duration" lowerBound="0"/>
+						<property name="ManualStart" type="xs:dateTime" lowerBound="0"/>
+						<property name="ManualFinish" type="xs:dateTime" lowerBound="0"/>
+						<property name="ManualDuration" type="xs:duration" lowerBound="0"/>
+						<property name="DurationFormat" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+								<enumeration>3</enumeration>
+								<enumeration>4</enumeration>
+								<enumeration>5</enumeration>
+								<enumeration>6</enumeration>
+								<enumeration>7</enumeration>
+								<enumeration>8</enumeration>
+								<enumeration>9</enumeration>
+								<enumeration>10</enumeration>
+								<enumeration>11</enumeration>
+								<enumeration>12</enumeration>
+								<enumeration>19</enumeration>
+								<enumeration>20</enumeration>
+								<enumeration>21</enumeration>
+								<enumeration>35</enumeration>
+								<enumeration>36</enumeration>
+								<enumeration>37</enumeration>
+								<enumeration>38</enumeration>
+								<enumeration>39</enumeration>
+								<enumeration>40</enumeration>
+								<enumeration>41</enumeration>
+								<enumeration>42</enumeration>
+								<enumeration>43</enumeration>
+								<enumeration>44</enumeration>
+								<enumeration>51</enumeration>
+								<enumeration>52</enumeration>
+								<enumeration>53</enumeration>
+							</typeDef>
+						</property>
+						<property name="Work" type="xs:duration" lowerBound="0"/>
+						<property name="Stop" type="xs:dateTime" lowerBound="0"/>
+						<property name="Resume" type="xs:dateTime" lowerBound="0"/>
+						<property name="ResumeValid" type="xs:boolean" lowerBound="0"/>
+						<property name="EffortDriven" type="xs:boolean" lowerBound="0"/>
+						<property name="Recurring" type="xs:boolean" lowerBound="0"/>
+						<property name="OverAllocated" type="xs:boolean" lowerBound="0"/>
+						<property name="Estimated" type="xs:boolean" lowerBound="0"/>
+						<property name="Milestone" type="xs:boolean" lowerBound="0"/>
+						<property name="Summary" type="xs:boolean" lowerBound="0"/>
+						<property name="DisplayAsSummary" type="xs:boolean" lowerBound="0"/>
+						<property name="Critical" type="xs:boolean" lowerBound="0"/>
+						<property name="IsSubproject" type="xs:boolean" lowerBound="0"/>
+						<property name="IsSubprojectReadOnly" type="xs:boolean" lowerBound="0"/>
+						<property name="SubprojectName" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+						</property>
+						<property name="ExternalTask" type="xs:boolean" lowerBound="0"/>
+						<property name="ExternalTaskProject" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+						</property>
+						<property name="EarlyStart" type="xs:dateTime" lowerBound="0"/>
+						<property name="EarlyFinish" type="xs:dateTime" lowerBound="0"/>
+						<property name="LateStart" type="xs:dateTime" lowerBound="0"/>
+						<property name="LateFinish" type="xs:dateTime" lowerBound="0"/>
+						<property name="StartVariance" type="xs:integer" lowerBound="0"/>
+						<property name="FinishVariance" type="xs:integer" lowerBound="0"/>
+						<property name="WorkVariance" type="xs:float" lowerBound="0"/>
+						<property name="FreeSlack" type="xs:integer" lowerBound="0"/>
+						<property name="StartSlack" type="xs:integer" lowerBound="0"/>
+						<property name="FinishSlack" type="xs:integer" lowerBound="0"/>
+						<property name="TotalSlack" type="xs:integer" lowerBound="0"/>
+						<property name="FixedCost" type="xs:float" lowerBound="0"/>
+						<property name="FixedCostAccrual" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic">
+								<enumeration>1</enumeration>
+								<enumeration>2</enumeration>
+								<enumeration>3</enumeration>
+							</typeDef>
+						</property>
+						<property name="PercentComplete" type="xs:integer" lowerBound="0"/>
+						<property name="PercentWorkComplete" type="xs:integer" lowerBound="0"/>
+						<property name="Cost" type="xs:decimal" lowerBound="0"/>
+						<property name="OvertimeCost" type="xs:decimal" lowerBound="0"/>
+						<property name="OvertimeWork" type="xs:duration" lowerBound="0"/>
+						<property name="ActualStart" type="xs:dateTime" lowerBound="0"/>
+						<property name="ActualFinish" type="xs:dateTime" lowerBound="0"/>
+						<property name="ActualDuration" type="xs:duration" lowerBound="0"/>
+						<property name="ActualCost" type="xs:decimal" lowerBound="0"/>
+						<property name="ActualOvertimeCost" type="xs:decimal" lowerBound="0"/>
+						<property name="ActualWork" type="xs:duration" lowerBound="0"/>
+						<property name="ActualOvertimeWork" type="xs:duration" lowerBound="0"/>
+						<property name="RegularWork" type="xs:duration" lowerBound="0"/>
+						<property name="RemainingDuration" type="xs:duration" lowerBound="0"/>
+						<property name="RemainingCost" type="xs:decimal" lowerBound="0"/>
+						<property name="RemainingWork" type="xs:duration" lowerBound="0"/>
+						<property name="RemainingOvertimeCost" type="xs:decimal" lowerBound="0"/>
+						<property name="RemainingOvertimeWork" type="xs:duration" lowerBound="0"/>
+						<property name="ACWP" type="xs:float" lowerBound="0"/>
+						<property name="CV" type="xs:float" lowerBound="0"/>
+						<property name="ConstraintType" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+								<enumeration>0</enumeration>
+								<enumeration>1</enumeration>
+								<enumeration>2</enumeration>
+								<enumeration>3</enumeration>
+								<enumeration>4</enumeration>
+								<enumeration>5</enumeration>
+								<enumeration>6</enumeration>
+								<enumeration>7</enumeration>
+							</typeDef>
+						</property>
+						<property name="CalendarUID" type="xs:integer" lowerBound="0"/>
+						<property name="ConstraintDate" type="xs:dateTime" lowerBound="0"/>
+						<property name="Deadline" type="xs:dateTime" lowerBound="0"/>
+						<property name="LevelAssignments" type="xs:boolean" lowerBound="0"/>
+						<property name="LevelingCanSplit" type="xs:boolean" lowerBound="0"/>
+						<property name="LevelingDelay" type="xs:integer" lowerBound="0"/>
+						<property name="LevelingDelayFormat" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+								<enumeration>3</enumeration>
+								<enumeration>4</enumeration>
+								<enumeration>5</enumeration>
+								<enumeration>6</enumeration>
+								<enumeration>7</enumeration>
+								<enumeration>8</enumeration>
+								<enumeration>9</enumeration>
+								<enumeration>10</enumeration>
+								<enumeration>11</enumeration>
+								<enumeration>12</enumeration>
+								<enumeration>19</enumeration>
+								<enumeration>20</enumeration>
+								<enumeration>21</enumeration>
+								<enumeration>35</enumeration>
+								<enumeration>36</enumeration>
+								<enumeration>37</enumeration>
+								<enumeration>38</enumeration>
+								<enumeration>39</enumeration>
+								<enumeration>40</enumeration>
+								<enumeration>41</enumeration>
+								<enumeration>42</enumeration>
+								<enumeration>43</enumeration>
+								<enumeration>44</enumeration>
+								<enumeration>51</enumeration>
+								<enumeration>52</enumeration>
+								<enumeration>53</enumeration>
+							</typeDef>
+						</property>
+						<property name="PreLeveledStart" type="xs:dateTime" lowerBound="0"/>
+						<property name="PreLeveledFinish" type="xs:dateTime" lowerBound="0"/>
+						<property name="Hyperlink" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+						</property>
+						<property name="HyperlinkAddress" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+						</property>
+						<property name="HyperlinkSubAddress" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+						</property>
+						<property name="IgnoreResourceCalendar" type="xs:boolean" lowerBound="0"/>
+						<property name="Notes" type="xs:string" lowerBound="0"/>
+						<property name="HideBar" type="xs:boolean" lowerBound="0"/>
+						<property name="Rollup" type="xs:boolean" lowerBound="0"/>
+						<property name="BCWS" type="xs:float" lowerBound="0"/>
+						<property name="BCWP" type="xs:float" lowerBound="0"/>
+						<property name="PhysicalPercentComplete" type="xs:integer" lowerBound="0"/>
+						<property name="EarnedValueMethod" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+								<enumeration>0</enumeration>
+								<enumeration>1</enumeration>
+							</typeDef>
+						</property>
+						<property name="PredecessorLink" lowerBound="0" upperBound="-1">
+							<typeDef xsi:type="ObjectType">
+								<property name="PredecessorUID" type="xs:integer" lowerBound="0"/>
+								<property name="Type" lowerBound="0">
+									<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+										<enumeration>0</enumeration>
+										<enumeration>1</enumeration>
+										<enumeration>2</enumeration>
+										<enumeration>3</enumeration>
+									</typeDef>
+								</property>
+								<property name="CrossProject" type="xs:boolean" lowerBound="0"/>
+								<property name="CrossProjectName" type="xs:string" lowerBound="0"/>
+								<property name="LinkLag" type="xs:integer" lowerBound="0"/>
+								<property name="LagFormat" lowerBound="0">
+									<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+										<enumeration>3</enumeration>
+										<enumeration>4</enumeration>
+										<enumeration>5</enumeration>
+										<enumeration>6</enumeration>
+										<enumeration>7</enumeration>
+										<enumeration>8</enumeration>
+										<enumeration>9</enumeration>
+										<enumeration>10</enumeration>
+										<enumeration>11</enumeration>
+										<enumeration>12</enumeration>
+										<enumeration>19</enumeration>
+										<enumeration>20</enumeration>
+										<enumeration>35</enumeration>
+										<enumeration>36</enumeration>
+										<enumeration>37</enumeration>
+										<enumeration>38</enumeration>
+										<enumeration>39</enumeration>
+										<enumeration>40</enumeration>
+										<enumeration>41</enumeration>
+										<enumeration>42</enumeration>
+										<enumeration>43</enumeration>
+										<enumeration>44</enumeration>
+										<enumeration>51</enumeration>
+										<enumeration>52</enumeration>
+										<enumeration>53</enumeration>
+									</typeDef>
+								</property>
+							</typeDef>
+						</property>
+						<property name="ActualWorkProtected" type="xs:duration" lowerBound="0"/>
+						<property name="ActualOvertimeWorkProtected" type="xs:duration" lowerBound="0"/>
+						<property name="ExtendedAttribute" lowerBound="0" upperBound="-1">
+							<typeDef xsi:type="ObjectType">
+								<property name="FieldID" type="xs:string" lowerBound="0"/>
+								<property name="Value" type="xs:string" lowerBound="0"/>
+								<property name="ValueGUID" type="xs:string" lowerBound="0"/>
+								<property name="DurationFormat" lowerBound="0">
+									<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+										<enumeration>3</enumeration>
+										<enumeration>4</enumeration>
+										<enumeration>5</enumeration>
+										<enumeration>6</enumeration>
+										<enumeration>7</enumeration>
+										<enumeration>8</enumeration>
+										<enumeration>9</enumeration>
+										<enumeration>10</enumeration>
+										<enumeration>11</enumeration>
+										<enumeration>12</enumeration>
+										<enumeration>19</enumeration>
+										<enumeration>20</enumeration>
+										<enumeration>21</enumeration>
+										<enumeration>35</enumeration>
+										<enumeration>36</enumeration>
+										<enumeration>37</enumeration>
+										<enumeration>38</enumeration>
+										<enumeration>39</enumeration>
+										<enumeration>40</enumeration>
+										<enumeration>41</enumeration>
+										<enumeration>42</enumeration>
+										<enumeration>43</enumeration>
+										<enumeration>44</enumeration>
+										<enumeration>51</enumeration>
+										<enumeration>52</enumeration>
+										<enumeration>53</enumeration>
+									</typeDef>
+								</property>
+							</typeDef>
+						</property>
+						<property name="Baseline" lowerBound="0" upperBound="-1">
+							<typeDef xsi:type="ObjectType">
+								<property xmlns:d9p1="http://schemas.microsoft.com/project/2010" name="TimephasedData" type="d9p1:TimephasedDataType" lowerBound="0" upperBound="-1"/>
+								<property name="Number" type="xs:integer" lowerBound="0"/>
+								<property name="Interim" type="xs:boolean" lowerBound="0" fixed="false" default="false"/>
+								<property name="Start" type="xs:dateTime" lowerBound="0"/>
+								<property name="Finish" type="xs:dateTime" lowerBound="0"/>
+								<property name="Duration" type="xs:duration" lowerBound="0"/>
+								<property name="DurationFormat" lowerBound="0">
+									<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+										<enumeration>3</enumeration>
+										<enumeration>4</enumeration>
+										<enumeration>5</enumeration>
+										<enumeration>6</enumeration>
+										<enumeration>7</enumeration>
+										<enumeration>8</enumeration>
+										<enumeration>9</enumeration>
+										<enumeration>10</enumeration>
+										<enumeration>11</enumeration>
+										<enumeration>12</enumeration>
+										<enumeration>19</enumeration>
+										<enumeration>20</enumeration>
+										<enumeration>21</enumeration>
+										<enumeration>35</enumeration>
+										<enumeration>36</enumeration>
+										<enumeration>37</enumeration>
+										<enumeration>38</enumeration>
+										<enumeration>39</enumeration>
+										<enumeration>40</enumeration>
+										<enumeration>41</enumeration>
+										<enumeration>42</enumeration>
+										<enumeration>43</enumeration>
+										<enumeration>44</enumeration>
+										<enumeration>51</enumeration>
+										<enumeration>52</enumeration>
+										<enumeration>53</enumeration>
+									</typeDef>
+								</property>
+								<property name="EstimatedDuration" type="xs:boolean" lowerBound="0"/>
+								<property name="Work" type="xs:duration" lowerBound="0"/>
+								<property name="Cost" type="xs:decimal" lowerBound="0"/>
+								<property name="BCWS" type="xs:float" lowerBound="0"/>
+								<property name="BCWP" type="xs:float" lowerBound="0"/>
+								<property name="FixedCost" type="xs:float" lowerBound="0"/>
+							</typeDef>
+						</property>
+						<property name="OutlineCode" lowerBound="0" upperBound="-1">
+							<typeDef xsi:type="ObjectType">
+								<property name="FieldID" type="xs:string" lowerBound="0"/>
+								<property name="ValueID" type="xs:integer" lowerBound="0"/>
+								<property name="ValueGUID" type="xs:integer" lowerBound="0"/>
+							</typeDef>
+						</property>
+						<property name="IsPublished" type="xs:boolean" lowerBound="0"/>
+						<property name="StatusManager" type="xs:string" lowerBound="0"/>
+						<property name="CommitmentStart" type="xs:dateTime" lowerBound="0"/>
+						<property name="CommitmentFinish" type="xs:dateTime" lowerBound="0"/>
+						<property name="CommitmentType" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+								<enumeration>0</enumeration>
+								<enumeration>1</enumeration>
+								<enumeration>2</enumeration>
+							</typeDef>
+						</property>
+						<property name="Pinned" type="xs:boolean" lowerBound="0"/>
+						<property name="PinnedStart" type="xs:string" lowerBound="0"/>
+						<property name="PinnedFinish" type="xs:string" lowerBound="0"/>
+						<property name="PinnedDuration" type="xs:string" lowerBound="0"/>
+						<property xmlns:d7p1="http://schemas.microsoft.com/project/2010" name="TimephasedData" type="d7p1:TimephasedDataType" lowerBound="0" upperBound="-1"/>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+		<property name="Resources" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property name="Resource" lowerBound="0" upperBound="-1">
+					<typeDef xsi:type="ObjectType">
+						<property name="UID" type="xs:integer"/>
+						<property name="ID" type="xs:integer" lowerBound="0"/>
+						<property name="Name" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+						</property>
+						<property name="Type" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+								<enumeration>0</enumeration>
+								<enumeration>1</enumeration>
+							</typeDef>
+						</property>
+						<property name="IsNull" type="xs:boolean" lowerBound="0"/>
+						<property name="Initials" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+						</property>
+						<property name="Phonetics" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+						</property>
+						<property name="NTAccount" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+						</property>
+						<property name="MaterialLabel" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+						</property>
+						<property name="Code" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+						</property>
+						<property name="Group" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+						</property>
+						<property name="WorkGroup" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+								<enumeration>0</enumeration>
+								<enumeration>1</enumeration>
+								<enumeration>2</enumeration>
+								<enumeration>3</enumeration>
+							</typeDef>
+						</property>
+						<property name="EmailAddress" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+						</property>
+						<property name="Hyperlink" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+						</property>
+						<property name="HyperlinkAddress" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+						</property>
+						<property name="HyperlinkSubAddress" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+						</property>
+						<property name="MaxUnits" type="xs:float" lowerBound="0" fixed="false" default="1.0"/>
+						<property name="PeakUnits" type="xs:float" lowerBound="0"/>
+						<property name="OverAllocated" type="xs:boolean" lowerBound="0"/>
+						<property name="AvailableFrom" type="xs:dateTime" lowerBound="0"/>
+						<property name="AvailableTo" type="xs:dateTime" lowerBound="0"/>
+						<property name="Start" type="xs:dateTime" lowerBound="0"/>
+						<property name="Finish" type="xs:dateTime" lowerBound="0"/>
+						<property name="CanLevel" type="xs:boolean" lowerBound="0"/>
+						<property name="AccrueAt" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+								<enumeration>1</enumeration>
+								<enumeration>2</enumeration>
+								<enumeration>3</enumeration>
+								<enumeration>4</enumeration>
+							</typeDef>
+						</property>
+						<property name="Work" type="xs:duration" lowerBound="0"/>
+						<property name="RegularWork" type="xs:duration" lowerBound="0"/>
+						<property name="OvertimeWork" type="xs:duration" lowerBound="0"/>
+						<property name="ActualWork" type="xs:duration" lowerBound="0"/>
+						<property name="RemainingWork" type="xs:duration" lowerBound="0"/>
+						<property name="ActualOvertimeWork" type="xs:duration" lowerBound="0"/>
+						<property name="RemainingOvertimeWork" type="xs:duration" lowerBound="0"/>
+						<property name="PercentWorkComplete" type="xs:integer" lowerBound="0"/>
+						<property name="StandardRate" type="xs:decimal" lowerBound="0"/>
+						<property name="StandardRateFormat" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+								<enumeration>1</enumeration>
+								<enumeration>2</enumeration>
+								<enumeration>3</enumeration>
+								<enumeration>4</enumeration>
+								<enumeration>5</enumeration>
+								<enumeration>7</enumeration>
+								<enumeration>8</enumeration>
+							</typeDef>
+						</property>
+						<property name="Cost" type="xs:decimal" lowerBound="0"/>
+						<property name="OvertimeRate" type="xs:decimal" lowerBound="0"/>
+						<property name="OvertimeRateFormat" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+								<enumeration>1</enumeration>
+								<enumeration>2</enumeration>
+								<enumeration>3</enumeration>
+								<enumeration>4</enumeration>
+								<enumeration>5</enumeration>
+								<enumeration>7</enumeration>
+							</typeDef>
+						</property>
+						<property name="OvertimeCost" type="xs:decimal" lowerBound="0"/>
+						<property name="CostPerUse" type="xs:decimal" lowerBound="0"/>
+						<property name="ActualCost" type="xs:decimal" lowerBound="0"/>
+						<property name="ActualOvertimeCost" type="xs:decimal" lowerBound="0"/>
+						<property name="RemainingCost" type="xs:decimal" lowerBound="0"/>
+						<property name="RemainingOvertimeCost" type="xs:decimal" lowerBound="0"/>
+						<property name="WorkVariance" type="xs:float" lowerBound="0"/>
+						<property name="CostVariance" type="xs:float" lowerBound="0"/>
+						<property name="SV" type="xs:float" lowerBound="0"/>
+						<property name="CV" type="xs:float" lowerBound="0"/>
+						<property name="ACWP" type="xs:float" lowerBound="0"/>
+						<property name="CalendarUID" type="xs:integer" lowerBound="0"/>
+						<property name="Notes" type="xs:string" lowerBound="0"/>
+						<property name="BCWS" type="xs:float" lowerBound="0"/>
+						<property name="BCWP" type="xs:float" lowerBound="0"/>
+						<property name="IsGeneric" type="xs:boolean" lowerBound="0"/>
+						<property name="IsInactive" type="xs:boolean" lowerBound="0"/>
+						<property name="IsEnterprise" type="xs:boolean" lowerBound="0"/>
+						<property name="BookingType" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+								<enumeration>0</enumeration>
+								<enumeration>1</enumeration>
+							</typeDef>
+						</property>
+						<property name="ActualWorkProtected" type="xs:duration" lowerBound="0"/>
+						<property name="ActualOvertimeWorkProtected" type="xs:duration" lowerBound="0"/>
+						<property name="ActiveDirectoryGUID" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="16"/>
+						</property>
+						<property name="CreationDate" type="xs:dateTime" lowerBound="0"/>
+						<property name="ExtendedAttribute" lowerBound="0" upperBound="-1">
+							<typeDef xsi:type="ObjectType">
+								<property name="FieldID" type="xs:string" lowerBound="0"/>
+								<property name="Value" type="xs:string" lowerBound="0"/>
+								<property name="ValueGUID" type="xs:integer" lowerBound="0"/>
+								<property name="DurationFormat" lowerBound="0">
+									<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+										<enumeration>3</enumeration>
+										<enumeration>4</enumeration>
+										<enumeration>5</enumeration>
+										<enumeration>6</enumeration>
+										<enumeration>7</enumeration>
+										<enumeration>8</enumeration>
+										<enumeration>9</enumeration>
+										<enumeration>10</enumeration>
+										<enumeration>11</enumeration>
+										<enumeration>12</enumeration>
+										<enumeration>19</enumeration>
+										<enumeration>20</enumeration>
+										<enumeration>21</enumeration>
+										<enumeration>35</enumeration>
+										<enumeration>36</enumeration>
+										<enumeration>37</enumeration>
+										<enumeration>38</enumeration>
+										<enumeration>39</enumeration>
+										<enumeration>40</enumeration>
+										<enumeration>41</enumeration>
+										<enumeration>42</enumeration>
+										<enumeration>43</enumeration>
+										<enumeration>44</enumeration>
+										<enumeration>51</enumeration>
+										<enumeration>52</enumeration>
+										<enumeration>53</enumeration>
+									</typeDef>
+								</property>
+							</typeDef>
+						</property>
+						<property name="Baseline" lowerBound="0" upperBound="-1">
+							<typeDef xsi:type="ObjectType">
+								<property name="Number" type="xs:integer"/>
+								<property name="Work" type="xs:duration" lowerBound="0"/>
+								<property name="Cost" type="xs:float" lowerBound="0"/>
+								<property name="BCWS" type="xs:float" lowerBound="0"/>
+								<property name="BCWP" type="xs:float" lowerBound="0"/>
+							</typeDef>
+						</property>
+						<property name="OutlineCode" lowerBound="0" upperBound="-1">
+							<typeDef xsi:type="ObjectType">
+								<property name="FieldID" type="xs:string" lowerBound="0"/>
+								<property name="ValueID" type="xs:integer" lowerBound="0"/>
+								<property name="ValueGUID" type="xs:integer" lowerBound="0"/>
+							</typeDef>
+						</property>
+						<property name="IsCostResource" type="xs:boolean" lowerBound="0"/>
+						<property name="AssnOwner" type="xs:string" lowerBound="0"/>
+						<property name="AssnOwnerGuid" type="xs:string" lowerBound="0"/>
+						<property name="IsBudget" type="xs:boolean" lowerBound="0"/>
+						<property name="AvailabilityPeriods" lowerBound="0">
+							<typeDef xsi:type="ObjectType">
+								<property name="AvailabilityPeriod" lowerBound="0" upperBound="-1">
+									<typeDef xsi:type="ObjectType">
+										<property name="AvailableFrom" type="xs:dateTime" lowerBound="0"/>
+										<property name="AvailableTo" type="xs:dateTime" lowerBound="0"/>
+										<property name="AvailableUnits" type="xs:float" lowerBound="0"/>
+									</typeDef>
+								</property>
+							</typeDef>
+						</property>
+						<property name="Rates" lowerBound="0">
+							<typeDef xsi:type="ObjectType">
+								<property name="Rate" lowerBound="0" upperBound="25">
+									<typeDef xsi:type="ObjectType">
+										<property name="RatesFrom" type="xs:dateTime"/>
+										<property name="RatesTo" type="xs:dateTime"/>
+										<property name="RateTable" lowerBound="0">
+											<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+												<enumeration>0</enumeration>
+												<enumeration>1</enumeration>
+												<enumeration>2</enumeration>
+												<enumeration>3</enumeration>
+												<enumeration>4</enumeration>
+											</typeDef>
+										</property>
+										<property name="StandardRate" type="xs:decimal" lowerBound="0"/>
+										<property name="StandardRateFormat" lowerBound="0">
+											<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+												<enumeration>1</enumeration>
+												<enumeration>2</enumeration>
+												<enumeration>3</enumeration>
+												<enumeration>4</enumeration>
+												<enumeration>5</enumeration>
+												<enumeration>7</enumeration>
+											</typeDef>
+										</property>
+										<property name="OvertimeRate" type="xs:decimal" lowerBound="0"/>
+										<property name="OvertimeRateFormat" lowerBound="0">
+											<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+												<enumeration>1</enumeration>
+												<enumeration>2</enumeration>
+												<enumeration>3</enumeration>
+												<enumeration>4</enumeration>
+												<enumeration>5</enumeration>
+												<enumeration>7</enumeration>
+											</typeDef>
+										</property>
+										<property name="CostPerUse" type="xs:decimal" lowerBound="0"/>
+									</typeDef>
+								</property>
+							</typeDef>
+						</property>
+						<property xmlns:d7p1="http://schemas.microsoft.com/project/2010" name="TimephasedData" type="d7p1:TimephasedDataType" lowerBound="0" upperBound="-1"/>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+		<property name="Assignments" lowerBound="0">
+			<typeDef xsi:type="ObjectType">
+				<property name="Assignment" lowerBound="0" upperBound="-1">
+					<typeDef xsi:type="ObjectType">
+						<property name="UID" type="xs:integer"/>
+						<property name="TaskUID" type="xs:integer" lowerBound="0"/>
+						<property name="ResourceUID" type="xs:integer" lowerBound="0"/>
+						<property name="PercentWorkComplete" type="xs:integer" lowerBound="0"/>
+						<property name="ActualCost" type="xs:decimal" lowerBound="0"/>
+						<property name="ActualOvertimeWork" type="xs:duration" lowerBound="0"/>
+						<property name="ActualWork" type="xs:duration" lowerBound="0"/>
+						<property name="ACWP" type="xs:float" lowerBound="0"/>
+						<property name="Confirmed" type="xs:boolean" lowerBound="0"/>
+						<property name="RateScale" type="xs:integer" lowerBound="0"/>
+						<property name="Cost" type="xs:decimal" lowerBound="0"/>
+						<property name="CostRateTable" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+								<enumeration>0</enumeration>
+								<enumeration>1</enumeration>
+								<enumeration>2</enumeration>
+								<enumeration>3</enumeration>
+								<enumeration>4</enumeration>
+							</typeDef>
+						</property>
+						<property name="CostVariance" type="xs:float" lowerBound="0"/>
+						<property name="CV" type="xs:float" lowerBound="0"/>
+						<property name="Delay" type="xs:integer" lowerBound="0"/>
+						<property name="Finish" type="xs:dateTime" lowerBound="0"/>
+						<property name="FinishVariance" type="xs:integer" lowerBound="0"/>
+						<property name="WorkVariance" type="xs:float" lowerBound="0"/>
+						<property name="HasFixedRateUnits" type="xs:boolean" lowerBound="0"/>
+						<property name="FixedMaterial" type="xs:boolean" lowerBound="0"/>
+						<property name="LevelingDelay" type="xs:integer" lowerBound="0"/>
+						<property name="LevelingDelayFormat" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+								<enumeration>3</enumeration>
+								<enumeration>4</enumeration>
+								<enumeration>5</enumeration>
+								<enumeration>6</enumeration>
+								<enumeration>7</enumeration>
+								<enumeration>8</enumeration>
+								<enumeration>9</enumeration>
+								<enumeration>10</enumeration>
+								<enumeration>11</enumeration>
+								<enumeration>12</enumeration>
+								<enumeration>19</enumeration>
+								<enumeration>20</enumeration>
+								<enumeration>21</enumeration>
+								<enumeration>35</enumeration>
+								<enumeration>36</enumeration>
+								<enumeration>37</enumeration>
+								<enumeration>38</enumeration>
+								<enumeration>39</enumeration>
+								<enumeration>40</enumeration>
+								<enumeration>41</enumeration>
+								<enumeration>42</enumeration>
+								<enumeration>43</enumeration>
+								<enumeration>44</enumeration>
+								<enumeration>51</enumeration>
+								<enumeration>52</enumeration>
+								<enumeration>53</enumeration>
+							</typeDef>
+						</property>
+						<property name="LinkedFields" type="xs:boolean" lowerBound="0"/>
+						<property name="Milestone" type="xs:boolean" lowerBound="0"/>
+						<property name="Overallocated" type="xs:boolean" lowerBound="0"/>
+						<property name="OvertimeWork" type="xs:duration" lowerBound="0"/>
+						<property name="RegularWork" type="xs:duration" lowerBound="0"/>
+						<property name="RemainingCost" type="xs:decimal" lowerBound="0"/>
+						<property name="RemainingOvertimeWork" type="xs:duration" lowerBound="0"/>
+						<property name="RemainingWork" type="xs:duration" lowerBound="0"/>
+						<property name="ResponsePending" type="xs:boolean" lowerBound="0"/>
+						<property name="Start" type="xs:dateTime" lowerBound="0"/>
+						<property name="StartVariance" type="xs:integer" lowerBound="0"/>
+						<property name="Units" type="xs:float" lowerBound="0"/>
+						<property name="UpdateNeeded" type="xs:boolean" lowerBound="0"/>
+						<property name="VAC" type="xs:float" lowerBound="0"/>
+						<property name="Work" type="xs:duration" lowerBound="0"/>
+						<property name="WorkContour" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+								<enumeration>0</enumeration>
+								<enumeration>1</enumeration>
+								<enumeration>2</enumeration>
+								<enumeration>3</enumeration>
+								<enumeration>4</enumeration>
+								<enumeration>5</enumeration>
+								<enumeration>6</enumeration>
+								<enumeration>7</enumeration>
+								<enumeration>8</enumeration>
+							</typeDef>
+						</property>
+						<property name="BCWS" type="xs:float" lowerBound="0"/>
+						<property name="BCWP" type="xs:float" lowerBound="0"/>
+						<property name="BookingType" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+								<enumeration>0</enumeration>
+								<enumeration>1</enumeration>
+							</typeDef>
+						</property>
+						<property name="CreationDate" type="xs:dateTime" lowerBound="0"/>
+						<property name="BudgetCost" type="xs:decimal" lowerBound="0"/>
+						<property name="BudgetWork" type="xs:duration" lowerBound="0"/>
+						<property name="ActualFinish" type="xs:dateTime" lowerBound="0"/>
+						<property name="ActualOvertimeCost" type="xs:decimal" lowerBound="0"/>
+						<property name="ActualStart" type="xs:dateTime" lowerBound="0"/>
+						<property name="Hyperlink" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+						</property>
+						<property name="HyperlinkAddress" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+						</property>
+						<property name="HyperlinkSubAddress" lowerBound="0">
+							<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" maxLength="512"/>
+						</property>
+						<property name="Notes" type="xs:string" lowerBound="0"/>
+						<property name="OvertimeCost" type="xs:decimal" lowerBound="0"/>
+						<property name="PeakUnits" type="xs:float" lowerBound="0"/>
+						<property name="RemainingOvertimeCost" type="xs:decimal" lowerBound="0"/>
+						<property name="Stop" type="xs:dateTime" lowerBound="0"/>
+						<property name="Resume" type="xs:dateTime" lowerBound="0"/>
+						<property name="Summary" type="xs:boolean" lowerBound="0"/>
+						<property name="SV" type="xs:float" lowerBound="0"/>
+						<property name="ActualWorkProtected" type="xs:duration" lowerBound="0"/>
+						<property name="ActualOvertimeWorkProtected" type="xs:duration" lowerBound="0"/>
+						<property name="AssnOwner" type="xs:string" lowerBound="0"/>
+						<property name="AssnOwnerGuid" type="xs:string" lowerBound="0"/>
+						<property name="ExtendedAttribute" lowerBound="0" upperBound="-1">
+							<typeDef xsi:type="ObjectType">
+								<property name="FieldID" type="xs:string" lowerBound="0"/>
+								<property name="Value" type="xs:string" lowerBound="0"/>
+								<property name="ValueGUID" type="xs:integer" lowerBound="0"/>
+								<property name="DurationFormat" lowerBound="0">
+									<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic">
+										<enumeration>3</enumeration>
+										<enumeration>4</enumeration>
+										<enumeration>5</enumeration>
+										<enumeration>6</enumeration>
+										<enumeration>7</enumeration>
+										<enumeration>8</enumeration>
+										<enumeration>9</enumeration>
+										<enumeration>10</enumeration>
+										<enumeration>11</enumeration>
+										<enumeration>12</enumeration>
+										<enumeration>19</enumeration>
+										<enumeration>20</enumeration>
+										<enumeration>21</enumeration>
+										<enumeration>35</enumeration>
+										<enumeration>36</enumeration>
+										<enumeration>37</enumeration>
+										<enumeration>38</enumeration>
+										<enumeration>39</enumeration>
+										<enumeration>40</enumeration>
+										<enumeration>41</enumeration>
+										<enumeration>42</enumeration>
+										<enumeration>43</enumeration>
+										<enumeration>44</enumeration>
+										<enumeration>51</enumeration>
+										<enumeration>52</enumeration>
+										<enumeration>53</enumeration>
+									</typeDef>
+								</property>
+							</typeDef>
+						</property>
+						<property name="Baseline" lowerBound="0" upperBound="-1">
+							<typeDef xsi:type="ObjectType">
+								<property xmlns:d9p1="http://schemas.microsoft.com/project/2010" name="TimephasedData" type="d9p1:TimephasedDataType" lowerBound="0" upperBound="-1"/>
+								<property name="Number" type="xs:string"/>
+								<property name="Start" type="xs:string" lowerBound="0"/>
+								<property name="Finish" type="xs:string" lowerBound="0"/>
+								<property name="Work" type="xs:duration" lowerBound="0"/>
+								<property name="Cost" type="xs:string" lowerBound="0"/>
+								<property name="BCWS" type="xs:float" lowerBound="0"/>
+								<property name="BCWP" type="xs:float" lowerBound="0"/>
+							</typeDef>
+						</property>
+						<property name="f404000" type="xs:anyType" lowerBound="0"/>
+						<property name="f404001" type="xs:anyType" lowerBound="0"/>
+						<property name="f404002" type="xs:anyType" lowerBound="0"/>
+						<property name="f404003" type="xs:anyType" lowerBound="0"/>
+						<property name="f404004" type="xs:anyType" lowerBound="0"/>
+						<property name="f404005" type="xs:anyType" lowerBound="0"/>
+						<property name="f404006" type="xs:anyType" lowerBound="0"/>
+						<property name="f404007" type="xs:anyType" lowerBound="0"/>
+						<property name="f404008" type="xs:anyType" lowerBound="0"/>
+						<property name="f404009" type="xs:anyType" lowerBound="0"/>
+						<property name="f40400a" type="xs:anyType" lowerBound="0"/>
+						<property name="f40400b" type="xs:anyType" lowerBound="0"/>
+						<property name="f40400c" type="xs:anyType" lowerBound="0"/>
+						<property name="f40400d" type="xs:anyType" lowerBound="0"/>
+						<property name="f40400e" type="xs:anyType" lowerBound="0"/>
+						<property name="f40400f" type="xs:anyType" lowerBound="0"/>
+						<property name="f404010" type="xs:anyType" lowerBound="0"/>
+						<property name="f404011" type="xs:anyType" lowerBound="0"/>
+						<property name="f404012" type="xs:anyType" lowerBound="0"/>
+						<property name="f404013" type="xs:anyType" lowerBound="0"/>
+						<property name="f404014" type="xs:anyType" lowerBound="0"/>
+						<property name="f404015" type="xs:anyType" lowerBound="0"/>
+						<property name="f404016" type="xs:anyType" lowerBound="0"/>
+						<property name="f404017" type="xs:anyType" lowerBound="0"/>
+						<property name="f404018" type="xs:anyType" lowerBound="0"/>
+						<property name="f404019" type="xs:anyType" lowerBound="0"/>
+						<property name="f40401a" type="xs:anyType" lowerBound="0"/>
+						<property name="f40401b" type="xs:anyType" lowerBound="0"/>
+						<property name="f40401c" type="xs:anyType" lowerBound="0"/>
+						<property name="f40401d" type="xs:anyType" lowerBound="0"/>
+						<property name="f40401e" type="xs:anyType" lowerBound="0"/>
+						<property name="f40401f" type="xs:anyType" lowerBound="0"/>
+						<property name="f404020" type="xs:anyType" lowerBound="0"/>
+						<property name="f404021" type="xs:anyType" lowerBound="0"/>
+						<property name="f404022" type="xs:anyType" lowerBound="0"/>
+						<property name="f404023" type="xs:anyType" lowerBound="0"/>
+						<property name="f404024" type="xs:anyType" lowerBound="0"/>
+						<property name="f404025" type="xs:anyType" lowerBound="0"/>
+						<property name="f404026" type="xs:anyType" lowerBound="0"/>
+						<property name="f404027" type="xs:anyType" lowerBound="0"/>
+						<property name="f404028" type="xs:anyType" lowerBound="0"/>
+						<property name="f404029" type="xs:anyType" lowerBound="0"/>
+						<property name="f40402a" type="xs:anyType" lowerBound="0"/>
+						<property name="f40402b" type="xs:anyType" lowerBound="0"/>
+						<property name="f40402c" type="xs:anyType" lowerBound="0"/>
+						<property name="f40402d" type="xs:anyType" lowerBound="0"/>
+						<property name="f40402e" type="xs:anyType" lowerBound="0"/>
+						<property name="f40402f" type="xs:anyType" lowerBound="0"/>
+						<property name="f404030" type="xs:anyType" lowerBound="0"/>
+						<property name="f404031" type="xs:anyType" lowerBound="0"/>
+						<property name="f404032" type="xs:anyType" lowerBound="0"/>
+						<property name="f404033" type="xs:anyType" lowerBound="0"/>
+						<property name="f404034" type="xs:anyType" lowerBound="0"/>
+						<property name="f404035" type="xs:anyType" lowerBound="0"/>
+						<property name="f404036" type="xs:anyType" lowerBound="0"/>
+						<property name="f404037" type="xs:anyType" lowerBound="0"/>
+						<property name="f404038" type="xs:anyType" lowerBound="0"/>
+						<property name="f404039" type="xs:anyType" lowerBound="0"/>
+						<property name="f40403a" type="xs:anyType" lowerBound="0"/>
+						<property name="f40403b" type="xs:anyType" lowerBound="0"/>
+						<property name="f40403c" type="xs:anyType" lowerBound="0"/>
+						<property name="f40403d" type="xs:anyType" lowerBound="0"/>
+						<property name="f40403e" type="xs:anyType" lowerBound="0"/>
+						<property name="f40403f" type="xs:anyType" lowerBound="0"/>
+						<property name="f404040" type="xs:anyType" lowerBound="0"/>
+						<property name="f404041" type="xs:anyType" lowerBound="0"/>
+						<property name="f404042" type="xs:anyType" lowerBound="0"/>
+						<property name="f404043" type="xs:anyType" lowerBound="0"/>
+						<property name="f404044" type="xs:anyType" lowerBound="0"/>
+						<property name="f404045" type="xs:anyType" lowerBound="0"/>
+						<property name="f404046" type="xs:anyType" lowerBound="0"/>
+						<property name="f404047" type="xs:anyType" lowerBound="0"/>
+						<property name="f404048" type="xs:anyType" lowerBound="0"/>
+						<property name="f404049" type="xs:anyType" lowerBound="0"/>
+						<property name="f40404a" type="xs:anyType" lowerBound="0"/>
+						<property name="f40404b" type="xs:anyType" lowerBound="0"/>
+						<property name="f40404c" type="xs:anyType" lowerBound="0"/>
+						<property name="f40404d" type="xs:anyType" lowerBound="0"/>
+						<property name="f40404e" type="xs:anyType" lowerBound="0"/>
+						<property name="f40404f" type="xs:anyType" lowerBound="0"/>
+						<property name="f404050" type="xs:anyType" lowerBound="0"/>
+						<property name="f404051" type="xs:anyType" lowerBound="0"/>
+						<property name="f404052" type="xs:anyType" lowerBound="0"/>
+						<property name="f404053" type="xs:anyType" lowerBound="0"/>
+						<property name="f404054" type="xs:anyType" lowerBound="0"/>
+						<property name="f404055" type="xs:anyType" lowerBound="0"/>
+						<property name="f404056" type="xs:anyType" lowerBound="0"/>
+						<property name="f404057" type="xs:anyType" lowerBound="0"/>
+						<property name="f404058" type="xs:anyType" lowerBound="0"/>
+						<property name="f404059" type="xs:anyType" lowerBound="0"/>
+						<property name="f40405a" type="xs:anyType" lowerBound="0"/>
+						<property name="f40405b" type="xs:anyType" lowerBound="0"/>
+						<property name="f40405c" type="xs:anyType" lowerBound="0"/>
+						<property name="f40405d" type="xs:anyType" lowerBound="0"/>
+						<property name="f40405e" type="xs:anyType" lowerBound="0"/>
+						<property name="f40405f" type="xs:anyType" lowerBound="0"/>
+						<property name="f404060" type="xs:anyType" lowerBound="0"/>
+						<property name="f404061" type="xs:anyType" lowerBound="0"/>
+						<property name="f404062" type="xs:anyType" lowerBound="0"/>
+						<property name="f404063" type="xs:anyType" lowerBound="0"/>
+						<property name="f404064" type="xs:anyType" lowerBound="0"/>
+						<property name="f404065" type="xs:anyType" lowerBound="0"/>
+						<property name="f404066" type="xs:anyType" lowerBound="0"/>
+						<property name="f404067" type="xs:anyType" lowerBound="0"/>
+						<property name="f404068" type="xs:anyType" lowerBound="0"/>
+						<property name="f404069" type="xs:anyType" lowerBound="0"/>
+						<property name="f40406a" type="xs:anyType" lowerBound="0"/>
+						<property name="f40406b" type="xs:anyType" lowerBound="0"/>
+						<property name="f40406c" type="xs:anyType" lowerBound="0"/>
+						<property name="f40406d" type="xs:anyType" lowerBound="0"/>
+						<property name="f40406e" type="xs:anyType" lowerBound="0"/>
+						<property name="f40406f" type="xs:anyType" lowerBound="0"/>
+						<property name="f404070" type="xs:anyType" lowerBound="0"/>
+						<property name="f404071" type="xs:anyType" lowerBound="0"/>
+						<property name="f404072" type="xs:anyType" lowerBound="0"/>
+						<property name="f404073" type="xs:anyType" lowerBound="0"/>
+						<property name="f404074" type="xs:anyType" lowerBound="0"/>
+						<property name="f404075" type="xs:anyType" lowerBound="0"/>
+						<property name="f404076" type="xs:anyType" lowerBound="0"/>
+						<property name="f404077" type="xs:anyType" lowerBound="0"/>
+						<property name="f404078" type="xs:anyType" lowerBound="0"/>
+						<property name="f404079" type="xs:anyType" lowerBound="0"/>
+						<property name="f40407a" type="xs:anyType" lowerBound="0"/>
+						<property name="f40407b" type="xs:anyType" lowerBound="0"/>
+						<property name="f40407c" type="xs:anyType" lowerBound="0"/>
+						<property name="f40407d" type="xs:anyType" lowerBound="0"/>
+						<property name="f40407e" type="xs:anyType" lowerBound="0"/>
+						<property name="f40407f" type="xs:anyType" lowerBound="0"/>
+						<property name="f404080" type="xs:anyType" lowerBound="0"/>
+						<property name="f404081" type="xs:anyType" lowerBound="0"/>
+						<property name="f404082" type="xs:anyType" lowerBound="0"/>
+						<property name="f404083" type="xs:anyType" lowerBound="0"/>
+						<property name="f404084" type="xs:anyType" lowerBound="0"/>
+						<property name="f404085" type="xs:anyType" lowerBound="0"/>
+						<property name="f404086" type="xs:anyType" lowerBound="0"/>
+						<property name="f404087" type="xs:anyType" lowerBound="0"/>
+						<property name="f404088" type="xs:anyType" lowerBound="0"/>
+						<property name="f404089" type="xs:anyType" lowerBound="0"/>
+						<property name="f40408a" type="xs:anyType" lowerBound="0"/>
+						<property name="f40408b" type="xs:anyType" lowerBound="0"/>
+						<property name="f40408c" type="xs:anyType" lowerBound="0"/>
+						<property name="f40408d" type="xs:anyType" lowerBound="0"/>
+						<property name="f40408e" type="xs:anyType" lowerBound="0"/>
+						<property name="f40408f" type="xs:anyType" lowerBound="0"/>
+						<property name="f404090" type="xs:anyType" lowerBound="0"/>
+						<property name="f404091" type="xs:anyType" lowerBound="0"/>
+						<property name="f404092" type="xs:anyType" lowerBound="0"/>
+						<property name="f404093" type="xs:anyType" lowerBound="0"/>
+						<property name="f404094" type="xs:anyType" lowerBound="0"/>
+						<property name="f404095" type="xs:anyType" lowerBound="0"/>
+						<property name="f404096" type="xs:anyType" lowerBound="0"/>
+						<property name="f404097" type="xs:anyType" lowerBound="0"/>
+						<property name="f404098" type="xs:anyType" lowerBound="0"/>
+						<property name="f404099" type="xs:anyType" lowerBound="0"/>
+						<property name="f40409a" type="xs:anyType" lowerBound="0"/>
+						<property name="f40409b" type="xs:anyType" lowerBound="0"/>
+						<property name="f40409c" type="xs:anyType" lowerBound="0"/>
+						<property name="f40409d" type="xs:anyType" lowerBound="0"/>
+						<property name="f40409e" type="xs:anyType" lowerBound="0"/>
+						<property name="f40409f" type="xs:anyType" lowerBound="0"/>
+						<property name="f4040a0" type="xs:anyType" lowerBound="0"/>
+						<property name="f4040a1" type="xs:anyType" lowerBound="0"/>
+						<property name="f4040a2" type="xs:anyType" lowerBound="0"/>
+						<property name="f4040a3" type="xs:anyType" lowerBound="0"/>
+						<property name="f4040a4" type="xs:anyType" lowerBound="0"/>
+						<property name="f4040a5" type="xs:anyType" lowerBound="0"/>
+						<property name="f4040a6" type="xs:anyType" lowerBound="0"/>
+						<property name="f4040a7" type="xs:anyType" lowerBound="0"/>
+						<property name="f4040a8" type="xs:anyType" lowerBound="0"/>
+						<property name="f4040a9" type="xs:anyType" lowerBound="0"/>
+						<property name="f4040aa" type="xs:anyType" lowerBound="0"/>
+						<property name="f4040ab" type="xs:anyType" lowerBound="0"/>
+						<property name="f4040ac" type="xs:anyType" lowerBound="0"/>
+						<property name="f4040ad" type="xs:anyType" lowerBound="0"/>
+						<property name="f4040ae" type="xs:anyType" lowerBound="0"/>
+						<property name="f4040af" type="xs:anyType" lowerBound="0"/>
+						<property name="f4040b0" type="xs:anyType" lowerBound="0"/>
+						<property name="f4040b1" type="xs:anyType" lowerBound="0"/>
+						<property name="f4040b2" type="xs:anyType" lowerBound="0"/>
+						<property name="f4040b3" type="xs:anyType" lowerBound="0"/>
+						<property name="f4040b4" type="xs:anyType" lowerBound="0"/>
+						<property name="f4040b5" type="xs:anyType" lowerBound="0"/>
+						<property name="f4040b6" type="xs:anyType" lowerBound="0"/>
+						<property name="f4040b7" type="xs:anyType" lowerBound="0"/>
+						<property name="f4040b8" type="xs:anyType" lowerBound="0"/>
+						<property name="f4040b9" type="xs:anyType" lowerBound="0"/>
+						<property name="f4040ba" type="xs:anyType" lowerBound="0"/>
+						<property name="f4040bb" type="xs:anyType" lowerBound="0"/>
+						<property name="f4040bc" type="xs:anyType" lowerBound="0"/>
+						<property name="f4040bd" type="xs:anyType" lowerBound="0"/>
+						<property name="f4040be" type="xs:anyType" lowerBound="0"/>
+						<property name="f4040bf" type="xs:anyType" lowerBound="0"/>
+						<property name="f4040c0" type="xs:anyType" lowerBound="0"/>
+						<property name="f4040c1" type="xs:anyType" lowerBound="0"/>
+						<property name="f4040c2" type="xs:anyType" lowerBound="0"/>
+						<property name="f4040c3" type="xs:anyType" lowerBound="0"/>
+						<property name="f4040c4" type="xs:anyType" lowerBound="0"/>
+						<property name="f4040c5" type="xs:anyType" lowerBound="0"/>
+						<property name="f4040c6" type="xs:anyType" lowerBound="0"/>
+						<property name="f4040c7" type="xs:anyType" lowerBound="0"/>
+						<property name="f4040c8" type="xs:anyType" lowerBound="0"/>
+						<property xmlns:d7p1="http://schemas.microsoft.com/project/2010" name="TimephasedData" type="d7p1:TimephasedDataType" lowerBound="0" upperBound="-1"/>
+					</typeDef>
+				</property>
+			</typeDef>
+		</property>
+	</objectType>
+</package>

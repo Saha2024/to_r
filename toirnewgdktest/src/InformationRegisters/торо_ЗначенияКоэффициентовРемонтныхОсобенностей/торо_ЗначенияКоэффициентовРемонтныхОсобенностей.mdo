@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e6bda3cf-0115-49ea-b198-0901175f2615">
+  <producedTypes>
+    <selectionType typeId="1d0394e8-4dca-4161-ad63-1868bb31de4d" valueTypeId="23b6b624-e122-4553-9013-a18fcba014df"/>
+    <listType typeId="f3c7c350-05e0-49e4-8f20-8af09a11ae08" valueTypeId="3403e7d5-b289-4216-a761-718eed7ed21a"/>
+    <managerType typeId="68c017f4-2011-45a0-84fc-056b529bb53b" valueTypeId="0fee7813-3ff9-48dc-9c30-422f3cdf8568"/>
+    <recordSetType typeId="e189c0a2-e321-451f-b8c6-f8fa8e9f8359" valueTypeId="8d1eabf2-28a2-4d38-a6c3-23764217e0d1"/>
+    <recordKeyType typeId="8a0ef1ed-1b72-455c-bd3c-05f1539bdaac" valueTypeId="fda5e653-4363-489c-8243-f7044ef0efae"/>
+    <recordType typeId="3dc4ec25-b6d5-4826-adc0-9cf0ad65561c" valueTypeId="8f1f8ab5-3c4b-4feb-9b41-3798328f1a64"/>
+    <recordManagerType typeId="88730787-b718-48b1-8952-439f7a6d882a" valueTypeId="338d9c88-23e7-4c30-9110-72695e0ea475"/>
+  </producedTypes>
+  <name>торо_ЗначенияКоэффициентовРемонтныхОсобенностей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Значения коэффициентов ремонтных особенностей</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <toolTip>
+      <key>ru</key>
+      <value>(Период)</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <resources uuid="4fcc9254-2cd7-4fe5-9607-7ba43de1d8b7">
+    <name>ЗначениеКоэффициента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение коэффициента</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ЗначенияКоэффициентовРемонтныхОсобенностей</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Значение коэффициента)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b3ed8426-5184-424d-a497-f70576e39012">
+    <name>Использование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использование</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Использование)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="5fd266b7-d99d-4d11-ab9f-df5dd0fe76fb">
+    <name>ОбъектРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект ремонта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ОбъектыРемонта</types>
+      <types>CatalogRef.торо_СписокОбъектовРегламентногоМероприятия</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Объект ремонта)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="1ef4cb73-1bbb-4a3a-87bd-6c65d14dcc6f">
+    <name>ВидКоэффициента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид коэффициента</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ВидыКоэффициентовРемонтныхОсобенностей</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Вид коэффициента)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ca1c04a4-7f11-46df-8462-d9b3bee16418">
+  <producedTypes>
+    <objectType typeId="40b349b5-4685-45c4-b895-7f02a70d5875" valueTypeId="0fa606dd-6b8e-4bbc-88f9-92c5c6afb1dc"/>
+    <managerType typeId="f5db79fa-4ab2-45e5-a1db-d9d5ca6b1a6b" valueTypeId="6c8dde8e-6d5e-4e57-a081-53dd9106def2"/>
+  </producedTypes>
+  <name>проф_РасчетСреднегодовогоЗначенияНаработки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расчет среднегодового значения наработки (Проф-ИТ)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.проф_РасчетСреднегодовогоЗначенияНаработки.Form.Форма</defaultForm>
+  <explanation>
+    <key>ru</key>
+    <value>Производить расчет перед формирования графика ППР на период год и более (для расчета годовой потребности в ТМЦ и сотрудников)</value>
+  </explanation>
+  <forms uuid="9664fd0d-9981-4c52-8808-d33c395f3dd9">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="4d861e24-c9f3-49f5-9682-77d0883dfde8">
+    <name>проф_РасчетСреднегодовогоЗначенияНаработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расчет среднегодового значения наработки</value>
+    </synonym>
+    <group>NavigationPanelImportant</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+    <toolTip>
+      <key>ru</key>
+      <value>Производить расчет перед формирования графика ППР на период год и более (для расчета годовой потребности в ТМЦ и сотрудников)</value>
+    </toolTip>
+  </commands>
+</mdclass:DataProcessor>

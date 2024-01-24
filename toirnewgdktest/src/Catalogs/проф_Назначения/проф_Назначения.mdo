@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9ffd7683-e584-474a-b265-31df63ffc5a9">
+  <producedTypes>
+    <objectType typeId="2ffddf2a-1af3-4d03-acbf-69e4ce607af5" valueTypeId="a560c350-a163-4e44-9b2e-b0e434d4a0d4"/>
+    <refType typeId="fa97c900-98f1-41ef-a165-c4217562908c" valueTypeId="fc019d66-b4d2-445c-979b-92c0a38c6518"/>
+    <selectionType typeId="b8c4c7e3-d06d-4091-8429-64ee138bcd1e" valueTypeId="454eb9d3-5c3b-40ac-9536-0282abb79b54"/>
+    <listType typeId="28d2bc6e-8a86-488a-985f-c9f744ae4b26" valueTypeId="cb33b026-838f-4e54-b09c-d5b1ace785ed"/>
+    <managerType typeId="0e600cf1-786c-4eef-96b8-4d150eb3f3c1" valueTypeId="85369215-080d-4ea0-bec9-6d0d10581296"/>
+  </producedTypes>
+  <name>проф_Назначения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Назначения</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.проф_Назначения.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="fe2cc228-8fb0-4209-9c64-f8d7349cf1a0">
+    <name>ВидДеятельностиНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид деятельности НДС</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипыНалогообложенияНДС</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d873557d-2cd2-49b8-b9b9-ba74907ab271">
+    <name>ДвиженияПоСкладскимРегистрам</name>
+    <synonym>
+      <key>ru</key>
+      <value>Движения по складским регистрам</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ac1cff61-ca3f-43ba-98e8-a73eede81b43">
+    <name>Заказ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказ</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.торо_ЗакрытиеЗаказаНаВнутреннееПотребление</types>
+      <types>DocumentRef.торо_ЗаказПоставщику</types>
+      <types>DocumentRef.торо_РезервПодВнутреннийЗаказ</types>
+      <types>DocumentRef.ЗаказНаВнутреннееПотребление</types>
+      <types>DocumentRef.торо_ЗаявкаНаРемонт</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="dfcd486f-ce81-4d09-95fb-ac1dc450ccc2">
+    <name>КонтролироватьТолькоНаличие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контролировать только наличие</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0005b69f-a259-4c75-ac02-65ccc9e14578">
+    <name>НаправлениеДеятельности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Направление деятельности</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.проф_НаправленияДеятельности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2635dfe1-50d3-44bc-b327-52eaf52f459d">
+    <name>ТипНазначения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип назначения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.проф_ТипыНазначений</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4b2e17e5-1e7a-4d58-a2ee-2b5810f1fb86">
+    <name>ТипОбъектаНазначения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип объекта назначения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.проф_ТипОбъектаНазначения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="30556ed4-3c87-4803-9f56-54b8640f13fa">
+    <name>CostCode</name>
+    <synonym>
+      <key>ru</key>
+      <value>Cost-code</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="710428d6-cf35-40d5-ba2f-b8358d3e48d1">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтруктураПредприятия</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d17a6c84-8090-4a0b-be0c-41c4f0e1e94b">
+    <name>ИДЗаказа</name>
+    <synonym>
+      <key>ru</key>
+      <value>ИД заказа</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

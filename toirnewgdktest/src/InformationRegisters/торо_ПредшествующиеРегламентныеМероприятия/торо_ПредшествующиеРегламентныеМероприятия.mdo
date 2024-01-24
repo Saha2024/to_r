@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="45af07c4-6216-4412-95a3-211b954c9b8c">
+  <producedTypes>
+    <selectionType typeId="40fb7bed-7af6-4c01-8d0c-0f2b921964d6" valueTypeId="a8b78664-596c-41ca-a8cc-7f4ac96745af"/>
+    <listType typeId="0942179d-6430-4ee9-b152-47d40230aa29" valueTypeId="c7952172-96ef-4864-adff-0f4d597ddd2e"/>
+    <managerType typeId="2a2ba289-8b05-4c9a-82bd-048c6d9a3e76" valueTypeId="63b9cc09-08e4-46fa-8266-1d2ab465ef16"/>
+    <recordSetType typeId="820f41c7-50a1-4ee9-b0a7-f1bcb41d1018" valueTypeId="d25bf384-f9d6-4bde-b4ba-f92778387dbd"/>
+    <recordKeyType typeId="1e9f6beb-102c-46cb-8143-b77c76ceb0f3" valueTypeId="830c0337-f766-473f-b8a5-ff60fe4bca33"/>
+    <recordType typeId="271bccb5-5eb0-49fc-8fb2-122034cebbe6" valueTypeId="15d7d802-181d-4f3a-8912-2682219f81eb"/>
+    <recordManagerType typeId="74e174f5-e585-4cd3-ab24-139c6605638e" valueTypeId="556880f0-51d7-41f0-8a52-778f95073a1f"/>
+  </producedTypes>
+  <name>торо_ПредшествующиеРегламентныеМероприятия</name>
+  <synonym>
+    <key>ru</key>
+    <value>Предшествующие регламентные мероприятия</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dimensions uuid="29123d58-3c5d-4054-be1d-0fe46dc87c96">
+    <name>ВидМероприятия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид мероприятия</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ВидыРемонтов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид мероприятия, для которого устанавливается предшествующий</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="7b6f8b91-2aeb-4ab5-8c22-3a80dcbd539a">
+    <name>СписокОбъектов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список объектов</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_СписокОбъектовРегламентногоМероприятия</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Список объектов регламентных мероприятий</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="1858b0a6-c11b-481e-9421-91bc6e0252c8">
+    <name>ПредшествующийВидМероприятия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предшествующий вид мероприятия</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ВидыРемонтов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид мероприятия, предшествующий указанному</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

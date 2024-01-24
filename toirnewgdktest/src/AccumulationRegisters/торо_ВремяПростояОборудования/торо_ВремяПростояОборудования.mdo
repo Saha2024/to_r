@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="80f6a0ab-4c00-419e-8981-1c375a2ecf79">
+  <producedTypes>
+    <selectionType typeId="b5e872de-af9b-4be2-a26f-9e0bf2ecbf2d" valueTypeId="af02004e-e8fd-492b-9122-1340f946b5e0"/>
+    <listType typeId="c13e5dd4-e593-4d9a-8b29-426aa01525a4" valueTypeId="efc9198d-b2b7-48b5-9135-b7a02dd61728"/>
+    <managerType typeId="719b79ab-e221-4f6c-929d-0acea84f7939" valueTypeId="82f36f4a-d72c-45e7-8a16-d77f002ebf86"/>
+    <recordSetType typeId="f92b6d47-2c22-4856-a5ef-eba4892de873" valueTypeId="506cf589-bfc6-4433-a345-e89072bfdec4"/>
+    <recordKeyType typeId="e9599feb-22c9-43b0-90de-535e001fd0fe" valueTypeId="f1032d8d-e6d1-40f4-bc4b-d5696f78bd1d"/>
+    <recordType typeId="1d8c29b1-2cee-45a8-81a4-6f1ea32e28a6" valueTypeId="9b5b3add-7ea0-468e-976c-f1e307ee8dae"/>
+  </producedTypes>
+  <name>торо_ВремяПростояОборудования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Время простоя оборудования</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Период записи регистра</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <resources uuid="fa5654be-9701-4ad9-b113-0b8af17aca93">
+    <name>ВремяПростоя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Время простоя</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Время простоя оборудования в секундах</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="1e596dbe-6d3c-447a-9374-c6ea1efbb407">
+    <name>ОбъектРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект ремонта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ОбъектыРемонта</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Объект ремонта, по которому отражается простой</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="ed498108-93d6-46e6-b43f-f6986af777ac">
+    <name>ПричинаПростоя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Причина простоя</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ПричиныПростояОборудования</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Причина простоя объекта ремонта</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="eeb4cc28-25fb-44f9-969b-5161f34518b2">
+    <name>ДатаЗапуска</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата запуска</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Дата запуска объекта ремонта</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

@@ -1,0 +1,987 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="android">
+	<objectType name="Координаты">
+		<property name="Период" type="xs:dateTime"/>
+		<property name="Пользователь" type="xs:string"/>
+		<property name="Широта" type="xs:double"/>
+		<property name="Долгота" type="xs:double"/>
+		<property name="Высота" type="xs:double"/>
+		<property name="ВидУстановкиМестоположения" type="xs:string"/>
+		<property name="Документ" type="xs:string"/>
+	</objectType>
+	<objectType name="СписокКоординат">
+		<property xmlns:d3p1="android" name="Координаты" type="d3p1:Координаты" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="Акт">
+		<property name="Дата" type="xs:dateTime" lowerBound="0" nillable="true"/>
+		<property name="УИДДокументаВБазеТОиР" type="xs:string"/>
+		<property name="Подразделение" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Организация" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Комментарий" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Ответственный" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="ID" type="xs:string"/>
+		<property name="ОбъектРемонта" type="xs:string"/>
+		<property name="ВидРемонта" type="xs:string"/>
+		<property name="Передан" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="Ссылка" type="xs:string"/>
+		<property name="ДатаНачала" type="xs:dateTime"/>
+		<property name="ДатаОкончания" type="xs:dateTime"/>
+		<property name="ДатыИзмененыВручную" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="android" name="Операции" type="d3p1:СписокРемонтныхРабот" nillable="false"/>
+		<property xmlns:d3p1="android" name="Материалы" type="d3p1:СписокМатериалов" nillable="false"/>
+		<property xmlns:d3p1="android" name="ТрудовыеЗатраты" type="d3p1:СписокТрудовыхЗатратАкта" nillable="false"/>
+		<property name="ЗавершитьРемонт" type="xs:boolean"/>
+		<property name="Проведен" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="ПометкаУдаления" type="xs:boolean" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="ТрудовыеЗатратыАкта">
+		<property name="ID" type="xs:string"/>
+		<property name="ДатаНачала" type="xs:dateTime"/>
+		<property name="ДатаОкончания" type="xs:dateTime"/>
+		<property name="Квалификация" type="xs:string"/>
+		<property name="Сотрудник" type="xs:string"/>
+		<property name="ВремяРаботы" type="xs:float"/>
+	</objectType>
+	<objectType name="СписокТрудовыхЗатратАкта">
+		<property xmlns:d3p1="android" name="ТрудовыеЗатраты" type="d3p1:ТрудовыеЗатратыАкта" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="СсылкаОР">
+		<property name="Код" type="xs:string"/>
+		<property name="КодОЭ" type="xs:string"/>
+		<property name="ДатаВД" type="xs:dateTime"/>
+	</objectType>
+	<objectType name="СписокСсылокОР">
+		<property xmlns:d3p1="android" name="ОбъектыРемонта" type="d3p1:СсылкаОР" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="ОР">
+		<property name="ГУИД" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Код" type="xs:string"/>
+		<property name="Наименование" type="xs:string" nillable="true"/>
+		<property name="РемонтнаяГруппа" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="ИнвентарныйНомер" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="ДатаВводаВЭксплуатацию" type="xs:dateTime" lowerBound="0" nillable="true"/>
+		<property name="ВнешнийОбъект" type="xs:boolean" lowerBound="0"/>
+		<property name="Контрагент" type="xs:string" lowerBound="0" nillable="true" fixed="false"/>
+		<property name="ДоговорКонтрагента" type="xs:string" lowerBound="0" nillable="true" fixed="false"/>
+		<property name="НомерПаспорта" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Комментарий" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="ДатаВыпуска" type="xs:dateTime" lowerBound="0" nillable="true"/>
+		<property name="Подразделение" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="ПодразделениеИсполнитель" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Организация" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="ШтрихКод" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="ЭтоГруппа" type="xs:boolean"/>
+		<property name="РодительКод" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="ЗаводскойНомер" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="ТехНомер" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Направление" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="ПометкаУдаления" type="xs:boolean" lowerBound="0"/>
+		<property name="Широта" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Долгота" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Высота" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Приоритет" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="ЭтоФМ" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="Местонахождение" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Адрес" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Регистратор" type="xs:string" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="СписокОР">
+		<property xmlns:d3p1="android" name="ОР" type="d3p1:ОР" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="СписокСписковОРМ">
+		<property xmlns:d3p1="android" name="СписокОбъектовРМ" type="d3p1:СписокОбъектовРМ" upperBound="-1"/>
+	</objectType>
+	<objectType name="СписокОбъектовРМ">
+		<property name="ГУИД" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Код" type="xs:string"/>
+		<property name="Наименование" type="xs:string"/>
+		<property name="Комментарий" type="xs:string" lowerBound="0"/>
+		<property name="ПодразделениеИсполнитель" type="xs:string" nillable="true"/>
+		<property name="ПометкаУдаления" type="xs:boolean"/>
+		<property xmlns:d3p1="android" name="Родитель" type="d3p1:СписокОбъектовРМ" nillable="true"/>
+		<property name="ЭтоГруппа" type="xs:boolean"/>
+		<property name="Удалить" type="xs:boolean" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="Организации">
+		<property name="ГУИД" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Код" type="xs:string"/>
+		<property name="Наименование" type="xs:string"/>
+		<property name="Комментарий" type="xs:string" lowerBound="0"/>
+		<property name="НаименованиеПолное" type="xs:string" lowerBound="0"/>
+		<property name="Префикс" type="xs:string" lowerBound="0"/>
+		<property name="ПометкаУдаления" type="xs:boolean"/>
+		<property name="Удалить" type="xs:boolean" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="СписокОрганизаций">
+		<property xmlns:d3p1="android" name="Организации" type="d3p1:Организации" upperBound="-1"/>
+	</objectType>
+	<objectType name="Склады">
+		<property name="УИД" type="xs:string"/>
+		<property name="Наименование" type="xs:string"/>
+		<property name="ЭтоГруппа" type="xs:boolean"/>
+		<property name="УИДРодителя" type="xs:string" nillable="true"/>
+		<property name="ПометкаУдаления" type="xs:boolean"/>
+		<property name="Удалить" type="xs:boolean" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="СписокСкладов">
+		<property xmlns:d3p1="android" name="Склады" type="d3p1:Склады" upperBound="-1"/>
+	</objectType>
+	<objectType name="ВидыДефектов">
+		<property name="ГУИД" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Код" type="xs:string"/>
+		<property name="Наименование" type="xs:string"/>
+		<property name="Комментарий" type="xs:string"/>
+		<property name="ЭтоГруппа" type="xs:boolean"/>
+		<property xmlns:d3p1="android" name="Родитель" type="d3p1:ВидыДефектов" nillable="true"/>
+		<property name="ПометкаУдаления" type="xs:boolean"/>
+		<property name="Удалить" type="xs:boolean" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="СписокВидовДефектов">
+		<property xmlns:d3p1="android" name="ВидыДефектов" type="d3p1:ВидыДефектов" upperBound="-1"/>
+	</objectType>
+	<objectType name="ВидыРемонтов">
+		<property name="ГУИД" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Код" type="xs:string"/>
+		<property name="Наименование" type="xs:string"/>
+		<property name="ЭтоГруппа" type="xs:boolean"/>
+		<property xmlns:d3p1="android" name="Родитель" type="d3p1:ВидыРемонтов" nillable="true"/>
+		<property name="ПометкаУдаления" type="xs:boolean"/>
+		<property name="Удалить" type="xs:boolean" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="СписокВидовРемонтов">
+		<property xmlns:d3p1="android" name="ВидыРемонтов" type="d3p1:ВидыРемонтов" upperBound="-1"/>
+	</objectType>
+	<objectType name="ТехОперации">
+		<property name="ГУИД" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Код" type="xs:string"/>
+		<property name="Наименование" type="xs:string"/>
+		<property name="ЭтоГруппа" type="xs:boolean"/>
+		<property xmlns:d3p1="android" name="Родитель" type="d3p1:ТехОперации" nillable="true"/>
+		<property name="СодержаниеРабот" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="ПометкаУдаления" type="xs:boolean"/>
+		<property name="Удалить" type="xs:boolean" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="СписокТехОпераций">
+		<property xmlns:d3p1="android" name="ТехОперации" type="d3p1:ТехОперации" upperBound="-1"/>
+	</objectType>
+	<objectType name="ТехКарты">
+		<property name="ГУИД" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Код" type="xs:string"/>
+		<property name="Наименование" type="xs:string"/>
+		<property name="ЭтоГруппа" type="xs:boolean"/>
+		<property xmlns:d3p1="android" name="Родитель" type="d3p1:ТехКарты" nillable="true"/>
+		<property name="ПометкаУдаления" type="xs:boolean"/>
+		<property name="Статус" type="xs:string" lowerBound="0"/>
+		<property name="Удалить" type="xs:boolean" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="СписокТехКарт">
+		<property xmlns:d3p1="android" name="ТехКарты" type="d3p1:ТехКарты" upperBound="-1"/>
+	</objectType>
+	<objectType name="ВерсииТехКарт">
+		<property name="ГУИД" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Код" type="xs:string"/>
+		<property name="Наименование" type="xs:string"/>
+		<property name="ЭтоГруппа" type="xs:boolean"/>
+		<property xmlns:d3p1="android" name="Родитель" type="d3p1:ВерсииТехКарт" nillable="true"/>
+		<property name="ПометкаУдаления" type="xs:boolean"/>
+		<property xmlns:d3p1="android" name="Операции" type="d3p1:СписокОперацийТехКарты"/>
+		<property name="ДатаПринятия" type="xs:date" lowerBound="1"/>
+		<property name="Удалить" type="xs:boolean" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="СписокВерсийТехКарт">
+		<property xmlns:d3p1="android" name="ВерсииТехКарт" type="d3p1:ВерсииТехКарт" upperBound="-1"/>
+	</objectType>
+	<objectType name="ОперацииТехКарты">
+		<property name="ГУИД" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="ID" type="xs:string"/>
+		<property name="Количество" type="xs:float"/>
+		<property name="НормаВремениВСекундах" type="xs:int"/>
+		<property name="Операция" type="xs:string"/>
+		<property name="Продолжительность" type="xs:float"/>
+		<property name="ID_ПараллельнойОперации" type="xs:string"/>
+	</objectType>
+	<objectType name="СписокОперацийТехКарты">
+		<property xmlns:d3p1="android" name="ОперацииТехКарты" type="d3p1:ОперацииТехКарты" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="ФайлыТехКарты">
+		<property name="ГУИД" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Наименование" type="xs:string"/>
+		<property name="Расширение" type="xs:string"/>
+		<property name="Комментарий" type="xs:string" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="СписокФайловТехКарты">
+		<property xmlns:d3p1="android" name="ФайлыТехКарты" type="d3p1:ФайлыТехКарты" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="ЕдиницыИзмерения">
+		<property name="ГУИД" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Код" type="xs:string"/>
+		<property name="Наименование" type="xs:string"/>
+		<property name="НаименованиеПолное" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="МеждународноеСокращение" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="ПометкаУдаления" type="xs:boolean"/>
+		<property name="Удалить" type="xs:boolean" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="СписокЕдиницИзмерения">
+		<property xmlns:d3p1="android" name="ЕдиницыИзмерения" type="d3p1:ЕдиницыИзмерения" upperBound="-1"/>
+	</objectType>
+	<objectType name="Сотрудники">
+		<property name="ГУИД" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Код" type="xs:string"/>
+		<property name="Наименование" type="xs:string"/>
+		<property name="ПометкаУдаления" type="xs:boolean"/>
+		<property name="Пользователи" type="xs:string" lowerBound="0" upperBound="-1"/>
+		<property name="Удалить" type="xs:boolean" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="СписокСотрудников">
+		<property xmlns:d3p1="android" name="Сотрудники" type="d3p1:Сотрудники" upperBound="-1"/>
+	</objectType>
+	<objectType name="Квалификации">
+		<property name="ГУИД" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Код" type="xs:string"/>
+		<property name="Наименование" type="xs:string"/>
+		<property name="ПометкаУдаления" type="xs:boolean"/>
+		<property name="Удалить" type="xs:boolean" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="СписокКвалификаций">
+		<property xmlns:d3p1="android" name="Квалификации" type="d3p1:Квалификации" upperBound="-1"/>
+	</objectType>
+	<objectType name="ЗаявкиНаРемонт">
+		<property name="Дата" type="xs:dateTime"/>
+		<property name="Номер" type="xs:string"/>
+		<property name="ПометкаУдаления" type="xs:boolean"/>
+		<property name="УИДДокументаВБазеТОиР" type="xs:string"/>
+		<property name="Проведен" type="xs:boolean"/>
+		<property name="Подразделение" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Организация" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Комментарий" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="ID" type="xs:string"/>
+		<property name="ОбъектРемонта" type="xs:string"/>
+		<property name="ВидРемонта" type="xs:string"/>
+		<property name="ДатаНачала" type="xs:dateTime"/>
+		<property name="ДатаОкончания" type="xs:dateTime"/>
+		<property name="ОписаниеРемонта" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="ДатаИнцидента" type="xs:dateTime" nillable="true"/>
+		<property name="КонтактноеЛицоИнициатора" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="ДефектОписание" type="xs:string" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="android" name="Операции" type="d3p1:СписокРемонтныхРабот"/>
+		<property xmlns:d3p1="android" name="Материалы" type="d3p1:СписокМатериалов"/>
+		<property xmlns:d3p1="android" name="Квалификации" type="d3p1:СписокТрудовыхЗатрат"/>
+		<property name="СтатусДокумента" type="xs:string"/>
+		<property name="КомментарийКСтатусу" type="xs:string"/>
+		<property name="КритичностьДефекта" type="xs:string" nillable="true"/>
+		<property name="Высота" type="xs:double" nillable="true"/>
+		<property name="Долгота" type="xs:double" nillable="true"/>
+		<property name="Широта" type="xs:double" nillable="true"/>
+	</objectType>
+	<objectType name="СписокЗаявокНаРемонт">
+		<property xmlns:d3p1="android" name="ЗаявкиНаРемонт" type="d3p1:ЗаявкиНаРемонт" upperBound="-1"/>
+	</objectType>
+	<objectType name="РемонтныеРаботы">
+		<property name="ID" type="xs:string"/>
+		<property name="ID_ПараллельнойОперации" type="xs:string"/>
+		<property name="РемонтнаяРабота" type="xs:string"/>
+		<property name="Родитель_ID" type="xs:string"/>
+		<property name="Количество" type="xs:float"/>
+		<property name="Картинка" type="xs:int"/>
+		<property name="Исполнитель" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Бригада" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="ИсполнительКонтрагент" type="xs:boolean" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="СписокРемонтныхРабот">
+		<property xmlns:d3p1="android" name="РемонтныеРаботы" type="d3p1:РемонтныеРаботы" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="Материалы">
+		<property name="ID" type="xs:string"/>
+		<property name="Количество" type="xs:float"/>
+		<property name="Номенклатура" type="xs:string"/>
+		<property name="КоличествоЕдиниц" type="xs:float"/>
+		<property name="ХарактеристикаНоменклатуры" type="xs:string"/>
+	</objectType>
+	<objectType name="СписокМатериалов">
+		<property xmlns:d3p1="android" name="Материалы" type="d3p1:Материалы" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="ТрудовыеЗатраты">
+		<property name="ID" type="xs:string"/>
+		<property name="ВремяРаботы" type="xs:float"/>
+		<property name="Квалификация" type="xs:string"/>
+		<property name="Количество" type="xs:float"/>
+	</objectType>
+	<objectType name="СписокТрудовыхЗатрат">
+		<property xmlns:d3p1="android" name="ТрудовыеЗатраты" type="d3p1:ТрудовыеЗатраты" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="ИзмеряемыеПоказателиОбъектовРемонта">
+		<property name="ГУИД" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Код" type="xs:string"/>
+		<property name="Наименование" type="xs:string"/>
+		<property name="ЕдиницаИзмерения" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="ПометкаУдаления" type="xs:boolean"/>
+		<property name="ТипЗначения" type="xs:string"/>
+		<property name="Удалить" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="ЭтоГруппа" type="xs:boolean"/>
+		<property xmlns:d3p1="android" name="Родитель" type="d3p1:ИзмеряемыеПоказателиОбъектовРемонта" nillable="true"/>
+	</objectType>
+	<objectType name="СписокИзмеряемыхПоказателей">
+		<property xmlns:d3p1="android" name="ИзмеряемыеПоказателиОбъектовРемонта" type="d3p1:ИзмеряемыеПоказателиОбъектовРемонта" upperBound="-1"/>
+	</objectType>
+	<objectType name="ЗначенияИзмеряемыхПоказателейОбъектовРемонта">
+		<property name="ГУИД" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Код" type="xs:string"/>
+		<property name="Наименование" type="xs:string"/>
+		<property name="ЭтоГруппа" type="xs:boolean"/>
+		<property xmlns:d3p1="android" name="Родитель" type="d3p1:ЗначенияИзмеряемыхПоказателейОбъектовРемонта" nillable="true"/>
+		<property name="ПометкаУдаления" type="xs:boolean"/>
+		<property name="КодВладельца" type="xs:string" lowerBound="0"/>
+		<property name="Удалить" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="Недопустимое" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="Критическое" type="xs:boolean" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="СписокЗначенийИзмеряемыхПоказателей">
+		<property xmlns:d3p1="android" name="ЗначенияИзмеряемыхПоказателейОбъектовРемонта" type="d3p1:ЗначенияИзмеряемыхПоказателейОбъектовРемонта" upperBound="-1"/>
+	</objectType>
+	<objectType name="Номенклатура">
+		<property name="ГУИД" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Код" type="xs:string"/>
+		<property name="Наименование" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="ЭтоГруппа" type="xs:boolean"/>
+		<property name="ЕдиницаИзмерения" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Артикул" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="ПометкаУдаления" type="xs:boolean"/>
+		<property xmlns:d3p1="android" name="Родитель" type="d3p1:Номенклатура" nillable="true"/>
+		<property name="ВидНоменклатуры" type="xs:string" lowerBound="0"/>
+		<property name="ИспользованиеХарактеристик" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Удалить" type="xs:boolean" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="СписокНоменклатуры">
+		<property xmlns:d3p1="android" name="Номенклатура" type="d3p1:Номенклатура" upperBound="-1"/>
+	</objectType>
+	<objectType name="ПричиныДефектов">
+		<property name="ГУИД" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Код" type="xs:string"/>
+		<property name="Наименование" type="xs:string"/>
+		<property name="ПометкаУдаления" type="xs:boolean"/>
+		<property name="Удалить" type="xs:boolean" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="СписокПричинДефектов">
+		<property xmlns:d3p1="android" name="ПричиныДефектов" type="d3p1:ПричиныДефектов" upperBound="-1"/>
+	</objectType>
+	<objectType name="ПричиныПростояОборудования">
+		<property name="ГУИД" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Код" type="xs:string"/>
+		<property name="Наименование" type="xs:string"/>
+		<property name="ВидПростоя" type="xs:string"/>
+		<property name="ЭтоГруппа" type="xs:boolean"/>
+		<property xmlns:d3p1="android" name="Родитель" type="d3p1:ПричиныПростояОборудования" nillable="true"/>
+		<property name="ПометкаУдаления" type="xs:boolean"/>
+		<property name="Удалить" type="xs:boolean" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="СписокПричинПростоев">
+		<property xmlns:d3p1="android" name="ПричиныПростояОборудования" type="d3p1:ПричиныПростояОборудования" upperBound="-1"/>
+	</objectType>
+	<objectType name="РемонтныеГруппы">
+		<property name="ГУИД" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Код" type="xs:string"/>
+		<property name="Наименование" type="xs:string"/>
+		<property name="Комментарий" type="xs:string"/>
+		<property name="ЭтоГруппа" type="xs:boolean"/>
+		<property xmlns:d3p1="android" name="Родитель" type="d3p1:РемонтныеГруппы" nillable="true"/>
+		<property name="ПометкаУдаления" type="xs:boolean"/>
+		<property name="Удалить" type="xs:boolean" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="СписокРемонтныхГрупп">
+		<property xmlns:d3p1="android" name="РемонтныеГруппы" type="d3p1:РемонтныеГруппы" upperBound="-1"/>
+	</objectType>
+	<objectType name="ПараметрыВыработкиОС">
+		<property name="ГУИД" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Код" type="xs:string"/>
+		<property name="Наименование" type="xs:string"/>
+		<property name="ЕдиницаИзмерения" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="ПометкаУдаления" type="xs:boolean"/>
+		<property name="Удалить" type="xs:boolean" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="СписокПараметровВыработкиОС">
+		<property xmlns:d3p1="android" name="ПараметрыВыработкиОС" type="d3p1:ПараметрыВыработкиОС" upperBound="-1"/>
+	</objectType>
+	<objectType name="ТиповыеДефектыОборудования">
+		<property name="Код" type="xs:string"/>
+		<property name="Наименование" type="xs:string"/>
+		<property name="ВидДефекта" type="xs:string" nillable="true"/>
+		<property name="КритичностьДефекта" type="xs:string" nillable="true"/>
+		<property name="ОписаниеДефекта" type="xs:string" nillable="true"/>
+		<property name="ПричинаДефекта" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Направление" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="ЭтоГруппа" type="xs:boolean"/>
+		<property xmlns:d3p1="android" name="Родитель" type="d3p1:ТиповыеДефектыОборудования" nillable="true"/>
+		<property name="ПометкаУдаления" type="xs:boolean"/>
+		<property name="ПоследствиеДефекта" type="xs:string" nillable="true"/>
+		<property name="НаправлениеНаУстранение" type="xs:string" nillable="true"/>
+		<property name="ГУИД" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Удалить" type="xs:boolean" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="СписокТиповыхДефектовОборудования">
+		<property xmlns:d3p1="android" name="ТиповыеДефектыОборудования" type="d3p1:ТиповыеДефектыОборудования" upperBound="-1"/>
+	</objectType>
+	<objectType name="КритичностиДефекта">
+		<property name="ГУИД" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Код" type="xs:string"/>
+		<property name="Наименование" type="xs:string"/>
+		<property name="ПометкаУдаления" type="xs:boolean"/>
+		<property name="Порядок" type="xs:int" lowerBound="0"/>
+		<property name="Удалить" type="xs:boolean" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="СписокКритичностейДефекта">
+		<property xmlns:d3p1="android" name="КритичностиДефекта" type="d3p1:КритичностиДефекта" upperBound="-1"/>
+	</objectType>
+	<objectType name="УсловияВыявленияДефекта">
+		<property name="ГУИД" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Код" type="xs:string"/>
+		<property name="Наименование" type="xs:string"/>
+		<property name="ПометкаУдаления" type="xs:boolean"/>
+		<property name="Удалить" type="xs:boolean" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="СписокУсловийВыявленияДефекта">
+		<property xmlns:d3p1="android" name="УсловияВыявленияДефекта" type="d3p1:УсловияВыявленияДефекта" upperBound="-1"/>
+	</objectType>
+	<objectType name="Подразделения">
+		<property name="ГУИД" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Код" type="xs:string"/>
+		<property name="Наименование" type="xs:string"/>
+		<property xmlns:d3p1="android" name="Родитель" type="d3p1:Подразделения" nillable="true"/>
+		<property name="ПометкаУдаления" type="xs:boolean"/>
+		<property name="Удалить" type="xs:boolean" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="СписокПодразделений">
+		<property xmlns:d3p1="android" name="Подразделения" type="d3p1:Подразделения" upperBound="-1"/>
+	</objectType>
+	<objectType name="ВидыЭксплуатации">
+		<property name="ГУИД" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Код" type="xs:string"/>
+		<property name="Наименование" type="xs:string"/>
+		<property name="ЭтоГруппа" type="xs:boolean"/>
+		<property xmlns:d3p1="android" name="Родитель" type="d3p1:ВидыЭксплуатации" nillable="true"/>
+		<property name="ПометкаУдаления" type="xs:boolean"/>
+		<property name="ТипЭксплуатации" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="ОбязательныйВводВидаПуска" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="Удалить" type="xs:boolean" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="СписокВидовЭксплуатации">
+		<property xmlns:d3p1="android" name="ВидыЭксплуатации" type="d3p1:ВидыЭксплуатации" upperBound="-1"/>
+	</objectType>
+	<objectType name="ВидыПусковОр">
+		<property name="ГУИД" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Код" type="xs:string"/>
+		<property name="Наименование" type="xs:string"/>
+		<property name="ПометкаУдаления" type="xs:boolean"/>
+		<property name="Удалить" type="xs:boolean" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="СписокВидовПусковОр">
+		<property xmlns:d3p1="android" name="ВидыПусковОр" type="d3p1:ВидыПусковОр" upperBound="-1"/>
+	</objectType>
+	<objectType name="НаработкаОР">
+		<property name="ОбъектРемонта" type="xs:string" lowerBound="1"/>
+		<property name="Показатель" type="xs:string" lowerBound="1"/>
+		<property name="ДатаКон" type="xs:dateTime"/>
+		<property name="Наработка" type="xs:string" lowerBound="1"/>
+	</objectType>
+	<objectType name="СписокНаработкаОР">
+		<property xmlns:d3p1="android" name="НаработкаОР" type="d3p1:НаработкаОР" upperBound="-1"/>
+	</objectType>
+	<objectType name="ТекущееСостояниеОР">
+		<property name="Дата" type="xs:dateTime"/>
+		<property name="ОбъектРемонта" type="xs:string" lowerBound="1"/>
+		<property name="ВидЭксплуатации" type="xs:string" lowerBound="1"/>
+		<property name="Примечание" type="xs:string" lowerBound="1"/>
+	</objectType>
+	<objectType name="СписокТекущееСостояниеОР">
+		<property xmlns:d3p1="android" name="ТекущееСостояниеОР" type="d3p1:ТекущееСостояниеОР" upperBound="-1"/>
+	</objectType>
+	<objectType name="ИзмеряемыеПоказателиОР">
+		<property name="Дата" type="xs:dateTime"/>
+		<property name="ОбъектРемонта" type="xs:string" lowerBound="1"/>
+		<property name="ДопустимыйМинимум" type="xs:string" lowerBound="1"/>
+		<property name="Показатель" type="xs:string" lowerBound="1"/>
+		<property name="ДопустимыйМаксимум" type="xs:string" lowerBound="1"/>
+		<property name="КритическийМинимум" type="xs:string" lowerBound="1"/>
+		<property name="КритическийМаксимум" type="xs:string" lowerBound="1"/>
+		<property name="ПометкаУдаления" type="xs:boolean"/>
+	</objectType>
+	<objectType name="СписокИзмеряемыеПоказателиОР">
+		<property xmlns:d3p1="android" name="ИзмеряемыеПоказателиОР" type="d3p1:ИзмеряемыеПоказателиОР" upperBound="-1"/>
+	</objectType>
+	<objectType name="ПараметрыНаработкиОР">
+		<property name="Дата" type="xs:dateTime"/>
+		<property name="ОбъектРемонта" type="xs:string" lowerBound="1"/>
+		<property name="Показатель" type="xs:string" lowerBound="1"/>
+		<property name="ПлановаяНаработка" type="xs:string" lowerBound="1"/>
+		<property name="ПериодПлановойНаработки" type="xs:string" lowerBound="1"/>
+		<property name="ПродолжительностьПериодаПлановойНаработки" type="xs:string" lowerBound="1"/>
+		<property name="КоэффициентИспользованияОборудования" type="xs:string" lowerBound="1"/>
+	</objectType>
+	<objectType name="рс_ПараметрыНаработки">
+		<property name="ОбъектРемонта" type="xs:string" lowerBound="1"/>
+		<property name="Показатель" type="xs:string" lowerBound="1"/>
+		<property name="ПлановаяНаработка" type="xs:string" lowerBound="1"/>
+		<property name="ПродолжительностьПериодаПлановойНаработки" type="xs:string" lowerBound="1"/>
+		<property name="КоэффициентИспользованияОборудования" type="xs:string" lowerBound="1"/>
+		<property name="ПериодПлановойНаработки" type="xs:string" lowerBound="1"/>
+		<property name="Период" type="xs:dateTime" lowerBound="1"/>
+	</objectType>
+	<objectType name="рс_СписокПараметрыНаработки">
+		<property xmlns:d3p1="android" name="рс_ПараметрыНаработки" type="d3p1:рс_ПараметрыНаработки" upperBound="-1"/>
+	</objectType>
+	<objectType name="рс_ТекущееСостоянияОР">
+		<property name="ОбъектРемонта" type="xs:string" lowerBound="1"/>
+		<property name="ВидЭксплуатации" type="xs:string" lowerBound="1"/>
+		<property name="Примечание" type="xs:string" lowerBound="1"/>
+		<property name="Период" type="xs:dateTime" lowerBound="1"/>
+	</objectType>
+	<objectType name="рс_СписокТекущееСостоянияОР">
+		<property xmlns:d3p1="android" name="рс_ТекущееСостоянияОР" type="d3p1:рс_ТекущееСостоянияОР" upperBound="-1"/>
+	</objectType>
+	<objectType name="рс_ИзмеряемыеПоказателиОР">
+		<property name="ОбъектРемонта" type="xs:string" lowerBound="1"/>
+		<property name="Показатель" type="xs:string" lowerBound="1"/>
+		<property name="КритическийМинимум" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="КритическийМаксимум" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="ДопустимыйМинимум" type="xs:double" lowerBound="0" nillable="true"/>
+		<property name="ДопустимыйМаксимум" type="xs:double" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="рс_СписокИзмеряемыеПоказателиОР">
+		<property xmlns:d3p1="android" name="рс_ИзмеряемыеПоказателиОР" type="d3p1:рс_ИзмеряемыеПоказателиОР" upperBound="-1"/>
+	</objectType>
+	<objectType name="рс_ВерсииТехКарт">
+		<property name="ИдентификаторТехКарты" type="xs:string" lowerBound="1"/>
+		<property name="ТехКарта" type="xs:string" lowerBound="1"/>
+		<property name="Период" type="xs:dateTime" lowerBound="1"/>
+	</objectType>
+	<objectType name="рс_СписокВерсииТехКарт">
+		<property xmlns:d3p1="android" name="рс_ВерсииТехКарт" type="d3p1:рс_ВерсииТехКарт" upperBound="-1"/>
+	</objectType>
+	<objectType name="ВыявленныйДефект">
+		<property name="Номер" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Дата" type="xs:dateTime" lowerBound="0" nillable="true"/>
+		<property name="Комментарий" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Ответственный" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Организация" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="ДатаОбнаружения" type="xs:dateTime" lowerBound="0" nillable="true"/>
+		<property name="ДефектВыявленВПроцессе" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Подразделение" type="xs:string" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="android" name="ТЧВыявленныйДефект" type="d3p1:ТЧВыявленныйДефект" lowerBound="1" upperBound="-1" nillable="true"/>
+		<property name="Передан" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="Ссылка" type="xs:string"/>
+		<property name="ДокументОснование" type="xs:string" nillable="true"/>
+		<property name="НазначитьЗаявку" type="xs:boolean" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="ТЧВыявленныйДефект">
+		<property name="ID" type="xs:string" lowerBound="0" upperBound="1" nillable="true"/>
+		<property name="ВидДефекта" type="xs:string" lowerBound="0" upperBound="1" nillable="true"/>
+		<property name="ДефектВыявленВПроцессе" type="xs:string" lowerBound="0" upperBound="1" nillable="true"/>
+		<property name="ТиповойДефект" type="xs:string" lowerBound="0" upperBound="1" nillable="true"/>
+		<property name="ДефектОписание" type="xs:string" lowerBound="0" upperBound="1" nillable="true"/>
+		<property name="ДефектПричина" type="xs:string" lowerBound="0" upperBound="1" nillable="true"/>
+		<property name="ДефектПричинаНаименование" type="xs:string" lowerBound="0" upperBound="1" nillable="true"/>
+		<property name="НаправлениеНаУстранение" type="xs:string" lowerBound="0" upperBound="1" nillable="true"/>
+		<property name="ОбъектРемонта" type="xs:string" lowerBound="0" upperBound="1" nillable="true"/>
+		<property name="ПодразделениеИсполнитель" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="ОтказавшийЭлемент" type="xs:string" lowerBound="0" upperBound="1" nillable="true"/>
+		<property name="ПоследствияДефекта" type="xs:string" lowerBound="0" upperBound="1" nillable="true"/>
+		<property name="КритичностьДефекта" type="xs:string" lowerBound="0" upperBound="1" nillable="true"/>
+		<property name="Высота" type="xs:double" nillable="true"/>
+		<property name="Долгота" type="xs:double" nillable="true"/>
+		<property name="Широта" type="xs:double" nillable="true"/>
+	</objectType>
+	<objectType name="ТЧСостояниеОР">
+		<property name="ДатаОкончания" type="xs:dateTime" lowerBound="0" upperBound="1" nillable="true"/>
+		<property name="ПричинаПростоя" type="xs:string" lowerBound="0" upperBound="1" nillable="true"/>
+		<property name="ВидЭксплуатации" type="xs:string" lowerBound="0" upperBound="1" nillable="true"/>
+		<property name="ВидПуска" type="xs:string" lowerBound="0" upperBound="1" nillable="true"/>
+		<property name="ОбъектРемонта" type="xs:string" lowerBound="0" upperBound="1" nillable="true"/>
+		<property name="РаспространятьНаПодчиненных" type="xs:boolean" lowerBound="0" upperBound="1" nillable="true"/>
+	</objectType>
+	<objectType name="СостояниеОР">
+		<property name="Номер" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Дата" type="xs:dateTime" lowerBound="0" nillable="true"/>
+		<property name="Комментарий" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Ответственный" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Организация" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="ВидЭксплуатации" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="ВидПуска" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Подразделение" type="xs:string" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="android" name="ТЧСостояниеОР" type="d3p1:ТЧСостояниеОР" lowerBound="1" upperBound="-1" nillable="true"/>
+		<property name="Передан" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="ИзменятьСостояниеПодчиненныхОР" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="Ссылка" type="xs:string"/>
+		<property name="ДокументОснование" type="xs:string" nillable="true"/>
+		<property name="ТипДокументаОснования" type="xs:string" nillable="true"/>
+	</objectType>
+	<objectType name="ТЧУчетКонтролируемыхПоказателей">
+		<property name="ДатаКонтроля" type="xs:dateTime" lowerBound="0" upperBound="1" nillable="true"/>
+		<property name="Показатель" type="xs:string" lowerBound="0" upperBound="1" nillable="true"/>
+		<property name="Значение" type="xs:string" lowerBound="0" upperBound="1" nillable="true"/>
+		<property name="ОбъектРемонта" type="xs:string" lowerBound="0" upperBound="1" nillable="true"/>
+	</objectType>
+	<objectType name="УчетКонтролируемыхПоказателей">
+		<property name="Номер" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Дата" type="xs:dateTime" lowerBound="0" nillable="true"/>
+		<property name="Комментарий" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Ответственный" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Организация" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Подразделение" type="xs:string" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="android" name="ТЧУчетКонтролируемыхПоказателей" type="d3p1:ТЧУчетКонтролируемыхПоказателей" lowerBound="1" upperBound="-1" nillable="true"/>
+		<property name="Передан" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="Ссылка" type="xs:string"/>
+		<property name="ДокументОснование" type="xs:string" nillable="true"/>
+	</objectType>
+	<objectType name="ТЧУчетНаработкиОборудования">
+		<property name="ОбъектРемонта" type="xs:string" lowerBound="0" upperBound="1" nillable="true"/>
+		<property name="Показатель" type="xs:string" lowerBound="0" upperBound="1" nillable="true"/>
+		<property name="ДатаРаботыПо" type="xs:dateTime" lowerBound="0" upperBound="1" nillable="true"/>
+		<property name="Наработка" type="xs:double" lowerBound="0" upperBound="1" nillable="true"/>
+		<property name="НовоеЗначение" type="xs:double" lowerBound="0" upperBound="1" nillable="true"/>
+		<property name="РаспространятьНаПодчиненных" type="xs:boolean" lowerBound="0" upperBound="1" nillable="true"/>
+		<property name="Иерархия" type="xs:string" lowerBound="0" upperBound="1" nillable="true"/>
+	</objectType>
+	<objectType name="УчетНаработкиОборудования">
+		<property name="Номер" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Дата" type="xs:dateTime" lowerBound="0" nillable="true"/>
+		<property name="Комментарий" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Ответственный" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Организация" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Подразделение" type="xs:string" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="android" name="ТЧУчетНаработкиОборудования" type="d3p1:ТЧУчетНаработкиОборудования" lowerBound="1" upperBound="-1" nillable="true"/>
+		<property name="Передан" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="Ссылка" type="xs:string"/>
+		<property name="ДокументОснование" type="xs:string" nillable="true"/>
+	</objectType>
+	<objectType name="Количество">
+		<property name="ОР" type="xs:int"/>
+		<property name="РемонтныеГруппы" type="xs:int"/>
+		<property name="Организации" type="xs:int"/>
+		<property name="Подразделения" type="xs:int"/>
+		<property name="ВидыЭксплуатации" type="xs:int"/>
+		<property name="УсловияВыявленияДефектов" type="xs:int"/>
+		<property name="КритичностиДефектов" type="xs:int"/>
+		<property name="ТиповыеДефекты" type="xs:int"/>
+		<property name="ПричиныДефектов" type="xs:int"/>
+		<property name="ЕдиницыИзмерения" type="xs:int"/>
+		<property name="ИзмеряемыеПоказатели" type="xs:int"/>
+		<property name="ПричиныПРостоев" type="xs:int"/>
+		<property name="ВидыДефектов" type="xs:int"/>
+		<property name="ПараметрыВыработкиОС" type="xs:int"/>
+		<property name="ПараметрыНаработкиОР" type="xs:int"/>
+		<property name="ТекущееСостояниеОР" type="xs:int"/>
+		<property name="ИзмеряемыеПоказателиОР" type="xs:int"/>
+		<property name="НаработкаОР" type="xs:int"/>
+		<property name="Направления" type="xs:int"/>
+	</objectType>
+	<objectType name="Направления">
+		<property name="ГУИД" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Код" type="xs:string"/>
+		<property name="Наименование" type="xs:string"/>
+		<property name="Комментарий" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="ПометкаУдаления" type="xs:boolean"/>
+		<property name="Удалить" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="СписокНаправления">
+		<property xmlns:d3p1="android" name="Направления" type="d3p1:Направления" upperBound="-1"/>
+	</objectType>
+	<objectType name="Фото">
+		<property name="ДанныеФото" type="xs:string"/>
+		<property name="Комментарий" type="xs:string"/>
+	</objectType>
+	<objectType name="СписокФото">
+		<property xmlns:d3p1="android" name="Фото" type="d3p1:Фото" upperBound="-1"/>
+	</objectType>
+	<objectType name="Файл">
+		<property name="ИмяФайла" type="xs:string"/>
+		<property name="ДанныеФайла" type="xs:string"/>
+		<property name="Комментарий" type="xs:string"/>
+		<property name="Расширение" type="xs:string"/>
+	</objectType>
+	<objectType name="СписокФайлов">
+		<property xmlns:d3p1="android" name="Файл" type="d3p1:Файл" upperBound="-1"/>
+	</objectType>
+	<objectType name="СтруктураИерархии">
+		<property name="Ссылка" type="xs:string"/>
+		<property name="Наименование" type="xs:string"/>
+	</objectType>
+	<objectType name="ЭлементИерархииОР">
+		<property xmlns:d3p1="android" name="ОбъектРемонта" type="d3p1:ОР"/>
+		<property xmlns:d3p1="android" name="Родитель" type="d3p1:ОР" nillable="true"/>
+	</objectType>
+	<objectType name="ИерархияОРСписок">
+		<property xmlns:d3p1="android" name="ИерархияОР" type="d3p1:ЭлементИерархииОР" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="СтруктураОтвета">
+		<property name="Успех" type="xs:boolean"/>
+		<property name="НомерДокумента" type="xs:string" lowerBound="0"/>
+		<property xmlns:d3p1="android" name="ТекстОшибки" type="d3p1:СтруктураТекстаОшибки" lowerBound="0" upperBound="-1"/>
+		<property name="ДокументПроведен" type="xs:boolean" lowerBound="0"/>
+	</objectType>
+	<objectType name="СтруктураТекстаОшибки">
+		<property name="ТекстОшибки" type="xs:string" lowerBound="1" upperBound="1"/>
+		<property name="КодОшибки" type="xs:int" lowerBound="1" upperBound="1"/>
+	</objectType>
+	<objectType name="ИнформацияОДефекте">
+		<property name="ДатаОбнаружения" type="xs:dateTime" lowerBound="0" upperBound="1" nillable="true"/>
+		<property name="ОбъектРемонта" type="xs:string" lowerBound="0" upperBound="1" nillable="true"/>
+		<property name="ОтказавшийЭлемент" type="xs:string" lowerBound="0" upperBound="1" nillable="true"/>
+		<property name="ВидДефекта" type="xs:string" lowerBound="0" upperBound="1" nillable="true"/>
+		<property name="КритичностьДефекта" type="xs:string" lowerBound="0" upperBound="1" nillable="true"/>
+		<property name="ДефектПричина" type="xs:string" lowerBound="0" upperBound="1" nillable="true"/>
+		<property name="ДефектОписание" type="xs:string" lowerBound="0" upperBound="1" nillable="true"/>
+		<property name="Ответственный" type="xs:string" lowerBound="0" upperBound="1" nillable="true"/>
+		<property name="Ссылка" type="xs:string" lowerBound="0" upperBound="1" nillable="true"/>
+	</objectType>
+	<objectType name="СписокДефектов">
+		<property xmlns:d3p1="android" name="Элементы" type="d3p1:ИнформацияОДефекте" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="СтруктураПоследнейНаработки">
+		<property name="Наработка" type="xs:double" nillable="true"/>
+		<property name="Период" type="xs:dateTime" nillable="true"/>
+		<property name="ПоказательКод" type="xs:string"/>
+		<property name="ПоказательНаименование" type="xs:string"/>
+	</objectType>
+	<objectType name="СписокПоследнейНаработки">
+		<property xmlns:d3p1="android" name="Элементы" type="d3p1:СтруктураПоследнейНаработки" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="СобытиеИзМП">
+		<property name="ДатаВремяСобытия" type="xs:dateTime"/>
+		<property name="ИдентификаторСобытия" type="xs:string"/>
+		<property name="ИнформацияСобытия" type="xs:string"/>
+		<property name="ТипСобытия" type="xs:string"/>
+		<property name="Сериализовано" type="xs:boolean"/>
+	</objectType>
+	<objectType name="События">
+		<property xmlns:d3p1="android" name="Элементы" type="d3p1:СобытиеИзМП" upperBound="-1"/>
+	</objectType>
+	<objectType name="ИдЗаявкиНаРемонт">
+		<property name="УИДДокументаВБазеТОиР" type="xs:string"/>
+		<property name="ИДРемонта" type="xs:string"/>
+	</objectType>
+	<objectType name="СписокИдЗаявокНаРемонт">
+		<property xmlns:d3p1="android" name="Элементы" type="d3p1:ИдЗаявкиНаРемонт" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="СтатусЗаявкиНаРемонт">
+		<property name="УИДДокументаВБазеТОиР" type="xs:string"/>
+		<property name="ИДРемонта" type="xs:string"/>
+		<property name="Удалить" type="xs:boolean"/>
+	</objectType>
+	<objectType name="СписокСтатусовЗаявокНаРемонт">
+		<property xmlns:d3p1="android" name="Элементы" type="d3p1:СтатусЗаявкиНаРемонт" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="ХарактеристикиНоменклатуры">
+		<property name="ГУИД" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Код" type="xs:string"/>
+		<property name="Наименование" type="xs:string"/>
+		<property name="НаименованиеПолное" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Владелец" type="xs:string" lowerBound="0"/>
+		<property name="ПометкаУдаления" type="xs:boolean"/>
+		<property name="ДляНоменклатуры" type="xs:boolean"/>
+		<property name="Удалить" type="xs:boolean" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="СписокХарактеристикНоменклатуры">
+		<property xmlns:d3p1="android" name="ХарактеристикиНоменклатуры" type="d3p1:ХарактеристикиНоменклатуры" upperBound="-1"/>
+	</objectType>
+	<objectType name="ВидыНоменклатуры">
+		<property name="ГУИД" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Наименование" type="xs:string"/>
+		<property name="ЭтоГруппа" type="xs:boolean"/>
+		<property name="ПометкаУдаления" type="xs:boolean"/>
+		<property xmlns:d3p1="android" name="Родитель" type="d3p1:ВидыНоменклатуры" nillable="true"/>
+		<property name="ТипНоменклатуры" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="ИспользоватьХарактеристики" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="ИспользованиеХарактеристик" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Удалить" type="xs:boolean" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="СписокВидовНоменклатуры">
+		<property xmlns:d3p1="android" name="ВидыНоменклатуры" type="d3p1:ВидыНоменклатуры" upperBound="-1"/>
+	</objectType>
+	<objectType name="ПриоритетыОР">
+		<property name="ГУИД" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Наименование" type="xs:string"/>
+		<property name="ПометкаУдаления" type="xs:boolean"/>
+		<property name="Значение" type="xs:int"/>
+		<property name="Комментарий" type="xs:string"/>
+		<property name="Удалить" type="xs:boolean" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="СписокПриоритетовОР">
+		<property xmlns:d3p1="android" name="ПриоритетыОР" type="d3p1:ПриоритетыОР" upperBound="-1"/>
+	</objectType>
+	<objectType name="РемонтныеБригады">
+		<property name="ГУИД" type="xs:string"/>
+		<property name="Наименование" type="xs:string"/>
+		<property name="Код" type="xs:string"/>
+		<property name="ЭтоГруппа" type="xs:boolean"/>
+		<property name="Родитель" type="xs:string" nillable="true"/>
+		<property name="ПометкаУдаления" type="xs:boolean"/>
+		<property name="Подразделение" type="xs:string" nillable="true"/>
+		<property name="Удалить" type="xs:boolean" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="СписокБригад">
+		<property xmlns:d3p1="android" name="Элементы" type="d3p1:РемонтныеБригады" upperBound="-1"/>
+	</objectType>
+	<objectType name="СтруктураЗначенийКонтроляПрисутствияНаОбъекте">
+		<property name="МетодКонтроля" type="xs:string"/>
+		<property name="ПогрешностьГеоконтроля" type="xs:int"/>
+	</objectType>
+	<objectType name="рс_МаршрутыРМ">
+		<property name="ОбъектРемонта" type="xs:string"/>
+		<property name="СписокОбъектов" type="xs:string"/>
+		<property name="НомерПоПорядку" type="xs:int"/>
+	</objectType>
+	<objectType name="рс_СписокМаршрутыРМ">
+		<property xmlns:d3p1="android" name="рс_МаршрутыРМ" type="d3p1:рс_МаршрутыРМ" upperBound="-1"/>
+	</objectType>
+	<objectType name="рс_ВыходныеДокументы">
+		<property name="СписокОбъектов" type="xs:string"/>
+		<property name="ВидМероприятия" type="xs:string"/>
+		<property name="ВыходнойДокумент" type="xs:string"/>
+	</objectType>
+	<objectType name="рс_СписокВыходныеДокументы">
+		<property xmlns:d3p1="android" name="рс_ВыходныеДокументы" type="d3p1:рс_ВыходныеДокументы" upperBound="-1"/>
+	</objectType>
+	<objectType name="НарядыНаРМ">
+		<property name="Дата" type="xs:dateTime"/>
+		<property name="Номер" type="xs:string"/>
+		<property name="ПометкаУдаления" type="xs:boolean"/>
+		<property name="УИДДокументаВБазеТОиР" type="xs:string"/>
+		<property name="Проведен" type="xs:boolean"/>
+		<property name="Подразделение" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Организация" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="ID" type="xs:string"/>
+		<property name="ОбъектРемонта" type="xs:string"/>
+		<property name="ВидРемонта" type="xs:string"/>
+		<property name="ДатаНачала" type="xs:dateTime"/>
+		<property name="ДатаОкончания" type="xs:dateTime"/>
+		<property name="МестоПроведенияРабот" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="ОпаснаяРабота" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="android" name="Операции" type="d3p1:СписокРемонтныхРабот"/>
+		<property name="Комментарий" type="xs:string" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="СписокНарядовНаРМ">
+		<property xmlns:d3p1="android" name="НарядыНаРМ" type="d3p1:НарядыНаРМ" upperBound="-1"/>
+	</objectType>
+	<objectType name="АктОВыполненииРМ">
+		<property name="Дата" type="xs:dateTime" lowerBound="0" nillable="true"/>
+		<property name="УИДНарядаВБазеТОиР" type="xs:string"/>
+		<property name="Подразделение" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Организация" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Комментарий" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Ответственный" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="ID" type="xs:string"/>
+		<property name="ОбъектРемонта" type="xs:string"/>
+		<property name="ВидРемонта" type="xs:string"/>
+		<property name="Передан" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="Ссылка" type="xs:string"/>
+		<property name="ДатаНачала" type="xs:dateTime"/>
+		<property name="ДатаОкончания" type="xs:dateTime"/>
+		<property name="ЗавершитьРемонт" type="xs:boolean"/>
+		<property xmlns:d3p1="android" name="МероприятияОбъектов" type="d3p1:СписокМероприятийОбъектов"/>
+	</objectType>
+	<objectType name="МероприятияОбъектов">
+		<property name="ОбъектРемонта" type="xs:string"/>
+		<property name="Выполнено" type="xs:boolean"/>
+		<property name="Комментарий" type="xs:string" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="СписокМероприятийОбъектов">
+		<property xmlns:d3p1="android" name="МероприятияОбъектов" type="d3p1:МероприятияОбъектов" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="ИДНарядаНаУдаление">
+		<property name="УИДДокументаВБазеТОиР" type="xs:string"/>
+		<property name="ИДРемонта" type="xs:string"/>
+		<property name="Удалить" type="xs:boolean" lowerBound="0"/>
+	</objectType>
+	<objectType name="СписокИДНарядовНаУдаление">
+		<property xmlns:d3p1="android" name="Элементы" type="d3p1:ИДНарядаНаУдаление" lowerBound="0" upperBound="-1"/>
+	</objectType>
+	<objectType name="СписокИзмененныхАктов">
+		<property xmlns:d3p1="android" name="ИзмененныеАкты" type="d3p1:Акт" upperBound="-1"/>
+	</objectType>
+	<objectType name="рс_КвалификацииСотрудниковБригады">
+		<property name="Сотрудник" type="xs:string"/>
+		<property name="Квалификация" type="xs:string"/>
+		<property name="КвалификацияИзСоставаБригады" type="xs:boolean"/>
+	</objectType>
+	<objectType name="рс_СписокКвалификацийСотрудниковБригады">
+		<property xmlns:d3p1="android" name="рс_КвалификацииСотрудниковБригады" type="d3p1:рс_КвалификацииСотрудниковБригады" upperBound="-1"/>
+	</objectType>
+	<objectType name="рс_ПорядокОР">
+		<property name="ОбъектРемонта" type="xs:string"/>
+		<property name="РеквизитДопУпорядочивания" type="xs:string"/>
+		<property name="ЭтоГруппа" type="xs:boolean" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="рс_СписокПорядокОР">
+		<property xmlns:d3p1="android" name="рс_ПорядокОР" type="d3p1:рс_ПорядокОР" upperBound="-1"/>
+	</objectType>
+	<objectType name="СписокПрисоединенныхФайлов">
+		<property xmlns:d3p1="android" name="ПрисоединенныеФайлы" type="d3p1:ПрисоединенныеФайлы" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="ПрисоединенныеФайлы">
+		<property name="ГУИД" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="ВладелецФайла" type="xs:string"/>
+		<property name="Наименование" type="xs:string"/>
+		<property name="Расширение" type="xs:string"/>
+		<property name="Комментарий" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Удалить" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="ТипВладельца" type="xs:string" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="СписокОбъектовРемонта">
+		<property xmlns:d3p1="android" name="ОР" type="d3p1:ОбъектРемонта" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="ОбъектРемонта">
+		<property name="ГУИД" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Код" type="xs:string"/>
+		<property name="Наименование" type="xs:string" nillable="true"/>
+		<property name="Родитель" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="РемонтнаяГруппа" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="ИнвентарныйНомер" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="ДатаВводаВЭксплуатацию" type="xs:dateTime" lowerBound="0" nillable="true"/>
+		<property name="ВнешнийОбъект" type="xs:boolean" lowerBound="0"/>
+		<property name="Контрагент" type="xs:string" lowerBound="0" nillable="true" fixed="false"/>
+		<property name="ДоговорКонтрагента" type="xs:string" lowerBound="0" nillable="true" fixed="false"/>
+		<property name="НомерПаспорта" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Комментарий" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="ДатаВыпуска" type="xs:dateTime" lowerBound="0" nillable="true"/>
+		<property name="Подразделение" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="ПодразделениеИсполнитель" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Организация" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="ШтрихКод" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="ЭтоГруппа" type="xs:boolean"/>
+		<property name="ЗаводскойНомер" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="ТехНомер" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Направление" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="ПометкаУдаления" type="xs:boolean" lowerBound="0"/>
+		<property name="Широта" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Долгота" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Высота" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Приоритет" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="ЭтоФМ" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="Местонахождение" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Адрес" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Удалить" type="xs:boolean" lowerBound="0" nillable="true"/>
+		<property name="НеВИерархии" type="xs:boolean" lowerBound="0"/>
+		<property name="ЭтоПротяженныйОбъект" type="xs:boolean" lowerBound="0" nillable="true"/>
+	</objectType>
+	<objectType name="ЗаявкаНаРемонт">
+		<property xmlns:d3p1="android" name="Операции" type="d3p1:СписокРемонтныхРабот"/>
+		<property xmlns:d3p1="android" name="Материалы" type="d3p1:СписокМатериалов"/>
+		<property xmlns:d3p1="android" name="Квалификации" type="d3p1:СписокТрудовыхЗатрат"/>
+	</objectType>
+	<objectType name="КоличествоПакетов">
+		<property name="КоличествоНоменклатура" type="xs:integer"/>
+		<property name="КоличествоХарактеристики" type="xs:integer"/>
+		<property name="КоличествоТехОперации" type="xs:integer"/>
+	</objectType>
+	<objectType name="СтруктураОтветаФайлы">
+		<property name="Успех" type="xs:boolean"/>
+		<property name="УИДФайлаВБазеТОИР" type="xs:string" lowerBound="0"/>
+	</objectType>
+	<objectType name="ФайлПакет">
+		<property name="ИдентификаторПакета" type="xs:string"/>
+		<property name="НомерЧасти" type="xs:int"/>
+		<property name="Данные" type="xs:base64Binary"/>
+		<property name="ВсегоЧастей" type="xs:int"/>
+		<property name="Расширение" type="xs:string"/>
+		<property name="ИмяФайла" type="xs:string"/>
+		<property name="РазмерФайла" type="xs:int"/>
+	</objectType>
+</package>

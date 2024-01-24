@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f0fd011f-8272-4c69-9210-647e7cfcaa2f">
+  <producedTypes>
+    <selectionType typeId="f3b72568-0242-453b-bd49-efa7b8c6e822" valueTypeId="53d4fffd-8f27-4cc7-9cfa-f3e7822ca500"/>
+    <listType typeId="9b1204b8-6e84-4831-a27a-d668456cee83" valueTypeId="5db49bf1-314a-4bd6-863c-afa4da2f4e67"/>
+    <managerType typeId="b416beb4-5314-4e01-a9fb-63f47d8d53ed" valueTypeId="d68df28b-4471-47d3-a7e9-87e6a04b4455"/>
+    <recordSetType typeId="1362a656-f76c-4570-8e16-f24fe22364b9" valueTypeId="da4ab531-3cee-4609-8514-2b6f484c1d3c"/>
+    <recordKeyType typeId="522e3264-c40e-408b-9bf9-a9280c3cb46a" valueTypeId="45251144-aa34-45dc-a93f-eb18c08dadb0"/>
+    <recordType typeId="30dd4234-ac01-4864-b7f8-91f7d0be7633" valueTypeId="d284c5ab-7a8d-4b25-b0f6-5087c4df8ebb"/>
+    <recordManagerType typeId="2f929948-568d-4ee5-8df0-a056e03904ff" valueTypeId="707820f1-95f3-4c97-8157-2d1b2b9af6fd"/>
+  </producedTypes>
+  <name>торо_ИзмеряемыеПоказателиОбъектовРемонта</name>
+  <synonym>
+    <key>ru</key>
+    <value>Измеряемые показатели объектов ремонта</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="fbadaf4b-f1cc-403e-a0a7-4a424cad9824">
+    <name>ДопустимыйМинимум</name>
+    <synonym>
+      <key>ru</key>
+      <value>Допустимый минимум</value>
+    </synonym>
+    <type>
+      <types>Characteristic.торо_ИзмеряемыеПоказателиОбъектовРемонта</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Допустимое минимальное значение</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <linkByType>
+      <field>InformationRegister.торо_ИзмеряемыеПоказателиОбъектовРемонта.Dimension.Показатель</field>
+    </linkByType>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="82cd1e24-6f80-4fe0-a62a-ff6341779d5f">
+    <name>ДопустимыйМаксимум</name>
+    <synonym>
+      <key>ru</key>
+      <value>Допустимый максимум</value>
+    </synonym>
+    <type>
+      <types>Characteristic.торо_ИзмеряемыеПоказателиОбъектовРемонта</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Допустимое максимальное значение</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <linkByType>
+      <field>InformationRegister.торо_ИзмеряемыеПоказателиОбъектовРемонта.Dimension.Показатель</field>
+    </linkByType>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="187e8b95-0b2e-4a04-8cf4-470a3f342a21">
+    <name>КритическийМинимум</name>
+    <synonym>
+      <key>ru</key>
+      <value>Критический минимум</value>
+    </synonym>
+    <type>
+      <types>Characteristic.торо_ИзмеряемыеПоказателиОбъектовРемонта</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Критическое минимальное значение</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <linkByType>
+      <field>InformationRegister.торо_ИзмеряемыеПоказателиОбъектовРемонта.Dimension.Показатель</field>
+    </linkByType>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="7dbdf7d7-52e7-40f3-8065-f9bdc5d8a48f">
+    <name>КритическийМаксимум</name>
+    <synonym>
+      <key>ru</key>
+      <value>Критический максимум</value>
+    </synonym>
+    <type>
+      <types>Characteristic.торо_ИзмеряемыеПоказателиОбъектовРемонта</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Критическое максимальное значение</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <linkByType>
+      <field>InformationRegister.торо_ИзмеряемыеПоказателиОбъектовРемонта.Dimension.Показатель</field>
+    </linkByType>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="ba0a0c71-0d71-41eb-ad6b-b7c26a002f90">
+    <name>ЗначенияКонтролируемыхПоказателейИзОР</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значения контролируемых показателей из ОР</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Допустимые и критические значения могут быть изменены в ОР</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="abd2c78d-877d-46ad-b47b-a4087a76cc69">
+    <name>ТочкаЗамера</name>
+    <synonym>
+      <key>ru</key>
+      <value>Точка контроля (замера)</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Место, где выполняется замер</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <attributes uuid="9de5eeab-a462-42ba-8fcc-79fd5f8f49e0">
+    <name>Удален</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удален</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Удален)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="8cbc5bc3-d4e1-48f0-a2ea-add02207eeda">
+    <name>ОбъектРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект ремонта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ТиповыеОР</types>
+      <types>CatalogRef.торо_ОбъектыРемонта</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Объект ремонта, в котором указан показатель</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="24c3431b-170a-42cd-b1b0-ce8888b34cfa">
+    <name>Показатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатель</value>
+    </synonym>
+    <type>
+      <types>ChartOfCharacteristicTypesRef.торо_ИзмеряемыеПоказателиОбъектовРемонта</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Измеряемый показатель, указанный в объекте ремонта</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

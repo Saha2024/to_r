@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"></meta><link rel="stylesheet" type="text/css" href="v8help://service_book/service_style"></link><meta name="GENERATOR" content="MSHTML 11.00.10570.1001"></meta></head><body>
+<h1 dir="ltr" class="MsoBodyText" align="justify" style="margin: 0cm 0cm 6pt; font-size: 17.920000076293945px; text-align: justify;"><span style="font-family: &quot;Times New Roman&quot;, serif;"><font face="Verdana">Справочник «Подключения к базе данных»</font></span></h1>
+<h1 style="font-size: 17.920000076293945px;"><blockquote style="font-size: 11.199999809265137px; font-weight: normal;"></blockquote></h1>
+<p dir="ltr" align="justify" style="margin: 0cm 0cm 6pt; text-align: justify;"><span style="font-family: &quot;Times New Roman&quot;, serif;"><font face="Verdana">Справочник предназначен для ведения списка подключений к базе данных при использовании интеграций с АСУ ТП.</font></span></p>
+<p dir="ltr" align="justify" style="margin: 0cm 0cm 6pt; text-align: justify;"><span style="font-family: &quot;Times New Roman&quot;, serif;"><font face="Verdana">В форме выводятся следующие поля:</font></span></p>
+<div align="justify" style="text-align: justify; margin: 0cm 0cm 6pt;">
+<ul><li><font face="Verdana"><b>Наименование</b> — название подключения.</font></li>
+<li><font face="Verdana"><b>Код</b> — код подключения.</font></li>
+<li><b>Сервер</b> <span style="font-family: Verdana;">— адрес сервера, на котором расположена база.</span></li>
+<li><font face="Verdana"><b>База данных </b></font><span style="font-family: Verdana;">— имя базы данных в СУБД.</span></li>
+<li><font face="Verdana"><b>Период получения данных </b></font><span style="font-family: Verdana;">— частота получения данных (например, раз в 24 часа, раз в час).</span></li>
+<li><font face="Verdana"><b>Отключен </b></font><span style="font-family: Verdana;">— признак, при установке которого данные из подключения получаться не будут. </span></li>
+<li><span style="font-family: Verdana;"><b>Текст запроса чтения </b></span><span style="font-family: Verdana;">— текст запроса для чтения загружаемых данных.</span></li>
+<li><span style="font-family: Verdana;"><b>Текст запроса пометки обрабатываемых </b>— текст запроса для пометки обрабатываемых данных.</span></li>
+<li><span style="font-family: Verdana;"><b>Текст запроса удаления обработанных</b> </span><span style="font-family: Verdana;">— текст запроса для удаления обработанных данных.</span></li>
+<li><span style="font-family: Verdana;"><b>Использовать пометку данных</b> </span><span style="font-family: Verdana;">— признак, при установке которого будет использоваться пометка загружаемых данных.</span></li>
+<li><span style="font-family: Verdana;"><b>Использовать удаление данных</b> </span><span style="font-family: Verdana;">— признак, при установке которого применяется запрос из блока удаления.</span></li>
+<li><span style="font-family: Verdana;"><b>Использовать разбиение данных на порции</b> </span><span style="font-family: Verdana;">— признак, при установке которого записи будут получаться порциями указанного размера с даты прошлого сеанса по текущий момент времени.</span></li>
+<li><span style="font-family: Verdana;"><b>Размер порции</b> </span><span style="font-family: Verdana;">— размер порции данных при использовании разбиения.</span></li>
+<li><span style="font-family: Verdana;"><b>Строка соединения </b></span><span style="font-family: Verdana;">— набор обязательных (сервер, имя базы, логин и пароль) и дополнительных (в зависимости от настроек SQL) параметров для подключения к базе данных. </span></li>
+<li><span style="font-family: Verdana;"><b>Использовать произвольную строку подключения </b></span><span style="font-family: Verdana;">— </span><span style="font-family: Verdana;">используется в случае, когда строка подключения к АСУ ТП отличается от стандартной строки подключения к MS SQL Server. Для указания места, в которое нужно подставить логин и пароль, следует использовать ключевые слова %Логин% и %Пароль% соответственно.</span></li></ul></div></body></html>

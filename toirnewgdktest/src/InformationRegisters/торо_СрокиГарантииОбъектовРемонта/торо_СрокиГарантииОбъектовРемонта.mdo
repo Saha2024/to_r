@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c6f46c20-2cad-4d70-a838-53b0912568c1">
+  <producedTypes>
+    <selectionType typeId="682dcb14-36cb-4f6e-bc38-67dff007d10e" valueTypeId="7f615ef5-1b94-4484-8d30-e69b5d06527e"/>
+    <listType typeId="680744ea-0841-4189-9e4c-4c1e7d9aad55" valueTypeId="9d1da5df-1650-41c1-b2a3-9bf6115a8f93"/>
+    <managerType typeId="6e10b666-cdec-4134-85a9-05d454da275c" valueTypeId="b038b8c0-1100-4bdf-87eb-2b91aea79439"/>
+    <recordSetType typeId="b5fc35e0-1089-4fcb-8b93-c39bcc61e197" valueTypeId="bf4cfcea-1f55-425a-8856-1322708a4aac"/>
+    <recordKeyType typeId="9eed794f-029d-473e-8bd7-dedfa00cfcf4" valueTypeId="b7a405f6-7b01-4945-becc-887cdd3ae43c"/>
+    <recordType typeId="ea2878d4-267b-4466-a640-d35458c74a86" valueTypeId="a211e40c-1029-499e-bb73-7333a898c572"/>
+    <recordManagerType typeId="dc753539-7624-40c0-810f-44501a426ffa" valueTypeId="af2a608d-04b0-409a-82c9-3e8e92a74ca5"/>
+  </producedTypes>
+  <name>торо_СрокиГарантииОбъектовРемонта</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сроки гарантии объектов ремонта</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="f126dbda-26ad-43e2-b15a-b24f457a7efb">
+    <name>ГарантирующаяОрганизация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Гарантирующая организация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Контрагенты</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Гарантирующая организация)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="3fdd41ef-7f75-4fb3-b7e1-ca28b24b4ea6">
+    <name>Договор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Договор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ДоговорыКонтрагентов</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Договор)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="06756fb8-fff6-441b-b93b-7abefa6686c2">
+    <name>ОбъектРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект ремонта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ОбъектыРемонта</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Объект ремонта)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="19f7e78d-53b2-4f50-83d0-9f53dd9e6a48">
+    <name>УсловияГарантии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Условия гарантии</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_УсловияГарантии</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Условия гарантии)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

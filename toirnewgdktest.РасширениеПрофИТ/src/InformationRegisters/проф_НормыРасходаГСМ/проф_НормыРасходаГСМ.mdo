@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="0579d05f-f497-4286-a1a3-a5b911eef124" extendedConfigurationObject="688a691b-7f89-4a1f-ba9f-08db233d076e">
+  <producedTypes>
+    <selectionType typeId="4f1ca59d-5a4c-4bb9-bfb6-98447561e2bc" valueTypeId="00030a65-689c-4963-bb35-01eefc5331af"/>
+    <listType typeId="d64f8364-1b7b-4959-8911-6c8228de4342" valueTypeId="7a994668-a005-4478-b685-4ec23660555b"/>
+    <managerType typeId="db980349-79a8-4fca-8143-7f733dac7af6" valueTypeId="5b5af7b5-77e3-4ec0-808e-6cd5568a1287"/>
+    <recordSetType typeId="581e9349-cb7c-4cad-8c2d-3285e6ff6315" valueTypeId="012d98ac-ca73-4ca8-91d9-9dbf46282822"/>
+    <recordKeyType typeId="39e58f1a-a5c8-4dca-83cb-0ab97e18ba6f" valueTypeId="dfae8e0a-ad48-4579-9817-b66ba6ad93bf"/>
+    <recordType typeId="e6293acf-2297-48ef-a77f-f1209ce587f7" valueTypeId="472b19b9-061d-4aaf-bf6f-6ea42672cf77"/>
+    <recordManagerType typeId="b8b35fc3-3e48-4cff-b1b0-1c59d8839530" valueTypeId="b015a819-893f-4128-9a0c-7be4da57ba39"/>
+  </producedTypes>
+  <name>проф_НормыРасходаГСМ</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:InformationRegisterExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <informationRegisterPeriodicity>Checked</informationRegisterPeriodicity>
+    <writeMode>Checked</writeMode>
+  </extension>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <resources uuid="56461008-ee28-46b2-abc9-1a0ba436a017" extendedConfigurationObject="62806708-2e92-425f-aabd-9240720894a6">
+    <name>ЛинейнаяНорма</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Number</type>
+        </types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </resources>
+  <resources uuid="2f47e375-ce02-4fb1-9d7c-d704199b680c" extendedConfigurationObject="afec8d6c-d181-47fa-81c0-901ed0532c82">
+    <name>НадбавкаНаКондиционер</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Number</type>
+        </types>
+        <numberQualifiers>
+          <precision>3</precision>
+          <scale>1</scale>
+        </numberQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </resources>
+  <resources uuid="e0777290-3508-4e3c-9a7d-3db8b5672abe" extendedConfigurationObject="ea557e3c-4f4f-46ed-b354-2c6e4bc901ac">
+    <name>НормаНаЕздку</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Number</type>
+        </types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </resources>
+  <resources uuid="2e0c76c2-12d4-4cc9-8ae2-2f89502dc340" extendedConfigurationObject="0c6b49ec-5cd0-4e3c-81b0-499599b2e77c">
+    <name>НормаНаЗапуск</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Number</type>
+        </types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </resources>
+  <resources uuid="c1651785-0d32-47a8-8653-226d1e1878c7" extendedConfigurationObject="97ae9eb0-f26c-462c-ba9c-469c012f45c3">
+    <name>НормаНаИзменениеСобственногоВеса</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Number</type>
+        </types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </resources>
+  <resources uuid="225ca4be-0e84-4008-a28d-ad070fe4c2f9" extendedConfigurationObject="564c1fee-5b6e-49f9-83c1-bf82a337a2dd">
+    <name>НормаНаОперацию</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Number</type>
+        </types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </resources>
+  <resources uuid="1f2183b0-da94-4db3-89ec-f0dd9833297b" extendedConfigurationObject="8070b81b-661f-41bb-bb22-ba56b02fde30">
+    <name>НормаНаОтопитель</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Number</type>
+        </types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </resources>
+  <resources uuid="a157eca6-5aa5-4234-b743-a946090d8078" extendedConfigurationObject="099a14d8-fdd4-4af1-adaf-7b84e7ebc609">
+    <name>НормаНаПростойСВклДвигателем</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Number</type>
+        </types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </resources>
+  <resources uuid="c1f50d1a-e37c-4276-830d-c2f72d68bed5" extendedConfigurationObject="509735f9-c525-4934-b33a-fe9b379cc5c7">
+    <name>НормаНаПростойСВклДвигателемЛитры</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Number</type>
+        </types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </resources>
+  <resources uuid="e1bf3e51-c078-4066-87e2-c0c60483972e" extendedConfigurationObject="9add1371-94d2-4d69-b851-52f18eb2e37e">
+    <name>НормаНаПростойСВклДвигателемПроцентомОтБазовой</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Number</type>
+        </types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </resources>
+  <resources uuid="9d49a899-6cf0-400d-9673-abbe8c9ad036" extendedConfigurationObject="1f2acc44-406e-45b7-973e-fa229c4df0b8">
+    <name>НормаНаСпециальнуюРаботу1</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Number</type>
+        </types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </resources>
+  <resources uuid="cb9d2b87-6c14-4512-9a68-3ceba967735a" extendedConfigurationObject="645d4fac-0507-42c8-9eaa-cbd320a0b7e9">
+    <name>НормаНаСпециальнуюРаботу10</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Number</type>
+        </types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </resources>
+  <resources uuid="29659876-277b-4aa8-8528-5b264621bc7b" extendedConfigurationObject="d39dbbb7-3f56-4c62-bf55-e45c2fc5c3a7">
+    <name>НормаНаСпециальнуюРаботу2</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Number</type>
+        </types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </resources>
+  <resources uuid="bb12f992-7e31-481a-8bd3-d049e69245da" extendedConfigurationObject="280e14dc-7bff-4c7f-ac96-ccade7198469">
+    <name>НормаНаСпециальнуюРаботу3</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Number</type>
+        </types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </resources>
+  <resources uuid="449f98b2-1c6b-4133-b3b2-9ad2b7f15982" extendedConfigurationObject="189c62b8-c776-4535-9fb6-caa637a87950">
+    <name>НормаНаСпециальнуюРаботу4</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Number</type>
+        </types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </resources>
+  <resources uuid="f77342bd-e8b0-4bd9-a2ac-c3e1ec09284b" extendedConfigurationObject="214ea432-a6b7-4a88-8e36-593fe5ca0b69">
+    <name>НормаНаСпециальнуюРаботу5</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Number</type>
+        </types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </resources>
+  <resources uuid="ca4eb2f1-a2b4-480a-94a7-fbe8e24b4733" extendedConfigurationObject="8bb44fe1-b20f-494e-bcbc-a3524d2108a6">
+    <name>НормаНаСпециальнуюРаботу6</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Number</type>
+        </types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </resources>
+  <resources uuid="48704815-613f-4d95-9dae-4c39651e9a01" extendedConfigurationObject="929b8543-71a8-4bb8-bf34-1b675286a054">
+    <name>НормаНаСпециальнуюРаботу7</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Number</type>
+        </types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </resources>
+  <resources uuid="de5ac549-719c-4195-afa6-a27ef5591913" extendedConfigurationObject="9f6e18c8-6cf3-4c6d-8db4-4e35383a8f0f">
+    <name>НормаНаСпециальнуюРаботу8</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Number</type>
+        </types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </resources>
+  <resources uuid="9f42ffb7-d945-4d20-9954-4293ca0a6cb5" extendedConfigurationObject="a1ce7e4f-7482-480e-8d84-de13d42e86af">
+    <name>НормаНаСпециальнуюРаботу9</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Number</type>
+        </types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </resources>
+  <resources uuid="f14d6c4d-1c8c-4eb3-80e4-860190c2f6b6" extendedConfigurationObject="52b98070-516e-4a22-8086-b4d2c55cc620">
+    <name>НормаНаТранспортнуюРаботу</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Number</type>
+        </types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </resources>
+  <resources uuid="19d57f72-1426-453e-bfe2-6bd0d6fcd1ba" extendedConfigurationObject="e42973c5-db9a-4b58-a42b-7651ff0e8f6e">
+    <name>НормаСпециальнаяНаМоточас</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Number</type>
+        </types>
+        <numberQualifiers>
+          <precision>11</precision>
+          <scale>3</scale>
+        </numberQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </resources>
+  <resources uuid="ec955c64-47f9-4fd5-a240-28f1f806e3bb" extendedConfigurationObject="18440944-52e1-497e-a892-f120c9271390">
+    <name>СезоннаяНадбавка</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Number</type>
+        </types>
+        <numberQualifiers>
+          <precision>3</precision>
+          <scale>1</scale>
+        </numberQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </resources>
+  <resources uuid="5cd3728b-a325-46b8-b18c-537e0dfb5089" extendedConfigurationObject="01ec4015-46b0-4727-9426-bc31b876915e">
+    <name>СпециальнаяРабота1</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>String</type>
+        </types>
+        <stringQualifiers>
+          <length>35</length>
+        </stringQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </resources>
+  <resources uuid="50f44557-5265-4912-b7bc-7ccb4539cd1d" extendedConfigurationObject="ec862ddc-1890-43ec-8995-3ba7aa11cb78">
+    <name>СпециальнаяРабота10</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>String</type>
+        </types>
+        <stringQualifiers>
+          <length>35</length>
+        </stringQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </resources>
+  <resources uuid="2db72621-5b58-4745-9047-3ee18721f2c6" extendedConfigurationObject="198f3ae4-2707-488c-b66d-5377cad8ac8c">
+    <name>СпециальнаяРабота2</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>String</type>
+        </types>
+        <stringQualifiers>
+          <length>35</length>
+        </stringQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </resources>
+  <resources uuid="6206c94b-1472-4482-8a18-9623c1c443bd" extendedConfigurationObject="534c333b-c6da-44b3-bdce-0723b1c204c3">
+    <name>СпециальнаяРабота3</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>String</type>
+        </types>
+        <stringQualifiers>
+          <length>35</length>
+        </stringQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </resources>
+  <resources uuid="97456bcd-fcbe-4a23-955c-f09d91c50f88" extendedConfigurationObject="dbba6312-08a0-441d-8a19-c30f2ee47995">
+    <name>СпециальнаяРабота4</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>String</type>
+        </types>
+        <stringQualifiers>
+          <length>35</length>
+        </stringQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </resources>
+  <resources uuid="eb8dcaae-9c09-4444-ac69-c8c37b5c75b7" extendedConfigurationObject="cef104db-7fb1-432e-845a-6c9f6ed9ad8c">
+    <name>СпециальнаяРабота5</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>String</type>
+        </types>
+        <stringQualifiers>
+          <length>35</length>
+        </stringQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </resources>
+  <resources uuid="4b635ec2-27ac-47e2-b676-bd3216bea803" extendedConfigurationObject="4ee57012-74f5-4acb-b944-4e451f5cbf57">
+    <name>СпециальнаяРабота6</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>String</type>
+        </types>
+        <stringQualifiers>
+          <length>35</length>
+        </stringQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </resources>
+  <resources uuid="b3aac030-bd87-4358-840e-bdfed3720cf5" extendedConfigurationObject="76d41fdc-1977-4e1e-927f-f50e9bb159a7">
+    <name>СпециальнаяРабота7</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>String</type>
+        </types>
+        <stringQualifiers>
+          <length>35</length>
+        </stringQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </resources>
+  <resources uuid="186a5e14-f8d6-4a22-991e-4a65fb5236ff" extendedConfigurationObject="a19ab8fd-4a1b-46a9-83e5-bf10e34088f8">
+    <name>СпециальнаяРабота8</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>String</type>
+        </types>
+        <stringQualifiers>
+          <length>35</length>
+        </stringQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </resources>
+  <resources uuid="72c7acd3-c140-4bf1-83f2-7b367f2de750" extendedConfigurationObject="954b3aa2-7fdc-4b3e-b04e-63d560e485a5">
+    <name>СпециальнаяРабота9</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>String</type>
+        </types>
+        <stringQualifiers>
+          <length>35</length>
+        </stringQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </resources>
+  <resources uuid="cce98a6c-05bb-4251-a9d0-b2b3f9fdafc3" extendedConfigurationObject="691d1086-6613-41d1-ab51-db656932762b">
+    <name>УчитыватьПростоиДляРасчетаНормыМоточасов</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Boolean</type>
+        </types>
+      </typeExtension>
+    </extension>
+    <type/>
+  </resources>
+  <dimensions uuid="6b6f2692-4ace-4f80-a715-e9f561aa277f" extendedConfigurationObject="9612a557-5929-4e3f-89bc-bc4829f7e7bb">
+    <name>ГСМ</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>CatalogRef.Номенклатура</type>
+        </types>
+      </typeExtension>
+    </extension>
+    <type/>
+  </dimensions>
+  <dimensions uuid="f0106de3-a629-4f73-8adc-f5488b1094d3" extendedConfigurationObject="013145d2-f242-4ddb-a5af-a012f5b21aed">
+    <name>МодельТС</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>AnyRef</type>
+        </types>
+      </typeExtension>
+    </extension>
+    <type/>
+  </dimensions>
+  <dimensions uuid="d5e96fcd-4a35-4b95-b163-c554179c584f" extendedConfigurationObject="a0bb0ae0-04dd-4600-bdb7-27965045f356">
+    <name>Организация</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>CatalogRef.Организации</type>
+        </types>
+      </typeExtension>
+    </extension>
+    <type/>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e0f7b296-900e-43e7-b2b2-8c51e87bed40">
+  <producedTypes>
+    <selectionType typeId="a6d62ea1-e19c-49a2-b863-d3c41299d96e" valueTypeId="cde0a67e-48c7-4119-a9dd-849a74e360f4"/>
+    <listType typeId="9ea4c341-738e-479b-a178-1cc5effcf75a" valueTypeId="47c2e385-5e1b-4647-8ca5-534dfd20e7da"/>
+    <managerType typeId="e8f27a0a-9454-4b9c-be2b-508e208f3233" valueTypeId="3bf021a0-c4b4-40be-98a6-e292c6ef8a37"/>
+    <recordSetType typeId="388806b9-ef75-486d-bad0-4d34da778d7f" valueTypeId="d8dd1470-f8c2-4b1d-9eff-debc8f05d884"/>
+    <recordKeyType typeId="1f6af41d-f98d-4004-bdb4-36a654b19524" valueTypeId="7c1eefe6-51d8-47dd-a800-65ef6c7f767d"/>
+    <recordType typeId="fe37bb97-68df-4483-8a43-1f177bb90d14" valueTypeId="c28231e2-d458-4c0d-b4b1-7c27677b95da"/>
+    <recordManagerType typeId="5fcab2af-32db-4ef9-aecb-0ad186edf04a" valueTypeId="3cf55018-7f8e-44aa-b0d4-fcf2872e4032"/>
+  </producedTypes>
+  <name>торо_НастройкиУведомлений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки уведомлений</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="9132bcf6-4431-46c6-ba52-bd56cee209ca">
+    <name>ВидДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид документа</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Вид документа)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="160c7032-085d-45b0-b615-74d16591af2f">
+    <name>СобытиеПоДокументу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Событие по документу</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_СобытияУведомленийВДокументах</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Событие по документу)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="cd64e601-37f9-4fde-93b4-18d60c481cd6">
+    <name>Событие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Событие</value>
+    </synonym>
+    <type>
+      <types>EnumRef.торо_СобытияУведомленийПользователей</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>(Событие)</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

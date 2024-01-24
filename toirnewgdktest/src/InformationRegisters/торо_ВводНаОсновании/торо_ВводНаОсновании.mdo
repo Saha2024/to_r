@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="797f8d87-6cee-4127-8660-ae1f45ab7bd8">
+  <producedTypes>
+    <selectionType typeId="a568611a-defc-4131-8b2b-7c3019942ea3" valueTypeId="79127327-5ef2-418a-bf9b-0176ddc6d183"/>
+    <listType typeId="e69e29fa-47e1-459f-8c28-88d3591fba7d" valueTypeId="ddcb2139-7e4e-4043-b4ae-6321d5666687"/>
+    <managerType typeId="3323552a-efbb-4d29-ab44-8e2c35b5f571" valueTypeId="9b2fac39-4b19-49c2-9ee3-bb7dff7debb8"/>
+    <recordSetType typeId="8f4bfd01-46b1-4fdc-bb64-da27e54e8088" valueTypeId="213fe0b1-c5df-4f22-a891-4cb476d61f49"/>
+    <recordKeyType typeId="ed2f0eb4-203e-4a0e-b4ab-cce7c0be284e" valueTypeId="b291d272-5dd5-43b7-a055-cd91fb991057"/>
+    <recordType typeId="0d5db229-ce38-41ce-8e8b-39263f0477ed" valueTypeId="2b7ad7e7-fd4b-4526-a5e7-624865ccd89f"/>
+    <recordManagerType typeId="53f80884-1186-47d8-a0c8-a5e7cab17849" valueTypeId="922c0589-1476-4438-ae64-4ed5a5661bca"/>
+  </producedTypes>
+  <name>торо_ВводНаОсновании</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ввод на основании (ТОиР)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="15e3931d-85aa-4e38-93b5-96c57e09d374">
+    <name>Значение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Истина или Ложь</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="3b3f4503-a841-4df1-adcd-669453f48952">
+    <name>ДокументОснование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ-основание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Документ, который является основанием.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="446aa1d5-66f8-4bc6-9412-1f9bb39a3d76">
+    <name>ДокументВводимый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Документ вводимый</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Документ, который вводится на основании</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

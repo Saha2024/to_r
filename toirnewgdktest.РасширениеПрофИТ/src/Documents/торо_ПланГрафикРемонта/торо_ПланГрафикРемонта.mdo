@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="c5ecaa50-7787-47aa-a9e1-22a73420b947" extendedConfigurationObject="71909b36-38e5-4d41-9803-7860ed2b377d">
+  <producedTypes>
+    <objectType typeId="7e2b3a94-32c8-459f-ba7a-d13260d2ce79" valueTypeId="8c1342a4-5b5f-410e-bd32-71c7f74179bc"/>
+    <refType typeId="91989609-7b18-4471-91be-43e5d50bca74" valueTypeId="804b14f9-c075-4f8a-bc83-b8f5f29d7fd9"/>
+    <selectionType typeId="c91f2dd6-a19c-4082-8efa-04bccd2bcbdd" valueTypeId="18ca850d-68ab-40f0-9a83-8d2b766dd35c"/>
+    <listType typeId="0282994d-9b05-473b-b588-dcdd66a6afa8" valueTypeId="ef077d96-2847-4899-9636-b442268e15ac"/>
+    <managerType typeId="72330cef-1753-4de5-9449-a351fcab3435" valueTypeId="f19006e7-b275-4674-85ea-1db935650027"/>
+  </producedTypes>
+  <name>торо_ПланГрафикРемонта</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+  </extension>
+  <attributes uuid="92acfb19-1648-44f1-9f68-75e27b5249c4" extendedConfigurationObject="7e9515d4-1e0b-402a-8a9b-c6a04c349bc7">
+    <name>ВидОперации</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>EnumRef.торо_ВидыОперацийПланаГрафикаППР</type>
+        </types>
+      </typeExtension>
+    </extension>
+    <type/>
+  </attributes>
+  <forms uuid="fb639652-b79d-45aa-bb82-2551fb6caa24" extendedConfigurationObject="8349c6da-9139-4f5e-a309-924853ad302c">
+    <name>ФормаДокумента</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFormExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <form>Extended</form>
+    </extension>
+  </forms>
+  <tabularSections uuid="7332b1e1-29c6-44d6-8942-04ff27285a3e" extendedConfigurationObject="caabbdda-e895-4d1f-939f-3da6bbc4ef8a">
+    <producedTypes>
+      <objectType typeId="3a052b19-1b9a-473f-b04f-5abe7b88b72c" valueTypeId="9459b27d-62ad-411b-b1a8-e75af5abb254"/>
+      <rowType typeId="f8579888-6ff2-470b-9666-614505c38460" valueTypeId="c0584bce-ad4d-488a-aa5d-1e6b58f9da63"/>
+    </producedTypes>
+    <name>ПланРемонтов</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+    <attributes uuid="32000856-bfa1-40a3-9877-7c9ef4080145" extendedConfigurationObject="33a739f5-f146-4490-87df-57785546d548">
+      <name>ID</name>
+      <objectBelonging>Adopted</objectBelonging>
+      <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+        <extendedConfigurationObject>Checked</extendedConfigurationObject>
+        <typeExtension>
+          <types>
+            <state>Checked</state>
+            <type>String</type>
+          </types>
+          <stringQualifiers>
+            <length>36</length>
+          </stringQualifiers>
+        </typeExtension>
+      </extension>
+      <type/>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

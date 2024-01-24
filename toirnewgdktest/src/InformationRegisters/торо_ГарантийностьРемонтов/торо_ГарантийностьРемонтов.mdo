@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8199c5e5-e082-4a93-aa44-3bbc180ba05d">
+  <producedTypes>
+    <selectionType typeId="4c18c986-2153-4f51-945c-30807280aa9e" valueTypeId="497d9b1f-28d1-4146-9e34-a6a308357edf"/>
+    <listType typeId="cbe4764d-e0ca-4281-8210-a0b90d4e127e" valueTypeId="3fbe850a-fc38-4634-b504-3486f008549d"/>
+    <managerType typeId="afdf610e-cbc2-4136-a54c-cd3c9bed1203" valueTypeId="5de8e244-6e53-487e-a5af-242628f2a75c"/>
+    <recordSetType typeId="2366c170-4f88-4bc1-b0b0-574826c6b6d8" valueTypeId="9753dab7-6ccf-441e-92d0-fdf05ba24352"/>
+    <recordKeyType typeId="8964dc52-0e9e-4635-844c-a6523997e999" valueTypeId="b36c6f06-cc52-4b2f-882d-8577cd33b165"/>
+    <recordType typeId="e98cd26e-392c-400c-9588-e84d3376c2f3" valueTypeId="4d645895-f38e-4b47-9633-e0452e7bfe82"/>
+    <recordManagerType typeId="14d41823-1766-4f22-9306-a4ec695659ed" valueTypeId="af3d646d-5159-4ef6-ac91-ee00ae0b8680"/>
+  </producedTypes>
+  <name>торо_ГарантийностьРемонтов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Гарантийность ремонтов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="ea810cb0-8f81-42a1-be97-80deb6a1a710">
+    <name>Гарантийный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Гарантийный</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="8043c47d-648e-4466-9081-baadd7eb5529">
+    <name>IDРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>IDРемонта</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

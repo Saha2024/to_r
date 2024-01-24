@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="804fd536-3a68-49c2-9909-ceb5ae31f996">
+  <producedTypes>
+    <selectionType typeId="2d99d48f-1bae-4f89-aa2c-b353b1ef400f" valueTypeId="75e544cc-8ff1-41d0-8282-0e621d2ff141"/>
+    <listType typeId="23cdf05e-2bf1-41bc-abab-ab5a09aeadaa" valueTypeId="e0940b51-2627-4122-9110-9cc675434528"/>
+    <managerType typeId="b5ab2b3b-c1a2-489c-b705-8240b8b3aa2b" valueTypeId="e81acb6d-2172-455c-b086-5c23783ffe0b"/>
+    <recordSetType typeId="b79b7de9-2212-4e2b-843e-68fde313184c" valueTypeId="fbc6db81-53b5-4f6e-b5aa-f494ec8cd7c7"/>
+    <recordKeyType typeId="d6fe542a-53f7-43c6-a3ae-81eefbe9e53e" valueTypeId="a66bdb6d-87a3-413d-80cb-639e7863330d"/>
+    <recordType typeId="d09a7c47-17ef-469c-bdfa-493f28fe4451" valueTypeId="bbde650a-baa0-478f-95d3-5c63e6d23c55"/>
+    <recordManagerType typeId="fc97bde6-1119-4a7c-8196-8ceec1362ada" valueTypeId="55ae288b-296d-4a74-934e-6eea5ea36ce3"/>
+  </producedTypes>
+  <name>торо_ИтоговаяПлановаяПотребностьВИнструментах</name>
+  <synonym>
+    <key>ru</key>
+    <value>Итоговая плановая потребность в инструментах</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="c84777b7-25fe-49fc-a7bc-b157d9b12c82">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="b688f87a-cc2e-4909-9bfe-f19833d589e3">
+    <name>IDРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>IDРемонта</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Идентификатор ремонта</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="04f7d652-eaf5-428b-a0bb-2392cd134763">
+    <name>Инструмент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Инструмент</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

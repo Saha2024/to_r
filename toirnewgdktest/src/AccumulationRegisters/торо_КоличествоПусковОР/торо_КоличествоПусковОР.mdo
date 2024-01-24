@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="16955970-6913-4cc5-8331-fcbdedf5489f">
+  <producedTypes>
+    <selectionType typeId="dd2c70b3-d67e-497f-a745-b251479356f0" valueTypeId="d21f99de-f20b-404c-bdd9-4e51e7e89344"/>
+    <listType typeId="560bd036-db90-4a54-bd81-a0411b68ffc4" valueTypeId="0f3b94af-b837-499b-a43c-75bd9e5f310e"/>
+    <managerType typeId="e35d11b3-2d9c-4f33-9e2e-b75290da8e55" valueTypeId="fbda38ac-11af-407b-af00-8160a8fb7c34"/>
+    <recordSetType typeId="4c0f9da9-ae84-4c78-9882-1354716f9408" valueTypeId="2158f1b4-7fd3-43c8-a5fc-d6511abe7671"/>
+    <recordKeyType typeId="f06040c6-53cf-43f7-a3de-a267c3e5ba55" valueTypeId="66d1805d-5b34-40bf-837b-16535e76c518"/>
+    <recordType typeId="c11d5961-0e89-4a28-9a4c-e90faa72cd9b" valueTypeId="d2e861f7-811a-4832-85ef-7333014e3e90"/>
+  </producedTypes>
+  <name>торо_КоличествоПусковОР</name>
+  <synonym>
+    <key>ru</key>
+    <value>Количество пусков объектов ремонта</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <toolTip>
+      <key>ru</key>
+      <value>Период записи регистра</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="355a2d4a-1937-4799-8fc3-69bb4228762d">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Количество пусков</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="f3ec61ac-7dee-4725-b62b-2e2ee4a39f6d">
+    <name>ОбъектРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект ремонта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ОбъектыРемонта</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Объект ремонтных работ</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="e5ec7aae-c863-4f5e-8c2a-c8954e02420f">
+    <name>ВидПуска</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид пуска</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ВидыПусковОР</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Вид пуска объекта ремонта</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c1f901d9-8142-4e6b-9226-441aabaac86c">
+  <name>торо_ОбменMobileBrigades_ПередУдалением</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен Мобильные бригады</value>
+  </synonym>
+  <source>
+    <types>CatalogObject.торо_ТиповыеОР</types>
+    <types>CatalogObject.торо_ИдентификаторыТехКарт</types>
+    <types>CatalogObject.торо_ПричиныДефектов</types>
+    <types>CatalogObject.торо_ТехКартыПрисоединенныеФайлы</types>
+    <types>CatalogObject.Склады</types>
+    <types>CatalogObject.торо_ОбъектыРемонтаПрисоединенныеФайлы</types>
+    <types>CatalogObject.торо_НаправленияОбъектовРемонтныхРабот</types>
+    <types>CatalogObject.торо_УсловияВыявленияДефекта</types>
+    <types>CatalogObject.торо_ТиповыеОРПрисоединенныеФайлы</types>
+    <types>CatalogObject.торо_ТехнологическиеОперации</types>
+    <types>CatalogObject.торо_ОбъектыРемонта</types>
+    <types>CatalogObject.торо_ТехКарты</types>
+    <types>CatalogObject.Организации</types>
+    <types>CatalogObject.торо_КритичностьДефекта</types>
+    <types>CatalogObject.Номенклатура</types>
+    <types>CatalogObject.торо_ВидыРемонтов</types>
+    <types>CatalogObject.ЕдиницыИзмерения</types>
+    <types>CatalogObject.Сотрудники</types>
+    <types>CatalogObject.ВидыНоменклатуры</types>
+    <types>CatalogObject.СтруктураПредприятия</types>
+    <types>DocumentObject.торо_НарядНаРегламентноеМероприятие</types>
+    <types>CatalogObject.торо_ВидыДефектов</types>
+    <types>CatalogObject.торо_ПриоритетыОбъектовРемонта</types>
+    <types>CatalogObject.ХарактеристикиНоменклатуры</types>
+    <types>CatalogObject.торо_РемонтныеБригады</types>
+    <types>DocumentObject.торо_ЗаявкаНаРемонт</types>
+  </source>
+  <event>BeforeDelete</event>
+  <handler>CommonModule.торо_ОбменMobileBrigadesСобытия.Обмен_mobileBrigades_ЗарегистрироватьИзменениеПередУдалением</handler>
+</mdclass:EventSubscription>

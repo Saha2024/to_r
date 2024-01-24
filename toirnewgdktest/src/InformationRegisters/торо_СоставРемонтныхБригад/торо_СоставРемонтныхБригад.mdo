@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e118f780-2407-4f1d-bf96-d234c7de33ef">
+  <producedTypes>
+    <selectionType typeId="495700f7-c4d6-49ed-a71b-ab44889ffa43" valueTypeId="36dcedc1-5158-4991-b5bd-c09bc67eeba6"/>
+    <listType typeId="2ee923b6-d3b9-4c4b-bc86-a0e80cc4a276" valueTypeId="8de6bdec-8d68-40f6-9828-30263099ed06"/>
+    <managerType typeId="7c967d12-a844-4d0d-8c61-7987af6b0cc3" valueTypeId="65a582bf-708a-4a15-9005-956e34ac7c24"/>
+    <recordSetType typeId="bc4c0150-2aba-4cc9-8f38-d09c861a586f" valueTypeId="87589ecc-4350-4601-a8a3-9363a0eabf34"/>
+    <recordKeyType typeId="79b54f33-e21d-4e84-8dd6-2faa1a45426b" valueTypeId="c02ffb57-8233-444e-8723-ffbf190da427"/>
+    <recordType typeId="1f27864c-f561-45b3-91fc-0c359ecf22b7" valueTypeId="33ba25fd-c779-426a-93ae-92d382ca40e6"/>
+    <recordManagerType typeId="4dcb7fb9-1ee7-4a8f-a8b1-8071dad2c452" valueTypeId="ed93351d-a047-4232-ad90-c85137f457a5"/>
+  </producedTypes>
+  <name>торо_СоставРемонтныхБригад</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состав ремонтных бригад</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период</value>
+    </synonym>
+    <toolTip>
+      <key>ru</key>
+      <value>Период на который актуальна запись в регистре</value>
+    </toolTip>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <resources uuid="0cbb7d7b-dd52-45bf-a64b-9527c930e8a9">
+    <name>ИсключенИзБригады</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исключен из бригады</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Исключен ли из бригады</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e59bb192-ce87-4b39-90e0-8adbdbd2b721">
+    <name>Бригадир</name>
+    <synonym>
+      <key>ru</key>
+      <value>Бригадир</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Это бригадир</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="f7f11019-6372-48ad-b5f9-08d2aa94c28c">
+    <name>Исполнитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исполнитель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Исполнитель в составе бригады</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="1f06a84a-a593-4970-a1d2-903632c954af">
+    <name>Квалификация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Квалификация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_КвалификацииРемонтногоПерсонала</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Квалификация исполнителя в составе бригады</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="8e1aeb3d-c5ad-41db-a999-d2d9d3829a38">
+    <name>РемонтнаяБригада</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ремонтная бригада</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_РемонтныеБригады</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Ремонтная бригада для которой определяется состав</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

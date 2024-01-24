@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d81c8864-3bb0-4bfc-a7ac-6ce765dd0f9a">
+  <producedTypes>
+    <objectType typeId="d52791df-ea6f-4603-917c-91cb9e20f312" valueTypeId="9a302bef-f3c0-4bf2-9743-702a0f77c572"/>
+    <refType typeId="c803f52c-5fff-429c-b40e-829f2bd913e3" valueTypeId="d7655bbd-aeff-4ab7-b6f8-5eea9ab9924b"/>
+    <selectionType typeId="88992bd5-abdb-49cc-a3e1-b7cea98180e6" valueTypeId="c1b80de2-15d8-4d58-b525-039e7a6c31ba"/>
+    <listType typeId="d38e1af8-2e39-4f47-87d0-172fb38345e9" valueTypeId="3aae4497-56b6-4ad3-8100-df3b1473d4cc"/>
+    <managerType typeId="ee24109c-5bd4-4f0e-8019-c20ab37b76d7" valueTypeId="8c613d95-783b-4443-ba98-a4d56d607578"/>
+  </producedTypes>
+  <name>проф_НаправленияДеятельности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Направления деятельности</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.проф_НаправленияДеятельности.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="8e239639-687c-49fd-9555-bf8ee91b37d4">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.проф_СтатусыНаправленияДеятельности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="30a37f07-d93c-4609-a038-f5bdad8e5aaa">
+    <name>НалогообложениеНДС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Налогообложение НДС</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипыНалогообложенияНДС</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="495b9727-43fa-40db-865d-1c8ddcac18df">
+    <name>НалогообложениеНДСОпределяетсяВДокументе</name>
+    <synonym>
+      <key>ru</key>
+      <value>Налогообложение НДСОпределяется в документе</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d123aaf6-b90e-48d6-8f0c-ee6a2bb80cce">
+    <name>ДатаНачалаДеятельности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала деятельности</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="27bc5277-e22e-4245-bc2f-8397423cb753">
+    <name>ДатаОкончанияДеятельности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания деятельности</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

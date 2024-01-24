@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="42e8eeaf-b6a5-4de6-89e7-c151b0e06fdd" extendedConfigurationObject="4a69a70d-1b4c-4999-a3dd-ae1deb331fea">
+  <producedTypes>
+    <selectionType typeId="4f5ba38d-92ea-472f-aaa9-7585d9d9ef63" valueTypeId="57562c27-9e96-4395-b916-f36dc2d81e3f"/>
+    <listType typeId="cceae9f1-a72d-4989-bf2d-2ca9bce4ef9b" valueTypeId="2ed96c68-c9fc-4d32-8a19-7ccf8f2bd1a7"/>
+    <managerType typeId="bcd5bf4b-b8d3-4040-a889-dec8421996f2" valueTypeId="6811e3e8-5280-4b20-96c2-168fbcbed710"/>
+    <recordSetType typeId="ea60fba9-5453-4936-9bf2-e1d2d5f5cd53" valueTypeId="36b45f7a-9630-45b8-92aa-ddfd0311afef"/>
+    <recordKeyType typeId="018e1029-96c6-4bf7-b5ed-a5fc88668634" valueTypeId="1f6fc56f-f602-428d-a724-e4840a4ef6a9"/>
+    <recordType typeId="09134a6d-12cd-4ccd-b4e0-bd43b345e44e" valueTypeId="84aafbe2-1dab-4def-989f-36fa71d0d411"/>
+    <recordManagerType typeId="0e66e4cb-26b8-49ef-9c7c-ec4da57405b5" valueTypeId="538529e9-1a7b-46ec-8b61-34f89b445b37"/>
+  </producedTypes>
+  <name>ДанныеПроизводственногоКалендаря</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:InformationRegisterExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <informationRegisterPeriodicity>Checked</informationRegisterPeriodicity>
+    <writeMode>Checked</writeMode>
+  </extension>
+  <dimensions uuid="ddb2abb0-2c50-4fc8-9ec6-5c7ecdb4c59d" extendedConfigurationObject="563c0f5c-e0b4-4229-a3f6-183091060aa4">
+    <name>Дата</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <typeExtension>
+        <types>
+          <state>Checked</state>
+          <type>Date</type>
+        </types>
+        <dateQualifiers>
+          <dateFractions>Date</dateFractions>
+        </dateQualifiers>
+      </typeExtension>
+    </extension>
+    <type/>
+  </dimensions>
+</mdclass:InformationRegister>

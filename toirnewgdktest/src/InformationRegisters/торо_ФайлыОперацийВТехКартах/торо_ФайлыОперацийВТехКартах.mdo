@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="43d90b8d-b062-428e-a2a8-f2d04b08a0d9">
+  <producedTypes>
+    <selectionType typeId="4a0a4ec1-f13d-47bf-8734-fcd8ce1e4cf0" valueTypeId="32b9c184-97d0-4ed3-8fff-ef723683c274"/>
+    <listType typeId="c6695dd7-8d49-4027-b279-dd3fe593cc50" valueTypeId="8813c378-17c7-4ef6-a715-5df01d4f21d9"/>
+    <managerType typeId="d542e9dd-b89a-4c06-a36b-35d31e6a2fa6" valueTypeId="e8e3d067-5f23-4ebb-b069-c6fab58ff61a"/>
+    <recordSetType typeId="46db33da-e822-4910-88ef-f5dc59497dd7" valueTypeId="3af62916-da54-46e1-b5a2-31ac604bd5bd"/>
+    <recordKeyType typeId="233b7117-a242-4c50-bdba-80cca001509d" valueTypeId="d0157cf5-4aa0-4442-8d56-14fd36b4b7f3"/>
+    <recordType typeId="b3e9e416-7737-41e1-a831-b26ad8a55099" valueTypeId="f6c0d89d-a1d7-4040-9eae-148bee83b4b9"/>
+    <recordManagerType typeId="af41e342-9eb2-41d0-8cc2-ac3028f9d9a9" valueTypeId="2f927023-5bc2-47dd-a3bf-33014c7be3d1"/>
+  </producedTypes>
+  <name>торо_ФайлыОперацийВТехКартах</name>
+  <synonym>
+    <key>ru</key>
+    <value>Файлы операций в тех картах</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="cc178090-f60e-4642-b70f-a10ff3392d46">
+    <name>ТехКарта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тех карта</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ТехКарты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="7395108f-9e28-4345-a938-cc89578a0588">
+    <name>ПрисоединенныйФайл</name>
+    <synonym>
+      <key>ru</key>
+      <value>Присоединенный файл</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ТехКартыПрисоединенныеФайлы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="d41d2711-5eea-4da5-b3e7-41c1d8efe54b">
+    <name>ID_Операции</name>
+    <synonym>
+      <key>ru</key>
+      <value>ID операции</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

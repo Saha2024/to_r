@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="93113e5d-de16-406c-89fd-c48cc555a41c">
+  <producedTypes>
+    <refType typeId="a739c10f-2de7-4676-857f-1fa3f0add6d7" valueTypeId="d35dfb41-5f53-4a88-b8cc-4a8a8a5cbf3f"/>
+    <listType typeId="be368245-f2f1-42af-87b4-69d9d118e344" valueTypeId="17a5195f-1548-4228-b69c-543d9e8b46c1"/>
+    <managerType typeId="3963f99e-1f6c-4003-8055-f4fe14095c66" valueTypeId="001d198f-5b28-4981-a764-d7a51b84fd0d"/>
+  </producedTypes>
+  <name>торо_СпособыУчетаДатыОтсчетаПриПланированииРемонтныхРабот</name>
+  <synonym>
+    <key>ru</key>
+    <value>Способы учета даты отсчета при планировании ремонтных работ</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="1ff298d7-9506-4e33-8a10-595c42ae31eb">
+    <name>ИспользоватьДатуВводаВЭксплуатацию</name>
+    <synonym>
+      <key>ru</key>
+      <value>По дате ввода в эксплуатацию или последнему ремонту</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6d9e0666-85ff-49ed-a96c-24e09088bd50">
+    <name>ИспользоватьДатуПланированияВКачествеДатыОтсчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать дату планирования</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9491a06f-1d6d-4859-bcee-31ec82896021">
+    <name>НеИспользоватьДатуВводаВЭксплуатацию</name>
+    <synonym>
+      <key>ru</key>
+      <value>По последнему ремонту</value>
+    </synonym>
+    <comment>Последний ремонт или ничего</comment>
+  </enumValues>
+  <enumValues uuid="c204b795-c58a-437a-b126-5aac2e00445e">
+    <name>ПоПоследнемуРемонтуИлиДатеПланирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>По последнему ремонту или дате планирования</value>
+    </synonym>
+    <comment>Последний ремонт или дата планирования</comment>
+  </enumValues>
+  <enumValues uuid="9594897a-16c6-4fcd-8654-a26e3dc71001">
+    <name>ПоДатеВводаВЭксплуатациюИлиПлановымДатам</name>
+    <synonym>
+      <key>ru</key>
+      <value>По дате ввода в эксплуатацию или плановым датам</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

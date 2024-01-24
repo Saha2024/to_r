@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="953fa9ac-0f50-45bc-b811-a8b3a175ac6b">
+  <name>торо_СогласованиеПриКопированииДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Согласование, при копировании документа</value>
+  </synonym>
+  <source>
+    <types>DefinedType.торо_СогласуемыеДокументыОбъекты</types>
+  </source>
+  <event>OnCopy</event>
+  <handler>CommonModule.торо_РаботаССогласованиями.торо_СогласованиеПриКопированииДокументаПриКопировании</handler>
+</mdclass:EventSubscription>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c7197952-917e-476f-8b3c-c1c48e43bd34">
+  <producedTypes>
+    <selectionType typeId="c3b56c86-d34c-40ee-b05e-2ebb44f6aa5c" valueTypeId="a669b0dc-fab5-46bb-9c87-7880d2aeef0d"/>
+    <listType typeId="0e82ed38-d457-44a1-8382-1a227430ed17" valueTypeId="1bd69be3-36e5-4398-9d13-149509ff4ae8"/>
+    <managerType typeId="e74514b6-1b34-4a74-92d1-a25317c0eeab" valueTypeId="adbe00e8-2f26-48b4-9267-5e860dca60a8"/>
+    <recordSetType typeId="e6d13949-dadd-4002-a034-ddf8ecae5db3" valueTypeId="c1244977-d7fc-4b4e-809d-673051b4fb77"/>
+    <recordKeyType typeId="851fc4f1-e242-4c56-9dce-97b98d57e513" valueTypeId="67a83ded-151a-4779-8363-eb5921877511"/>
+    <recordType typeId="e97aebaa-7cda-4ced-b67f-82f6c5c8da4b" valueTypeId="11957673-661b-47f5-9383-634f92a89a24"/>
+    <recordManagerType typeId="c6b97cfa-58c0-4cd8-95eb-98c3ce59c05b" valueTypeId="0b4c82da-70e7-4208-bf64-11a75af5d099"/>
+  </producedTypes>
+  <name>торо_СкользящийПланРабот</name>
+  <synonym>
+    <key>ru</key>
+    <value>Скользящий план работ</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>RecorderPosition</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="68b75093-66c8-4476-9ef3-ca89e6035de7">
+    <name>ДатаНачалаРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала ремонта</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="86f6a091-0812-4c9c-a7a0-f416607c1673">
+    <name>ДатаОкончанияРемонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания ремонта</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="b4a76e48-d7a2-401f-bbec-a50d07a24760">
+    <name>КрайняяДатаЗавершения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Крайняя дата завершения</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="d9effe5f-a2ea-428c-80b1-98b8006ffa11">
+    <name>ВидПлана</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид плана</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ВидыСкользящихПланов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="4127d1c3-b5db-468c-9916-bf9d41f8094a">
+    <name>ДатаНачалаБазовогоПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала базового периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="0ad0cdc6-cbfd-486f-8f37-e3959082b847">
+    <name>ДатаОкончанияБазовогоПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата окончания базового периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="5fb32c99-600d-401d-904b-5d595b962d7a">
+    <name>ДатаОтсчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата отсчета</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="51911962-d3a6-41c6-af03-363f936687fc">
+    <name>ID_Ремонта</name>
+    <synonym>
+      <key>ru</key>
+      <value>ID ремонта</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

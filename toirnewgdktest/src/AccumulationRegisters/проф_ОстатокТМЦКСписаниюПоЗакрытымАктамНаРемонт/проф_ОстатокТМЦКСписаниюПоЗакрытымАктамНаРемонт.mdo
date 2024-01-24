@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6ae04480-96d0-4b42-a38a-77468b8202a6">
+  <producedTypes>
+    <selectionType typeId="f2999080-5936-4f5e-9ee4-40481a5fa22f" valueTypeId="a9702c27-67a8-405d-8a72-853b9c3863a8"/>
+    <listType typeId="79ed46c2-9fb0-4cfa-9900-e6b4aabe5e23" valueTypeId="c355b0f0-216a-43d8-bca0-24823b3c8962"/>
+    <managerType typeId="0b83a64a-9fa5-453f-b2dc-b3441ff88eec" valueTypeId="023516da-a142-4a58-93c0-fc2889a4af6c"/>
+    <recordSetType typeId="24babf04-8059-4145-a0ea-cf301e1c8939" valueTypeId="d419c2ab-d4cd-4125-b2d6-da50c85bbb4f"/>
+    <recordKeyType typeId="94021506-2fb4-4cf1-9516-a09d83f3ee82" valueTypeId="ad91675c-5d57-46bf-abb2-e86bc599f2df"/>
+    <recordType typeId="e2385b71-5136-4159-8d15-c2580ebe969c" valueTypeId="c1229251-50fd-4663-a4f0-067534288d1f"/>
+  </producedTypes>
+  <name>проф_ОстатокТМЦКСписаниюПоЗакрытымАктамНаРемонт</name>
+  <synonym>
+    <key>ru</key>
+    <value>Остаток ТМЦ к списанию по закрытым актам на ремонт (Проф-ИТ)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="08ca1fe2-22ec-4b93-a944-e923fd69ea51">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>3</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Затраченное количество</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="b0a906f0-c1ef-48b1-9e3c-1419f3d9e085">
+    <name>АктОВыполненииЭтапаРабот</name>
+    <synonym>
+      <key>ru</key>
+      <value>Акт о выполнении этапа работ</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.торо_АктОВыполненииЭтапаРабот</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="cf269c73-3461-41b0-b4ca-c1d0165d64a0">
+    <name>Номенклатура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номенклатура</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Номенклатура, остатки которой учитываются на складах.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="94b5fc89-114f-4c0b-bbfc-774d7d18f1fb">
+    <name>Характеристика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Характеристика</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ХарактеристикиНоменклатуры</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Характеристика номенклатуры, остатки которой учитываются на складах.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>

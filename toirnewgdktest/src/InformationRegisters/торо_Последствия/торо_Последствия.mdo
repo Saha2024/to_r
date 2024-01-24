@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="26fa38f6-2cee-4c87-bac3-27240ed396e3">
+  <producedTypes>
+    <selectionType typeId="9617e656-fc1a-473d-a94c-f2dcb27500ea" valueTypeId="67c545b5-4ca6-4251-977c-ed1e3f9018e2"/>
+    <listType typeId="c7b297e7-837e-440c-bbe2-be4e9f2e5065" valueTypeId="56601a30-48d7-4ac2-b002-14f95723df1b"/>
+    <managerType typeId="126d5bd3-01c3-4c7a-8339-cd9c90d3c553" valueTypeId="809b4279-fe70-45e8-9e99-44c941e8ae29"/>
+    <recordSetType typeId="042c8b1b-695b-4be3-bfeb-cd2805c2560d" valueTypeId="22784593-ff30-43bb-86f6-04c7d7faf8a8"/>
+    <recordKeyType typeId="163d03d1-d7da-4deb-bb30-76ea920a7b1f" valueTypeId="c92a11e1-1784-45fe-bdba-cff3c8ee7575"/>
+    <recordType typeId="c760c42d-a7be-43da-8abe-aeeb86bd0075" valueTypeId="329f970f-2ad7-4052-bad8-35d3264d127c"/>
+    <recordManagerType typeId="be9c761c-51ec-47f9-94da-f4f2930cb3ab" valueTypeId="5c14e209-bd7b-413d-b96d-d3c420bfc2ad"/>
+  </producedTypes>
+  <name>торо_Последствия</name>
+  <synonym>
+    <key>ru</key>
+    <value>Последствия</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.торо_Последствия.Form.ФормаСписка</defaultListForm>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="2f8275b5-869b-4b7e-a705-f66e7f5a586e">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="b95b18bb-120c-40e7-9647-cb9eed48a599">
+    <name>ОписаниеЯзык1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание (дополнительный язык 1)</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="57065227-8e01-4249-99ff-be9cbe9ed6a7">
+    <name>ОписаниеЯзык2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание (дополнительный язык 2)</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="03bcbfb7-ec78-4b5e-9541-8b73ca6c0853">
+    <name>ОбъектВоздействия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект воздействия</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_ОбъектыВоздействия</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="191ae35e-a9db-46ad-98a4-dae4cb004144">
+    <name>КатегорияТяжести</name>
+    <synonym>
+      <key>ru</key>
+      <value>Категория тяжести</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_КатегорииТяжестиПоследствий</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="5e970b9d-a1c7-44bd-99be-a414d45471ce">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <includeHelpInContents>true</includeHelpInContents>
+    <help>
+      <pages>
+        <lang>ru</lang>
+      </pages>
+    </help>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="6d066654-c3e6-4bed-8780-06f02c751500">
+    <name>НачальноеЗаполнение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начальное заполнение</value>
+    </synonym>
+  </templates>
+</mdclass:InformationRegister>

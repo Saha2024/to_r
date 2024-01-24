@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="93ca8c81-b303-434f-9a4d-138c6baa4759">
+  <name>торо_ОбменТОИРRCM_ЗарегистрироватьУдаление</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обмен ТОИР - RCM зарегистрировать удаление</value>
+  </synonym>
+  <source>
+    <types>CatalogObject.торо_ИдентификаторыТехКарт</types>
+    <types>CatalogObject.ПараметрыВыработкиОС</types>
+    <types>DocumentObject.торо_УчетНаработкиОборудования</types>
+    <types>CatalogObject.торо_ТехнологическиеОперации</types>
+    <types>CatalogObject.торо_ОбъектыРемонта</types>
+    <types>CatalogObject.Валюты</types>
+    <types>CatalogObject.ЕдиницыИзмерения</types>
+    <types>DocumentObject.торо_ВыявленныеДефекты</types>
+    <types>CatalogObject.торо_ПриоритетыОбъектовРемонта</types>
+    <types>CatalogObject.торо_СпособыПланированияРемонтныхРабот</types>
+  </source>
+  <event>BeforeDelete</event>
+  <handler>CommonModule.торо_ОбменДаннымиТОИР20RCM.ЗарегистрироватьУдалениеДляRCM</handler>
+</mdclass:EventSubscription>

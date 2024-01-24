@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ec21b4f4-de19-4cc8-8729-28a0d450aca4">
+  <producedTypes>
+    <selectionType typeId="437b7506-de91-4c25-a468-a5e2e7a1f7f6" valueTypeId="559d11c4-4ce1-48d9-931f-11432f8645af"/>
+    <listType typeId="ab55c115-25f3-49e4-a246-e440bc8e01d7" valueTypeId="1ead15d0-2714-42aa-ab2c-375ed4905706"/>
+    <managerType typeId="e7802316-b8d9-4ffd-82c0-f18b04706de4" valueTypeId="3af0b378-8a71-4139-8a05-b59483d4c0a0"/>
+    <recordSetType typeId="3bd7f22c-7cdf-4960-8b96-a33066686ab1" valueTypeId="99c2bdc7-e4db-4f2f-821d-bac2b8567100"/>
+    <recordKeyType typeId="6dd2ac60-2654-4dd4-8a1a-e86ff7f63d03" valueTypeId="1a764f74-7a55-4ed6-9707-e5d17452f054"/>
+    <recordType typeId="fc4bf4cf-57d3-49d8-8086-68d25e635298" valueTypeId="cf71c2b5-6fae-4f1e-b2a1-329f20f239d7"/>
+    <recordManagerType typeId="40101252-6d52-4538-b874-da244e4e6a65" valueTypeId="45c03b3b-ed18-43e4-896b-96934b5625b6"/>
+  </producedTypes>
+  <name>торо_ПараметрыНапоминанийОПодпискахИТС</name>
+  <synonym>
+    <key>ru</key>
+    <value>Параметры напоминаний о подписках 1С:ИТС</value>
+  </synonym>
+  <editType>InDialog</editType>
+  <includeHelpInContents>true</includeHelpInContents>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="e1894d87-3c78-4133-986e-e936d8bff55d">
+    <name>Напоминать</name>
+    <synonym>
+      <key>ru</key>
+      <value>Напоминать</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="1a943db6-e6b6-4783-a286-c6feb57106dd">
+    <name>СрокНапоминания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Срок напоминания (дней)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a3676297-600e-4950-9e5f-ee6cae2406f4">
+    <name>ПараметрыОповещения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры оповещения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.торо_СобытияУведомленийВДокументах</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="6dbb279b-28a4-4d51-99ad-ab7e614a45e7">
+    <name>Событие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Событие</value>
+    </synonym>
+    <type>
+      <types>EnumRef.торо_СобытияПодписокИТС</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

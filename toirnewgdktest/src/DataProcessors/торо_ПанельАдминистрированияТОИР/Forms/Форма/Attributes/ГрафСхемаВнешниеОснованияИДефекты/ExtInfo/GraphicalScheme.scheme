@@ -1,0 +1,1046 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GraphicalSchema xmlns="http://v8.1c.ru/8.3/xcf/scheme" xmlns:sch="http://v8.1c.ru/8.2/data/graphscheme" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<BackColor>style:FieldBackColor</BackColor>
+	<GridEnabled>true</GridEnabled>
+	<DrawGridMode>None</DrawGridMode>
+	<GridHorizontalStep>10</GridHorizontalStep>
+	<GridVerticalStep>10</GridVerticalStep>
+	<PrintParameters>
+		<TopMargin>10</TopMargin>
+		<LeftMargin>10</LeftMargin>
+		<BottomMargin>10</BottomMargin>
+		<RightMargin>10</RightMargin>
+		<BlackAndWhite>false</BlackAndWhite>
+		<FitPageMode>Auto</FitPageMode>
+	</PrintParameters>
+	<Items>
+		<Decoration id="2">
+			<Properties>
+				<Name>торо_УчетВыявленныхДефектовОборудования</Name>
+				<Title>
+					<v8:item>
+						<v8:lang>#</v8:lang>
+						<v8:content>Дефект</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip/>
+				<TabOrder>2</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>0</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font kind="AutoFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<Location top="60" left="190" bottom="100" right="300"/>
+				<Picture/>
+				<PictureSize>AutoSize</PictureSize>
+				<Shape>Block</Shape>
+				<FlipMode>0</FlipMode>
+				<Angle xsi:type="xs:decimal">0</Angle>
+			</Properties>
+		</Decoration>
+		<Decoration id="3">
+			<Properties>
+				<Name>торо_ИспользоватьСметыРемонта</Name>
+				<Title>
+					<v8:item>
+						<v8:lang>#</v8:lang>
+						<v8:content>Заявка</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip/>
+				<TabOrder>3</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>1</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font kind="AutoFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<Location top="60" left="360" bottom="100" right="470"/>
+				<Picture/>
+				<PictureSize>AutoSize</PictureSize>
+				<Shape>Block</Shape>
+				<FlipMode>0</FlipMode>
+				<Angle xsi:type="xs:decimal">0</Angle>
+			</Properties>
+		</Decoration>
+		<Decoration id="4">
+			<Properties>
+				<Name>торо_ИспользоватьНарядыНаВыполнениеРабот</Name>
+				<Title>
+					<v8:item>
+						<v8:lang>#</v8:lang>
+						<v8:content>Наряд</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip/>
+				<TabOrder>4</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>2</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font kind="AutoFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<Location top="60" left="530" bottom="100" right="640"/>
+				<Picture/>
+				<PictureSize>AutoSize</PictureSize>
+				<Shape>Block</Shape>
+				<FlipMode>0</FlipMode>
+				<Angle xsi:type="xs:decimal">0</Angle>
+			</Properties>
+		</Decoration>
+		<Decoration id="5">
+			<Properties>
+				<Name>Акт</Name>
+				<Title>
+					<v8:item>
+						<v8:lang>#</v8:lang>
+						<v8:content>Акт</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip/>
+				<TabOrder>5</TabOrder>
+				<BackColor>web:LightGreen</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>3</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font kind="AutoFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<Location top="60" left="700" bottom="100" right="810"/>
+				<Picture/>
+				<PictureSize>AutoSize</PictureSize>
+				<Shape>Block</Shape>
+				<FlipMode>0</FlipMode>
+				<Angle xsi:type="xs:decimal">0</Angle>
+			</Properties>
+		</Decoration>
+		<ConnectionLine id="6">
+			<Properties>
+				<Name>ДефектЗаявка</Name>
+				<Title/>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>#</v8:lang>
+						<v8:content>Ввод заявок на ремонт на основании выявленных дефектов</v8:content>
+					</v8:item>
+				</ToolTip>
+				<TabOrder>6</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>4</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font kind="AutoFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<PivotPoints>
+					<Point x="300" y="80"/>
+					<Point x="330" y="80"/>
+					<Point x="330" y="80"/>
+					<Point x="360" y="80"/>
+				</PivotPoints>
+				<Connect>
+					<From>
+						<Item>торо_УчетВыявленныхДефектовОборудования</Item>
+						<PortIndex>3</PortIndex>
+					</From>
+					<To>
+						<Item>торо_ИспользоватьСметыРемонта</Item>
+						<PortIndex>5</PortIndex>
+					</To>
+				</Connect>
+				<Line width="1" gap="false">
+					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
+				</Line>
+				<DecorativeLine>true</DecorativeLine>
+				<TextLocation>FirstSegment</TextLocation>
+				<BeginArrow>None</BeginArrow>
+				<EndArrow>Filled</EndArrow>
+			</Properties>
+		</ConnectionLine>
+		<ConnectionLine id="7">
+			<Properties>
+				<Name>ЗаявкаНаряд</Name>
+				<Title/>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>#</v8:lang>
+						<v8:content>Ввод нарядов на выполнение ремонтных работ на основании заявок</v8:content>
+					</v8:item>
+				</ToolTip>
+				<TabOrder>7</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>5</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font kind="AutoFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<PivotPoints>
+					<Point x="470" y="80"/>
+					<Point x="500" y="80"/>
+					<Point x="500" y="80"/>
+					<Point x="530" y="80"/>
+				</PivotPoints>
+				<Connect>
+					<From>
+						<Item>торо_ИспользоватьСметыРемонта</Item>
+						<PortIndex>3</PortIndex>
+					</From>
+					<To>
+						<Item>торо_ИспользоватьНарядыНаВыполнениеРабот</Item>
+						<PortIndex>1</PortIndex>
+					</To>
+				</Connect>
+				<Line width="1" gap="false">
+					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
+				</Line>
+				<DecorativeLine>true</DecorativeLine>
+				<TextLocation>FirstSegment</TextLocation>
+				<BeginArrow>None</BeginArrow>
+				<EndArrow>Filled</EndArrow>
+			</Properties>
+		</ConnectionLine>
+		<ConnectionLine id="8">
+			<Properties>
+				<Name>НарядАкт</Name>
+				<Title/>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>#</v8:lang>
+						<v8:content>Ввод актов о выполнении ремонтных работ на основании нарядов</v8:content>
+					</v8:item>
+				</ToolTip>
+				<TabOrder>8</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>6</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font kind="AutoFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<PivotPoints>
+					<Point x="640" y="80"/>
+					<Point x="670" y="80"/>
+					<Point x="670" y="80"/>
+					<Point x="700" y="80"/>
+				</PivotPoints>
+				<Connect>
+					<From>
+						<Item>торо_ИспользоватьНарядыНаВыполнениеРабот</Item>
+						<PortIndex>3</PortIndex>
+					</From>
+					<To>
+						<Item>Акт</Item>
+						<PortIndex>5</PortIndex>
+					</To>
+				</Connect>
+				<Line width="1" gap="false">
+					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
+				</Line>
+				<DecorativeLine>true</DecorativeLine>
+				<TextLocation>FirstSegment</TextLocation>
+				<BeginArrow>None</BeginArrow>
+				<EndArrow>Filled</EndArrow>
+			</Properties>
+		</ConnectionLine>
+		<ConnectionLine id="9">
+			<Properties>
+				<Name>ЗаявкаАкт</Name>
+				<Title/>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>#</v8:lang>
+						<v8:content>Ввод актов о выполнении ремонтных работ на основании заявок</v8:content>
+					</v8:item>
+				</ToolTip>
+				<TabOrder>9</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>7</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font kind="AutoFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<PivotPoints>
+					<Point x="415" y="100"/>
+					<Point x="415" y="110"/>
+					<Point x="680" y="110"/>
+					<Point x="680" y="80"/>
+					<Point x="700" y="80"/>
+				</PivotPoints>
+				<Connect>
+					<From>
+						<Item>торо_ИспользоватьСметыРемонта</Item>
+						<PortIndex>4</PortIndex>
+					</From>
+					<To>
+						<Item>Акт</Item>
+						<PortIndex>1</PortIndex>
+					</To>
+				</Connect>
+				<Line width="1" gap="false">
+					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
+				</Line>
+				<DecorativeLine>true</DecorativeLine>
+				<TextLocation>FirstSegment</TextLocation>
+				<BeginArrow>None</BeginArrow>
+				<EndArrow>Filled</EndArrow>
+			</Properties>
+		</ConnectionLine>
+		<ConnectionLine id="10">
+			<Properties>
+				<Name>ДефектНаряд</Name>
+				<Title/>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>#</v8:lang>
+						<v8:content>Ввод нарядов на выполнение ремонтных работ на основании выявленных дефектов</v8:content>
+					</v8:item>
+				</ToolTip>
+				<TabOrder>10</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>8</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font kind="AutoFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<PivotPoints>
+					<Point x="245" y="60"/>
+					<Point x="245" y="50"/>
+					<Point x="510" y="50"/>
+					<Point x="510" y="80"/>
+					<Point x="530" y="80"/>
+				</PivotPoints>
+				<Connect>
+					<From>
+						<Item>торо_УчетВыявленныхДефектовОборудования</Item>
+						<PortIndex>2</PortIndex>
+					</From>
+					<To>
+						<Item>торо_ИспользоватьНарядыНаВыполнениеРабот</Item>
+						<PortIndex>1</PortIndex>
+					</To>
+				</Connect>
+				<Line width="1" gap="false">
+					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
+				</Line>
+				<DecorativeLine>true</DecorativeLine>
+				<TextLocation>FirstSegment</TextLocation>
+				<BeginArrow>None</BeginArrow>
+				<EndArrow>Filled</EndArrow>
+			</Properties>
+		</ConnectionLine>
+		<ConnectionLine id="11">
+			<Properties>
+				<Name>ДефектАкт</Name>
+				<Title/>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>#</v8:lang>
+						<v8:content>Ввод актов о выполнении ремонтных работ на основании выявленных дефектов</v8:content>
+					</v8:item>
+				</ToolTip>
+				<TabOrder>11</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>9</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font kind="AutoFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<PivotPoints>
+					<Point x="245" y="60"/>
+					<Point x="245" y="40"/>
+					<Point x="680" y="40"/>
+					<Point x="680" y="80"/>
+					<Point x="700" y="80"/>
+				</PivotPoints>
+				<Connect>
+					<From>
+						<Item>торо_УчетВыявленныхДефектовОборудования</Item>
+						<PortIndex>2</PortIndex>
+					</From>
+					<To>
+						<Item>Акт</Item>
+						<PortIndex>1</PortIndex>
+					</To>
+				</Connect>
+				<Line width="1" gap="false">
+					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
+				</Line>
+				<DecorativeLine>true</DecorativeLine>
+				<TextLocation>FirstSegment</TextLocation>
+				<BeginArrow>None</BeginArrow>
+				<EndArrow>Filled</EndArrow>
+			</Properties>
+		</ConnectionLine>
+		<Decoration id="12">
+			<Properties>
+				<Name>торо_ИспользоватьВнешниеОснованияДляРабот</Name>
+				<Title>
+					<v8:item>
+						<v8:lang>#</v8:lang>
+						<v8:content>Внешнее основание</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip/>
+				<TabOrder>12</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>10</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font kind="AutoFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<Location top="60" left="20" bottom="100" right="130"/>
+				<Picture/>
+				<PictureSize>AutoSize</PictureSize>
+				<Shape>Block</Shape>
+				<FlipMode>0</FlipMode>
+				<Angle xsi:type="xs:decimal">0</Angle>
+			</Properties>
+		</Decoration>
+		<ConnectionLine id="13">
+			<Properties>
+				<Name>ВнешнееОснованиеДефект</Name>
+				<Title/>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>#</v8:lang>
+						<v8:content>Ввод выявленных дефектов на основании внешних оснований для работ</v8:content>
+					</v8:item>
+				</ToolTip>
+				<TabOrder>13</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>11</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font kind="AutoFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<PivotPoints>
+					<Point x="130" y="80"/>
+					<Point x="160" y="80"/>
+					<Point x="160" y="80"/>
+					<Point x="190" y="80"/>
+				</PivotPoints>
+				<Connect>
+					<From>
+						<Item>торо_ИспользоватьВнешниеОснованияДляРабот</Item>
+						<PortIndex>3</PortIndex>
+					</From>
+					<To>
+						<Item>торо_УчетВыявленныхДефектовОборудования</Item>
+						<PortIndex>1</PortIndex>
+					</To>
+				</Connect>
+				<Line width="1" gap="false">
+					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
+				</Line>
+				<DecorativeLine>true</DecorativeLine>
+				<TextLocation>FirstSegment</TextLocation>
+				<BeginArrow>None</BeginArrow>
+				<EndArrow>Filled</EndArrow>
+			</Properties>
+		</ConnectionLine>
+		<Decoration id="14">
+			<Properties>
+				<Name>торо_УчетСостоянияОборудования</Name>
+				<Title>
+					<v8:item>
+						<v8:lang>#</v8:lang>
+						<v8:content>Состояние ОР</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip/>
+				<TabOrder>14</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>12</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font kind="AutoFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<Location top="180" left="360" bottom="220" right="470"/>
+				<Picture/>
+				<PictureSize>AutoSize</PictureSize>
+				<Shape>Block</Shape>
+				<FlipMode>0</FlipMode>
+				<Angle xsi:type="xs:decimal">0</Angle>
+			</Properties>
+		</Decoration>
+		<Decoration id="15">
+			<Properties>
+				<Name>торо_УчетКонтролируемыхПоказателей</Name>
+				<Title>
+					<v8:item>
+						<v8:lang>#</v8:lang>
+						<v8:content>Контролируемые показатели</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip/>
+				<TabOrder>15</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>13</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font kind="AutoFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<Location top="180" left="190" bottom="220" right="300"/>
+				<Picture/>
+				<PictureSize>AutoSize</PictureSize>
+				<Shape>Block</Shape>
+				<FlipMode>0</FlipMode>
+				<Angle xsi:type="xs:decimal">0</Angle>
+			</Properties>
+		</Decoration>
+		<Decoration id="16">
+			<Properties>
+				<Name>торо_УчетНаработкиОборудования</Name>
+				<Title>
+					<v8:item>
+						<v8:lang>#</v8:lang>
+						<v8:content>Наработка</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip/>
+				<TabOrder>16</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>14</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font kind="AutoFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<Location top="180" left="20" bottom="220" right="130"/>
+				<Picture/>
+				<PictureSize>AutoSize</PictureSize>
+				<Shape>Block</Shape>
+				<FlipMode>0</FlipMode>
+				<Angle xsi:type="xs:decimal">0</Angle>
+			</Properties>
+		</Decoration>
+		<ConnectionLine id="17">
+			<Properties>
+				<Name>ДефектНаработка</Name>
+				<Title/>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>#</v8:lang>
+						<v8:content>Ввод документов учета параметров наработки на основании выявленных дефектов</v8:content>
+					</v8:item>
+				</ToolTip>
+				<TabOrder>17</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>15</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font kind="AutoFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<PivotPoints>
+					<Point x="245" y="100"/>
+					<Point x="245" y="150"/>
+					<Point x="75" y="150"/>
+					<Point x="75" y="180"/>
+				</PivotPoints>
+				<Connect>
+					<From>
+						<Item>торо_УчетВыявленныхДефектовОборудования</Item>
+						<PortIndex>4</PortIndex>
+					</From>
+					<To>
+						<Item>торо_УчетНаработкиОборудования</Item>
+						<PortIndex>2</PortIndex>
+					</To>
+				</Connect>
+				<Line width="1" gap="false">
+					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
+				</Line>
+				<DecorativeLine>true</DecorativeLine>
+				<TextLocation>FirstSegment</TextLocation>
+				<BeginArrow>None</BeginArrow>
+				<EndArrow>Filled</EndArrow>
+			</Properties>
+		</ConnectionLine>
+		<ConnectionLine id="18">
+			<Properties>
+				<Name>ДефектКонтролируемыеПоказатели</Name>
+				<Title/>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>#</v8:lang>
+						<v8:content>Ввод дументов учета контролируемых показателей на основании выявленных дефектов</v8:content>
+					</v8:item>
+				</ToolTip>
+				<TabOrder>18</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>16</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font kind="AutoFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<PivotPoints>
+					<Point x="245" y="100"/>
+					<Point x="245" y="140"/>
+					<Point x="245" y="140"/>
+					<Point x="245" y="180"/>
+				</PivotPoints>
+				<Connect>
+					<From>
+						<Item>торо_УчетВыявленныхДефектовОборудования</Item>
+						<PortIndex>4</PortIndex>
+					</From>
+					<To>
+						<Item>торо_УчетКонтролируемыхПоказателей</Item>
+						<PortIndex>5</PortIndex>
+					</To>
+				</Connect>
+				<Line width="1" gap="false">
+					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
+				</Line>
+				<DecorativeLine>true</DecorativeLine>
+				<TextLocation>FirstSegment</TextLocation>
+				<BeginArrow>None</BeginArrow>
+				<EndArrow>Filled</EndArrow>
+			</Properties>
+		</ConnectionLine>
+		<ConnectionLine id="19">
+			<Properties>
+				<Name>ДефектСостояние</Name>
+				<Title/>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>#</v8:lang>
+						<v8:content>Ввод документов состояний ОР на основании выявленных дефектов</v8:content>
+					</v8:item>
+				</ToolTip>
+				<TabOrder>19</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>17</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font kind="AutoFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<PivotPoints>
+					<Point x="245" y="100"/>
+					<Point x="245" y="150"/>
+					<Point x="415" y="150"/>
+					<Point x="415" y="180"/>
+				</PivotPoints>
+				<Connect>
+					<From>
+						<Item>торо_УчетВыявленныхДефектовОборудования</Item>
+						<PortIndex>4</PortIndex>
+					</From>
+					<To>
+						<Item>торо_УчетСостоянияОборудования</Item>
+						<PortIndex>2</PortIndex>
+					</To>
+				</Connect>
+				<Line width="1" gap="false">
+					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
+				</Line>
+				<DecorativeLine>true</DecorativeLine>
+				<TextLocation>FirstSegment</TextLocation>
+				<BeginArrow>None</BeginArrow>
+				<EndArrow>Filled</EndArrow>
+			</Properties>
+		</ConnectionLine>
+		<ConnectionLine id="22">
+			<Properties>
+				<Name>ВнешнееОснованиеЗаявка</Name>
+				<Title/>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>#</v8:lang>
+						<v8:content>Ввод заявок на основании внешних оснований для работ</v8:content>
+					</v8:item>
+				</ToolTip>
+				<TabOrder>20</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>18</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font kind="AutoFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<PivotPoints>
+					<Point x="75" y="100"/>
+					<Point x="75" y="110"/>
+					<Point x="350" y="110"/>
+					<Point x="350" y="80"/>
+					<Point x="360" y="80"/>
+				</PivotPoints>
+				<Connect>
+					<From>
+						<Item>торо_ИспользоватьВнешниеОснованияДляРабот</Item>
+						<PortIndex>4</PortIndex>
+					</From>
+					<To>
+						<Item>торо_ИспользоватьСметыРемонта</Item>
+						<PortIndex>1</PortIndex>
+					</To>
+				</Connect>
+				<Line width="1" gap="false">
+					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
+				</Line>
+				<DecorativeLine>true</DecorativeLine>
+				<TextLocation>FirstSegment</TextLocation>
+				<BeginArrow>None</BeginArrow>
+				<EndArrow>Filled</EndArrow>
+			</Properties>
+		</ConnectionLine>
+		<ConnectionLine id="23">
+			<Properties>
+				<Name>ВнешнееОснованиеНаряд</Name>
+				<Title/>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>#</v8:lang>
+						<v8:content>Ввод нарядов на основании внешних оснований для работ</v8:content>
+					</v8:item>
+				</ToolTip>
+				<TabOrder>21</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>19</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font kind="AutoFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<PivotPoints>
+					<Point x="75" y="60"/>
+					<Point x="75" y="20"/>
+					<Point x="520" y="20"/>
+					<Point x="520" y="80"/>
+					<Point x="530" y="80"/>
+				</PivotPoints>
+				<Connect>
+					<From>
+						<Item>торо_ИспользоватьВнешниеОснованияДляРабот</Item>
+						<PortIndex>2</PortIndex>
+					</From>
+					<To>
+						<Item>торо_ИспользоватьНарядыНаВыполнениеРабот</Item>
+						<PortIndex>5</PortIndex>
+					</To>
+				</Connect>
+				<Line width="1" gap="false">
+					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
+				</Line>
+				<DecorativeLine>true</DecorativeLine>
+				<TextLocation>FirstSegment</TextLocation>
+				<BeginArrow>None</BeginArrow>
+				<EndArrow>Filled</EndArrow>
+			</Properties>
+		</ConnectionLine>
+		<ConnectionLine id="24">
+			<Properties>
+				<Name>ВнешнееОснованиеАкт</Name>
+				<Title/>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>#</v8:lang>
+						<v8:content>Ввод актов о выполнении ремонтных работ на основании внешних оснований для работ</v8:content>
+					</v8:item>
+				</ToolTip>
+				<TabOrder>22</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>20</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font kind="AutoFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<PivotPoints>
+					<Point x="75" y="60"/>
+					<Point x="75" y="10"/>
+					<Point x="690" y="10"/>
+					<Point x="690" y="80"/>
+					<Point x="700" y="80"/>
+				</PivotPoints>
+				<Connect>
+					<From>
+						<Item>торо_ИспользоватьВнешниеОснованияДляРабот</Item>
+						<PortIndex>2</PortIndex>
+					</From>
+					<To>
+						<Item>Акт</Item>
+						<PortIndex>5</PortIndex>
+					</To>
+				</Connect>
+				<Line width="1" gap="false">
+					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
+				</Line>
+				<DecorativeLine>true</DecorativeLine>
+				<TextLocation>FirstSegment</TextLocation>
+				<BeginArrow>None</BeginArrow>
+				<EndArrow>Filled</EndArrow>
+			</Properties>
+		</ConnectionLine>
+		<Decoration id="25">
+			<Properties>
+				<Name>торо_ИспользоватьАктПриемкиОборудования</Name>
+				<Title>
+					<v8:item>
+						<v8:lang>#</v8:lang>
+						<v8:content>Акт приемки оборудования</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip/>
+				<TabOrder>23</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>21</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font kind="AutoFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<Location top="180" left="530" bottom="220" right="640"/>
+				<Picture/>
+				<PictureSize>AutoSize</PictureSize>
+				<Shape>Block</Shape>
+				<FlipMode>0</FlipMode>
+				<Angle xsi:type="xs:decimal">0</Angle>
+			</Properties>
+		</Decoration>
+		<ConnectionLine id="27">
+			<Properties>
+				<Name>ВнешнееОснованиеАктПриемки</Name>
+				<Title/>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>#</v8:lang>
+						<v8:content>Ввод актов приемки оборудования на основании внешних оснований для работ</v8:content>
+					</v8:item>
+				</ToolTip>
+				<TabOrder>24</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>22</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font kind="AutoFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<PivotPoints>
+					<Point x="75" y="100"/>
+					<Point x="75" y="140"/>
+					<Point x="585" y="140"/>
+					<Point x="585" y="180"/>
+				</PivotPoints>
+				<Connect>
+					<From>
+						<Item>торо_ИспользоватьВнешниеОснованияДляРабот</Item>
+						<PortIndex>4</PortIndex>
+					</From>
+					<To>
+						<Item>торо_ИспользоватьАктПриемкиОборудования</Item>
+						<PortIndex>2</PortIndex>
+					</To>
+				</Connect>
+				<Line width="1" gap="false">
+					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
+				</Line>
+				<DecorativeLine>true</DecorativeLine>
+				<TextLocation>FirstSegment</TextLocation>
+				<BeginArrow>None</BeginArrow>
+				<EndArrow>Filled</EndArrow>
+			</Properties>
+		</ConnectionLine>
+		<ConnectionLine id="29">
+			<Properties>
+				<Name>ДефектАктПриемки</Name>
+				<Title/>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>#</v8:lang>
+						<v8:content>Ввод актов приемки оборудования на основании выявленных дефектов</v8:content>
+					</v8:item>
+				</ToolTip>
+				<TabOrder>25</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>23</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font kind="AutoFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<PivotPoints>
+					<Point x="245" y="100"/>
+					<Point x="245" y="130"/>
+					<Point x="585" y="130"/>
+					<Point x="585" y="180"/>
+				</PivotPoints>
+				<Connect>
+					<From>
+						<Item>торо_УчетВыявленныхДефектовОборудования</Item>
+						<PortIndex>4</PortIndex>
+					</From>
+					<To>
+						<Item>торо_ИспользоватьАктПриемкиОборудования</Item>
+						<PortIndex>2</PortIndex>
+					</To>
+				</Connect>
+				<Line width="1" gap="false">
+					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
+				</Line>
+				<DecorativeLine>true</DecorativeLine>
+				<TextLocation>FirstSegment</TextLocation>
+				<BeginArrow>None</BeginArrow>
+				<EndArrow>Filled</EndArrow>
+			</Properties>
+		</ConnectionLine>
+		<ConnectionLine id="30">
+			<Properties>
+				<Name>ЗаявкаАктПриемки</Name>
+				<Title/>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>#</v8:lang>
+						<v8:content>Ввод актов приемки оборудования на основании заявок</v8:content>
+					</v8:item>
+				</ToolTip>
+				<TabOrder>26</TabOrder>
+				<BackColor>auto</BackColor>
+				<TextColor>style:FormTextColor</TextColor>
+				<LineColor>style:BorderColor</LineColor>
+				<GroupNumber>0</GroupNumber>
+				<ZOrder>24</ZOrder>
+				<Hyperlink>false</Hyperlink>
+				<Transparent>false</Transparent>
+				<Font kind="AutoFont"/>
+				<HorizontalAlign>Center</HorizontalAlign>
+				<VerticalAlign>Center</VerticalAlign>
+				<PictureLocation>Left</PictureLocation>
+				<PivotPoints>
+					<Point x="415" y="100"/>
+					<Point x="415" y="120"/>
+					<Point x="585" y="120"/>
+					<Point x="585" y="180"/>
+				</PivotPoints>
+				<Connect>
+					<From>
+						<Item>торо_ИспользоватьСметыРемонта</Item>
+						<PortIndex>4</PortIndex>
+					</From>
+					<To>
+						<Item>торо_ИспользоватьАктПриемкиОборудования</Item>
+						<PortIndex>2</PortIndex>
+					</To>
+				</Connect>
+				<Line width="1" gap="false">
+					<v8ui:style xsi:type="sch:ConnectorLineType">Solid</v8ui:style>
+				</Line>
+				<DecorativeLine>true</DecorativeLine>
+				<TextLocation>FirstSegment</TextLocation>
+				<BeginArrow>None</BeginArrow>
+				<EndArrow>Filled</EndArrow>
+			</Properties>
+		</ConnectionLine>
+	</Items>
+</GraphicalSchema>

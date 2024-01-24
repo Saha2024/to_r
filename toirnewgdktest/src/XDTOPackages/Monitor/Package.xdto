@@ -1,0 +1,12 @@
+<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="monitor">
+	<objectType name="Данные">
+		<property xmlns:d3p1="monitor" name="Список" type="d3p1:Переменная" lowerBound="0" upperBound="-1" nillable="true"/>
+	</objectType>
+	<objectType name="Переменная">
+		<property name="Ключ" type="xs:string" lowerBound="0" nillable="true"/>
+		<property name="Тип" type="xs:string"/>
+		<property name="Значение" type="xs:string" lowerBound="0" nillable="true"/>
+		<property xmlns:d3p1="monitor" name="Список" type="d3p1:Переменная" lowerBound="0" upperBound="-1" nillable="true"/>
+		<property name="Число" type="xs:double" lowerBound="0" nillable="true"/>
+	</objectType>
+</package>

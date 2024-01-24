@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="08ac77da-24bb-4814-abc1-7569b76201b6">
+  <producedTypes>
+    <selectionType typeId="e3de7b69-0611-48df-ac66-680a649109ac" valueTypeId="453dc9da-229d-4722-84c0-c7d691aad826"/>
+    <listType typeId="40dbc3c3-188d-4811-80fa-e1a213aeda32" valueTypeId="0164898d-7098-4515-9aef-1a71c8ad589a"/>
+    <managerType typeId="50edaefa-0f74-4b7f-a7f8-aeda3e2c3b99" valueTypeId="61e42f61-1aaf-46b0-81cf-2fad3f0326ad"/>
+    <recordSetType typeId="c75a95cd-028d-4767-abf0-9d98530a133f" valueTypeId="ca0efc65-4c2f-4588-bc4b-53adf85c4f17"/>
+    <recordKeyType typeId="acb2429e-4bab-49e5-a1c0-a62f76946248" valueTypeId="027f90bf-9818-410c-9f61-2d4fb3be1886"/>
+    <recordType typeId="567b750d-caac-4dda-bcb1-d877e7b3736b" valueTypeId="883855f8-421d-43c8-af1a-407cd5e125f9"/>
+    <recordManagerType typeId="158eb288-6a23-4446-b7e5-293c38dbbea5" valueTypeId="e39b64e8-edfc-423e-ac22-3d588606a489"/>
+  </producedTypes>
+  <name>проф_НормыРасходаТехническихЖидкостей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Нормы расхода технических жидкостей</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <resources uuid="c7c8923c-6abc-4dd2-8656-97c2ba47d2e1">
+    <name>ЛинейнаяНорма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Линейная норма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="fe30d0d1-fe81-4d2e-9059-0d8e5e910e65">
+    <name>Норма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Норма</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="3d8f42ed-2914-4677-8905-94c708f709fc">
+    <name>НормаНаМоточас</name>
+    <synonym>
+      <key>ru</key>
+      <value>Норма на моточас</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="c49089a8-c679-4f9b-98ce-37b8d2b1b0a7">
+    <name>ГСМ</name>
+    <synonym>
+      <key>ru</key>
+      <value>ГСМ</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Номенклатура</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="75fa1b38-0874-454b-8ce3-a1bb6b3a87b6">
+    <name>МодельТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>ОР/Модель ТС</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.проф_МоделиТСиОборудования</types>
+      <types>CatalogRef.торо_ОбъектыРемонта</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

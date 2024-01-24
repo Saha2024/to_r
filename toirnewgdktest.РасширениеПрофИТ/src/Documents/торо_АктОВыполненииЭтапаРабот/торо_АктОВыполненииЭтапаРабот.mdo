@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="ab59dd8f-9b17-4e58-8d76-2af4e013ef74" extendedConfigurationObject="b863b14e-c352-4234-8c63-d86d97f12044">
+  <producedTypes>
+    <objectType typeId="33f6ad64-b8bc-417e-b4b3-33cc4e49bdaa" valueTypeId="4de19bd8-6ad1-4d47-b0c7-3a635668e56a"/>
+    <refType typeId="e8c3d540-c148-4301-857a-061667f761f1" valueTypeId="aacaad98-34c5-4256-8f55-d48f5cf03d6c"/>
+    <selectionType typeId="e4cc68c2-b100-4ba8-8122-6090a1122b53" valueTypeId="73664b68-661e-4eab-9675-b4318361b04a"/>
+    <listType typeId="9843763c-a179-46c2-a2ec-e70c1225ee10" valueTypeId="577061dc-dce5-4f4b-baf3-005b689387c8"/>
+    <managerType typeId="6e15629c-ddef-44ed-8277-03387a4513cd" valueTypeId="a4faa1cd-507b-423f-8615-a1054fd0bb09"/>
+  </producedTypes>
+  <name>торо_АктОВыполненииЭтапаРабот</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DocumentExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <objectModule>Extended</objectModule>
+    <managerModule>Extended</managerModule>
+  </extension>
+  <forms uuid="93d3931b-8d8e-4ba9-b622-a721b2700b75" extendedConfigurationObject="c25bb8c8-705c-4873-b38c-81d8ee94df90">
+    <name>ФормаДокумента</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFormExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <form>Extended</form>
+    </extension>
+  </forms>
+  <forms uuid="4006293d-5735-47a9-92ac-8038f74d4d97" extendedConfigurationObject="f8a4ffa9-0317-49c8-999f-a29126aadb2e">
+    <name>ФормаСписка</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:BasicFormExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+      <form>Extended</form>
+    </extension>
+  </forms>
+  <tabularSections uuid="7912642b-6c38-42fe-baf8-54ae6946f71d" extendedConfigurationObject="6a750754-4a73-402d-8f35-6a379ec1cb60">
+    <producedTypes>
+      <objectType typeId="8ff3afeb-3ba3-4f16-9eaf-81e79f578c67" valueTypeId="b8555770-c3a7-4ac4-bb6a-3f6bc934e2ac"/>
+      <rowType typeId="a8fa6ae9-c73c-495b-a434-e05355e7259d" valueTypeId="e5fbe9de-89d5-494f-9022-532a73e3955e"/>
+    </producedTypes>
+    <name>ДокументыОснования</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+    <attributes uuid="7e81c49e-cd5b-4127-a417-15bcb3418372" extendedConfigurationObject="23087b8e-d21e-4499-beac-8287045096a2">
+      <name>ДокументОснование</name>
+      <objectBelonging>Adopted</objectBelonging>
+      <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+        <extendedConfigurationObject>Checked</extendedConfigurationObject>
+        <typeExtension>
+          <types>
+            <state>Checked</state>
+            <type>AnyRef</type>
+          </types>
+        </typeExtension>
+      </extension>
+      <type/>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="ad92cb56-bf4e-4968-9444-a5ecfbdb8bd5" extendedConfigurationObject="35c6e5ea-774c-4081-b20e-6b7733152e33">
+    <producedTypes>
+      <objectType typeId="97b57942-b86e-4058-a517-7b20b2617b4d" valueTypeId="6a396d20-abb1-4d47-ba9e-a3769c2d4b5a"/>
+      <rowType typeId="921e5051-c238-4faf-8000-d6f248a2b7a6" valueTypeId="43188803-04e8-4348-84e5-96b9fcfe6e70"/>
+    </producedTypes>
+    <name>РемонтыОборудования</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:MdObjectExtension">
+      <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    </extension>
+    <attributes uuid="b3263d33-263f-4ce2-9aca-b1a52959c900" extendedConfigurationObject="f458fa39-e462-44c2-a688-fb165a2c6c8d">
+      <name>ID</name>
+      <objectBelonging>Adopted</objectBelonging>
+      <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+        <extendedConfigurationObject>Checked</extendedConfigurationObject>
+        <typeExtension>
+          <types>
+            <state>Checked</state>
+            <type>String</type>
+          </types>
+          <stringQualifiers>
+            <length>36</length>
+          </stringQualifiers>
+        </typeExtension>
+      </extension>
+      <type/>
+    </attributes>
+    <attributes uuid="edcb059d-5020-4ace-ac00-d8b3e9a52728" extendedConfigurationObject="41c9c7b6-5db5-492f-8a78-0e1fb54a88c4">
+      <name>ОбъектРемонта</name>
+      <objectBelonging>Adopted</objectBelonging>
+      <extension xsi:type="mdclassExtension:BasicFeatureExtension">
+        <extendedConfigurationObject>Checked</extendedConfigurationObject>
+        <typeExtension>
+          <types>
+            <state>Checked</state>
+            <type>CatalogRef.торо_ОбъектыРемонта</type>
+          </types>
+        </typeExtension>
+      </extension>
+      <type/>
+    </attributes>
+  </tabularSections>
+  <templates uuid="4f06064e-0436-4cf7-a7cc-9071bbdf1b07">
+    <name>проф_ПФ_MXL_АктТехническогоСостоянияТС</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проф п ф MXL акт технического состояния ТС</value>
+    </synonym>
+  </templates>
+  <templates uuid="596efe22-d325-4a99-9ae5-449616d2ffb7">
+    <name>проф_ПФ_MXL_АктТехническогоСостоянияДСТ</name>
+    <synonym>
+      <key>ru</key>
+      <value>ПФ MXL акт технического состояния ДСТ</value>
+    </synonym>
+  </templates>
+  <templates uuid="cd629eae-a951-471e-bd27-5e5246de8328">
+    <name>проф_ЗаказНаряд</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заказ-наряд</value>
+    </synonym>
+  </templates>
+</mdclass:Document>

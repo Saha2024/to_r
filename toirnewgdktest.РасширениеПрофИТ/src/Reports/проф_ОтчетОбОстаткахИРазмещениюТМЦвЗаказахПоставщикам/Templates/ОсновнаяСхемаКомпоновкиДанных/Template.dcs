@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Номенклатура</dataPath>
+			<field>Номенклатура</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Назначение</dataPath>
+			<field>Назначение</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Характеристика</dataPath>
+			<field>Характеристика</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Склад</dataPath>
+			<field>Склад</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗарезервированоВЗаказах</dataPath>
+			<field>ЗарезервированоВЗаказах</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Зарезервировано в заказах</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ФактическийСвободныйОстаток</dataPath>
+			<field>ФактическийСвободныйОстаток</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Фактический свободный остаток</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РазмещеноВЗаказахПоставщикам</dataPath>
+			<field>РазмещеноВЗаказахПоставщикам</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Размещено в заказах поставщикам</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъектРемонта</dataPath>
+			<field>ОбъектРемонта</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объект ремонта</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:required>true</dcscom:required>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>РазмещеноВЗаказахПоставщикамЗапас</dataPath>
+			<field>РазмещеноВЗаказахПоставщикамЗапас</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Размещено в заказах поставщикам запас</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Серия</dataPath>
+			<field>Серия</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗаказНаВнутреннееПотребление</dataPath>
+			<field>ЗаказНаВнутреннееПотребление</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заказ на внутреннее потребление</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:required>true</dcscom:required>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗаявкаНаРемонт</dataPath>
+			<field>ЗаявкаНаРемонт</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заявка на ремонт</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:required>true</dcscom:required>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДокументРезерв</dataPath>
+			<field>ДокументРезерв</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗаказПоставщику</dataPath>
+			<field>ЗаказПоставщику</field>
+			<role>
+				<dcscom:required>true</dcscom:required>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗаказНаВППредставление</dataPath>
+			<field>ЗаказНаВППредставление</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заказ на ВППредставление</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъектРемонтаПредставление</dataPath>
+			<field>ОбъектРемонтаПредставление</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объект ремонта представление</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗаявкаНаРемонтПредставление</dataPath>
+			<field>ЗаявкаНаРемонтПредставление</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заявка на ремонт представление</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	торо_РезервыНаСкладахОстатки.Номенклатура КАК Номенклатура,
+	торо_РезервыНаСкладахОстатки.Характеристика КАК Характеристика,
+	торо_РезервыНаСкладахОстатки.Склад КАК Склад,
+	торо_РезервыНаСкладахОстатки.ЗаказНаВнутреннееПотребление КАК ЗаказНаВнутреннееПотребление,
+	торо_РезервыНаСкладахОстатки.КоличествоОстаток КАК КоличествоОстаток
+ПОМЕСТИТЬ ВтРезервыНаСкладахОстатки
+ИЗ
+	РегистрНакопления.торо_РезервыНаСкладах.Остатки(&amp;Период, ) КАК торо_РезервыНаСкладахОстатки
+
+ИНДЕКСИРОВАТЬ ПО
+	ЗаказНаВнутреннееПотребление
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ВтРезервыНаСкладахОстатки.Номенклатура КАК Номенклатура,
+	ВтРезервыНаСкладахОстатки.Характеристика КАК Характеристика,
+	ВтРезервыНаСкладахОстатки.Склад КАК Склад,
+	ВтРезервыНаСкладахОстатки.ЗаказНаВнутреннееПотребление КАК ЗаказНаВнутреннееПотребление,
+	ЕСТЬNULL(ЗаказНаВП.ДокументОснование, НЕОПРЕДЕЛЕНО) КАК ЗаявкаНаРемонт,
+	ВтРезервыНаСкладахОстатки.КоличествоОстаток КАК ЗарезервированоВЗаказах
+ПОМЕСТИТЬ ВТ_ЗаказНаВП
+ИЗ
+	Документ.ЗаказНаВнутреннееПотребление КАК ЗаказНаВП
+		ПРАВОЕ СОЕДИНЕНИЕ ВтРезервыНаСкладахОстатки КАК ВтРезервыНаСкладахОстатки
+		ПО (ВтРезервыНаСкладахОстатки.ЗаказНаВнутреннееПотребление = ЗаказНаВП.Ссылка)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	торо_ЗаказыПоставщикуОстатки.Номенклатура КАК Номенклатура,
+	торо_ЗаказыПоставщикуОстатки.Характеристика КАК Характеристика,
+	торо_ЗаказыПоставщикуОстатки.Склад КАК Склад,
+	торо_ЗаказыПоставщикуОстатки.ЗаказПоставщику КАК ЗаказПоставщику,
+	торо_ЗаказыПоставщикуОстатки.КоличествоОстаток КАК КоличествоОстаток
+ПОМЕСТИТЬ ВТ_ЗаказыПоставщикуОстатки
+ИЗ
+	РегистрНакопления.торо_ЗаказыПоставщику.Остатки(&amp;Период, ) КАК торо_ЗаказыПоставщикуОстатки
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ЗаказыПоставщикуОстатки.Номенклатура КАК Номенклатура,
+	ВТ_ЗаказыПоставщикуОстатки.Характеристика КАК Характеристика,
+	ВТ_ЗаказыПоставщикуОстатки.Склад КАК Склад,
+	ВТ_ЗаказыПоставщикуОстатки.ЗаказПоставщику КАК ЗаказПоставщику,
+	ВТ_ЗаказыПоставщикуОстатки.КоличествоОстаток КАК КоличествоОстаток,
+	ЕСТЬNULL(торо_ЗаказПоставщикуДокументыОснования.ДокументОснование, ЗНАЧЕНИЕ(Документ.ЗаказНаВнутреннееПотребление.ПустаяСсылка)) КАК ЗаказНаВП
+ПОМЕСТИТЬ ВТ_ЗаказыПоставщику_ЗаказыНаВП
+ИЗ
+	ВТ_ЗаказыПоставщикуОстатки КАК ВТ_ЗаказыПоставщикуОстатки
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.торо_ЗаказПоставщику.ДокументыОснования КАК торо_ЗаказПоставщикуДокументыОснования
+		ПО ВТ_ЗаказыПоставщикуОстатки.ЗаказПоставщику = торо_ЗаказПоставщикуДокументыОснования.Ссылка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ЗаказыПоставщику_ЗаказыНаВП.ЗаказПоставщику КАК ЗаказПоставщику,
+	ВТ_ЗаказыПоставщику_ЗаказыНаВП.ЗаказНаВП КАК ЗаказНаВП,
+	ЕСТЬNULL(ЗаказНаВнутреннееПотребление.ДокументОснование, НЕОПРЕДЕЛЕНО) КАК ЗаявкаНаРемонт,
+	ЕСТЬNULL(ЗаказНаВнутреннееПотребление.проф_ЗаказДляЗакупки, ЛОЖЬ) КАК проф_ЗаказДляЗакупки
+ПОМЕСТИТЬ ВТ_ЗаказыПоставщику_ЗаявкиНаРемонт
+ИЗ
+	ВТ_ЗаказыПоставщику_ЗаказыНаВП КАК ВТ_ЗаказыПоставщику_ЗаказыНаВП
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.ЗаказНаВнутреннееПотребление КАК ЗаказНаВнутреннееПотребление
+		ПО ВТ_ЗаказыПоставщику_ЗаказыНаВП.ЗаказНаВП = ЗаказНаВнутреннееПотребление.Ссылка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ЗаказыПоставщику_ЗаявкиНаРемонт.ЗаказПоставщику КАК ЗаказПоставщику,
+	ВТ_ЗаказыПоставщику_ЗаявкиНаРемонт.ЗаказНаВП КАК ЗаказНаВП,
+	ВТ_ЗаказыПоставщику_ЗаявкиНаРемонт.ЗаявкаНаРемонт КАК ЗаявкаНаРемонт,
+	ВТ_ЗаказыПоставщику_ЗаявкиНаРемонт.проф_ЗаказДляЗакупки КАК проф_ЗаказДляЗакупки,
+	ЕСТЬNULL(торо_ЗаявкаНаРемонт.проф_Назначение, ЗНАЧЕНИЕ(Справочник.проф_Назначения.ПустаяСсылка)) КАК проф_Назначение,
+	ЕСТЬNULL(торо_ЗаявкаНаРемонтРемонтыОборудования.ОбъектРемонта, ЗНАЧЕНИЕ(Справочник.торо_ОбъектыРемонта.ПустаяСсылка)) КАК ОбъектРемонта
+ПОМЕСТИТЬ ВТ_ЗаказыПоставщику_ОъектыРемонта
+ИЗ
+	ВТ_ЗаказыПоставщику_ЗаявкиНаРемонт КАК ВТ_ЗаказыПоставщику_ЗаявкиНаРемонт
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.торо_ЗаявкаНаРемонт.РемонтыОборудования КАК торо_ЗаявкаНаРемонтРемонтыОборудования
+		ПО ВТ_ЗаказыПоставщику_ЗаявкиНаРемонт.ЗаявкаНаРемонт = торо_ЗаявкаНаРемонтРемонтыОборудования.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ Документ.торо_ЗаявкаНаРемонт КАК торо_ЗаявкаНаРемонт
+		ПО ВТ_ЗаказыПоставщику_ЗаявкиНаРемонт.ЗаявкаНаРемонт = торо_ЗаявкаНаРемонт.Ссылка
+
+СГРУППИРОВАТЬ ПО
+	ВТ_ЗаказыПоставщику_ЗаявкиНаРемонт.ЗаказПоставщику,
+	ВТ_ЗаказыПоставщику_ЗаявкиНаРемонт.ЗаказНаВП,
+	ВТ_ЗаказыПоставщику_ЗаявкиНаРемонт.ЗаявкаНаРемонт,
+	ВТ_ЗаказыПоставщику_ЗаявкиНаРемонт.проф_ЗаказДляЗакупки,
+	ЕСТЬNULL(торо_ЗаявкаНаРемонтРемонтыОборудования.ОбъектРемонта, ЗНАЧЕНИЕ(Справочник.торо_ОбъектыРемонта.ПустаяСсылка)),
+	ЕСТЬNULL(торо_ЗаявкаНаРемонт.проф_Назначение, ЗНАЧЕНИЕ(Справочник.проф_Назначения.ПустаяСсылка))
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ЗаказыПоставщикуОстатки.Номенклатура КАК Номенклатура,
+	ВТ_ЗаказыПоставщикуОстатки.Характеристика КАК Характеристика,
+	ВТ_ЗаказыПоставщикуОстатки.Склад КАК Склад,
+	ЕСТЬNULL(ВТ_ЗаказыПоставщику_ОъектыРемонта.проф_Назначение, ЗНАЧЕНИЕ(Справочник.проф_Назначения.ПустаяСсылка)) КАК Назначение,
+	0 КАК ФактическийСвободныйОстаток,
+	0 КАК ЗарезервированоВЗаказах,
+	ЕСТЬNULL(ВТ_ЗаказыПоставщикуОстатки.ЗаказПоставщику, ЗНАЧЕНИЕ(Документ.торо_ЗаказПоставщику.ПустаяСсылка)) КАК ЗаказПоставщику,
+	ЕСТЬNULL(ВТ_ЗаказыПоставщику_ОъектыРемонта.ОбъектРемонта, ЗНАЧЕНИЕ(Справочник.торо_ОбъектыРемонта.ПустаяСсылка)) КАК ОбъектРемонта,
+	ЕСТЬNULL(ВТ_ЗаказыПоставщику_ОъектыРемонта.ЗаказНаВП, ЗНАЧЕНИЕ(Документ.ЗаказНаВнутреннееПотребление.ПустаяСсылка)) КАК ЗаказНаВнутреннееПотребление,
+	ЕСТЬNULL(ВТ_ЗаказыПоставщику_ОъектыРемонта.ЗаявкаНаРемонт, ЗНАЧЕНИЕ(Документ.торо_ЗаявкаНаРемонт.ПустаяСсылка)) КАК ЗаявкаНаРемонт,
+	ПРЕДСТАВЛЕНИЕ(ЕСТЬNULL(ВТ_ЗаказыПоставщику_ОъектыРемонта.ОбъектРемонта, ЗНАЧЕНИЕ(Справочник.торо_ОбъектыРемонта.ПустаяСсылка))) КАК ОбъектРемонтаПредставление,
+	ПРЕДСТАВЛЕНИЕ(ЕСТЬNULL(ВТ_ЗаказыПоставщику_ОъектыРемонта.ЗаказНаВП, ЗНАЧЕНИЕ(Документ.ЗаказНаВнутреннееПотребление.ПустаяСсылка))) КАК ЗаказНаВППредставление,
+	ПРЕДСТАВЛЕНИЕ(ЕСТЬNULL(ВТ_ЗаказыПоставщику_ОъектыРемонта.ЗаявкаНаРемонт, ЗНАЧЕНИЕ(Документ.торо_ЗаявкаНаРемонт.ПустаяСсылка))) КАК ЗаявкаНаРемонтПредставление,
+	ЕСТЬNULL(ВТ_ЗаказыПоставщику_ОъектыРемонта.проф_ЗаказДляЗакупки, ЛОЖЬ) КАК ЗаказДляЗакупки,
+	ВТ_ЗаказыПоставщикуОстатки.КоличествоОстаток КАК КоличествоОстаток
+ПОМЕСТИТЬ ВтЗаказыПоставщику
+ИЗ
+	ВТ_ЗаказыПоставщикуОстатки КАК ВТ_ЗаказыПоставщикуОстатки
+		ЛЕВОЕ СОЕДИНЕНИЕ ВТ_ЗаказыПоставщику_ОъектыРемонта КАК ВТ_ЗаказыПоставщику_ОъектыРемонта
+		ПО ВТ_ЗаказыПоставщикуОстатки.ЗаказПоставщику = ВТ_ЗаказыПоставщику_ОъектыРемонта.ЗаказПоставщику
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	проф_ТоварыНаСкладахОстатки.Номенклатура КАК Номенклатура,
+	проф_ТоварыНаСкладахОстатки.Характеристика КАК Характеристика,
+	проф_ТоварыНаСкладахОстатки.Склад КАК Склад,
+	проф_ТоварыНаСкладахОстатки.Назначение КАК Назначение,
+	проф_ТоварыНаСкладахОстатки.ВНаличииОстаток КАК ФактическийСвободныйОстаток,
+	0 КАК ЗарезервированоВЗаказах,
+	0 КАК РазмещеноВЗаказахПоставщикам,
+	0 КАК РазмещеноВЗаказахПоставщикамЗапас,
+	ЗНАЧЕНИЕ(Документ.торо_ЗаказПоставщику.пустаяСсылка) КАК ЗаказПоставщику,
+	ЗНАЧЕНИЕ(Справочник.торо_ОбъектыРемонта.ПустаяСсылка) КАК ОбъектРемонта,
+	ЗНАЧЕНИЕ(Документ.ЗаказНаВнутреннееПотребление.ПустаяСсылка) КАК ЗаказНаВнутреннееПотребление,
+	ЗНАЧЕНИЕ(Документ.торо_ЗаявкаНаРемонт.ПустаяСсылка) КАК ЗаявкаНаРемонт,
+	"" КАК ОбъектРемонтаПредставление,
+	"" КАК ЗаказНаВППредставление,
+	"" КАК ЗаявкаНаРемонтПредставление
+ИЗ
+	РегистрНакопления.проф_ТоварыНаСкладах.Остатки(&amp;Период, ) КАК проф_ТоварыНаСкладахОстатки
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ВТ_ЗаказНаВП.Номенклатура,
+	ВТ_ЗаказНаВП.Характеристика,
+	ВТ_ЗаказНаВП.Склад,
+	ЕСТЬNULL(торо_ЗаявкаНаРемонт.проф_Назначение, ЗНАЧЕНИЕ(Справочник.проф_Назначения.ПустаяСсылка)),
+	0,
+	0,
+	0,
+	0,
+	ЗНАЧЕНИЕ(Документ.торо_ЗаказПоставщику.ПустаяСсылка),
+	ЕСТЬNULL(торо_ЗаявкаНаРемонтРемонтыОборудования.ОбъектРемонта, ЗНАЧЕНИЕ(Справочник.торо_ОбъектыРемонта.ПустаяСсылка)),
+	ЕСТЬNULL(ВТ_ЗаказНаВП.ЗаказНаВнутреннееПотребление, ЗНАЧЕНИЕ(Документ.ЗаказНаВнутреннееПотребление.ПустаяСсылка)),
+	ЗНАЧЕНИЕ(Документ.торо_ЗаявкаНаРемонт.ПустаяСсылка),
+	ПРЕДСТАВЛЕНИЕ(торо_ЗаявкаНаРемонтРемонтыОборудования.ОбъектРемонта),
+	ПРЕДСТАВЛЕНИЕ(ВТ_ЗаказНаВП.ЗаказНаВнутреннееПотребление),
+	""
+ИЗ
+	ВтРезервыНаСкладахОстатки КАК ВТ_ЗаказНаВП,
+	Документ.торо_ЗаявкаНаРемонт.РемонтыОборудования КАК торо_ЗаявкаНаРемонтРемонтыОборудования,
+	Документ.торо_ЗаявкаНаРемонт КАК торо_ЗаявкаНаРемонт
+
+СГРУППИРОВАТЬ ПО
+	торо_ЗаявкаНаРемонтРемонтыОборудования.ОбъектРемонта,
+	ЕСТЬNULL(торо_ЗаявкаНаРемонт.проф_Назначение, ЗНАЧЕНИЕ(Справочник.проф_Назначения.ПустаяСсылка)),
+	ВТ_ЗаказНаВП.Номенклатура,
+	ВТ_ЗаказНаВП.Характеристика,
+	ВТ_ЗаказНаВП.Склад,
+	ВТ_ЗаказНаВП.ЗаказНаВнутреннееПотребление
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ВтЗаказыПоставщику.Номенклатура,
+	ВтЗаказыПоставщику.Характеристика,
+	ВтЗаказыПоставщику.Склад,
+	ВтЗаказыПоставщику.Назначение,
+	ВтЗаказыПоставщику.ФактическийСвободныйОстаток,
+	ВтЗаказыПоставщику.ЗарезервированоВЗаказах,
+	0,
+	0,
+	ВтЗаказыПоставщику.ЗаказПоставщику,
+	ВтЗаказыПоставщику.ОбъектРемонта,
+	ВтЗаказыПоставщику.ЗаказНаВнутреннееПотребление,
+	ВтЗаказыПоставщику.ЗаявкаНаРемонт,
+	ВтЗаказыПоставщику.ОбъектРемонтаПредставление,
+	ВтЗаказыПоставщику.ЗаказНаВППредставление,
+	ВтЗаказыПоставщику.ЗаявкаНаРемонтПредставление
+ИЗ
+	ВтЗаказыПоставщику КАК ВтЗаказыПоставщику
+ГДЕ
+	ВтЗаказыПоставщику.ЗаказДляЗакупки = ИСТИНА
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ВтЗаказыПоставщику.Номенклатура,
+	ВтЗаказыПоставщику.Характеристика,
+	ВтЗаказыПоставщику.Склад,
+	ВтЗаказыПоставщику.Назначение,
+	ВтЗаказыПоставщику.ФактическийСвободныйОстаток,
+	ВтЗаказыПоставщику.ЗарезервированоВЗаказах,
+	ВтЗаказыПоставщику.КоличествоОстаток,
+	ВтЗаказыПоставщику.КоличествоОстаток,
+	ВтЗаказыПоставщику.ЗаказПоставщику,
+	ВтЗаказыПоставщику.ОбъектРемонта,
+	ВтЗаказыПоставщику.ЗаказНаВнутреннееПотребление,
+	ВтЗаказыПоставщику.ЗаявкаНаРемонт,
+	ВтЗаказыПоставщику.ОбъектРемонтаПредставление,
+	ВтЗаказыПоставщику.ЗаказНаВППредставление,
+	ВтЗаказыПоставщику.ЗаявкаНаРемонтПредставление
+ИЗ
+	ВтЗаказыПоставщику КАК ВтЗаказыПоставщику
+ГДЕ
+	ВтЗаказыПоставщику.ЗаказДляЗакупки = ЛОЖЬ</query>
+	</dataSet>
+	<calculatedField>
+		<dataPath>НомерЗаказаИОР</dataPath>
+		<expression>Выбор когда ЗаказНаВППредставление &lt;&gt; "" и ЗарезервированоВЗаказах &gt; 0 тогда ЗаказНаВППредставление+", "+ОбъектРемонтаПредставление иначе "" Конец</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Номер заказа и ТС/оборудования, под которое зарезервировано ТМЦ</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
+		<dataPath>ТСиОборудованияВЗаказахПоставщикам</dataPath>
+		<expression>Выбор когда ЗаявкаНаРемонтПредставление &lt;&gt; "" и РазмещеноВЗаказахПоставщикам &gt; 0 тогда ЗаявкаНаРемонтПредставление+", " +ОбъектРемонтаПредставление иначе "" Конец</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>под какие ТС и оборудование, заказы ТОиР (в заказах поставщикам)</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<totalField>
+		<dataPath>ЗарезервированоВЗаказах</dataPath>
+		<expression>Сумма(ЗарезервированоВЗаказах)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>РазмещеноВЗаказахПоставщикамЗапас</dataPath>
+		<expression>Сумма(ВычислитьВыражениеСГруппировкойМассив("Максимум(РазмещеноВЗаказахПоставщикамЗапас)","ЗаказПоставщику"))</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ФактическийСвободныйОстаток</dataPath>
+		<expression>Максимум(ФактическийСвободныйОстаток)</expression>
+		<group>Номенклатура</group>
+		<group>Характеристика</group>
+	</totalField>
+	<totalField>
+		<dataPath>НомерЗаказаИОР</dataPath>
+		<expression>ВычислитьВыражениеСГруппировкойМассив("НомерЗаказаИОР","ЗаявкаНаРемонт")</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ТСиОборудованияВЗаказахПоставщикам</dataPath>
+		<expression>ВычислитьВыражениеСГруппировкойМассив("ТСиОборудованияВЗаказахПоставщикам","ЗаявкаНаРемонт")</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ФактическийСвободныйОстаток</dataPath>
+		<expression>Сумма(ВычислитьВыражение("Максимум(ФактическийСвободныйОстаток)","Номенклатура, Характеристика"))</expression>
+	</totalField>
+	<totalField>
+		<dataPath>РазмещеноВЗаказахПоставщикам</dataPath>
+		<expression>Сумма(ВычислитьВыражениеСГруппировкойМассив("Максимум(РазмещеноВЗаказахПоставщикам)","ЗаказПоставщику"))</expression>
+	</totalField>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>На дату</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>false</useRestriction>
+		<expression>КонецПериода(&amp;Период,"День")</expression>
+	</parameter>
+	<template>
+		<name>Макет1</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">НомерЗаказаИОР</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">25.375</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">25.375</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>НомерЗаказаИОР</dcsat:name>
+			<dcsat:expression>стрЗаменить(стрЗаменить(Представление(НомерЗаказаИОР),"&lt;Пустое значение&gt;;", ""),"&lt;Пустое значение&gt;", "")</dcsat:expression>
+		</parameter>
+	</template>
+	<template>
+		<name>Макет2</name>
+		<template xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:AreaTemplate">
+			<dcsat:item xsi:type="dcsat:TableRow">
+				<dcsat:tableCell>
+					<dcsat:item xsi:type="dcsat:Field">
+						<dcsat:value xsi:type="dcscor:Parameter">ТСиОборудованияВЗаказахПоставщикам</dcsat:value>
+					</dcsat:item>
+					<dcsat:appearance>
+						<dcscor:item>
+							<dcscor:parameter>Размещение</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">25.375</dcscor:value>
+						</dcscor:item>
+						<dcscor:item>
+							<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+							<dcscor:value xsi:type="xs:decimal">25.375</dcscor:value>
+						</dcscor:item>
+					</dcsat:appearance>
+				</dcsat:tableCell>
+			</dcsat:item>
+		</template>
+		<parameter xmlns:dcsat="http://v8.1c.ru/8.1/data-composition-system/area-template" xsi:type="dcsat:ExpressionAreaTemplateParameter">
+			<dcsat:name>ТСиОборудованияВЗаказахПоставщикам</dcsat:name>
+			<dcsat:expression>стрЗаменить(стрЗаменить(Представление(ТСиОборудованияВЗаказахПоставщикам),"&lt;Пустое значение&gt;;", ""),"&lt;Пустое значение&gt;", "")</dcsat:expression>
+		</parameter>
+	</template>
+	<fieldTemplate>
+		<field>НомерЗаказаИОР</field>
+		<template>Макет1</template>
+	</fieldTemplate>
+	<fieldTemplate>
+		<field>ТСиОборудованияВЗаказахПоставщикам</field>
+		<template>Макет2</template>
+	</fieldTemplate>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Отчет об остатках и размещению ТМЦ в заказах поставщикам</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Номенклатура</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Назначение</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Фактический свободный остаток</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ФактическийСвободныйОстаток</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>кол-во</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:placement>Auto</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Зарезервировано в заказах</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ЗарезервированоВЗаказах</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>кол-во</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>НомерЗаказаИОР</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Horizontally</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemFolder">
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Размещено в заказах поставщикам</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>РазмещеноВЗаказахПоставщикам</dcsset:field>
+						<dcsset:lwsTitle>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>кол-во</v8:content>
+							</v8:item>
+						</dcsset:lwsTitle>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>ТСиОборудованияВЗаказахПоставщикам</dcsset:field>
+					</dcsset:item>
+					<dcsset:placement>Horizontally</dcsset:placement>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>РазмещеноВЗаказахПоставщикамЗапас</dcsset:field>
+					<dcsset:lwsTitle>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Размещено в заказах поставщикам для выполнения страхового запаса</v8:content>
+						</v8:item>
+					</dcsset:lwsTitle>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Склад</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>173b801b-0ccb-431f-b9ca-ffddf91bec61</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Номенклатура</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>021928c9-e552-4a96-87dd-d5f87bb1fc25</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardBeginningDate">
+						<v8:variant xsi:type="v8:StandardBeginningDateVariant">Custom</v8:variant>
+						<v8:date>0001-01-01T00:00:00</v8:date>
+					</dcscor:value>
+					<dcsset:userSettingID>3941ed93-4a2e-4645-9570-54d21aa2cbb1</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:conditionalAppearance>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>ПараметрыДанных.Период</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter/>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Формат</dcscor:parameter>
+							<dcscor:value xsi:type="v8:LocalStringType">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ДФ=dd.MM.yyyy</v8:content>
+								</v8:item>
+							</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+			</dcsset:conditionalAppearance>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>РасположениеИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>АвтоПозицияРесурсов</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionResourcesAutoPosition">DontUse</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Номенклатура</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Назначение</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>
